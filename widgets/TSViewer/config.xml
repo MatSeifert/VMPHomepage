@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config>
+    <!-- ### devMX TeamSpeak3 Webviewer Lite ### -->
+    <!-- See: http://devmx.de/en/software/teamspeak3-webviewer-lite/dokumentation-installation -->
+    <!-- for information abtout the configuration -->
+    
+    <!-- ### Basic configuration ### -->
+    
+    <!-- Hostname or ip adress of your teamspeak3 server -->
+    <!-- e.g. example.com or 192.168.178.2 -->
+    <host>ts.vmp-clan.de</host>
+    
+    <!-- Queryport of your teamspeak3 server -->
+    <!-- default: 10011 -->
+    <queryport>10011</queryport>
+    
+    <!-- Serverport of the teamspeak3 server to display -->
+    <!-- default: 9987 -->
+    <serverport>9987</serverport>
+    
+    
+    <!-- Username of the query user [optional] -->
+    <!-- default: empty -->
+    <username></username>
+    
+    
+    <!-- Password of the query user [optional] -->
+    <!-- default: emtpy -->
+    <password></password>
+    
+    
+    <!-- ### Advanced configuration ### -->
+    
+    <!-- If the viewer should be cached (recommended) -->
+    <!-- default: true -->
+    <caching>true</caching>
+    
+    <!-- If the viewer should download custom icons (recommended) -->
+    <!-- default: true -->
+    <downloadIcons>true</downloadIcons>
+    
+    <!-- If images should be shown (recommended) -->
+    <!-- default: true -->
+    <showImages>true</showImages>
+    
+    <!-- If country icons should be shown (not recommended) -->
+    <!-- default: false -->
+    <showCountryIcons>false</showCountryIcons>
+    
+    <!-- If query clients should be rendered in the viewer (not recommended) -->
+    <!-- default: false -->
+    <renderServerQueryClients>false</renderServerQueryClients>
+</config>

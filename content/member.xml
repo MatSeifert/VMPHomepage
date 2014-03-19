@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="member.xsl" ?>
+
+<memberlist>
+	<!-- ADMINISTRATION -->
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Behemoth</nickname>
+		<rank>Admin</rank>
+		<activity value="aktiv" />
+		<birthday day="14" month="3" year="1991" />
+		<recruited in="2008" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Chiemra</nickname>
+		<rank>Admin</rank>
+		<activity value="aktiv" />
+		<birthday day="10" month="7" year="1989" />
+		<recruited in="2010" />
+	</member>	
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Kakadu</nickname>
+		<rank>Admin</rank>
+		<activity value="aktiv" />
+		<birthday day="1" month="12" year="1990" />
+		<recruited in="2008" />
+	</member>	
+	<!-- VICE ADMINISTRATION -->
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Black Angel</nickname>
+		<rank>Vizeadmin</rank>
+		<activity value="aktiv" />
+		<birthday day="24" month="2" year="1992" />
+		<recruited in="2010" />
+	</member>
+	<!-- FOUNDER -->
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Leviathan</nickname>
+		<rank>Gründer</rank>
+		<activity value="inaktiv" />
+		<birthday day="7" month="1" year="1993" />
+		<recruited in="2010" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>female</sex>
+		<nickname>Vicky</nickname>
+		<rank>Gründer</rank>
+		<activity value="inaktiv" />
+		<recruited in="2008" />
+	</member>	
+	<!-- MEMBER -->
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Langy</nickname>
+		<rank>Member</rank>
+		<activity value="inaktiv" />
+		<recruited in="2008" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Deadman</nickname>
+		<rank>Member</rank>
+		<activity value="inaktiv" />
+		<recruited in="2010" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Rabbit</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2011" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Duebel</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2011" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>female</sex>
+		<nickname>Lisa</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2012" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Paintex</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2012" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Hellbourne</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2012" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Fou</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2013" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Patoyz</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2013" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>female</sex>
+		<nickname>Princess</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2013" />
+	</member>
+	<!-- TRIALMEMBER -->
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Hoousemusic</nickname>
+		<rank>Member</rank>
+		<activity value="aktiv" />
+		<recruited in="2014" />
+	</member>
+</memberlist>
