@@ -25,7 +25,7 @@
 		case "calendar": @include __DIR__ . '/../content/kalender.php';
 		break;
 		
-		case "lestplay": @include __DIR__ . 'content/letsplay.html';
+		case "letsplay": @include __DIR__ . '/../content/letsplay.html';
 		break;
 		
 		case "forum": @include __DIR__ . 'content/forum.php';

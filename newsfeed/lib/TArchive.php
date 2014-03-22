@@ -8,13 +8,22 @@
 			$client = new \Tumblr\API\Client($consumerKey, $consumerSecret);
 			$client->setToken($token, $tokenSecret);
 		
-			$options = array("limit" => 3);
+			$options = array("limit" => 1);
+
+			$replace = "<img class=\"rect\" ";
+			$search = "<img ";
 
 			foreach ($client->getBlogPosts('vmp-clan', $options)->posts as $post) {
-				echo "<div class=\"PostTitle\"> $post->title \n </div>";
+
+				$postArchive = $post->body;
+				$replacedPostArchive = str_replace($search, $replace, $postArchive);
+				echo $postArchive;
+				echo $replacedPostArchive;
 
 				$date = date('d.m.Y - H:i', $post->timestamp);
-				echo "<div class=\"PostDate\"> $date \n </div>";
+				echo "<span class=\"smallHeadline\"> $date - $post->title \n </span>";
+				// echo "";
+
 			}
 		}	
 	}
