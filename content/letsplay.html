@@ -1,0 +1,11 @@
+<div class="PostTitle">
+  LET'S PLAY
+</div>
+<br />
+
+<?php 
+	$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
+	$xml = simplexml_load_file(rawurlencode($xmlfile));
+
+	print_r($xml);
+?>

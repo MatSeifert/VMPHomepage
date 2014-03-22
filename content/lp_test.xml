@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="latestVideos.xsl" ?>
+
+<feed 
+ xmlns='http://www.w3.org/2005/Atom' 
+ xmlns:media='http://search.yahoo.com/mrss/' 
+ xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/'
+ xmlns:gd='http://schemas.google.com/g/2005' xmlns:yt='http://gdata.youtube.com/schemas/2007'>
+	<id>http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads</id>
+	<updated>2014-03-22T00:20:24.764Z</updated>
+	<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+	<title type='text'>Uploads by VMP-Clan</title>
+	<logo>http://www.gstatic.com/youtube/img/logo.png</logo>
+	<link rel='related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/users/vmpclanmedia'/>
+	<link rel='alternate' type='text/html' href='http://www.youtube.com/channel/UCcWQgwwm9rCj6tx099W31Hg/videos'/>
+	<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads'/>
+	<link rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads/batch'/>
+	<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads?start-index=1&amp;max-results=25'/>
+	<link rel='next' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads?start-index=26&amp;max-results=25'/>
+	<author>
+		<name>VMP-Clan</name>
+		<uri>http://gdata.youtube.com/feeds/api/users/VMPClanMedia</uri>
+	</author>
+	<generator version='2.1' uri='http://gdata.youtube.com'>YouTube data API</generator>
+	<openSearch:totalResults>499</openSearch:totalResults>
+	<openSearch:startIndex>1</openSearch:startIndex>
+	<openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+
+
+	<entry>
+		<id>http://gdata.youtube.com/feeds/api/videos/b0xeKZzH9eU</id>
+		<published>2014-03-21T16:11:04.000Z</published>
+		<updated>2014-03-21T16:11:04.000Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Entertainment' label='Unterhaltung'/>
+		<title type='text'>Let's Play: Borderlands [CNRR] #079 - Gack - GAAACK</title>
+		<content type='text'>
+			========================================
+			Gackgack GAAACK
+
+			Bordergaack
+			(C) 2009 Gackbox, 2GACK
+			Gaaacked by: VMP GACK (Gackadu, GackGaack Angel &amp; Gackemoth) 
+
+			========================================
+			GaaackgaaackGACK
+
+			Gack Gaaack 79 Gackgackgack GAAAACK gack gack GACK! Gack Gagagagack Gaack Gack Gagagagagaack, Gackergagack Gack GAAACK GAGAACK. Gack Gaack Gaaaagackgack GACK! Gack Gackgackgack Gaagack Gack GAGAGAGACK GACK!
+		</content>
+		<link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=b0xeKZzH9eU&amp;feature=youtube_gdata'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/b0xeKZzH9eU/related'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=b0xeKZzH9eU'/>
+		<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads/b0xeKZzH9eU'/>
+		<author>
+			<name>VMP-Clan</name>
+			<uri>http://gdata.youtube.com/feeds/api/users/VMPClanMedia</uri>
+		</author>
+		<gd:comments>
+			<gd:feedLink rel='http://gdata.youtube.com/schemas/2007#comments' href='http://gdata.youtube.com/feeds/api/videos/b0xeKZzH9eU/comments' countHint='0'/>
+		</gd:comments>
+		<yt:hd/>
+		<media:group>
+			<media:category label='Unterhaltung' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Entertainment</media:category>
+			<media:content 
+			 url='http://www.youtube.com/v/b0xeKZzH9eU?version=3&amp;f=user_uploads&amp;app=youtube_gdata' 
+			 type='application/x-shockwave-flash' 
+			 medium='video' isDefault='true' 
+			 expression='full' duration='1076' 
+			 yt:format='5'/>
+			<media:content 
+			 url='rtsp://r4---sn-4g57kues.c.youtube.com/CigLENy73wIaHwnl9cecKV5MbxMYDSANFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp' 
+			 type='video/3gpp'
+			 medium='video' 
+			 expression='full' 
+			 duration='1076' 
+			 yt:format='1'/>
+			<media:content 
+			 url='rtsp://r4---sn-4g57kues.c.youtube.com/CigLENy73wIaHwnl9cecKV5MbxMYESARFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp' 
+			 type='video/3gpp' 
+			 medium='video' 
+			 expression='full' 
+			 duration='1076' 
+			 yt:format='6'/>
+			<media:description type='plain'>
+				========================================
+				Gackgack GAAACK
+
+				Bordergaack
+				(C) 2009 Gackbox, 2GACK
+				Gaaacked by: VMP GACK (Gackadu, GackGaack Angel &amp; Gackemoth) 
+
+				========================================
+				GaaackgaaackGACK
+
+				Gack Gaaack 79 Gackgackgack GAAAACK gack gack GACK! Gack Gagagagack Gaack Gack Gagagagagaack, Gackergagack Gack GAAACK GAGAACK. Gack Gaack Gaaaagackgack GACK! Gack Gackgackgack Gaagack Gack GAGAGAGACK GACK!
+			</media:description>
+			<media:keywords/>
+			<media:player url='http://www.youtube.com/watch?v=b0xeKZzH9eU&amp;feature=youtube_gdata_player'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/0.jpg' height='360' width='480' time='00:08:58'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/1.jpg' height='90' width='120' time='00:04:29'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/2.jpg' height='90' width='120' time='00:08:58'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/3.jpg' height='90' width='120' time='00:13:27'/>
+			<media:title type='plain'>Let's Play: Borderlands [CNRR] #079 - Gack - GAAACK</media:title>
+			<yt:duration seconds='1076'/>
+		</media:group>
+		<yt:statistics favoriteCount='0' viewCount='2'/>
+	</entry>
+
+	<entry>
+		<id>http://gdata.youtube.com/feeds/api/videos/b0xeKZzH9eU</id>
+		<published>2014-03-21T16:11:04.000Z</published>
+		<updated>2014-03-21T16:11:04.000Z</updated>
+		<category scheme='http://schemas.google.com/g/2005#kind' term='http://gdata.youtube.com/schemas/2007#video'/>
+		<category scheme='http://gdata.youtube.com/schemas/2007/categories.cat' term='Entertainment' label='Unterhaltung'/>
+		<title type='text'>Let's Play: Borderlands [CNRR] #079 - Gack - GAAACK</title>
+		<content type='text'>
+			========================================
+			Gackgack GAAACK
+
+			Bordergaack
+			(C) 2009 Gackbox, 2GACK
+			Gaaacked by: VMP GACK (Gackadu, GackGaack Angel &amp; Gackemoth) 
+
+			========================================
+			GaaackgaaackGACK
+
+			Gack Gaaack 79 Gackgackgack GAAAACK gack gack GACK! Gack Gagagagack Gaack Gack Gagagagagaack, Gackergagack Gack GAAACK GAGAACK. Gack Gaack Gaaaagackgack GACK! Gack Gackgackgack Gaagack Gack GAGAGAGACK GACK!
+		</content>
+		<link rel='alternate' type='text/html' href='http://www.youtube.com/watch?v=b0xeKZzH9eU&amp;feature=youtube_gdata'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#video.related' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/videos/b0xeKZzH9eU/related'/>
+		<link rel='http://gdata.youtube.com/schemas/2007#mobile' type='text/html' href='http://m.youtube.com/details?v=b0xeKZzH9eU'/>
+		<link rel='self' type='application/atom+xml' href='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads/b0xeKZzH9eU'/>
+		<author>
+			<name>VMP-Clan</name>
+			<uri>http://gdata.youtube.com/feeds/api/users/VMPClanMedia</uri>
+		</author>
+		<gd:comments>
+			<gd:feedLink rel='http://gdata.youtube.com/schemas/2007#comments' href='http://gdata.youtube.com/feeds/api/videos/b0xeKZzH9eU/comments' countHint='0'/>
+		</gd:comments>
+		<yt:hd/>
+		<media:group>
+			<media:category label='Unterhaltung' scheme='http://gdata.youtube.com/schemas/2007/categories.cat'>Entertainment</media:category>
+			<media:content 
+			 url='http://www.youtube.com/v/b0xeKZzH9eU?version=3&amp;f=user_uploads&amp;app=youtube_gdata' 
+			 type='application/x-shockwave-flash' 
+			 medium='video' isDefault='true' 
+			 expression='full' duration='1076' 
+			 yt:format='5'/>
+			<media:content 
+			 url='rtsp://r4---sn-4g57kues.c.youtube.com/CigLENy73wIaHwnl9cecKV5MbxMYDSANFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp' 
+			 type='video/3gpp'
+			 medium='video' 
+			 expression='full' 
+			 duration='1076' 
+			 yt:format='1'/>
+			<media:content 
+			 url='rtsp://r4---sn-4g57kues.c.youtube.com/CigLENy73wIaHwnl9cecKV5MbxMYESARFEgGUgx1c2VyX3VwbG9hZHMM/0/0/0/video.3gp' 
+			 type='video/3gpp' 
+			 medium='video' 
+			 expression='full' 
+			 duration='1076' 
+			 yt:format='6'/>
+			<media:description type='plain'>
+				========================================
+				Gackgack GAAACK
+
+				Bordergaack
+				(C) 2009 Gackbox, 2GACK
+				Gaaacked by: VMP GACK (Gackadu, GackGaack Angel &amp; Gackemoth) 
+
+				========================================
+				GaaackgaaackGACK
+
+				Gack Gaaack 79 Gackgackgack GAAAACK gack gack GACK! Gack Gagagagack Gaack Gack Gagagagagaack, Gackergagack Gack GAAACK GAGAACK. Gack Gaack Gaaaagackgack GACK! Gack Gackgackgack Gaagack Gack GAGAGAGACK GACK!
+			</media:description>
+			<media:keywords/>
+			<media:player url='http://www.youtube.com/watch?v=b0xeKZzH9eU&amp;feature=youtube_gdata_player'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/0.jpg' height='360' width='480' time='00:08:58'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/1.jpg' height='90' width='120' time='00:04:29'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/2.jpg' height='90' width='120' time='00:08:58'/>
+			<media:thumbnail url='http://i1.ytimg.com/vi/b0xeKZzH9eU/3.jpg' height='90' width='120' time='00:13:27'/>
+			<media:title type='plain'>Let's Play: Borderlands [CNRR] #079 - Gack - GAAACK</media:title>
+			<yt:duration seconds='1076'/>
+		</media:group>
+		<yt:statistics favoriteCount='0' viewCount='2'/>
+	</entry>	
+</feed>
