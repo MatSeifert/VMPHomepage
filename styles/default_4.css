@@ -141,7 +141,7 @@ span.more {
 	display: inline-block;
 }
 
-span.rightText {
+div.rightText {
 	font-family: Segoe, Arial, Helvetica, sans-serif;
 	font size: 9px;
 	margin: 5px 20px 10px 20px;
@@ -154,6 +154,25 @@ div.newsTitle {
 	text-indent: 10px;
 	font-family: Segoe, Arial, Helvetica, sans-serif;
 	font-size: 20px;
+}
+
+/* Styles für den Let's Play Bereich der Homepage (nicht das Widget!) */
+
+div.LPBox {
+	float: left;
+	background-color: #dddddd;
+	margin: 0px 3px 15px 3px;
+	width: 157px;
+	padding: 5px;
+	box-shadow: 
+		2px 2px 1px 0px rgba(0,0,0,0.2), 
+		0px 0px 1px 0px rgba(0,0,0,0.2);	
+}
+
+img.LetsPlayThumb {
+	width: 167px;
+	margin: -5px -5px 10px -5px;
+	float: left;
 }
 
 span.smallHeadline {
