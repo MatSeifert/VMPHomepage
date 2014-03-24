@@ -161,7 +161,7 @@ div.newsTitle {
 div.LPBox {
 	float: left;
 	text-align: left;
-	background-color: #dddddd;
+	background-color: #EFEFEF;
 	margin: 0px 3px 15px 3px;
 	width: 157px;
 	height: 250px;
@@ -169,6 +169,23 @@ div.LPBox {
 	box-shadow: 
 		2px 2px 1px 0px rgba(0,0,0,0.2), 
 		0px 0px 1px 0px rgba(0,0,0,0.2);	
+}
+
+div.LPBoxEmpty {
+	float: left;
+	text-align: left;
+	margin: 0px 3px 15px 3px;
+	width: 157px;
+	height: 250px;
+	padding: 5px;
+}
+
+
+div.LPSubHeadline {
+	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	display: block;
+	margin: 20px 0px 10px 10px;	
 }
 
 img.LetsPlayThumb {

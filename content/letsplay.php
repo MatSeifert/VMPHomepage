@@ -1,17 +1,21 @@
 <?php 
-	$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
-	$xml = simplexml_load_file(rawurlencode($xmlfile));
+	function YoutubeXml () {
+		$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
+		$xml = simplexml_load_file(rawurlencode($xmlfile));
 
-	// print_r($xml);
+		print_r($xml);
+
+		echo("Tetsausgabe");
+	}
 ?>
 
 <div class="PostTitle">
   LET'S PLAY
 </div>
 <div class="PostPost">
-	<span class="smallHeadline">
+	<div class="LPSubHeadline">
 		Unsere Projekte
-	</span>
+	</div>
 
 	<div class="LPBlock">
 		<div class="LPBox">
@@ -76,12 +80,24 @@
 				Spieler: Kakadu, Behemoth <br />
 			</span>
 		</div>
+
+		<div class="LPBoxEmpty">
+			&nbsp;
+		</div>
+
+		<div class="LPBoxEmpty">
+			&nbsp;
+		</div>
+
 	</div>
 
-	<div>
-		<p> &nbsp; </p>
-		<span class="smallHeadline">
-			Neuste Videos
-		</span>
+	<p> &nbsp; </p>
+	<div class="LPSubHeadline">
+		Neuste Videos
 	</div>
+
+	<div class="LPBlock">
+		<?php YoutubeXml(); ?>
+	</div>
+
 </div>
