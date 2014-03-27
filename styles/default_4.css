@@ -492,3 +492,33 @@ td.ActDay {
 	border-top: solid 5px #9E0000;
 	background-color: #fff;
 }
+
+/* Styles für die 404 Error Seite. Im optimalfall wird diese nie dem User gezeigt */
+
+div.Error404 {
+	background-image: url('../images/error404.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 100%;
+}
+
+div.HttpError404Headline {
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-size: 65px;
+	margin: 0px 0px 0px 40px;
+	padding-top: 30px;
+}
+
+div.HttpError404SubHeadline {
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-size: 35px;
+	margin: 30px 0px 0px 40px;
+}
+
+div.HttpError404Helper {
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-size: 15px;	
+	width: 520px;
+	margin: 30px auto 0px auto;
+	text-align: justify;
+}

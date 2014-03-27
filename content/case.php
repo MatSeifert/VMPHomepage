@@ -46,6 +46,6 @@
 		case "mania2013": @include __DIR__ . 'content/mania2013.php';
 		break;
 		
-	   	// default: @include 'inc/news.php';
+	   	default: @include __DIR__ . '/../content/error404.php';
   }
 ?>	
