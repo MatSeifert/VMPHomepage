@@ -1,11 +1,8 @@
 <?php 
 	function YoutubeXml () {
 		$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
-		$xml = simplexml_load_file(rawurlencode($xmlfile));
+		$xml = simplexml_load_file(rawurlencode($xmlfl));
 
-		print_r($xml);
-
-		echo("Tetsausgabe");
 	}
 ?>
 
