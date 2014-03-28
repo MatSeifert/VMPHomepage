@@ -522,3 +522,54 @@ div.HttpError404Helper {
 	margin: 30px auto 0px auto;
 	text-align: justify;
 }
+
+/* Styledefinitionen für das News Formular zum schreiben neuer News */
+
+input.NewsTitle {
+	margin-left: 10px; 
+	width: 480px;
+	padding: 8px;
+}
+
+span.mandatory {
+	color: #ff0000;
+}
+
+textarea.NewsContent {
+	margin-left: 10px; 
+	width: 480px;
+	height: 250px;
+	padding: 8px;
+}
+
+input.NewsAuthor {
+	margin-left: 10px; 
+	width: 250px;
+	padding: 8px;	
+}
+
+select.NewsGame {
+	margin-left: 10px; 
+	width: 220px;
+	padding: 8px;	
+}
+
+input.NewsSubmit {
+	margin: auto auto; 
+	width: 250px;
+	padding: 8px;
+}
+
+div.NewsSubmit {
+	width: 100%; 
+	text-align: center; 
+	display: block; 
+	height: 30px; 
+	margin: 20px 0px 40px 0px; 
+	float: left
+}
+
+option.seperator { 
+	border-bottom: 1px dotted #000; 
+	width: 100%;
+}
