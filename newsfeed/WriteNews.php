@@ -33,9 +33,10 @@
 			</span>
 			<select class="NewsGame">
 			  <option value="NotInList">Nicht in der Liste</option>
-			  <option disabled>__________________________</option>
+			  <option disabled>&nbsp;&nbsp;&nbsp;SONSTIGE</option>
 			  <option value="VmpClan">In eigener Sache</option>
-			  <option disabled>__________________________</option>
+			  <option value="Technique">Technik</option>
+			  <option disabled>&nbsp;&nbsp;&nbsp;GAMES</option>
 			  <option value="Battlefield3">Battlefield 3</option>
 			  <option value="Battlefield4">Battlefield 4</option>
 			  <option value="Borderlands2">Borderlands 2</option>
