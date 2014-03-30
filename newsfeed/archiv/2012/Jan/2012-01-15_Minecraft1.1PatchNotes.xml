@@ -1,0 +1,22 @@
+<xml version="1.0" encoding="UTF-8"><news><title>Minecraft 1.1 Patch Notes</title><content>Zwar ist die Version 1.1 schon einige Tage raus, aber da sie aus Servertechnischen Gründen momentan wohl eh noch keiner heruntergeladen hat konnte ich mir mit dem Changelog auch Zeit lassen ;) Hier ist es jetzt also: Eine kleine Übersicht, was es so neues geben wird.
+
+Changelog:
+
+- Im Creative Modus kann man nun Mobs aus einem Ei spawnen lassen, ausgenommen hierbei ist der Enderdrache, Spinnenreiter und Schneegolems. Leider gibt es die Eier (noch?) nicht im Survival Modus, also sind sie zumindest für unseren Server irrelevant
+- Minecraft goes multiligual! Neben Englisch könnt ihr nun auch Deutsch und andere Sprachen auswählen, damit ihr endlich kapiert was es mit Minecraft auf sich hat ;D
+- Beim generieren einer neuen Map stehen nun mehr Eigenschaften zur Verfügung, momentan kann man allerdings nur zwischen “Normal” und “Flatmap” wählen. Wie der Name schon verät generiert Minecraft damit eine komplett flache Map, perfekt zum Bauen im Creative Modus. Im Survival Modus eher unsinnig
+- Schafe bekommen ab sofort auch hunger! Sie fressen das Gras von Blöcken (nicht das 3D Gras, sondern “Grasblöcke”), was den netten Nebeneffekt hat, dass ihre Wolle nachwächst (Vllt. sollte ich aufhören zu essen, dann muss ich nicht mehr zum Friseur?!). Jedenfalls werden wir daher unser Plugin, welches die Wolle nachwachsen lässt entfernen, ihr müsst eure Schafe also jetzt aus dem Keller auf eine saftige grüne Wiese lassen ;)
+- Das Crafting Rezept für Goldene Äpfel (heilen instant 10 Herzen) wurde geändert. Statt übertriebenen 8 Goldblöcken bedarf es jetzt nur noch 8 Gold Nuggets
+- Apropos Äpfel: Auch diese fallen jetzt ohne Plugin ab und an aus Blättern, wenn ihr Bäume fällt
+- Die Übergänge zwischen den Biomen wurden verbessert, damit die verschiedenen Farben nicht mehr so stark aufeinandertreffen (auf dem Server trifft das wahrscheinlich nur in neu generierten Gebieten zu)
+- In Minecraft werden ab sofort auch am Meer (wieder) Strände generiert, aber wie schon bei den Biom Übergängen bekommen wir das - wenn überhaupt - nur in neu generierten Gebieten zu sehen
+- Die Brauzeit von Tränken wurde auf 20 Sekunden reduziert
+man kann ab sofort nicht mehr auf Leitern stehen (man kann sich mit der Umschalt-Taste aber noch daran festhalten). Aber die Kollisionboxen oben wurden entfernt
+- Eine gute Nachricht an alle Landwirte: Getreide bleibt nun auch stehen wenn ihr (oder evil Animals) wild darauf herumtrampelt
+- Magmacreme wird nun - welche Überraschung ;) - von den Magma Cubes im Nether gedroppt
+- In NPC Dörfern werden nun in der Schmiede Kisten von den Bewohnern generiert, was da wohl drin ist? (Und wie die - - Bewohner reagieren wenn man sich bedient?)
+- Bögen kann man ab sofort auch verzaubern. Hier gibts auch gleich mal eine Übersicht welche Zauber drauf gehen: 
+Power Wie der Name schon sagt, verleiht dieser Zauber eurem Bogen mehr Bums, dadurch fügt er bis zu 1,5 Herzen mehr Damage pro Level zu. Die Maximale Verzauberungsstufe liegt bei V
+- Punch Dieser Zauber wirft getroffene Gegner ein stück zurück, und lässt sie einen auf Angry Birds machen. Maximales Level hier ist II
+- Flame. Nein, dieser Zauber belappt eure Gegner nicht blöd, damit schießt ihr brennende Pfeile und macht aus getroffenen Gegnern wandelnde Straßenlaternen (goil)
+- Infinity Damit könnt ihr, sofern ihr mindestens 1 Pfeil im Inventar habt unbegrenzt viele Pfeile schießen</content><author>Behemoth</author><game>VmpClan</game><source></source><year>2012</year><month>01</month><day>15</day><time>17:19</time></news>

@@ -3,19 +3,19 @@
 </div>
 <div class="PostPost">
 	<p>&nbsp;</p>
-	<form action="SaveNews.php" method="get">
+	<form action="newsfeed/SaveNews.php" method="post" accept-charset="ISO-8859-1">
 	 
 		<span class="smallHeadline">
 			Titel der News<span class="mandatory">*</span>
 		</span>
-		<input type="Text" name="NewsTitle" class="NewsTitle">
+		<input type="Text" name="NewsTitle" class="NewsTitle" id="NewsTitle" required="required">
 
 		<p>&nbsp;</p>
 		
 		<span class="smallHeadline">
 			Newsinhalt<span class="mandatory">*</span>
 		</span>	
-		<textarea name="NewsContent" class="NewsContent"></textarea>
+		<textarea name="NewsContent" class="NewsContent" id="NewsContent" required="required"></textarea>
 		
 		<p>&nbsp;</p>
 
@@ -23,7 +23,7 @@
 			<span class="smallHeadline">
 				Nickname (Ohne Clantag!)<span class="mandatory">*</span>
 			</span>
-			<input type="Text" name="NewsTitle" class="NewsAuthor">	
+			<input type="Text" name="NewsAuthor" class="NewsAuthor" id="NewsAuthor" required="required">	
 
 		</div>
 
@@ -31,12 +31,15 @@
 			<span class="smallHeadline">
 				Spiel/Kategorie wählen<span class="mandatory">*</span>
 			</span>
-			<select class="NewsGame">
+			<select class="NewsGame" id="NewsGame" name="NewsGame" required="required">
 			  <option value="NotInList">Nicht in der Liste</option>
 			  <option disabled>&nbsp;&nbsp;&nbsp;SONSTIGE</option>
 			  <option value="VmpClan">In eigener Sache</option>
+			  <option value="Origin">Origin</option>
+			  <option value="Steam">Steam</option>
 			  <option value="Technique">Technik</option>
 			  <option disabled>&nbsp;&nbsp;&nbsp;GAMES</option>
+			  <option value="Anno2070">Anno 2070</option>
 			  <option value="Battlefield3">Battlefield 3</option>
 			  <option value="Battlefield4">Battlefield 4</option>
 			  <option value="Borderlands2">Borderlands 2</option>
@@ -45,9 +48,21 @@
 			  <option value="CallOfDutyGhosts">Call of Duty: Ghosts</option>
 			  <option value="DayZ">DayZ</option>
 			  <option value="DeadSpace">Dead Space</option>
+			  <option value="GTAV">GTA V</option>
+			  <option value="LeagueOfLegends">League of Legends</option>
 			  <option value="Left4Dead">Left 4 Dead 2</option>
+			  <option value="MedalOfHonorWarfighter">Medal of Honor: Warfighter</option>
+			  <option value="Metro2033">Metro 2033</option>
+			  <option value="Minecraft">Minecraft</option>
+			  <option value="NeedForSpeedWorld">Need for Speed World</option>
+			  <option value="Payday">Payday</option>
+			  <option value="Portal">Portal</option>
+			  <option value="Portal2">Portal 2</option>
+			  <option value="StarwarsTheOldRepublic">StarWars: The Old Republic</option>
 			  <option value="Titanfall">Titanfall</option>
 			  <option value="TrackmaniaCanyon">Trackmania² Canyon</option>
+			  <option value="Warface">Warface</option>
+			  <option value="WormsReloaded">Worms: Reloaded</option>
 			</select>	
 		</div>
 	
@@ -56,7 +71,7 @@
 		<span class="smallHeadline">
 			Quelle (wird nur intern gespeichert)
 		</span>	
-		<input type="Text" name="NewsSource" class="NewsTitle">
+		<input type="Text" name="NewsSource" class="NewsTitle" id="NewsSource">
 		
 		<p>&nbsp;</p>
 
