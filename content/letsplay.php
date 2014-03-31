@@ -1,7 +1,16 @@
 <?php 
 	function YoutubeXml () {
 		$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
-		$xml = simplexml_load_file(rawurlencode($xmlfl));
+		$xml = simplexml_load_file(rawurlencode($xmlfile));
+
+
+		foreach ($xml->entry as $entry) {
+			echo '<div class="LPBoxLatestVideo">';
+				echo '<span class="LPHeadline">' . strtoupper(substr($entry->title, 12)) . '</span><br />';
+				echo '<span class="LPContent">' . nl2br($entry->content) . '</span>';
+			echo '</div>';
+		}
+
 
 	}
 ?>
