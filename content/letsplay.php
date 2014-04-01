@@ -3,15 +3,20 @@
 		$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
 		$xml = simplexml_load_file(rawurlencode($xmlfile));
 
-
+		$i = 0;
 		foreach ($xml->entry as $entry) {
+			if ($i==3) break;
+
+			$VideoId = substr($entry->id, -11);
+
 			echo '<div class="LPBoxLatestVideo">';
-				echo '<span class="LPHeadline">' . strtoupper(substr($entry->title, 12)) . '</span><br />';
-				echo '<span class="LPContent">' . nl2br($entry->content) . '</span>';
+				echo '<iframe width="520" height="293" src="//www.youtube.com/embed/' . $VideoId . '?autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>';
+				echo '<div class="LPHeadline">' . strtoupper(substr($entry->title, 12)) . '</div><br />';
+				echo '<div class="LPContentLatestVideo">' . nl2br($entry->content) . '</div>';
 			echo '</div>';
+
+			$i++;
 		}
-
-
 	}
 ?>
 

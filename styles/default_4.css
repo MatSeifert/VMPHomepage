@@ -164,11 +164,12 @@ div.LPBoxLatestVideo {
 	background-color: #EFEFEF;
 	margin: 0px 3px 15px 3px;
 	width: 100%;
-	height: 150px;
-	padding: 5px;
+	height: auto;
+	padding: 0px;
 	box-shadow: 
 		2px 2px 1px 0px rgba(0,0,0,0.2), 
 		0px 0px 1px 0px rgba(0,0,0,0.2);	
+	display: block;
 }
 
 div.LPBox {
@@ -208,9 +209,10 @@ img.LetsPlayThumb {
 	float: left;
 }
 
-span.LPHeadline {
+div.LPHeadline {
 	font-family: segoe, Arial, Helvetica, sans-serif;
 	font-size: 16px;
+	text-indent: 10px;
 }
 
 span.LPContent {
@@ -218,9 +220,17 @@ span.LPContent {
 	font-family: segoe, Arial, Helvetica, sans-serif;
 }
 
-span.LPContentLatestVideo {
-	font-size: 12px;
+div.LPContentLatestVideo {
+	font-size: 10px;
 	font-family: segoesl, Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	line-height: -12;
+	padding: 0px 0px 5px 10px;
+}
+
+iframe.embed {
+	margin, padding: 0px 0px 0px 0px;
+
 }
 
 span.smallHeadline {

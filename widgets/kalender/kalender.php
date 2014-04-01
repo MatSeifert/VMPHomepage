@@ -27,7 +27,7 @@
 		echo ("	<p>&nbsp;</p> <div class=\"agendaEntry\"> 
 					<img src=\"images/widgets/kalender/besprechung.png\" alt=\"besprechung\" class=\"left\"> 
 					&nbsp; BESPRECHUNG<br /> 
-					&nbsp; <span class=\"date\">$date - 20:15 Uhr</span>
+					&nbsp; <span class=\"date\">Mo, $date - 20:15h</span>
 				</div>");		
 	}
 
