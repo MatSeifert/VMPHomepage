@@ -11,7 +11,7 @@
 		echo ("	<p>&nbsp;</p> <div class=\"agendaEntry\"> 
 					<img src=\"images/widgets/kalender/anno2070.png\" alt=\"Anno 2070\" class=\"left\"> 
 					&nbsp; ANNO 2070 <br /> 
-					&nbsp; <span class=\"date\">Mo, $date - 20:15h</span>
+					&nbsp; <span class=\"date\">Mo, $date - 20:15 Uhr</span>
 				</div>");
 	}
 	
@@ -19,7 +19,7 @@
 		echo ("	<p>&nbsp;</p> <div class=\"agendaEntry\"> 
 					<img src=\"images/widgets/kalender/battlefield3.png\" alt=\"BF3\" class=\"left\"> 
 					&nbsp; BATTLEFIELD 3 <br /> 
-					&nbsp; <span class=\"date\">Do, $date - 20:15h</span>
+					&nbsp; <span class=\"date\">Do, $date - 20:15 Uhr</span>
 				</div>");
 	}
 	
@@ -27,7 +27,7 @@
 		echo ("	<p>&nbsp;</p> <div class=\"agendaEntry\"> 
 					<img src=\"images/widgets/kalender/besprechung.png\" alt=\"besprechung\" class=\"left\"> 
 					&nbsp; BESPRECHUNG<br /> 
-					&nbsp; <span class=\"date\">Mo, $date - 20:15h</span>
+					&nbsp; <span class=\"date\">Mo, $date - 20:15 Uhr</span>
 				</div>");		
 	}
 

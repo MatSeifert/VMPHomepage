@@ -1,15 +1,9 @@
 <?php
-	# Die Variable $seite darf nur ueber die URL kommen und nicht z.B. ueber fremde Formulare
-	# Wenn keine Seite angegeben wurde, z.B. bei www.meinehp.de
 	
-	$site = $_GET["site"];
-	if (!isset($site) || empty($site)) $site = "start";
-	# hole Datei zur angegebenen Zahl
-	
-	// Ausgabe zur Überprüfung des variableninhalts
-	// echo $site;	
-	
-	switch($site) {
+	$seite = @$_GET["site"];
+	if (!isset($seite) || empty($seite)) $seite = "start";
+
+	switch($seite) {
 	   	case "start": @include __DIR__ . '/../newsfeed/inc/news.php';
 		break;
 		
