@@ -3,7 +3,8 @@
 		$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
 		$xml = simplexml_load_file(rawurlencode($xmlfile));
 
-		$i = 0;
+		$i = 0;		// Abbruchvariable, da sonst zu viele Videos eingebettet werden
+
 		foreach ($xml->entry as $entry) {
 			if ($i==6) break;
 

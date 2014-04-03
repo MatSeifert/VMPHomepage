@@ -11,7 +11,6 @@
 	$CalFirstDay = date("N", $CalStartTimestamp);
 	$CalLastDay = date("N", mktime(0,0,0,date("n",$CalDate),$CalDays,date("Y",$CalDate)));
 	//Testausgabe
-
 ?>
 
 <div class="PostTitle">
@@ -42,7 +41,7 @@
 			if(date("N",$CalTodayTimestamp) == 1)
 			  echo "<tr>\n";
 			if(date("dmY", $CalDate) == date("dmY", $CalTodayTimestamp))
-			  echo "      <td class=\"ActDay\">",$CalToday,"</td>\n";
+			// echo "      <td class=\"ActDay\">",$CalToday,"</td>\n";
 			elseif($CalActDay >= 0 AND $CalActDay < $CalDays)
 			  echo "      <td class=\"StandDay\">",$CalToday,"</td>\n";
 			else
