@@ -5,22 +5,17 @@
 	{
 		$alter = (date('Y') - $jahr) - intval(date('md') < sprintf('%02d%02d' , $monat , $tag ));
 		
-		echo($alter);
-	}
-	
-	function activity($bool) {
-		if ($bool == 1)
-		{
-			echo('Aktiv');
-		}
-		else echo('<span class="inactive">Inaktiv</span>');
+		echo '<td class="normal"><span class="number">' . $alter . '</span></td>';
 	}
 	
   // Funktion zum Berechnen der "Dienstzeit"
 
 	function dienstzeit($since) {
 		$jahre = (date('Y') - $since);
-		echo($jahre);
+		if ($jahre == 1) {
+			echo '<td class="normal"><span class="number">' . $jahre . ' Jahr</span></td>';
+		}
+		else echo  '<td class="normal"><span class="number">' . $jahre . ' Jahren</span></td>';
 	}
 
   // Verarbeiten der Daten aus dem XML File
@@ -34,30 +29,42 @@
     echo '<div class="PostTitle">Member</div><br />';    // Überschrift
     echo '<table class="memberlist">' .                  // Tabellenkopf
             '<thead>' .
-              '<th>Land</th>' .
-              '<th> <span class="number"> &nbsp; </span> </th>' .
-              '<th>Nickname</th>' .
-              '<th colspan="2">Rang</th>' .
-              '<th> &nbsp; </th>' .
-              '<th> <span class="number"> Alter </span> </th>' .
-              '<th> <span class="number"> Dienstjahre </span> </th>' .
+              '<td>LAND</td>' .
+              '<td> <span class="number"> &nbsp; </span> </td>' .
+              '<td>NICKNAME</td>' .
+              '<td>RANG</td>' .
+              '<td> &nbsp; </td>' .
+              '<td> <span class="number"> ALTER </span> </td>' .
+              '<td> <span class="number"> DABEI SEIT ... </span> </td>' .
             '</tr>' .
             '<thead>' .
               '<td colspan="8" class="normal">&nbsp;</td>' .
-              '</tr></table>';
+              '</tr>';
     foreach ($memberXml->member as $member) {
-      echo '<img src="images/flag_' . $member->country . '.png" alt="Germany">';
-      echo $member->sex;
-      echo $member->nickname;
-      echo $member->rank;
-      foreach ($member->activity->attributes() as $name => $att) {
-        echo $att;
+      echo '<tr><td class="normal"><img src="images/flag_' . $member->country . '.png" alt="Germany"></td>';
+      echo '<td class="normal"><img src="images/' . $member->sex . '.png" alt="Sex"></td>';
+      echo '<td class="normal">' . $member->nickname . '</td>';
+      echo '<td class="normal">' . $member->rank . '</td>';
+
+      if ($member->activity['value'] == 'aktiv') {
+      	 echo '<td class="normal">Aktiv</td>';
       }
-      foreach ($member->birthday->attributes() as $name => $bday) {
-        echo $bday;
-      }
+      else echo '<td class="normal"><span class="inactive">inaktiv</span></td>';
+      // echo '<td>' . $member->activity['value'] . '</td>';
+
+      if(property_exists($member, 'birthday') && $member->birthday) {
+	      $day = $member->birthday['day'];
+	      $month = $member->birthday['month'];
+	      $year = $member->birthday['year'];
+	      alter($year, $month, $day);
+	  }
+	  else echo '<td class="normal">&nbsp;</td>';
+
+      $RecrYr = $member->recruited['in'];
+      dienstzeit($RecrYr);
     }
 
+    echo '</table><p>&nbsp;</p>';
   }
 
   member();

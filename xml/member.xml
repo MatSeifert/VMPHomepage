@@ -65,6 +65,7 @@
 		<nickname>Langy</nickname>
 		<rank>Member</rank>
 		<activity value="inaktiv" />
+		<birthday day="18" month="10" year="1990" />
 		<recruited in="2008" />
 	</member>
 	<member>
@@ -73,6 +74,7 @@
 		<nickname>Deadman</nickname>
 		<rank>Member</rank>
 		<activity value="inaktiv" />
+		<birthday day="13" month="6" year="1990" />
 		<recruited in="2010" />
 	</member>
 	<member>
@@ -105,6 +107,7 @@
 		<nickname>Paintex</nickname>
 		<rank>Member</rank>
 		<activity value="aktiv" />
+		<birthday day="14" month="3" year="1995" />
 		<recruited in="2012" />
 	</member>
 	<member>
@@ -121,6 +124,7 @@
 		<nickname>Fou</nickname>
 		<rank>Member</rank>
 		<activity value="aktiv" />
+		<birthday day="4" month="4" year="1989" />
 		<recruited in="2013" />
 	</member>
 	<member>
@@ -143,7 +147,7 @@
 	<member>
 		<country>germany</country>
 		<sex>male</sex>
-		<nickname>Hoousemusic</nickname>
+		<nickname>Housemusic</nickname>
 		<rank>Member</rank>
 		<activity value="aktiv" />
 		<recruited in="2014" />

@@ -464,6 +464,10 @@ span.number {
 	display: inline-block;
 }
 
+span.inactive {
+	color: #cc1100;
+}
+
 td.normal {
 	border-bottom-style: solid; 
 	border-bottom-width: thin;
