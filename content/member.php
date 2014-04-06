@@ -15,6 +15,9 @@
 		if ($jahre == 1) {
 			echo '<td class="normal"><span class="number">' . $jahre . ' Jahr</span></td>';
 		}
+		else if ($jahre == 0){
+			echo '<td class="normal"><span class="number">Diesem Jahr</span></td>';
+		}
 		else echo  '<td class="normal"><span class="number">' . $jahre . ' Jahren</span></td>';
 	}
 

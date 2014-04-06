@@ -42,6 +42,9 @@
 
 		case "AddNews": @include __DIR__ . '/../newsfeed/WriteNews.php';
 		break;
+
+		case "playVideo": @include __DIR__ . '/../content/playVideo.php';
+		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';
   }

@@ -158,6 +158,19 @@ div.newsTitle {
 
 /* Styles für den Let's Play Bereich der Homepage (nicht das Widget!) */
 
+div.cropThumb {
+	overflow: hidden;
+	width: 200px;
+	height: 113px;
+    float: left;	
+}
+
+img.thumbnail {
+    width: 200px;
+    height: 151px;
+    margin: -19px 0px 0px 0px;
+}
+
 div.LPBoxLatestVideo {
 	float: left;
 	text-align: left;

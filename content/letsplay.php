@@ -9,17 +9,19 @@
 			if ($i==6) break;
 
 			$VideoId = substr($entry->id, -11);
+			$title = $entry->title;
+			$desc = $entry->content;
 
 			echo '<div class="LPBoxLatestVideo">';
-				echo '<iframe class="embed" width="200" height="113" src="//www.youtube.com/embed/' . $VideoId . '?autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>';
+				echo '<div class="cropThumb"><img src="http://img.youtube.com/vi/' . $VideoId . '/0.jpg" alt="Thumbnail" class="thumbnail"></div>';
 				echo '<div style="float: left; height: 113px">&nbsp;</div>';
-				if (strlen($entry->title) > 48) {
-					echo '<div class="LPHeadline">' . strtoupper(substr($entry->title, 12, 36)) . '...</div><br />';					
+				if (strlen($title) > 48) {
+					echo '<div class="LPHeadline"><a href="?site=playVideo&YouTubeVideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(substr($title, 12, 36)) . '...</a></div><br />';					
 				}
 				else {
-					echo '<div class="LPHeadline">' . strtoupper(substr($entry->title, 12)) . '</div><br />';						
+					echo '<div class="LPHeadline"><a href="?site=playVideo&YouTubeVideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(substr($title, 12)) . '</a></div><br />';
 				}
-				echo '<div class="LPContentLatestVideo">' . nl2br(substr($entry->content, 0, 210)) . '... </div>';
+				echo '<div class="LPContentLatestVideo">' . nl2br(substr($desc, 0, 210)) . '... </div>';
 			echo '</div>';
 
 			$i++;
