@@ -156,6 +156,26 @@ div.newsTitle {
 	font-size: 20px;
 }
 
+/* Styles für die Video Wiedergabeseite */
+
+div.LPLargeHeadline {
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	margin: 30px 5px 0px 15px;
+}
+
+div.back {
+	float: left;
+	margin: 10px 10px 10px 5px;
+}
+
+div.LPDescription {
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin: 0px 15px 0px 15px;
+	text-align: justify;
+}
+
 /* Styles für den Let's Play Bereich der Homepage (nicht das Widget!) */
 
 div.cropThumb {
@@ -627,4 +647,66 @@ div.NewsSubmit {
 option.seperator { 
 	border-bottom: 1px dotted #000; 
 	width: 100%;
+}
+
+/* Styles für die Social Media Wendeicons (Widget rechtsseitig) */
+
+div.icons {
+	width: 100%;
+	height: 65px;
+	bottom: 0px;
+	text-align: center;
+	margin: auto auto;
+}
+
+.card-container {
+	height: 32px;
+	-webkit-perspective: 600;
+	-moz-perspective: 600;
+	-ms-perspective: 600;
+	-o-perspective: 600;
+	perspective: 600;
+	margin: auto auto;
+	width: 52px;
+	float: left;
+	padding: 0px;
+}
+
+.card {
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	width: 100%;
+}
+.card:hover {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+
+.card .side {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+.card .back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	margin: 0px 0px 0px 0px;
 }

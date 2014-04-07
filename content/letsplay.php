@@ -1,4 +1,4 @@
-<?php 
+<?php
 	function YoutubeXml () {
 		$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
 		$xml = simplexml_load_file(rawurlencode($xmlfile));
@@ -9,17 +9,17 @@
 			if ($i==6) break;
 
 			$VideoId = substr($entry->id, -11);
-			$title = $entry->title;
-			$desc = $entry->content;
+			$title = str_replace('#', '~raute~', $entry->title);
+			$desc = nl2br(str_replace('#', '~raute~', $entry->content));
 
 			echo '<div class="LPBoxLatestVideo">';
 				echo '<div class="cropThumb"><img src="http://img.youtube.com/vi/' . $VideoId . '/0.jpg" alt="Thumbnail" class="thumbnail"></div>';
 				echo '<div style="float: left; height: 113px">&nbsp;</div>';
 				if (strlen($title) > 48) {
-					echo '<div class="LPHeadline"><a href="?site=playVideo&YouTubeVideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(substr($title, 12, 36)) . '...</a></div><br />';					
+					echo '<div class="LPHeadline"><a href="?site=playVideo&VideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(substr(str_replace('~raute~', '#', $title), 12, 36)) . '...</a></div><br />';					
 				}
 				else {
-					echo '<div class="LPHeadline"><a href="?site=playVideo&YouTubeVideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(substr($title, 12)) . '</a></div><br />';
+					echo '<div class="LPHeadline"><a href="?site=playVideo&VideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(substr(str_replace('~raute~', '#', $title), 12)) . '</a></div><br />';
 				}
 				echo '<div class="LPContentLatestVideo">' . nl2br(substr($desc, 0, 210)) . '... </div>';
 			echo '</div>';
