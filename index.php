@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	function ImageCount() {					// Zählen der Bilder im angegeben Ordner +++ NAMECONVENTION BEI NEUEN BILDERN BEACHTEN!
 		$files = scandir('images/header');
 		$count = count($files)-3;			//-2 wegen . und .., und nochmal -1, da rand Funktion bei 0 anfängt
@@ -56,7 +56,7 @@
 			   		<span class="NavCategory">TEAMSPEAK 3</span>
 			   		<div class="rightText">
 			   			<p>&nbsp;</p>
-			   			TS Viewer shielded due to elusiveness of www.ts-viewer.com
+			   			TS Viewer disabled due to Server problems at www.ts-viewer.com
 			   			<p>&nbsp;</p>
 			   			<!--
 					   	<div id="ts3viewer_944104" > </div>
