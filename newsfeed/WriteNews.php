@@ -21,9 +21,9 @@
 
 		<div style="float: left">
 			<span class="smallHeadline">
-				Nickname (Ohne Clantag!)<span class="mandatory">*</span>
+				Security Token<span class="mandatory">*</span>
 			</span>
-			<input type="Text" name="NewsAuthor" class="NewsAuthor" id="NewsAuthor" required="required">	
+			<input type="Text" name="NewsToken" class="NewsAuthor" id="NewsToken" required="required">	
 
 		</div>
 
