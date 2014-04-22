@@ -115,7 +115,7 @@ else
     $viewer = new devmx\TSWebViewer\TSWebViewer($host, $queryPort, $serverPort);
 }
 
-header("Content-Type: text/html; charset=utf-8");
+// header("Content-Type: text/html; charset=utf-8");
 
 // Render viewer
 try

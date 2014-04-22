@@ -649,6 +649,15 @@ option.seperator {
 	width: 100%;
 }
 
+/* Styles für die News Hauptseite */
+
+span.AddNews {
+	font-size: 14px;
+	margin: 14px 0px 0px 0px;
+	float: right;
+
+}
+
 /* Styles für die Social Media Wendeicons (Widget rechtsseitig) */
 
 div.icons {

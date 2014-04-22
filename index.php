@@ -5,6 +5,8 @@
 
 		return $count;
 	}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -44,11 +46,8 @@
 			
 			</div>
 
-			<div class="content">
-
-				<?php require_once ("content/case.php") ?>
+			<div class="content"><?php require_once ("content/case.php") ?>
 			   	<p>&nbsp;</p>
-
 			</div>
 
 			<div class="right">
@@ -56,9 +55,6 @@
 			   		<span class="NavCategory">TEAMSPEAK 3</span>
 			   		<div class="rightText">
 			   			<p>&nbsp;</p>
-			   			TS Viewer disabled due to Server problems at www.ts-viewer.com
-			   			<p>&nbsp;</p>
-			   			<!--
 					   	<div id="ts3viewer_944104" > </div>
 				 		<script type="text/javascript" src="http://static.tsviewer.com/short_expire/js/ts3viewer_loader.js"></script>
 				 		<script type="text/javascript">
@@ -67,7 +63,7 @@
 					   			ts3v_display.init(ts3v_url_1, 944104, 100);
 				  			
 				 		</script> 
-				 		/-->
+
 					   		<?php
 					   			// require_once ("widgets/TSViewer/TSViewer.php")
 					   		?>		
