@@ -10,9 +10,9 @@
 	<div class="LPBlock">
 
 	<div class="LPBox">
-		<a href="#">
+		<a href="?site=AdventuresOfDayZ">
 			<img src="images/ScPage_TalesOfDayZ.png" class="LetsPlayThumb" alt="Tales of DayZ">
-			<span class="LPHeadline">TALES OF DAYZ</span> <br />
+			<span class="LPHeadline">ADVENTURES OF DAYZ</span> <br />
 		</a>
 		<span class="LPContent">
 			<p>&nbsp;</p>
@@ -24,7 +24,7 @@
 	</div>
 
 		<div class="LPBox">
-			<a href="#">
+			<a href="?site=MinecraftMonuments">
 				<img src="images/ScPage_MinecraftMonuments.png" class="LetsPlayThumb" alt="Minecraft Monuments">
 				<span class="LPHeadline">MINECRAFT MONUME...</span> <br />
 			</a>

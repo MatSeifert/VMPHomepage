@@ -40,13 +40,19 @@
 		case "mania2013": @include __DIR__ . 'content/mania2013.php';
 		break;
 
-		case "AddNews": @include __DIR__ . '/../newsfeed/WriteNews.php';
+		case "AddNews": @include __DIR__ . '/../news/WriteNews.php';
 		break;
 
 		case "playVideo": @include __DIR__ . '/../content/playVideo.php';
 		break;
 
 		case "screenshots": @include __DIR__ . '/../content/screenshots.php';
+		break;
+
+		case "MinecraftMonuments": @include __DIR__ . '/../content/galleries/minecraft.php';
+		break;
+
+		case "AdventuresOfDayZ": @include __DIR__ . '/../content/galleries/dayz.php';
 		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';
