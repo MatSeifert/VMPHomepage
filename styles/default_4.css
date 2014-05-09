@@ -3,6 +3,55 @@
 	padding: 0;
 }
 
+/* Responsive Media Queries */
+
+@media only screen and (max-width: 600px) {
+            body {
+                width: auto !important;
+            }
+
+            div[class=menue] {display: none !important;}
+            div[class=contentWrapper] {
+            	width: 100% !important; 
+            	margin-top: 0px !important;
+            }
+            div[class=content] {
+            	width: 100% !important;
+            	margin: 0px 0px 0px 0px !important;
+            }
+            div[class=right] {display: none !important;}
+            div[class=sektion] {display: none !important;}
+            div[class=mobileHead] {display: block !important;}
+            span[class=title] {font-size: 40px !important;}
+            div[class=hintergrundbild] {
+            	width: 100% !important;
+            	height: 125px !important;
+            	position: inherit !important;
+            	padding-top: 60px;
+            	overflow: hidden;
+            }
+            img[class=resize] {
+            	width: 800px !important;
+            	margin: 0px 0px 0px -100px !important;
+            	display: block;
+            }
+        }
+
+.mobileHead {
+	display: none;
+	height: 60px;
+	background-color: #8C0000;
+	position: fixed;
+	width: 100%;
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: 28px;
+}
+
+.resize {
+	display: none;
+}
+
 .sektion {
 	position: relative;
 	height: 300px;

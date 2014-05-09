@@ -17,15 +17,29 @@
 			<!-- Seitentitel -->
 		<title>VMP Clan - German Multigaming</title>
 			<!-- Stylesheet- und Favicon Einbindung /-->
+		<meta name="viewport" content="width=300px, initial-scale=1, maximum-scale=1, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<script src="javascript/parallax.js" type="text/javascript"></script>
-	
 	</head>
 
 	<body>
+
+		<!-- Mobile Header /-->
+
+		<div class="mobileHead">
+			<img src="images/widgets.png" alt="widgets" style="float: right">
+			<img src="images/menue.png" alt="menu" style="float: left">
+			<span class="title">VMP CLAN</span>
+		</div>
+		<div class="hintergrundbild">
+			<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start" class="resize"/>
+		</div>
+
+		<!-- End of mobile Header /-->
+
 		<div class="sektion" id="start">
 			<div class="hintergrundbild">
 				<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start"/>
