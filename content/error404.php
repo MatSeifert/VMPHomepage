@@ -1,3 +1,7 @@
+<div class="whereAmI">
+    ERROR 404
+</div>
+
 <div class="Error404">
 	<div class="HttpError404Headline">
 		Error 404

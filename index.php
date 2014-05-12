@@ -10,14 +10,13 @@
 <!DOCTYPE html>
 
 <html lang="de">
-	
 	<head>
 			<!-- Metadaten und WOT Verifizierung /-->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<!-- Seitentitel -->
 		<title>VMP Clan - German Multigaming</title>
 			<!-- Stylesheet- und Favicon Einbindung /-->
-		<meta name="viewport" content="width=300px, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 
@@ -26,18 +25,34 @@
 	</head>
 
 	<body>
-
 		<!-- Mobile Header /-->
+		<div class="mobileSektion" id="start">
+			<div class="mobileHead" style="text-align: center">
 
-		<div class="mobileHead">
-			<img src="images/widgets.png" alt="widgets" style="float: right">
-			<img src="images/menue.png" alt="menu" style="float: left">
-			<span class="title">VMP CLAN</span>
-		</div>
-		<div class="hintergrundbild">
-			<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start" class="resize"/>
-		</div>
+	<section class="ac-container">
 
+			<div>
+				<input id="ac-2" name="accordion-1" type="checkbox" />
+				<label for="ac-2">foobar</label>
+				<article class="ac-medium">
+					<a href="?site=informationen">Informationen</a><br>
+					<a href="?site=clanregeln">Clanregeln</a>
+				</article>
+			</div>
+			</section>
+			
+				<img src="images/widgets.png" alt="widgets" style="float: right;">
+				<img src="images/menue.png" alt="menu" style="float: left; margin-left: -15px">
+			</div>
+			<div class="mobileHintergrundbild">
+				<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start" class="resize"/>
+			</div>
+			<div class="mobileText">
+				<img src="images/logo_xs.png" alt="Logo" class="logo"/>
+				<span class="title">VMP CLAN</span> <br />
+				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>				
+			</div>
+		</div>
 		<!-- End of mobile Header /-->
 
 		<div class="sektion" id="start">
@@ -113,9 +128,7 @@
 
 				   	</div>
 			   	</div>	
-
 			</div>
 		</div>
-
 	</body>
 </html>

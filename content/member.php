@@ -29,6 +29,8 @@
 
     // print_r ($memberXml);
 
+    echo '<div class="whereAmI">MEMBER</div>';
+
     echo '<div class="PostTitle">Member</div><br />';    // Überschrift
     echo '<table class="memberlist">' .                  // Tabellenkopf
             '<thead>' .

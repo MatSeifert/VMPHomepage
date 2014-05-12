@@ -28,6 +28,9 @@
 		}
 	}
 ?>
+<div class="whereAmI">
+    LET'S PLAY
+</div>
 
 <div class="PostTitle">
   LET'S PLAY
@@ -123,13 +126,7 @@
 			</span>
 		</div>
 
-		<div class="LPBoxEmpty">
-			&nbsp;
-		</div>
-
-		<div class="LPBoxEmpty">
-			&nbsp;
-		</div>
+		<div style="clear: both"></div>
 
 	</div>
 
