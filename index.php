@@ -28,21 +28,22 @@
 		<!-- Mobile Header /-->
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
-
-	<section class="ac-container">
-
-			<div>
-				<input id="ac-2" name="accordion-1" type="checkbox" />
-				<label for="ac-2">foobar</label>
-				<article class="ac-medium">
-					<a href="?site=informationen">Informationen</a><br>
-					<a href="?site=clanregeln">Clanregeln</a>
-				</article>
-			</div>
-			</section>
-			
 				<img src="images/widgets.png" alt="widgets" style="float: right;">
-				<img src="images/menue.png" alt="menu" style="float: left; margin-left: -15px">
+
+				<section class="ac-container">
+					<div>
+						<input id="ac-1" name="accordion-1" type="checkbox" />
+						<label for="ac-1">
+							<img src="images/menue.png" alt="menu" style="float: left; margin-left: -15px">
+						</label>
+						<article class="ac-medium">
+							<div style="height: 1500px; width: 300px; overflow: auto">
+								<?php include("content/menue.html") ?>
+							</div>
+						</article>
+					</div>
+				</section>	
+
 			</div>
 			<div class="mobileHintergrundbild">
 				<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start" class="resize"/>
@@ -69,7 +70,7 @@
 		<div class="contentWrapper">
 			<div class="menue">			
 			
-				<?php require_once("content/menue.html") ?>
+				<?php include("content/menue.html") ?>
 			
 			</div>
 
