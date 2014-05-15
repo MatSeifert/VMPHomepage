@@ -22,26 +22,42 @@
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<script src="javascript/parallax.js" type="text/javascript"></script>
+
+		<script>
+			// Auslesen der aktuellen Fensterhöhe, eine Veränderung in Echtzeit ist unnötig
+			function Fensterhoehe () {
+			  if (window.innerHeight) {
+			    return window.innerHeight;
+			  } else if (document.body && document.body.offsetHeight) {
+			    return document.body.offsetHeight;
+			  } else {
+			    return 0;
+			  }
+			}
+
+			// Überwachung initialisieren
+			if (!window.Hoehe && window.innerHeight) {
+			  Hoehe = Fensterhoehe();
+			}
+		</script>
 	</head>
 
 	<body>
-		<!-- Mobile Header /-->
+	<!-- Mobile Header /-->
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
 				<img src="images/widgets.png" alt="widgets" style="float: right;">
-
-				<section class="ac-container">
-					<div>
-						<input id="ac-1" name="accordion-1" type="checkbox" />
-						<label for="ac-1">
-							<img src="images/menue.png" alt="menu" style="float: left; margin-left: -15px">
-						</label>
-						<article class="ac-medium">
-							<div style="height: 1500px; width: 300px; overflow: auto">
-								<?php include("content/menue.html") ?>
-							</div>
-						</article>
-					</div>
+				<section class="ac-container" id="">
+					<input id="ac-1" name="accordion-1" type="checkbox" />
+					<label for="ac-1">
+						<img src="images/menue.png" alt="menu" style="float: left; margin-left: -15px">
+					</label>
+					<article class="ac-medium">
+						<div id="mobiMenu">
+							<?php include("content/menue.html") ?>
+						</div>
+						<div style="height: 100%; background-color: #ff9900"></div>
+					</article>
 				</section>	
 
 			</div>
@@ -51,7 +67,7 @@
 			<div class="mobileText">
 				<img src="images/logo_xs.png" alt="Logo" class="logo"/>
 				<span class="title">VMP CLAN</span> <br />
-				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>				
+				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>	
 			</div>
 		</div>
 		<!-- End of mobile Header /-->
@@ -131,5 +147,8 @@
 			   	</div>	
 			</div>
 		</div>
+		<script>
+			document.getElementById("mobiMenu").style.height = Hoehe + 'px';
+		</script>
 	</body>
 </html>

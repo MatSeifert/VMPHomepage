@@ -10,7 +10,10 @@
                 width: auto !important;
                 height: 100% !important;
             }
-
+            span[class=NavPoint] {
+				margin: 12px 0px auto 25px !important;            	
+            	height: 42px !important;
+            }
             div[class=menue] {display: none !important;}
             div[class=contentWrapper] {
             	width: 100% !important; 
@@ -260,8 +263,13 @@ div.right {
 div.NavContainer {
 	background-color: #fff;
 	margin: 10px 0px 0px 0px;
-	min-height: 100%;
-	height: 100%;
+	height: auto;
+}
+
+div.NavContainerMobile {
+	background-color: #fff;
+	margin: 10px 0px 0px 0px;
+	height: 820px;
 }
 
 div.impressum {
@@ -844,6 +852,7 @@ div.icons {
 /* Linkes Menue, auch mobil bedienbar, Gestaltung und Konfiguration mit folgenden CSS-Deklarationen */
 .ac-container{
 	width: 300px;
+	overflow: auto;
 }
 
 .ac-container label{
@@ -854,47 +863,34 @@ div.icons {
 	cursor: pointer;
 }
 
-.ac-container label:hover{
-
-}
-
-.ac-container input:checked + label,
-.ac-container input:checked + label:hover{
-	margin: 0px 0px 0px 0px;
-}
-
-.ac-container input:checked + label:hover:after {
-	background-color: #ededed;
-}
-
 .ac-container input{
 	display: none;
 }
 
 .ac-container article{
 	background-color: #fff;
-	overflow: auto;
+	overflow: hidden;
 	height: 0px;
 	z-index: 10;
-
-}
-.ac-container input:checked ~ article{
 }
 
-article{
+article {
 	color: #000;
-	height: 100%;
 }
 
 .ac-container input:checked ~ article.ac-medium{
-	height: 100%;
-	height: auto !important;
+	position: fixed;
+	height: auto;
 	margin: 0px;
 	padding: 0px;
 	color: #000;
+	overflow: auto;
 	text-align: left;
-	overflow: auto; 
 	box-shadow: 
 		5px 5px 5px 5px rgba(0,0,0,0.3), 
 		8px 6px 6px rgba(0,0,0,0.1);
+}
+
+#mobiMenu input:checked ~ article.ac-medium{
+	margin: -10px 0px -60px 0px;
 }
