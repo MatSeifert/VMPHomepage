@@ -1,4 +1,4 @@
-// Globale Variablen
+﻿// Globale Variablen
 var fensterHoehe = 0,
 	seitenHoehe = -0,
 	bewegungsTeiler = 2;	// Die Verschiebung der Hintergrundebene entspricht der gescrollten Hoehe geteilt durch diesen Wert.
@@ -33,8 +33,10 @@ function parallaxeVerschiebung() {
 	// Prueft in welcher Sektion wir uns befinden, repositioniert den inneliegenden Block mit der Klasse "hintergrundbild"
 	if ( gegenwaertigeSektion == 1 ) {
 		$( '#start .hintergrundbild' ).css( 'top', bewegungAktiv );
+		$( '#start .mobileHintergrundbild' ).css( 'top', bewegungAktiv );
 	} else {
 		$( '#start .hintergrundbild' ).css( 'top', bewegungProaktiv );
+		$( '#start .mobileHintergrundbild' ).css( 'top', bewegungProaktiv );
 	};
 
 }

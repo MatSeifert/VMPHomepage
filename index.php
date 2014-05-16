@@ -46,11 +46,15 @@
 	<!-- Mobile Header /-->
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
-				<img src="images/widgets.png" alt="widgets" style="float: right;">
-				<section class="ac-container" id="">
+	
+
+						<img src="images/widgets.png" alt="widgets" style="float: right;">
+
+
+				<section class="ac-container">
 					<input id="ac-1" name="accordion-1" type="checkbox" />
 					<label for="ac-1">
-						<img src="images/menue.png" alt="menu" style="float: left; margin-left: -15px">
+						<img src="images/menue.png" alt="menu" style="float: left; margin-left: 5px">
 					</label>
 					<article class="ac-medium">
 						<div id="mobiMenu">
