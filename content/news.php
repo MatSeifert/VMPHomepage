@@ -1,31 +1,33 @@
 <?php
-	function DisplayNews() {
-		$XmlFile='../feed/2013-02-14_Warface-ClosedBetaangespielt.xml';
-    	$NewsXml = simplexml_load_file($XmlFile);
+	function GetNewsFromRss () {
+		$newsfeed='http://vmp-clan.tumblr.com/rss';
+		$xml = simplexml_load_file(rawurlencode($newsfeed));
+		$namespaces = $xml->getNamespaces(true);
 
-    	print_r($NewsXml);
+		$i = 0;		// Abbruchvariable für die foreach Schleife
 
-	     foreach ($NewsXml->news as $news) {
-	      echo '<tr><td class="normal"><img src="images/flag_' . $news->title . '.png" alt="Germany"></td>';
-
-	      
-	    }   	
+		foreach ($xml->channel->item as $item) {
+			if ($i==8) break;
+			echo '<div class="newsItemWrapper">';
+				echo '<span class="smallHeadlineNews"><nobr>' . strtoupper($item->title) . '</nobr></span>';
+				echo '<div class="newsFeedContent">' . str_replace('<img', '<img class="newsImage" ',$item->description) . '</div>';
+			echo "</div>";
+			
+			$i++;
+		}
 	}
 ?>
+<div class="whereAmI">
+    NEWS
+</div>
 
 <div class="PostTitle">
-	NEWS
-	<span class="AddNews">
-		<a href="?site=AddNews">News schreiben</a>
-	</span>
+  NEWS
 </div>
+<div class="PostPost">
 
-<div>
-	<?php
-		DisplayNews();
-	?>
+	<div class="LPBlock">
+		<?php GetNewsFromRss(); ?>
+	</div>
+	<p>&nbsp;</p>
 </div>
-<br />
-
-
-<p>&nbsp;</p>

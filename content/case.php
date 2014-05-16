@@ -4,10 +4,10 @@
 	if (!isset($seite) || empty($seite)) $seite = "start";
 
 	switch($seite) {
-	   	case "start": @include __DIR__ . '/../news/inc/news.php';
+	   	case "start": @include __DIR__ . '/../content/news.php';
 		break;
 		
-		case "archive": @include '/../news/inc/archive.php';
+		case "archive": @include '/../content/archive.php';
 		break;
 		
 		case "information": @include __DIR__ . '/../content/information.html';

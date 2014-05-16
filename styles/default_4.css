@@ -3,6 +3,21 @@
 	padding: 0;
 }
 
+body {
+	/* background-image:url('../images/bg_body.png'); */
+	background-color: #dbdbdb;
+	margin: auto auto;
+	padding: 0px;
+	height: 100%;
+}
+
+@font-face {
+	font-family: segoe;
+	src:url('../fonts/segoe.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+
 /* --- BEGIN OF Responsive Style Declarations --- */
 
 @media only screen and (max-width: 1000px) {
@@ -128,6 +143,17 @@
             	margin: 0px 0px 0px -100px !important;
             	display: block !important;
             }
+            div[class=newsFeedContent] {
+            	font-size: 14px !important;
+            	width: 100% !important;
+            	overflow: hidden !important;
+            }
+            img[class=newsImage] {
+            	width: 100% !important;
+            	height: auto !important;
+            	position: relative !important;
+            	margin: 5px 0px 0px -160px;
+            }
             .mobileResize50per {
    				width: 50% !important;         	
             }
@@ -144,6 +170,45 @@
             	margin: 0px 5px 0px 40px !important;
             }
         }
+.smallHeadlineNews {
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	display: block;
+	margin: 20px 5px 10px 160px;
+	overflow: hidden;	
+}
+
+.newsItemWrapper {
+	text-align: left;
+	background-color: #EFEFEF;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	height: 142px;
+	padding: 0px 0px 0px 0px;
+	box-shadow: 
+		2px 2px 1px 0px rgba(0,0,0,0.2), 
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+}
+
+.newsImage {
+	position: absolute;
+	clip:rect(0px,170px,142px,20px);
+	width: auto;
+	margin: -24px 0px 0px -180px;
+	height: 150px;	
+	display: block;
+}
+
+.newsFeedContent {
+	width: 68%;
+	height: 112px;
+	margin: -4px 0px 0px 0px;
+	padding: 0px 0px 0px 160px;
+	overflow: hidden;
+	font-family: segoe, Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	line-height: 19px;
+}
 
 .whereAmI {
 	display: none;
@@ -199,26 +264,6 @@
 	z-index: 2;
 	color: #fff;
 	margin: auto auto;
-}
-
-body {
-	/* background-image:url('../images/bg_body.png'); */
-	background-color: #dbdbdb;
-	margin: auto auto;
-	padding: 0px;
-	height: 100%;
-}
-
-@font-face {
-	font-family: segoesl;
-	src:url('../fonts/nirmala.ttf');
-}
-
-@font-face {
-	font-family: segoe;
-	src:url('../fonts/segoe.ttf');
-	font-style: normal;
-	font-weight: normal;
 }
 
 /* Einstellungen für Hyperlinks */

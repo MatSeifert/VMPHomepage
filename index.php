@@ -46,11 +46,10 @@
 	<!-- Mobile Header /-->
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
-	
-
-						<img src="images/widgets.png" alt="widgets" style="float: right;">
-
-
+				<!-- TODO ###
+					AUSKLAPPBARE WIDGETSIDEBAR
+				/-->
+				<img src="images/widgets.png" alt="widgets" style="float: right;">
 				<section class="ac-container">
 					<input id="ac-1" name="accordion-1" type="checkbox" />
 					<label for="ac-1">
