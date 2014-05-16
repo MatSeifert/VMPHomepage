@@ -27,13 +27,11 @@
     $xmlfile='xml/member.xml';
     $memberXml = simplexml_load_file($xmlfile);
 
-    // print_r ($memberXml);
-
-    echo '<div class="whereAmI">MEMBER</div>';
+    echo '<div class="whereAmI">MEMBER</div>';           // Überschrift für mobile Seite
 
     echo '<div class="PostTitle">Member</div><br />';    // Überschrift
     echo '<table class="memberlist">' .                  // Tabellenkopf
-            '<thead>' .
+            '<tr>' .
               '<td>LAND</td>' .
               '<td> <span class="number"> &nbsp; </span> </td>' .
               '<td>NICKNAME</td>' .
@@ -42,9 +40,9 @@
               '<td> <span class="number"> ALTER </span> </td>' .
               '<td> <span class="number"> DABEI SEIT ... </span> </td>' .
             '</tr>' .
-            '<thead>' .
+            '<tr>' .
               '<td colspan="8" class="normal">&nbsp;</td>' .
-              '</tr>';
+            '</tr>';
     foreach ($memberXml->member as $member) {
       echo '<tr><td class="normal"><img src="images/flag_' . $member->country . '.png" alt="Germany"></td>';
       echo '<td class="normal"><img src="images/' . $member->sex . '.png" alt="Sex"></td>';
@@ -69,7 +67,7 @@
       dienstzeit($RecrYr);
     }
 
-    echo '</table><p>&nbsp;</p>';
+    echo '</tr></table><p>&nbsp;</p>';
   }
 
   member();
