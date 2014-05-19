@@ -47,11 +47,16 @@ body {
             }
             div[class=PostPost] { 
             	width: 98% !important;
-            	font-size: 20px !important;
-            	line-height: 24px !important;
+            	font-family: segoe, Arial, Helvetica, sans-serif !important;
+            	font-size: 24px !important;
+            	line-height: 32px !important;
             }
             div[class=PostTitle] {
             	display: none !important;
+            }
+            div[class=disclaimerBottomRight] {
+            	font-size: 18px !important;
+            	margin: 0px 0px 0px 0px !important;
             }
             span[class=smallHeadline] {
             	font-size: 28px !important;
@@ -82,14 +87,16 @@ body {
             	display: inline-block;
             	margin-top: 5px !important;
             	padding: 0px 0px 0px 10px !important;
-            	font-size: 30px !important;
+            	font-size: 24px !important;
             	font-family: segoe, Arial, Helvetica, sans-serif !important;
+            	overflow: hidden !important;
             }
             span[class=LPDate] {
             	display: inline-block !important;
             	font-family: segoe, Arial, Helvetica, sans-serif !important;
             	font-size: 24px !important; 
-            	padding: 20px 0px 0px 0px !important;
+            	padding: 0px 0px 0px 0px !important;
+            	margin: -10px 0px 0px 0px !important;
             }
             div[class=mobileText] {
             	width: 100%;
@@ -109,7 +116,6 @@ body {
             div[class=mobileSektion] {
             	display: block !important;
             }
-
             div[class=LPBox] {
             	width: 99% !important;
             	display: block !important;
@@ -120,6 +126,20 @@ body {
 			img[class=mobileHeadIcon] {
 			 	float: left; 
 			 	margin: 6px 0px 0px 0px;
+			}
+			div[class=imageWrapper] {
+				width: 100% !important;
+				height: auto !important;
+			}
+			div[class=FlickrSubText] {
+				width: 98% !important;
+			}
+			div[class=ScreenshotContent] {
+				width: 98% !important;
+			}
+			img[class=FlickrImage] {
+				width: 100% !important;
+				height: auto !important;
 			}
             div[class=whereAmI] {
             	display: inline-block !important;
@@ -133,6 +153,18 @@ body {
             	vertical-align: middle !important;
             	height: 58px !important;
             }
+            div[class=newsFeedContent] {
+            	font-size: 24px !important;
+            	line-height: 30px !important;
+            	padding: 230px 0px 10px 0px !important;
+            }
+            div[class=LPSubHeadline] {
+            	font-size: 36px !important;
+            }
+            span[class=smallHeadlineNews] {
+            	font-size: 28px !important;
+            	line-height: 36px !important;
+            }
             img[class=LetsPlayThumb] {
             	padding: 0px !important;
             	margin: 0px !important;
@@ -143,16 +175,10 @@ body {
             	margin: 0px 0px 0px -100px !important;
             	display: block !important;
             }
-            div[class=newsFeedContent] {
-            	font-size: 14px !important;
-            	width: 100% !important;
-            	overflow: hidden !important;
-            }
             img[class=newsImage] {
-            	width: 100% !important;
-            	height: auto !important;
-            	position: relative !important;
-            	margin: 5px 0px 0px -160px;
+            	width: 98% !important;
+            	height: 150px !important;
+            	margin: -235px 0px 0px -5px;
             }
             .mobileResize50per {
    				width: 50% !important;         	
@@ -172,10 +198,14 @@ body {
         }
 .smallHeadlineNews {
 	font-family: segoe, Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	display: block;
-	margin: 20px 5px 10px 160px;
-	overflow: hidden;	
+	margin: 160px 0px 0px 5px;
+	position: absolute;
+}
+
+.newsItem {
+	margin: 5px 0px 5px 0px;
 }
 
 .newsItemWrapper {
@@ -183,7 +213,7 @@ body {
 	background-color: #EFEFEF;
 	margin: 0px 0px 0px 0px;
 	width: 100%;
-	height: 142px;
+	height: auto;
 	padding: 0px 0px 0px 0px;
 	box-shadow: 
 		2px 2px 1px 0px rgba(0,0,0,0.2), 
@@ -192,19 +222,18 @@ body {
 
 .newsImage {
 	position: absolute;
-	clip:rect(0px,170px,142px,20px);
 	width: auto;
-	margin: -24px 0px 0px -180px;
-	height: 150px;	
+	margin: -195px 0px 0px -5px;
+	height: auto;
 	display: block;
 }
 
 .newsFeedContent {
-	width: 68%;
-	height: 112px;
-	margin: -4px 0px 0px 0px;
-	padding: 0px 0px 0px 160px;
-	overflow: hidden;
+	width: 98%;
+	height: auto;
+	margin: 20px 5px 0px 5px;
+	padding: 190px 0px 10px 0px;
+	overflow: hidden;     
 	font-family: segoe, Arial, Helvetica, sans-serif !important;
 	font-size: 14px !important;
 	line-height: 19px;
@@ -522,7 +551,7 @@ div.LPBoxEmpty {
 
 
 div.LPSubHeadline {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: segoe, Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	display: block;
 	margin: 20px 0px 10px 10px;	

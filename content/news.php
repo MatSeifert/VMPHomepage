@@ -7,10 +7,10 @@
 		$i = 0;		// Abbruchvariable für die foreach Schleife
 
 		foreach ($xml->channel->item as $item) {
-			if ($i==8) break;
+			if ($i==3) break;
 			echo '<div class="newsItemWrapper">';
-				echo '<span class="smallHeadlineNews"><nobr>' . strtoupper($item->title) . '</nobr></span>';
-				echo '<div class="newsFeedContent">' . str_replace('<img', '<img class="newsImage" ',$item->description) . '</div>';
+				echo '<span class="smallHeadlineNews">' . strtoupper($item->title) . '</span>';
+				echo '<div class="newsFeedContent">' . str_replace('<img', '<img class="newsImage" ',str_replace('<p', '<p class="newsItem" ' ,$item->description)) . '</div>';
 			echo "</div>";
 			
 			$i++;
