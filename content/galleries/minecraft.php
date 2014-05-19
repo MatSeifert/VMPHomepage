@@ -16,6 +16,15 @@
 	}
 ?>
 
+<div class="LpSsMobileHeadline">
+	<a href="?site=screenshots">
+		<img src="images/backButtonL.png" alt="back" style="float: left; margin: 9px 15px 0px -30px;" border="0">
+	</a>
+	<img src="https://farm6.staticflickr.com/5137/buddyicons/2611823@N25.jpg?1398633302" alt="Icon" style="float: left; margin: 9px 10px 0px 5px;">
+		MINECRAFT MONUMENTE <br>
+		<div class="FlickrSubTitle">Alle Bauwerke, ob groß oder klein, vom Minecraftserver des VMP Clans.</div>
+</div>
+
 <div class="PostTitle">
 	<a href="?site=screenshots">
 		<img src="images/backButtonL.png" alt="back" style="float: left; margin: 9px 15px 0px -30px;" border="0">

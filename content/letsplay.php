@@ -44,7 +44,7 @@
 	<div class="LPBlock">
 		<div class="LPBox">
 			<img src="images/lpPage_fnv.png" class="LetsPlayThumb" alt="Fallout: New Vegas">
-			<span class="LPHeadline">FALLOUT NEW VEGAS</span> <br />
+			<span class="LPHeadline">FALLOUT NEW VEGAS</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=vsfTCJviyQg&list=PL12CD5FAF96B404D1">Playlist</a> <br />
@@ -56,7 +56,7 @@
 
 		<div class="LPBox">
 			<img src="images/lpPage_bl.png" class="LetsPlayThumb" alt="Borderlands">
-			<span class="LPHeadline">BORDERLANDS</span> <br />
+			<span class="LPHeadline">BORDERLANDS</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=mL0evO0Y5d0&list=PLMYyvoe65Ysk4YCJKEJ0QRziWfL-cmYPp">Playlist</a> <br />
@@ -68,7 +68,7 @@
 
 		<div class="LPBox">
 			<img src="images/lpPage_lanoire.png" class="LetsPlayThumb" alt="L.A. Noire">
-			<span class="LPHeadline">L.A. NOIRE</span> <br />
+			<span class="LPHeadline">L.A. NOIRE</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=ZM1halUgcOA&list=PLMYyvoe65Ysn0--WAJj-G8wH-V-zFhk1e">Playlist</a> <br />
@@ -80,7 +80,7 @@
 
 		<div class="LPBox">
 			<img src="images/lpPage_metro2033.png" class="LetsPlayThumb" alt="Metro 2033">
-			<span class="LPHeadline">METRO 2033 </span><br />
+			<span class="LPHeadline">METRO 2033 </span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=I2f_Kz3l65g&list=PLMYyvoe65YslT6qv8FZlaU-zwzq7pTW-9">Playlist</a> <br />
@@ -92,7 +92,7 @@
 
 		<div class="LPBox">
 			<img src="images/lpPage_penOver.png" class="LetsPlayThumb" alt="Penumbra Overture">
-			<span class="LPHeadline">PENUMBRA OVETURE</span><br />
+			<span class="LPHeadline">PENUMBRA OVETURE</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=ZiwNW3bA-A0&list=PLMYyvoe65YslO9cftBYDWNkJYLGb7-xiG">Playlist</a> <br />
@@ -104,7 +104,7 @@
 
 		<div class="LPBox">
 			<img src="images/lpPage_penBlaPlag.png" class="LetsPlayThumb" alt="Penumbra Black Plague">
-			<span class="LPHeadline">PENUMBRA BLACK PLA...</span><br />
+			<span class="LPHeadline">PENUMBRA BLACK PLAGUE</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=Yj0k0ZV-AN4&list=PLMYyvoe65YsllXFcevINnWGIUTOTE1mVG">Playlist</a> <br />
@@ -116,7 +116,7 @@
 
 		<div class="LPBox">
 			<img src="images/lpPage_slender.png" class="LetsPlayThumb" alt="Slender">
-			<span class="LPHeadline">SLENDER</span><br />
+			<span class="LPHeadline">SLENDER</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=vIU_XUvDyC8&list=PL7EDB5FDAD8EAD27A">Playlist</a> <br />

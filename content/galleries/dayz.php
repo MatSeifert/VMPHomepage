@@ -16,6 +16,15 @@
 	}
 ?>
 
+<div class="LpSsMobileHeadline">
+	<a href="?site=screenshots">
+		<img src="images/backButtonL.png" alt="back" style="float: left; margin: 9px 15px 0px -30px;" border="0">
+	</a>
+	<img src="https://farm8.staticflickr.com/7297/buddyicons/2669756@N23.jpg?1399166119" alt="Icon" style="float: left; margin: 9px 10px 0px 5px;">
+		ADVENTURES OF DAYZ <br>
+		<div class="FlickrSubTitle">Erinnerungsfotos von gemeinsamen DayZ Streifzügen</div>
+</div>
+
 <div class="PostTitle">
 	<a href="?site=screenshots">
 		<img src="images/backButtonL.png" alt="back" style="float: left; margin: 9px 15px 0px -30px;" border="0">
