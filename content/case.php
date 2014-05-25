@@ -28,7 +28,7 @@
 		case "member": @include __DIR__ . '/../content/member.php';
 		break;
 		
-		case "joinus": @include __DIR__ . 'content/joinus.php';
+		case "joinus": @include __DIR__ . '/../content/joinus.php';
 		break;
 		
 		case "mania2011": @include __DIR__ . 'content/mania2011.php';

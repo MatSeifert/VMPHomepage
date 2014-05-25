@@ -25,9 +25,20 @@ body {
                 width: auto !important;
                 height: 100% !important;
             }
+            iframe[class=embed] {
+            	margin: 80px 0px 0px 0px !important;
+            }
             span[class=NavPoint] {
 				margin: 12px 0px auto 25px !important;            	
             	height: 42px !important;
+            }
+            div[class=back] {
+            	position: absolute !important;
+            	margin: -30px 0px 0px 5px !important;
+            }
+            div[class=LPLargeHeadline] {
+            	position: absolute !important;
+            	margin: -40px 0px 0px 35px !important;
             }
             div[class=menue] {display: none !important;}
             div[class=contentWrapper] {
@@ -50,13 +61,15 @@ body {
             	font-family: segoe, Arial, Helvetica, sans-serif !important;
             	font-size: 24px !important;
             	line-height: 32px !important;
+            	height: auto !important;
+            	min-height: 100% !important;
             }
             div[class=PostTitle] {
             	display: none !important;
             }
             div[class=disclaimerBottomRight] {
             	font-size: 18px !important;
-            	margin: 0px 0px 0px 0px !important;
+            	margin: 0px 0px 0px -40px !important;
             }
             span[class=smallHeadline] {
             	font-size: 28px !important;
@@ -131,6 +144,7 @@ body {
             div[class=LPDescription] {
             	font-size: 24px !important;
             	overflow: hidden !important;
+            	width: 95% !important;
             }
             div[class=LPBox] {
             	width: 99% !important;
@@ -618,12 +632,12 @@ span.LPContent {
 }
 
 div.LPContentLatestVideo {
-	font-size: 12px;
-	font-family: segoesl, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-family: segoe, Arial, Helvetica, sans-serif;
 	overflow: hidden;
 	padding: 0px 10px 0px 0px;
-	margin: -10px 0px 0px 0px;
-	height: 113px;
+	margin: -16px 0px 0px 0px;
+	height: 90px;
 	text-align: justify;
 	line-height: 18px;
 }
@@ -860,7 +874,7 @@ div.HttpError404Helper {
 
 input.NewsTitle {
 	margin-left: 10px; 
-	width: 480px;
+	width: 93%;
 	padding: 8px;
 }
 
@@ -870,7 +884,7 @@ span.mandatory {
 
 textarea.NewsContent {
 	margin-left: 10px; 
-	width: 480px;
+	width: 93%;
 	height: 250px;
 	padding: 8px;
 }
@@ -1022,4 +1036,32 @@ article {
 
 #mobiMenu input:checked ~ article.ac-medium{
 	margin: -10px 0px -60px 0px;
+}
+
+.hr {
+	width: 98%;
+	height: 20px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.tag {
+	font-size: 18px;
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	margin: 0px 5px 0px 10px;
+}
+
+.NewsTitleWithTag {
+	margin-left: 10px; 
+	width: 81%;
+	padding: 8px;
+}
+
+.InputAge {
+	width: 100px;
+	margin-left: 10px; 
+	padding: 8px;
+}
+
+.DefaultFormCheckbox {
+	margin: 0px 0px 0px 10px;
 }

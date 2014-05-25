@@ -10,7 +10,7 @@
 
 			$VideoId = substr($entry->id, -11);
 			$title = str_replace('#', '~raute~', $entry->title);
-			$desc = nl2br(str_replace('#', '~raute~', $entry->content));
+			$desc = nl2br(str_replace('&', '~and~', $entry->content));
 
 			echo '<div class="LPBoxLatestVideo">';
 				echo '<div class="cropThumb"><img src="http://img.youtube.com/vi/' . $VideoId . '/0.jpg" alt="Thumbnail" class="thumbnail"></div>';
@@ -21,7 +21,7 @@
 				else {
 					echo '<div class="LPHeadline"><a href="?site=playVideo&VideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(substr(str_replace('~raute~', '#', $title), 12)) . '</a></div><br />';
 				}
-				echo '<div class="LPContentLatestVideo">' . nl2br(substr($desc, 0, 210)) . '... </div>';
+				echo '<div class="LPContentLatestVideo">' . $desc . '... </div>';
 			echo '</div>';
 
 			$i++;

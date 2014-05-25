@@ -34,7 +34,6 @@
 			    return 0;
 			  }
 			}
-
 			// Überwachung initialisieren
 			if (!window.Hoehe && window.innerHeight) {
 			  Hoehe = Fensterhoehe();
