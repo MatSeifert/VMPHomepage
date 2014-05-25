@@ -31,13 +31,13 @@
 		case "joinus": @include __DIR__ . '/../content/joinus.php';
 		break;
 		
-		case "mania2011": @include __DIR__ . 'content/mania2011.php';
+		case "mania2011": @include __DIR__ . '/../content/mania2011.php';
 		break;
 		
-		case "mania2012": @include __DIR__ . 'content/mania2012.php';
+		case "mania2012": @include __DIR__ . '/../content/mania2012.php';
 		break;
 		
-		case "mania2013": @include __DIR__ . 'content/mania2013.php';
+		case "mania2013": @include __DIR__ . '/../content/mania2013.php';
 		break;
 
 		case "AddNews": @include __DIR__ . '/../news/WriteNews.php';

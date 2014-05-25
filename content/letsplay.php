@@ -60,6 +60,18 @@
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=mL0evO0Y5d0&list=PLMYyvoe65Ysk4YCJKEJ0QRziWfL-cmYPp">Playlist</a> <br />
+				<span class="LPDate">Let's Play Dauer:</span> <br>
+				97 Folgen
+				<br>
+			</span>
+		</div>
+
+		<div class="LPBox">
+			<img src="images/lpPage_bl2.png" class="LetsPlayThumb" alt="Borderlands2">
+			<span class="LPHeadline">BORDERLANDS 2</span>
+			<span class="LPContent">
+				<p>&nbsp;</p>
+				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=mL0evO0Y5d0&list=PLMYyvoe65Ysk4YCJKEJ0QRziWfL-cmYPp">Playlist</a> <br />
 				<span class="LPDate">Neue Folgen immer:</span> <br>
 				Montag &amp; Freitag
 				<br>
