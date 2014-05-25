@@ -203,6 +203,10 @@ body {
             div[class=LPSubHeadline] {
             	font-size: 36px !important;
             }
+            div[class=maniaDescription] {
+            	font-size: 22px !important;
+            	line-height: 28px !important;
+            }
             span[class=smallHeadlineNews] {
             	font-size: 28px !important;
             	line-height: 36px !important;
@@ -231,6 +235,15 @@ body {
             .imageWrapper:hover .ImageInfo {
 				height: 60px !important;
 			}
+			.mobileHidden {
+				display: none !important;
+			}
+			td[class=maniaHoFTop] {
+				font-size: 20px !important;
+			}
+			td[class=maniaHoFDefault] {
+				font-size: 20px !important;
+			}			
             table[class=memberlist] {
             	width: 98% !important;
             	font-size: 16px !important;
@@ -1064,4 +1077,34 @@ article {
 
 .DefaultFormCheckbox {
 	margin: 0px 0px 0px 10px;
+}
+
+.maniaDescription {
+	margin: 5px 5px 0px 5px;
+	padding: 0px 0px 5px 0px;
+	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: justify;
+}
+
+table.mania2011 {
+	width: 100%;
+	font-family: segoe, Arial, Helvetica, sans-serif;
+}
+
+.maniaHoFTop {
+	vertical-align: top; 
+	border-top: 2px solid #bbb;
+	padding: 5px 0px 5px 0px;
+}
+
+.maniaHoFDefault {
+	vertical-align: top; 
+	border-top: 1px solid #ccc;
+	padding: 5px 0px 5px 0px;	
+}
+
+.space50px {
+	width: 50px;
 }
