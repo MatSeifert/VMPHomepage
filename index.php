@@ -42,24 +42,37 @@
 	</head>
 
 	<body>
-	<!-- Mobile Header /-->
+	<!--BEGIN OF  Mobile Header /-->
+
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
-				<!-- TODO ###
-					AUSKLAPPBARE WIDGETSIDEBAR
-				/-->
-				<img src="images/widgets.png" alt="widgets" style="float: right;">
+
 				<section class="ac-container">
-					<input id="ac-1" name="accordion-1" type="checkbox" />
-					<label for="ac-1">
-						<img src="images/menue.png" alt="menu" style="float: left; margin-left: 5px">
-					</label>
-					<article class="ac-medium">
-						<div id="mobiMenu">
-							<?php include("content/menue.html") ?>
-						</div>
-						<div style="height: 100%; background-color: #ff9900"></div>
-					</article>
+					<div>
+						<imput id="ac-1" name="accordion-1" type="checkbox" />
+						<label for="ac-1">
+								<img src="images/widgets.png" alt="widgets" style="float: right; margin-right: 5px;">
+						</label>
+						<article class="ac-medium">
+							<div id="mobiSidebar">
+								TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>
+							</div>
+							<div style="height: 100%; background-color: #ff9900"></div>
+						</article>
+					</div>
+
+					<div>
+						<input id="ac-2" name="accordion-1" type="checkbox" />
+						<label for="ac-2">
+							<img src="images/menue.png" alt="menu" style="float: left; margin-left: 5px">
+						</label>
+						<article class="ac-medium">
+							<div id="mobiMenu">
+								<?php include("content/menue.html") ?>
+							</div>
+							<div style="height: 100%; background-color: #ff9900"></div>
+						</article>
+					</div>
 				</section>	
 
 			</div>
@@ -72,7 +85,7 @@
 				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>	
 			</div>
 		</div>
-		<!-- End of mobile Header /-->
+		<!-- END OF Mobile Header /-->
 
 		<div class="sektion" id="start">
 			<div class="hintergrundbild">
@@ -150,7 +163,8 @@
 			</div>
 		</div>
 		<script>
-			document.getElementById("mobiMenu").style.height = Hoehe + 'px';
+			document.getElementById("mobiMenu").style.height = Hoehe - 68 + 'px';
+			document.getElementById("mobiSidebar").style.height = Hoehe -68 + 'px';
 		</script>
 	</body>
 </html>
