@@ -40,6 +40,9 @@
 		case "mania2013": @include __DIR__ . '/../content/mania2013.php';
 		break;
 
+		case "mania2014": @include __DIR__ . '/../content/mania2014.php';
+		break;
+
 		case "AddNews": @include __DIR__ . '/../news/WriteNews.php';
 		break;
 

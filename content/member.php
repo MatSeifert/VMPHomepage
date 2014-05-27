@@ -33,10 +33,10 @@
     echo '<table class="memberlist">' .                  // Tabellenkopf
             '<tr>' .
               '<td>LAND</td>' .
-              '<td> <span class="number"> &nbsp; </span> </td>' .
+              '<td class="mobileHidden"> <span class="number"> &nbsp; </span> </td>' .
               '<td>NICKNAME</td>' .
               '<td>RANG</td>' .
-              '<td> &nbsp; </td>' .
+              '<td class="mobileHidden"> &nbsp; </td>' .
               '<td> <span class="number"> ALTER </span> </td>' .
               '<td> <span class="number"> DABEI SEIT ... </span> </td>' .
             '</tr>' .
@@ -45,14 +45,14 @@
             '</tr>';
     foreach ($memberXml->member as $member) {
       echo '<tr><td class="normal"><img src="images/flag_' . $member->country . '.png" alt="Germany"></td>';
-      echo '<td class="normal"><img src="images/' . $member->sex . '.png" alt="Sex"></td>';
+      echo '<td class="normal mobileHidden"><img src="images/' . $member->sex . '.png" alt="Sex"></td>';
       echo '<td class="normal">' . $member->nickname . '</td>';
       echo '<td class="normal">' . $member->rank . '</td>';
 
       if ($member->activity['value'] == 'aktiv') {
-      	 echo '<td class="normal">Aktiv</td>';
+      	 echo '<td class="normal mobileHidden">Aktiv</td>';
       }
-      else echo '<td class="normal"><span class="inactive">inaktiv</span></td>';
+      else echo '<td class="normal mobileHidden"><span class="inactive">inaktiv</span></td>';
       // echo '<td>' . $member->activity['value'] . '</td>';
 
       if(property_exists($member, 'birthday') && $member->birthday) {
@@ -60,11 +60,11 @@
 	      $month = $member->birthday['month'];
 	      $year = $member->birthday['year'];
 	      alter($year, $month, $day);
-	  }
-	  else echo '<td class="normal">&nbsp;</td>';
+  	  }
+  	  else echo '<td class="normal">&nbsp;</td>';
 
-      $RecrYr = $member->recruited['in'];
-      dienstzeit($RecrYr);
+        $RecrYr = $member->recruited['in'];
+        dienstzeit($RecrYr);
     }
 
     echo '</tr></table><p>&nbsp;</p>';

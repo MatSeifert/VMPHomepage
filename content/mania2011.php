@@ -22,7 +22,7 @@
 		<tr>
 			<td class="maniaHoFTop">CoD: Modern Warfare 2</td>
 			<td class="maniaHoFTop">-</td>
-			<td class="maniaHoFTop mobileHidden">Abgesagt, aufgrund Unpünktlichkeit</td>
+			<td class="maniaHoFTop mobileHidden">Abgesagt</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">CoD 4: Modern Warfare</td>

@@ -11,12 +11,6 @@ body {
 	height: 100%;
 }
 
-@font-face {
-	font-family: segoe;
-	src:url('../fonts/segoe.ttf');
-	font-style: normal;
-	font-weight: normal;
-}
 
 /* --- BEGIN OF Responsive Style Declarations --- */
 
@@ -58,7 +52,7 @@ body {
             }
             div[class=PostPost] { 
             	width: 98% !important;
-            	font-family: segoe, Arial, Helvetica, sans-serif !important;
+            	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
             	font-size: 24px !important;
             	line-height: 32px !important;
             	height: auto !important;
@@ -102,7 +96,7 @@ body {
             	margin-top: 5px !important;
             	padding: 0px 0px 0px 10px !important;
             	font-size: 24px !important;
-            	font-family: segoe, Arial, Helvetica, sans-serif !important;
+            	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
             	width: 300px !important;
             }
             div[class=LPHeadline] {
@@ -114,7 +108,7 @@ body {
             }
             span[class=LPDate] {
             	display: inline-block !important;
-            	font-family: segoe, Arial, Helvetica, sans-serif !important;
+            	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
             	font-size: 24px !important; 
             	padding: 0px 0px 0px 0px !important;
             	margin: -10px 0px 0px 0px !important;
@@ -144,10 +138,7 @@ body {
             div[class=LPDescription] {
             	font-size: 24px !important;
             	overflow: hidden !important;
-<<<<<<< HEAD
-=======
             	width: 95% !important;
->>>>>>> df9ed29eb5eadad71c7a1a3e87dec2e82ff4ed10
             }
             div[class=LPBox] {
             	width: 99% !important;
@@ -189,11 +180,10 @@ body {
             div[class=whereAmI] {
             	display: inline-block !important;
             	position: fixed !important;
-            	width: 80% !important;
-            	max-width: 300px !important;
-            	margin: -186px -55px 0px 55px;
-            	z-index: 1 !important;
-            	font-family: segoe, Arial, Helvetica, sans-serif !important;
+            	width: 200px !important;
+            	margin: -186px 0px 0px 55px;
+            	z-index: 2 !important;
+            	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
             	font-size: 22px !important;
             	color: #fff;
             	vertical-align: middle !important;
@@ -204,12 +194,12 @@ body {
             	line-height: 30px !important;
             	padding: 230px 0px 10px 0px !important;
             }
+            div[class=contentBox] {
+            	width: 250px !important;
+            	margin: 0px 0px 0px 10px !important;
+            }
             div[class=LPSubHeadline] {
             	font-size: 36px !important;
-            }
-            div[class=maniaDescription] {
-            	font-size: 22px !important;
-            	line-height: 28px !important;
             }
             span[class=smallHeadlineNews] {
             	font-size: 28px !important;
@@ -239,6 +229,11 @@ body {
             .imageWrapper:hover .ImageInfo {
 				height: 60px !important;
 			}
+            div[class=maniaDescription] {
+            	font-size: 22px !important;
+            	line-height: 28px !important;
+            }
+
 			.mobileHidden {
 				display: none !important;
 			}
@@ -247,7 +242,7 @@ body {
 			}
 			td[class=maniaHoFDefault] {
 				font-size: 20px !important;
-			}			
+			}
             table[class=memberlist] {
             	width: 98% !important;
             	font-size: 16px !important;
@@ -262,13 +257,14 @@ body {
 .LpSsMobileHeadline {
 	display: none;
 	padding: 10px 0px 10px 35px;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 28px;
 }
 
 .smallHeadlineNews {
-	font-family: segoe, Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 22px;
 	display: block;
 	margin: 160px 0px 0px 5px;
 	position: absolute;
@@ -304,7 +300,7 @@ body {
 	margin: 20px 5px 0px 5px;
 	padding: 190px 0px 10px 0px;
 	overflow: hidden;     
-	font-family: segoe, Arial, Helvetica, sans-serif !important;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
 	font-size: 14px !important;
 	line-height: 19px;
 }
@@ -319,7 +315,7 @@ body {
 	background-color: #8C0000;
 	position: fixed;
 	width: 100%;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color: #fff;
 	font-size: 28px;
 }
@@ -403,8 +399,9 @@ div.menue {
 }
 
 div.right {
-	width: 250px;
-	margin: 20px 0px 0px 890px;
+	width: 250px !important;
+	margin: 20px 0px 0px 890px !important;
+	text-align: left; 
 }
 
 div.NavContainer {
@@ -420,7 +417,7 @@ div.NavContainerMobile {
 }
 
 div.impressum {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	margin: 8px 0px 0px 20px;
 }
@@ -460,7 +457,7 @@ span.more {
 }
 
 div.rightText {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font size: 9px;
 	margin: 5px 20px 10px 20px;
 	display: block;
@@ -470,25 +467,25 @@ div.newsTitle {
 	margin: 20px 0px 10px 50px;
 	border-left: 3px solid #9E0000;
 	text-indent: 10px;
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 }
 
 /* Styles für die Video Wiedergabeseite */
 
 div.LPLargeHeadline {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 26px;
 	margin: 30px 5px 0px 15px;
 }
 
 div.back {
 	float: left;
-	margin: 10px 10px 10px 5px;
+	margin: 6px 10px 10px 10px;
 }
 
 div.LPDescription {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	margin: 0px 15px 0px 15px;
 	text-align: justify;
@@ -497,7 +494,7 @@ div.LPDescription {
 
 .ScreenshotContent {
 	text-align: justify;
-	font-family: segoesl, Arial, Helvetica, sans-serif;	
+	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;	
 	width: 520px;
 	margin: auto auto;
 	font-size: 14px;
@@ -515,7 +512,7 @@ div.LPDescription {
 }
 
 .FlickrSubTitle {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	margin: 0px 0px 15px 0px;
 }
@@ -556,7 +553,7 @@ div.LPDescription {
 
 .ImageInfoText {
 	line-height: 14px;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	padding: 2px 0px 0px 5px;
 	vertical-align: middle;
@@ -621,7 +618,7 @@ div.LPBoxEmpty {
 
 
 div.LPSubHeadline {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	display: block;
 	margin: 20px 0px 10px 10px;	
@@ -634,7 +631,7 @@ img.LetsPlayThumb {
 }
 
 span.LPHeadline {
-	font-family: segoe, Arial, Helvetica, sans-serif !important;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
 	font-size: 16px;
 	margin-left: 0px;
 	overflow: hidden;
@@ -645,12 +642,12 @@ span.LPHeadline {
 
 span.LPContent {
 	font-size: 16px;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 div.LPContentLatestVideo {
 	font-size: 14px;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	overflow: hidden;
 	padding: 0px 10px 0px 0px;
 	margin: -16px 0px 0px 0px;
@@ -665,20 +662,20 @@ iframe.embed {
 }
 
 span.LPDate {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 11px;
 	color: #787878;
 }
 
 span.smallHeadline {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	display: block;
 	margin: 20px 0px 10px 10px;
 }
 
 span.NavCategory {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
@@ -688,8 +685,22 @@ span.NavCategory {
 	margin: 10px 0px 0px 20px;
 }
 
+span.RightHeadline {
+	text-align: left;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #d3d3d3;	
+	width: 85%;
+	display: inline-block;
+	margin: 10px 0px 0px 20px;
+}
+
 .NavPoint {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
 	font-size: 20px;
 	margin: 2px 0px auto 25px;
 	border-bottom: solid 1px #e3e3e3;
@@ -699,24 +710,34 @@ span.NavCategory {
 }
 
 span.title {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-weight: 100;
 	font-size: 103px;
 	margin: 20px;
 }
 
 span.subtitle {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
-	font-size: 30px;	
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 29px;	
 	margin: 20px;
 }
 
 span.NavTitle {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
-	font-size: 30px;
+	text-align: left;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #d3d3d3;	
+	width: 85%;
+	display: inline-block;
+	margin: 0px 0px 30px 20px;
 }
 
 span.date {
-	font-family: Segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 13px;
 }
 
@@ -742,7 +763,8 @@ img.inlineImageL {
 
 div.PostTitle {
 	text-align: left;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
 	font-size: 26px;
 	width: 520px;
 	margin: 10px auto;
@@ -762,7 +784,7 @@ div.PostDate {
 
 div.PostPost {
 	text-align: justify;
-	font-family: segoesl, Arial, Helvetica, sans-serif;	
+	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;	
 	width: 520px;
 	margin: auto auto;
 	font-size: 14px;
@@ -772,7 +794,7 @@ div.PostPost {
 /* Deklarationen zur Darstellung der Memberliste auf der Homepage, tabellarische Form */
 
 table.memberlist {
-	font-family: segoesl, Arial, Helvetica, sans-serif;		
+	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;		
 	width: 85%;
 	border-spacing: 0px;
 	font-size: 13px;
@@ -807,13 +829,13 @@ td.bottom {
 /* STYLEDEFINITIONEN FÜR DEN KALENDER (NICHT DAS WIDGET) */
 
 span.month {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 35px;	
 	margin: 0px 0px 0px 70px;
 }
 
 table.calendar {
-	font-family: segoesl, Arial, Helvetica, sans-serif;		
+	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;		
 	width: 90%;
 	border-spacing: 1px;
 	font-size: 13px;
@@ -824,14 +846,14 @@ table.calendar {
 td.wday {
 	width: 14%;
 	height: 40px;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	background-color: #b8b8b8;
 	text-indent: 10px;
 }
 
 td.PreMonDay {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color: #b4b4b4;
 	height: 70px;
 	vertical-align: top;
@@ -840,7 +862,7 @@ td.PreMonDay {
 }
 
 td.StandDay {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color: #000;
 	height: 70px;
 	vertical-align: top;
@@ -849,7 +871,7 @@ td.StandDay {
 }
 
 td.ActDay {	
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color: #9E0000;
 	height: 70px;
 	vertical-align: top;
@@ -867,20 +889,20 @@ div.Error404 {
 }
 
 div.HttpError404Headline {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 65px;
 	margin: 0px 0px 0px 40px;
 	padding-top: 30px;
 }
 
 div.HttpError404SubHeadline {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 35px;
 	margin: 30px 0px 0px 40px;
 }
 
 div.HttpError404Helper {
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 15px;	
 	width: 520px;
 	margin: 30px auto 0px auto;
@@ -1000,78 +1022,139 @@ div.icons {
 	margin: 0px 0px 0px 0px;
 }
 
-/* ####################### Mobile Menue ########################### */
-.ac-container{
-	width: 100%;
+/* ####################### Mobile Menue & Sidebar ########################### */
+.mobileMenu{
+	width: 48%;
 	overflow: auto;
 	z-index: 10;
 	float: left;
 }
 
-.ac1-container label{
-	z-index: 20;
-	display: block;
-	height: 60px;
-	width: 150px;
-	float: left;
-	cursor: pointer;
-}
-
-.ac2-container label{
-	z-index: 20;
-	display: block;
-	height: 60px;
-	width: 150px;
+.mobileSidebar {
+	width: 48%;
+	overflow: auto;
+	z-index: 10;	
 	float: right;
+	text-align: right;
+}
+
+.mobileMenu label{
+	z-index: 20;
+	display: block;
+	height: 60px;
+	width: 150px;
 	cursor: pointer;
 }
 
-.ac-container input{
+.mobileSidebar label{
+	z-index: 20;
+	display: block;
+	height: 60px;
+	width: 150px;
+	cursor: pointer;
+	float: right;
+}
+
+
+.mobileMenu input{
 	display: none;
 	z-index: 10;
-	float: left;
 }
 
-.ac-container article{
+.mobileSidebar input{
+	display: none;
+	z-index: 10;
+}
+
+.mobileMenu article{
 	background-color: #fff;
 	overflow: hidden;
 	height: 0px;
 	z-index: 10;
-	float: left;
+}
+
+.mobileSidebar article{
+	background-color: #dbdbdb;
+	overflow: hidden;
+	height: 0px;
+	z-index: 10;
+	width: 270px;
+	float: right;
+	right: 0px;
+	position: absolute;
 }
 
 article {
 	color: #000;
 }
 
-.ac-container input:checked ~ article.ac-medium{
+.mobileMenu input:checked ~ article.mobileSidebarContainer{
 	position: fixed;
-	float: left;
 	height: auto;
-	margin: 58px 0px 0px 0px;
 	padding: 0px;
 	color: #000;
 	overflow: auto;
 	text-align: left;
-	z-index: 1;
+	z-index: 5;
+}
+
+.mobileSidebar input:checked ~ article.mobileSidebarContainer{
+	position: fixed;
+	height: auto;
+	margin: 60px 0px 0px 0px;
+	color: #000;
+	overflow: auto;
+	text-align: left;
+	z-index: 5;
+	box-shadow: 0px 0 0px rgba(0,0,0,0),  -8px 0 8px rgba(0,0,0,0.3); 
+}
+
+.mobileMenu input:checked ~ article.mobileMenuContainer{
+	position: fixed;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	overflow: auto;
+	text-align: left;
+	z-index: 5;
 	box-shadow: 
 		5px 5px 5px 5px rgba(0,0,0,0.3), 
 		8px 6px 6px rgba(0,0,0,0.1);
 }
 
-#mobiMenu input:checked ~ article.ac2-medium{
+.mobileSidebar input:checked ~ article.mobileMenuContainer{
+	position: fixed;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	overflow: auto;
+	text-align: left;
+	z-index: 5;
+	box-shadow: 
+		5px 5px 5px 5px rgba(0,0,0,0.3), 
+		8px 6px 6px rgba(0,0,0,0.1);
+}
+
+#mobiMenu input:checked ~ article.mobileMenuContainer{
 	margin: -10px 0px -60px 0px;
+}
+
+#mobiSidebar {
+	width: 270px;
 }
 
 .hr {
 	width: 98%;
-	height: 20px;
+	height: 1px;
 	border-bottom: 1px solid #D3D3D3;
+	margin: 0px 0px -20px 0px;
 }
 
 .tag {
 	font-size: 18px;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	margin: 0px 5px 0px 10px;
 }
 
@@ -1094,7 +1177,7 @@ article {
 .maniaDescription {
 	margin: 5px 5px 0px 5px;
 	padding: 0px 0px 5px 0px;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: justify;
@@ -1102,7 +1185,7 @@ article {
 
 table.mania2011 {
 	width: 100%;
-	font-family: segoe, Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .maniaHoFTop {
@@ -1119,4 +1202,39 @@ table.mania2011 {
 
 .space50px {
 	width: 50px;
+}
+
+.right {
+	text-align: right;
+	padding: 0px 10px 0px 0px;
+	vertical-align: middle;
+}
+
+/* Mania Abschlusstabellenformatierung ab 2013 */
+
+.winner {
+	background-color: #e9e9e9;
+}
+
+.positive {
+	color: #38bc00;
+	vertical-align: middle;
+}
+
+.negative {
+	color: #ff0000;
+	vertical-align: middle;	
+}
+
+.bold {
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.largeText {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 30px;
+	margin: 20px 0px 20px 0px;
 }

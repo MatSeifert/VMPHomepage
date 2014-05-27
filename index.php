@@ -9,16 +9,17 @@
 
 <!DOCTYPE html>
 
-<html lang="de">
+<html>
 	<head>
 			<!-- Metadaten und WOT Verifizierung /-->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<!-- Seitentitel -->
 		<title>VMP Clan - German Multigaming</title>
 			<!-- Stylesheet- und Favicon Einbindung /-->
-		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=no" />
+		<meta name="viewport" content="width=400, initial-scale=0.7, maximum-scale=0.7, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="shortcut icon" href="images/favicon.png">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<script src="javascript/parallax.js" type="text/javascript"></script>
@@ -39,40 +40,64 @@
 			  Hoehe = Fensterhoehe();
 			}
 		</script>
+
+		<script>
+			function iFrameHeight(n,id) 
+			{
+				var h = 0;
+				if ( !document.all ) 
+				{
+					h = document.getElementById(id).contentDocument.body.offsetHeight;
+					document.getElementById(id).style.height = h + 0 + 'px';
+				} 
+				else if( document.all ) 
+				{
+					// Extrawurst für den Internet Explorer
+					h = document.frames(n).document.body.scrollHeight;
+					document.getElementById(id).style.height = h + 0 + 'px';
+				}
+			}
+		</script>
 	</head>
 
 	<body>
-	<!--BEGIN OF  Mobile Header /-->
-
+	<!-- Mobile Header /-->
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
 
-				<section class="ac-container">
-					<div>
-						<imput id="ac-1" name="accordion-1" type="checkbox" />
-						<label for="ac-1">
-								<img src="images/widgets.png" alt="widgets" style="float: right; margin-right: 5px;">
-						</label>
-						<article class="ac-medium">
-							<div id="mobiSidebar">
-								TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>TEST FOOBAR <br>
-							</div>
-							<div style="height: 100%; background-color: #ff9900"></div>
-						</article>
-					</div>
+				<section class="mobileSidebar">
+					<input id="RightSidebar" name="accordion-1" type="checkbox" />
+					<label for="RightSidebar" class="ac-1">
+						<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
+					</label>
+					<article class="mobileSidebarContainer">
+						<div id="mobiSidebar">
 
-					<div>
-						<input id="ac-2" name="accordion-1" type="checkbox" />
-						<label for="ac-2">
-							<img src="images/menue.png" alt="menu" style="float: left; margin-left: 5px">
-						</label>
-						<article class="ac-medium">
-							<div id="mobiMenu">
-								<?php include("content/menue.html") ?>
-							</div>
-							<div style="height: 100%; background-color: #ff9900"></div>
-						</article>
-					</div>
+							<iframe 
+								onload="javascript:parent.iFrameHeight('sidebar','sidebar');" 
+								src="sidebar.php" 
+								id="sidebar" name="sidebar"
+								frameborder="0" 
+								class="wrapper"
+								style="height: 1400px; overflow-x: hidden; width: 270px;">
+							</iframe>
+
+						</div>
+						<div style="height: 100%; background-color: #ff9900"></div>
+					</article>
+				</section>	
+
+				<section class="mobileMenu">
+					<input id="LeftMenu" name="accordion-1" type="checkbox" />
+					<label for="LeftMenu" class="ac-2">
+						<img src="images/menue.png" alt="menu" style="float: left; margin-left: 5px">
+					</label>
+					<article class="mobileMenuContainer">
+						<div id="mobiMenu">
+							<?php include("content/menue.html") ?>
+						</div>
+						<div style="height: 100%; background-color: #ff9900"></div>
+					</article>
 				</section>	
 
 			</div>
@@ -85,7 +110,7 @@
 				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>	
 			</div>
 		</div>
-		<!-- END OF Mobile Header /-->
+		<!-- End of mobile Header /-->
 
 		<div class="sektion" id="start">
 			<div class="hintergrundbild">
@@ -114,7 +139,7 @@
 
 			<div class="right">
 				<div class="contentBox">
-			   		<span class="NavCategory">TEAMSPEAK 3</span>
+			   		<span class="RightHeadline">TEAMSPEAK 3</span>
 			   		<div class="rightText">
 			   			<p>&nbsp;</p>
 					   	<div id="ts3viewer_944104" > </div>
@@ -132,17 +157,17 @@
 			   	</div>
 			   	<p>&nbsp;</p>
 			   	<div class="contentBox">
-			   		<span class="NavCategory">TERMINE</span>
+			   		<span class="RightHeadline">TERMINE</span>
 			   		<div class="rightText">
 				   		<?php
-				   			require_once("widgets/kalender/kalender.php")
+				   			include("widgets/kalender/kalender.php")
 				   		?>
 				   		<p>&nbsp;</p>
 				   	</div>
 			   	</div>
 			   	<p>&nbsp;</p>
 			   	<div class="contentBox">
-			   		<span class="NavCategory">LET'S PLAY</span>
+			   		<span class="RightHeadline">LET'S PLAY</span>
 			   		<p>&nbsp;</p>
 			   		<div class="rightText">
 			   			
@@ -152,7 +177,7 @@
 			   	</div>		
 			   	<p>&nbsp;</p>
 			   	<div class="contentBox">
-			   		<span class="NavCategory">SOCIAL MEDIA</span>
+			   		<span class="RightHeadline">SOCIAL MEDIA</span>
 			   		<p>&nbsp;</p>
 			   		<div class="rightText">
 			   			
@@ -163,8 +188,8 @@
 			</div>
 		</div>
 		<script>
-			document.getElementById("mobiMenu").style.height = Hoehe - 68 + 'px';
-			document.getElementById("mobiSidebar").style.height = Hoehe -68 + 'px';
+			document.getElementById("mobiMenu").style.height = Hoehe - 60 + 'px';
+			document.getElementById("mobiSidebar").style.height = Hoehe + 'px';
 		</script>
 	</body>
 </html>
