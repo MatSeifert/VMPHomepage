@@ -432,6 +432,16 @@ div.content {
 		0px 0px 1px 0px rgba(0,0,0,0.1);
 }
 
+.forumContent {
+	width: 870px;
+	margin: 0px 0px 20px 20px;
+	float: left;
+	background-color: #fff;
+	box-shadow: 
+		2px 2px 1px 0px rgba(0,0,0,0.1), 
+		0px 0px 1px 0px rgba(0,0,0,0.1);
+}
+
 div.headerWrapper {
 	width: 1200px;
 	margin: auto auto;

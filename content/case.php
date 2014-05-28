@@ -22,7 +22,7 @@
 		case "letsplay": @include __DIR__ . '/../content/letsplay.php';
 		break;
 		
-		case "forum": @include __DIR__ . 'content/forum.php';
+		case "forum": @include __DIR__ . '/../content/forum.php';
 		break;
 		
 		case "member": @include __DIR__ . '/../content/member.php';
