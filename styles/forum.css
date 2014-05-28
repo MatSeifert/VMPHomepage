@@ -1,203 +1,75 @@
-#mainContainer{
-	background-image: url(../images/business-style/main.png);
-	background-repeat: repeat-y;
-	background-position: center;
-}
-
-#logo, .mainMenuInner, #mainMenu, #mainMenu a, #footer, #toTopLink {
-	border: 0px;
-        margin-top: 26px;
-}
-
-#header{
-        border: 0px;
-        height: 130px;
-}
-
-#footerContainer{
-	background-image: url('../images/business-style/footer.png');
-	background-position: center;
-	background-repeat:no-repeat;
-	background-position: top;
-}
-
-#headerContainer{
-	background-image: url('../images/business-style/menu.png');
-	background-position: center;
-	background-repeat:no-repeat;
-	background-position: bottom;
-	height: 290px;
-}
-
-#logo {
-	height: 197px;
-}
-
-#footer {
-	height: 100px;
-}
-
-.mainMenuInner {
-	border: 0px !important;
-        height: 75px;
-}
-
-.messageInner {
-	background-image: url('../images/business-style/message-bg.png');
-	background-repeat:no-repeat;
-	background-position: top;
-}
-
-.messageNumber {
-	background: transparent !important;
-	border-width: 0px !important;
-	color: #ccc;
-}
-
-#userPanel {
-	width: 280px;
-	height: 145px;
-	position: relative;
-	left: 310px;
-	z-index: 100;
-	background: url('../images/business-style/usermenu.png') center center scroll no-repeat transparent;
-	background-position: top;
-}
-
-#userAvatar {
-	display: block !important;
-	position: absolute;
-	left: 35px;
-	top: 35px;
-	border: 1px solid #fff;
-}
-
-#userAvatar img {
-	max-width: 70px !important;
-	max-height: 70px !important;
-}
-
-#userNote, #userMenu, #userNote a, #userMenu a {
-	color: #fff;
-}
-
-#userNote a:hover, #userMenu a:hover {
-	color: #ccc;
-}
-
-#userNote {
-	font-size: 1.2em;
-	position: absolute;
-	left: 15px;
-}
-
-#userMenu {
-	display: block;
-	width: 125px;
-	position: absolute;
-	left: 115px;
-	top: 27px;
-}
-
-#userMenu li {
-	margin-bottom: 1px;
-	min-width: 120px;
-}
-
-#userMenu li.new a {
-	color: #fff;
-}
-
-#userMenu img {
-	display: none;
-}
-
-.mainMenu, #logo {
-	position: relative;
-	top: -145px;
-}
-
-#search {
-	margin-top: 15px !important;
-}
-
-#mainHeadline {
-        height: 0px;
-}
-
-#footer  a{
-color: #fff;
-margin-top: 5px;
-}
-
-.date {
-color: #fff;
-}
-
-.copyright:after
-{
-content: " - Style by webshake.biz";
-color: #ccc;
-}
-
-@viewport {
-	width: 600px;
-	zoom: 2;
-	user-zoom:fixed;
-}
-
-@media only screen and (max-width: 958px) {
-	body {
-        width: auto !important;
-        height: 100% !important;
-	}
-	.mainMenuInner .headerContainer {
-		width: 100% !important;
-	}
 	.userPanel {
-		float: left !important;
-		margin: -30px 0px 0px 0px !important;
-		width: 100% !important;
-		left: 0px !important;
-		position: fixed !important;
-		background: #8C0000 !important;
-		height: 73px !important;
+		float: left;
+		margin: 0px 0px 0px 0px;
+		width: 100%;
+		left: 0px;
+		position: fixed;
+		background: #8C0000;
+		height: 73px;
 	}
 	#userAvatar {
-		margin: -32px 0px 0px -36px !important;
-		border: none !important;
+		margin: 0px 0px 0px 0px;
+		border: none;
 	}
 	#userNote {
-		font-size: 18px !important;
-		left: 80px !important;
+		font-size: 18px;
+		left: 80px;
 	}
 	#userMenu {
-		width: 98% !important;
-		left: 80px !important;
+		width: 98%;
+		left: 80px;
 	}
 	#userMenuModeration {
-		display: none !important;
+		width: auto;
+		min-width: 0px;
+		font-size: 16px;
+		padding: 0px 5px 0px 0px;
 	}
     #userMenuACP {
-		display: none !important;
+		width: auto;
+		min-width: 0px;
+		font-size: 16px;
+		padding: 0px 5px 0px 0px;
 	}
 	#userMenuLogout {
-		width: auto !important;
-		min-width: 0px !important;
-		font-size: 16px !important;
-		padding: 0px 5px 0px 0px !important;
+		width: auto;
+		min-width: 0px;
+		font-size: 16px;
+		padding: 0px 5px 0px 0px;
 	}
 	#userMenuProfileEdit {
-		width: auto !important;
-		min-width: 0px !important;
-		font-size: 16px !important;
-		padding: 0px 5px 0px 0px !important;
+		width: auto;
+		min-width: 0px;
+		font-size: 16px;
+		padding: 0px 5px 0px 0px;
 	}	
 	#userMenuPm {
-		width: auto !important;
-		min-width: 0px !important;
-		font-size: 16px !important;
-		padding: 0px 5px 0px 0px !important;
+		width: auto;
+		min-width: 0px;
+		font-size: 16px;
+		padding: 0px 5px 0px 0px;
 	}
+	
+	#tplIndex {
+		width: 100%
+	}
+	
+	#header {
+		margin: 30px 0px 0px 0px;
+	}
+
+	body {
+        width: auto;
+        height: 100%;
+	}
+
+	.mainMenuInner {
+		width: 100%;
+        }
+
+       .headerContainer {
+		width: 100%;
+	}
+@media only screen and (max-width: 869px) {
 
 }
