@@ -1248,3 +1248,57 @@ table.mania2011 {
 	line-height: 30px;
 	margin: 20px 0px 20px 0px;
 }
+
+/* Styles für die Newsseite, deren Inhalt aus der Datenbank kommt */
+
+.SqlNewsBox {
+	background-color: #EFEFEF;
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+				0px 0px 1px 0px rgba(0,0,0,0.2);	
+	width: 520px;
+	height: 150px;
+	margin: 0px 0px 15px 0px;
+}
+
+.SqlNewsThumbnail {
+	position: absolute;
+	border: none;
+}
+
+.SqlNewsHeadline {
+	padding: 3px 0px 0px 155px;
+	width: 360px;
+	font-size: 16px;
+	display: block;
+	line-height: 18px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.SqlNewsDate {
+	padding: 3px 0px 0px 155px;
+	width: 365px;	
+	font-size: 11px;
+	color: #979797;
+	display: block;
+}
+
+.SqlNewsSnippet {
+	display: block;
+	overflow: hidden;
+	height: 110px;
+	font-size: 14px;
+	color: #979797;
+	padding: 0px 5px 0px 0px;
+}
+
+.SqlNewsReadMore {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+	color: #979797;
+	background-color: #EFEFEF;
+	margin: -20px 0px 0px 271px;	
+	padding: 0px 0px 0px 10px;
+}
