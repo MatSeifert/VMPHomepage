@@ -57,6 +57,9 @@
 
 		case "AdventuresOfDayZ": @include __DIR__ . '/../content/galleries/dayz.php';
 		break;
+
+		case "read": @include __DIR__ . '/../content/readArticle.php';
+		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';
   }

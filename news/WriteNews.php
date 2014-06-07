@@ -32,23 +32,23 @@
 				Spiel/Kategorie wählen<span class="mandatory">*</span>
 			</span>
 			<select class="NewsGame" id="NewsGame" name="NewsGame" required="required">
-			  <option value="NotInList">Nicht in der Liste</option>
+			  <option value="nichtinderliste">Nicht in der Liste</option>
 			  <option disabled>&nbsp;&nbsp;&nbsp;SONSTIGE</option>
-			  <option value="VmpClan">In eigener Sache</option>
-			  <option value="Origin">Origin</option>
-			  <option value="Steam">Steam</option>
-			  <option value="Technique">Technik</option>
+			  <option value="ineigenersache">In eigener Sache</option>
+			  <option value="origin">Origin</option>
+			  <option value="steam">Steam</option>
+			  <option value="technik">Technik</option>
 			  <option disabled>&nbsp;&nbsp;&nbsp;GAMES</option>
-			  <option value="Anno2070">Anno 2070</option>
-			  <option value="AnnoOnline">Anno Online</option>
-			  <option value="Battlefield3">Battlefield 3</option>
-			  <option value="Battlefield4">Battlefield 4</option>
-			  <option value="Borderlands2">Borderlands 2</option>
-			  <option value="CallOfDutyModernWarfare2">Call of Duty: Modern Warfare 2</option>
-			  <option value="CallOfDutyModernWarfare3">Call of Duty: Modern Warfare 3</option>
-			  <option value="CallOfDutyGhosts">Call of Duty: Ghosts</option>
-			  <option value="DayZ">DayZ</option>
-			  <option value="DeadSpace">Dead Space</option>
+			  <option value="anno2070">Anno 2070</option>
+			  <option value="annoonline">Anno Online</option>
+			  <option value="battlefield3">Battlefield 3</option>
+			  <option value="battlefield4">Battlefield 4</option>
+			  <option value="borderlands2">Borderlands 2</option>
+			  <option value="modernwarfare2">Call of Duty: Modern Warfare 2</option>
+			  <option value="modernwarfare3">Call of Duty: Modern Warfare 3</option>
+			  <option value="codghosts">Call of Duty: Ghosts</option>
+			  <option value="dayz">DayZ</option>
+			  <option value="deadspace">Dead Space</option>
 			  <option value="GTAV">GTA V</option>
 			  <option value="LeagueOfLegends">League of Legends</option>
 			  <option value="Left4Dead">Left 4 Dead 2</option>

@@ -4,7 +4,7 @@
 	function TokenAuth($AuthCode) {
 		$verification;
 
-		if ($AuthCode == "J5KJU8BL" || $AuthCode == "5G9VZ60V") {
+		if ($AuthCode == "*qSY?lrIE[Bc~Sh$X830" || $AuthCode == "58dt%qx6z^DWb=bv:L',") {
 			$verification = True;
 		} 
 		else $verification = False;
@@ -14,67 +14,41 @@
 
 	function GetName($AuthToken) {
 		switch ($AuthToken){
-			case "J5KJU8BL": return "Behemoth";
+			case "*qSY?lrIE[Bc~Sh$X830": return "Behemoth";
 			break;
 
-			case "5G9VZ60V": return "Fallen Angel";
+			case "58dt%qx6z^DWb=bv:L',": return "Kakadu";
 			break;
 		}
 	}
 
 	// Daten aus dem Formular holen und in Variablen zwischenspeichern
-	$title 		= $_POST['NewsTitle'];
-	$content 	= $_POST['NewsContent'];
 	$token 	= $_POST['NewsToken'];
-	$game 		= $_POST['NewsGame'];
-	$source 	= $_POST['NewsSource'];
 
-	// Datumsvariablen initialisieren
-	$year 		= date('Y');
-	$month		= date('m');
-	$day		= date('d');
-
-	$time 	= date('H:i');
-
-	// Dateipfad- & name festlegen
-	$titleFilename = str_replace(' ', '', $title);
-	$filepathArchive = 'archiv/' . $year . '/' . $month . '/' . $year . '-' . $month . '-' .  $day . '_' . $titleFilename . '.xml';
-	$filepathFeed = 'feed/' . $year . '-' . $month . '-' .  $day . '_' . $titleFilename . '.xml';
-
-	// XML Datei anlegen und speichern
+	// Token authentifizieren und News in die Datenbank schreiben
 	if (TokenAuth($token)) {
-		$fp = fopen($filepathArchive, 'w'); 
-			fputs($fp, '<xml version="1.0" encoding="UTF-8">');
-			fputs($fp, '<news>');
-			fputs($fp, '<title>' . $title . '</title>'); 
-			fputs($fp, '<content>' . $content . '</content>');
-			fputs($fp, '<author>' . GetName($token) . '</author>');
-			fputs($fp, '<game>' . $game . '</game>');
-			fputs($fp, '<source>' . $source . '</source>');
-			fputs($fp, '<year>' . $year . '</year>');
-			fputs($fp, '<month>' . $month . '</month>');
-			fputs($fp, '<day>' . $day . '</day>');
-			fputs($fp, '<time>' . $time . '</time>');
-			fputs($fp, '</news>');
-		fclose($fp);
+		$con=mysqli_connect("localhost","news","6F5PHPTGKaPh7Gnf","webseite");
+		// Check connection
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
 
-		$fp = fopen($filepathFeed, 'w'); 
-			fputs($fp, '<xml version="1.0" encoding="UTF-8">');
-			fputs($fp, '<news>');
-			fputs($fp, '<title>' . $title . '</title>'); 
-			fputs($fp, '<content>' . $content . '</content>');
-			fputs($fp, '<author>' . GetName($token) . '</author>');
-			fputs($fp, '<game>' . $game . '</game>');
-			fputs($fp, '<source>' . $source . '</source>');
-			fputs($fp, '<year>' . $year . '</year>');
-			fputs($fp, '<month>' . $month . '</month>');
-			fputs($fp, '<day>' . $day . '</day>');
-			fputs($fp, '<time>' . $time . '</time>');
-			fputs($fp, '</news>');
-		fclose($fp);
+		// escape variables for security
+		$title = mysqli_real_escape_string($con, $_POST['NewsTitle']);
+		$content = mysqli_real_escape_string($con, $_POST['NewsContent']);
+		$game = mysqli_real_escape_string($con, $_POST['NewsGame']);
+		$author = GetName($token);
 
-		echo ('News wurde erfolgreich gepostet! <br> <a href="?site=start">Zur Startseite</a>');
-	}
+		$sql="INSERT INTO articles (date, timestamp, headline, content, author, game)
+		VALUES (now(), now(), '$title', '$content', '$author', '$game')";
+
+		if (!mysqli_query($con,$sql)) {
+		  die('Error: ' . mysqli_error($con));
+		}
+		echo "1 record added";
+
+		mysqli_close($con);
+	} 
 
 	else echo ('Das Security Token stimmt nicht &uuml;berein! Bitte &uuml;berpr&uuml;fe deine Eingabe! <br> <a href="../?site=AddNews">zur&uuml;ck</a>');
 ?>

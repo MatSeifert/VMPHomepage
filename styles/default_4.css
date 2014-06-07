@@ -252,6 +252,79 @@ body {
             	padding: 0px !important;
             	margin: 0px 5px 0px 40px !important;
             }
+			/* Styles für die Newsseite, deren Inhalt aus der Datenbank kommt */
+
+			.SqlNewsBox {
+				width: 99% !important;
+				margin: 20px 0px 0px 0px !important;
+			}
+
+			.SqlNewsThumbnail {
+				float: left !important;
+				margin: 0px 0px 0px 0px !important;
+			}
+
+			.SqlNewsHeadline {
+				padding: 3px 0px 0px 155px;
+				width: auto !important;
+				font-size: 16px;
+			}
+
+			.SqlNewsDate {
+				font-size: 13px !important;
+				margin: -5px 0px 0px 0px !important;
+			}
+
+			.SqlNewsSnippet {
+				width: auto !important;
+				font-size: 17px !important;
+				line-height: 19px !important;
+				height: 98px !important;
+			}
+
+			.SqlNewsReadMore {
+				display: none !important;
+			}
+
+			.SqlArticleHeadImage {
+				width: 98% !important;
+				margin: 5px 5px 0px 5px !important;
+			}
+
+			.SqlArticleBack {
+				float: left;
+				margin: 5px 10px 0px 5px;
+				border: none;
+			}
+
+			.SqlArticleHeadline {
+				font-size: 26px;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				text-align: left;
+				margin-left: 5px;
+				display: block;
+				margin: 0px 0px 0px 40px;
+			}
+
+			.SqlArticleDate {
+				display: block;
+				font-size: 12px;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				margin: 10px 0px 0px 40px;
+			}
+
+			.SqlArticleContent {
+				display: block;
+				font-size: 18px !important;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				text-align: justify;
+				margin: 10px 40px 0px 40px;
+			}
+
+			.SqlArticleContent iframe {
+				width: 98% !important;
+			}
+
         }
 
 .LpSsMobileHeadline {
@@ -1289,8 +1362,8 @@ table.mania2011 {
 	overflow: hidden;
 	height: 110px;
 	font-size: 14px;
-	color: #979797;
-	padding: 0px 5px 0px 0px;
+	color: #757575;
+	padding: 0px 5px 0px 155px;
 }
 
 .SqlNewsReadMore {
@@ -1299,6 +1372,64 @@ table.mania2011 {
 	font-size: 14px;
 	color: #979797;
 	background-color: #EFEFEF;
-	margin: -20px 0px 0px 271px;	
+	margin: -20px 0px 0px 426px;	
 	padding: 0px 0px 0px 10px;
+}
+
+.SqlArticleHeadImage {
+	margin: 0px 0px 0px 0px;
+}
+
+.SqlArticleBack {
+	float: left;
+	margin: 5px 10px 0px 5px;
+	border: none;
+}
+
+.SqlArticleHeadline {
+	font-size: 26px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	text-align: left;
+	margin-left: 5px;
+	display: block;
+	margin: 0px 0px 0px 40px;
+}
+
+.SqlArticleDate {
+	display: block;
+	font-size: 12px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	margin: 10px 0px 0px 40px;
+}
+
+.SqlArticleContent {
+	display: block;
+	font-size: 14px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	text-align: justify;
+	margin: 10px 40px 0px 40px;
+}
+
+.SqlArticleContent iframe {
+	margin: 20px 0px 0px 0px;
+}
+
+.AddNews {
+	float: right;
+	font-size: 16px;
+	vertical-align: middle;
+	height: auto;
+	display: block;
+	border: 1px solid #870000;
+	background-color: #FFD6D6;
+	padding: 3px;
+	margin-top: 4px;
+}
+
+.AddNews:hover {
+	background-color: #870000;
+}
+
+.AddNews:hover a {
+	color: #fff;
 }
