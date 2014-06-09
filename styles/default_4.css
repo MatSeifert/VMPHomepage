@@ -1442,3 +1442,23 @@ table.mania2011 {
 .smallInline {
 	font-size: 12px;
 }
+
+/* Archiv Styles */
+
+select.ArchiveYear {
+	margin-left: 0px; 
+	width: 100px;
+	padding: 8px;	
+}
+
+select.ArchiveMonth {
+	margin-left: 10px; 
+	width: 280px;
+	padding: 8px;	
+}
+
+.ArchiveSubmit {
+	margin-left: 10px; 
+	width: 110px;
+	padding: 8px;
+}
