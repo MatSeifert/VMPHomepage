@@ -132,10 +132,9 @@
 
 			<div class="forumContent">
 
-				<iframe onload="javascript:parent.iFrameHeight('forum','forum');" style="margin-top:0px; position: static;"
+				<iframe onload="javascript:parent.iFrameHeight('forum','forum');" style="margin-top:0px; position: static; width: inherit;"
 				id="forum" name="forum"
 				src="wbb/upload/index.php"
-				width="870"
 				scrolling="no"
 				frameborder="0"
 				class="wrapper" height="4400px">

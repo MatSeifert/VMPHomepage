@@ -325,6 +325,11 @@ body {
 				width: 98% !important;
 			}
 
+			.forumContent {
+				width: 100% !important;
+				margin: 0px !important;
+			}
+
         }
 
 .LpSsMobileHeadline {
@@ -1432,4 +1437,8 @@ table.mania2011 {
 
 .AddNews:hover a {
 	color: #fff;
+}
+
+.smallInline {
+	font-size: 12px;
 }

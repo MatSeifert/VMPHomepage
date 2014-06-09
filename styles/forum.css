@@ -1,75 +1,300 @@
-	.userPanel {
-		float: left;
-		margin: 0px 0px 0px 0px;
-		width: 100%;
-		left: 0px;
-		position: fixed;
-		background: #8C0000;
-		height: 73px;
-	}
-	#userAvatar {
-		margin: 0px 0px 0px 0px;
-		border: none;
-	}
-	#userNote {
-		font-size: 18px;
-		left: 80px;
-	}
-	#userMenu {
-		width: 98%;
-		left: 80px;
-	}
-	#userMenuModeration {
-		width: auto;
-		min-width: 0px;
-		font-size: 16px;
-		padding: 0px 5px 0px 0px;
-	}
-    #userMenuACP {
-		width: auto;
-		min-width: 0px;
-		font-size: 16px;
-		padding: 0px 5px 0px 0px;
-	}
-	#userMenuLogout {
-		width: auto;
-		min-width: 0px;
-		font-size: 16px;
-		padding: 0px 5px 0px 0px;
-	}
-	#userMenuProfileEdit {
-		width: auto;
-		min-width: 0px;
-		font-size: 16px;
-		padding: 0px 5px 0px 0px;
-	}	
-	#userMenuPm {
-		width: auto;
-		min-width: 0px;
-		font-size: 16px;
-		padding: 0px 5px 0px 0px;
-	}
-	
-	#tplIndex {
-		width: 100%
-	}
-	
-	#header {
-		margin: 30px 0px 0px 0px;
-	}
+#userAvatar {
+	display: block !important;
+	position: absolute !important;
+}
 
-	body {
-        width: auto;
-        height: 100%;
-	}
+#userPanel {
+	width: 96%;
+	margin: 10px 0px 0px 10px;
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+	 			0px 0px 1px 0px rgba(0,0,0,0.2);
+}
 
-	.mainMenuInner {
-		width: 100%;
-        }
+#userAvatar img {
+	max-width: 100px;
+	max-height: 100px;
+}
 
-       .headerContainer {
-		width: 100%;
-	}
+body {
+    width: auto;
+    height: 100%;
+}
+
+#tplIndex {
+	width: 100%;
+}
+
+#logo {
+	border: none;
+	display: none;
+}
+
+#headerContainer {
+	width: 100%;
+}
+
+#userPanelInner {
+	width: 100%;
+}
+
+.headerContainer {
+	width: 100%;
+	border-width: 0px 0px 0px 0px !important;
+}
+.mainMenuInner {
+	width: 100%;
+	border-width: 0px 0px 0px 0px !important;
+	margin: 20px 0px 0px 0px;
+}
+.userPanel {
+	float: left;
+	margin: auto auto;
+	background: #EFEFEF;
+	height: 100px;
+}
+#header {
+	border: none;
+	margin: 5px;
+	height: 0px;
+	width: 95%;
+}
+#userNote {
+	font-size: 22px;
+	padding-left: 110px;
+	width: 600px;
+	display: block;
+}
+#userMenu {
+	width: 98%;
+	padding: 10px 0px 0px 110px;
+}
+#userMenuModeration {
+	display: none;
+}
+#userMenuACP {
+	width: auto;
+	min-width: 0px;
+	font-size: 16px;
+	padding: 0px 5px 0px 0px;
+}
+#userMenuLogout {
+	width: auto;
+	min-width: 0px;
+	font-size: 16px;
+	padding: 0px 5px 0px 0px;
+}
+#userMenuProfileEdit {
+	width: auto;
+	min-width: 0px;
+	font-size: 16px;
+	padding: 0px 5px 0px 0px;
+}	
+#userMenuPm {
+	width: auto;
+	min-width: 0px;
+	font-size: 16px;
+	padding: 0px 5px 0px 0px;
+}
+#search {
+	position: absolute;
+	margin: -115px -20px 0px 0px;
+}
+
+#mainMenu {
+	margin: 20px 0px 0px 10px;
+	padding: 5px 0px 5px 0px;
+	width: 96%;
+	border-width: 0px 0px 0px 0px !important;
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+	 			0px 0px 1px 0px rgba(0,0,0,0.2);
+	background: #EFEFEF;
+}
+
+.mainMenu a {
+	border: none !important;
+	color: #363636;
+}
+
+.mainMenu .active a, .mainMenu .firstActive a, .mainMenu .lastActive a {
+	color: #363636;
+}
+
+.mainMenu a:hover {
+	color: #cc1100;
+}
+
+a:hover {
+	color: #cc1100;
+	text-decoration: none;
+}
+
+#mainContainer {
+	width: 100%;
+}
+
+#main {
+	width: 98%;
+}
+
+.mainHeadline img {
+	height: 24px;
+	width: 24px;
+}
+
+.border {
+	border: 0px;
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+	 			0px 0px 1px 0px rgba(0,0,0,0.2);
+	background: #EFEFEF;
+	padding: 0px 0px 0px 0px;
+}
+
+.containerHead {
+	background-color: #870000;
+	background-image: none;
+	margin: -1px 0px 0px -1px;
+}
+
+.container-1 {
+	background-color: #efefef;
+}
+
+.boardlistLastPost {
+	min-height: 37px;
+	height: auto;
+	width: 300px;
+}
+
+.boardlistStats {
+	min-height: 37px;
+	height: auto;
+}
+
+.boardlistTitle {
+	min-height: 37px;
+	height: auto;
+	width: 374px;
+}
+
+#boardlist li ul .boardlistTitle .containerIcon {
+	margin: 0px 0px 0px 0px;
+}
+
+.category {
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 10px 0px; 
+}
+
+#footerContainer {
+	display: none;
+}
+
+.largeButtons li a, .pmEditFolders a {
+	background-image: none;
+	background-color: #FFD6D6;
+	border:1px solid #870000;
+	color: #870000;
+	padding: 4px;
+}
+
+.mainHeadline {
+	min-height: 30px !important;
+}
+
+.headlineContainer p {
+	display: none;
+}
+
+.memberList li .memberName, .messageNumber, .optionButtons a, .smallButtons a, li.extraButton a {
+	background-color: #FFD6D6;
+	background-image: none;
+	color: #870000 !important;
+	border: 1px solid #870000;
+	padding: 3px;
+}
+
+.optionButtons a:hover, .smallButtons a:hover, li.extraButton a:hover {
+	color: #fff !important;
+	border: 1px solid #870000;
+	padding: 3px;
+}
+
+.smallButtons li {
+	border: none;
+	padding: 2px;
+}
+
+.message {
+	border: none !important;
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+	 			0px 0px 1px 0px rgba(0,0,0,0.2);	
+	margin-bottom: 15px;
+}
+
+.largeButtons li {
+	border: none;
+}
+
+.message .dividers .messageAuthor {
+	border: none !important;
+}
+
+.messageInner {
+	border: none !important;
+}
+
+#logo, #search, .attachmentPreview ul li a, .border .tableList td, .border .tableList th, .columnContainer, .dividers .messageAuthor, .dividers .tocHeadline, .dividers .userAvatar, .dividers .userCredits, .dividers .userMessenger, .dividers .userSymbols, .inlineCalendarFooter td a, .inlineCalendarFooter td span, .inlineCalendarHeader td a, .inlineCalendarHeader td span, .mainMenu .mainMenuInner, .mainMenu a, .mceEditor .mceColors li, .messageContent, .messageInner, .subTabMenu div.containerHead, .tabMenu li a, .userAvatar, .userAvatarFramed {
+	border-color: #EFEFEF;
+}
+
+.color-2 {
+	background-color: #fff !important;
+}
+
+.tableList {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.tableList td {
+	border: none;
+}
+
+.tableList th {
+	border: none;
+}
+
+.columnTopic {
+	border: none;
+}
+
+.columnMark {
+	border: none;
+}
+
+.emptyHead {
+	padding: none;
+}
+
+.columnRating {
+	display: none;
+}
+
+#topThreadsStatus {
+	margin: -8px 0px 20px -1px;
+}
+
 @media only screen and (max-width: 869px) {
+	.searchContainer {
+		display: none !important;
+	}
 
+	.boardlistLastPost {
+		display: none !important;
+	}
+
+	.boardlistStats {
+		display: none !important; 
+	}
 }

@@ -44,6 +44,7 @@
 			  <option value="battlefield3">Battlefield 3</option>
 			  <option value="battlefield4">Battlefield 4</option>
 			  <option value="borderlands2">Borderlands 2</option>
+			  <option value="borderlandsthepresequel">Borderlands the Presequel</option>
 			  <option value="modernwarfare2">Call of Duty: Modern Warfare 2</option>
 			  <option value="modernwarfare3">Call of Duty: Modern Warfare 3</option>
 			  <option value="codghosts">Call of Duty: Ghosts</option>
@@ -76,7 +77,12 @@
 		<input type="Text" name="NewsSource" class="NewsTitle" id="NewsSource">
 		
 		<p>&nbsp;</p>
-
+		<span class="smallHeadline">
+			Tags<span class="mandatory">*</span>&nbsp;<span class="smallInline">(bitte tagge deine News, damit sie in der Suche gelistet werden kann)</span>
+		</span>	
+		<input type="Text" name="NewsTags" class="NewsTitle" id="NewsTags">
+		
+		<p>&nbsp;</p>
 		<div class="NewsSubmit">
 			<input type="Submit" name="" value="Veröffentlichen" class="NewsSubmit">
 		</div>

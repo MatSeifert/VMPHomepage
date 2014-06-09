@@ -1,10 +1,6 @@
 <?php
 	// Falls die Seite lokal aufgerufen wird, wird die lokale Debug Umgebung aktiviert
-	if ($_SERVER['SERVER_NAME'] == 'localhost')
-	{
-		define('DEBUG', true);
-	}
-	else define('DEBUG', false);
+	define('DEBUG', true);
 
 	function ConnectToDatabase() {
 		if (DEBUG) {
@@ -15,8 +11,8 @@
 			}
 		}
 		else {
-			$database=mysqli_connect("localhost","news","6F5PHPTGKaPh7Gnf","webseite");		// später die Adresse der DB auf dem Server
-			// Check connection 																		// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
+			$database=mysqli_connect("localhost","news","6F5PHPTGKaPh7Gnf","webseite");					// später die Adresse der DB auf dem Server
+			// Check connection 																		
 			if (mysqli_connect_errno()) {
 			  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 			}			

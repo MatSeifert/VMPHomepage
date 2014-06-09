@@ -1,6 +1,6 @@
 <?php
 /**
-* generated at Wed, 28 May 2014 20:03:23 +0000
+* generated at Mon, 09 Jun 2014 01:00:31 +0000
 */
 define('ACTIVITY_POINTS_PER_POST', 5);
 define('ACTIVITY_POINTS_PER_THREAD', 10);
@@ -47,7 +47,7 @@ define('CAPTCHA_RANDOM_FONT_SIZE', 0);
 define('CAPTCHA_RANDOM_LINES', 0);
 define('CENSORED_WORDS', '');
 define('COOKIE_DOMAIN', '');
-define('COOKIE_PATH', '/HTML/clanpage_4.0/wbb/upload');
+define('COOKIE_PATH', '/clanpage/wbb/upload');
 define('COOKIE_PREFIX', 'wcf_');
 define('ENABLE_CENSORSHIP', 0);
 define('ENABLE_DAYLIGHT_SAVING_TIME', 1);
@@ -68,7 +68,7 @@ define('INDEX_ENABLE_STATS', 1);
 define('INDEX_ENABLE_TAGS', 0);
 define('INDEX_ENABLE_USERS_ONLINE_LEGEND', 0);
 define('INLINE_IMAGE_MAX_WIDTH', 530);
-define('INSTALL_DATE', 1401303817);
+define('INSTALL_DATE', 1401455997);
 define('LOGIN_USE_CAPTCHA', 0);
 define('LOST_PASSWORD_USE_CAPTCHA', 0);
 define('MAIL_ADMIN_ADDRESS', '');
@@ -125,7 +125,7 @@ define('OFFLINE_MESSAGE', '');
 define('OFFLINE_MESSAGE_ALLOW_HTML', 0);
 define('PAGE_DESCRIPTION', '');
 define('PAGE_TITLE', 'WoltLab Burning Board');
-define('PAGE_URL', 'http://localhost/HTML/clanpage_4.0/wbb/upload');
+define('PAGE_URL', 'http://localhost/clanpage/wbb/upload');
 define('PAGE_URLS', '');
 define('PM_DEFAULT_SORT_FIELD', 'time');
 define('PM_DEFAULT_SORT_ORDER', 'DESC');
@@ -195,9 +195,9 @@ define('THREAD_MIN_WORD_COUNT', 0);
 define('THREAD_POSTS_PER_PAGE', 20);
 define('TIMEZONE', '0');
 define('USERS_ONLINE_PAGE_REFRESH', 0);
-define('USERS_ONLINE_RECORD', 2);
+define('USERS_ONLINE_RECORD', 3);
 define('USERS_ONLINE_RECORD_NO_GUESTS', 0);
-define('USERS_ONLINE_RECORD_TIME', 1401307402);
+define('USERS_ONLINE_RECORD_TIME', 1402275620);
 define('USERS_ONLINE_SHOW_GUESTS', 1);
 define('USERS_ONLINE_SHOW_ROBOTS', 1);
 define('USER_CAN_SEE_HIS_WARNINGS', 1);
