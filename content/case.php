@@ -43,7 +43,10 @@
 		case "mania2014": @include __DIR__ . '/../content/mania2014.php';
 		break;
 
-		case "AddNews": @include __DIR__ . '/../news/WriteNews.php';
+		case "AddNews": @include __DIR__ . '/../content/WriteNews.php';
+		break;
+
+		case "SaveNews": @include __DIR__ . '/../content/SaveNews.php';
 		break;
 
 		case "playVideo": @include __DIR__ . '/../content/playVideo.php';
@@ -59,6 +62,12 @@
 		break;
 
 		case "read": @include __DIR__ . '/../content/readArticle.php';
+		break;
+
+		case "bugtracker": @include __DIR__ . '/../content/bugtracker.php';
+		break;
+
+		case "SaveBugreport": @include __DIR__ . '/../content/saveBugreport.php';
 		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';

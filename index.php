@@ -23,6 +23,7 @@
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<script src="javascript/parallax.js" type="text/javascript"></script>
+		<script src="javascript/charCount.js" type="text/javascript"></script>
 
 		<script>
 			// Auslesen der aktuellen Fensterhöhe, eine Veränderung in Echtzeit ist unnötig
@@ -128,6 +129,10 @@
 			
 				<?php include("content/menue.html") ?>
 			
+			</div>
+
+			<div class="bugtracker">
+				<img class="left" src="images/bugtracker.png" alt="Bug"><a title="Einen Bug melden" href="?site=bugtracker">EINEN BUG MELDEN</a>
 			</div>
 
 			<div class="content">
