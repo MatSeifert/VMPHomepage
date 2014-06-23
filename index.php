@@ -1,4 +1,6 @@
 ﻿<?php
+	setlocale(LC_TIME, "de_DE");
+
 	function ImageCount() {					// Zählen der Bilder im angegeben Ordner +++ NAMECONVENTION BEI NEUEN BILDERN BEACHTEN!
 		$files = scandir('images/header');
 		$count = count($files)-3;			//-2 wegen . und .., und nochmal -1, da rand Funktion bei 0 anfängt
@@ -131,7 +133,7 @@
 			
 			</div>
 
-			<div class="bugtracker">
+			<div class="bugtracker" style="display: none !important">
 				<img class="left" src="images/bugtracker.png" alt="Bug"><a title="Einen Bug melden" href="?site=bugtracker">EINEN BUG MELDEN</a>
 			</div>
 

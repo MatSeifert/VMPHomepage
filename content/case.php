@@ -7,7 +7,7 @@
 	   	case "start": @include __DIR__ . '/../content/news.php';
 		break;
 		
-		case "archive": @include '/../content/archive.php';
+		case "archive": @include __DIR__ . '/../content/archive.php';
 		break;
 		
 		case "information": @include __DIR__ . '/../content/information.html';

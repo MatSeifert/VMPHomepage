@@ -1,6 +1,6 @@
 <?php
 
-	$con=mysqli_connect("localhost","news","6F5PHPTGKaPh7Gnf","webseite");
+	$con=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");
 	if (mysqli_connect_errno()) {
 	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 

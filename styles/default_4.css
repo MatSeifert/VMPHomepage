@@ -615,6 +615,7 @@ div.LPDescription {
 }
 
 .FlickrSubText {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	clear: both;
 	padding: 20px 0px 0px 0px;
 }
@@ -683,6 +684,7 @@ div.LPBoxLatestVideo {
 
 div.LPBox {
 	float: left;
+	overflow: hidden;
 	text-align: left;
 	background-color: #EFEFEF;
 	margin: 0px 3px 15px 3px;
@@ -872,7 +874,7 @@ div.PostDate {
 
 div.PostPost {
 	text-align: justify;
-	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;	
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;	
 	width: 520px;
 	margin: auto auto;
 	font-size: 14px;
@@ -882,7 +884,7 @@ div.PostPost {
 /* Deklarationen zur Darstellung der Memberliste auf der Homepage, tabellarische Form */
 
 table.memberlist {
-	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;		
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;		
 	width: 85%;
 	border-spacing: 0px;
 	font-size: 13px;
@@ -1365,10 +1367,14 @@ table.mania2011 {
 .SqlNewsSnippet {
 	display: block;
 	overflow: hidden;
-	height: 110px;
+	height: 90px;
 	font-size: 14px;
 	color: #757575;
 	padding: 0px 5px 0px 155px;
+}
+
+.SqlNewsSnippet a {
+	display: none;
 }
 
 .SqlNewsReadMore {
@@ -1377,8 +1383,8 @@ table.mania2011 {
 	font-size: 14px;
 	color: #979797;
 	background-color: #EFEFEF;
-	margin: -20px 0px 0px 426px;	
-	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 155px;	
+	padding: 0px 0px 0px 0px;
 }
 
 .SqlArticleHeadImage {
@@ -1477,4 +1483,24 @@ select.ArchiveMonth {
 
 #textarea_feedback {
 	margin: 0px 0px 0px 10px;
+}
+
+.ScreenshotHeadline {
+	width: 150px;
+	white-space: nowrap;
+	font-family: 'Roboto', Arial, Hevetica, sans-serif;
+	font-size: 16px;
+	margin: 165px 0px 0px 0px;
+}
+
+.widgetLetsPlaySubHeadline {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 225px;
+}
+
+.hidden {
+	display: none;
+	width: 1px;
+	height: 1px;
 }

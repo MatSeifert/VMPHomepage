@@ -43,6 +43,7 @@
 			  <option value="annoonline">Anno Online</option>
 			  <option value="battlefield3">Battlefield 3</option>
 			  <option value="battlefield4">Battlefield 4</option>
+			  <option value="battlefieldhardline">Battlefield Hardline</option>
 			  <option value="borderlands2">Borderlands 2</option>
 			  <option value="borderlandsthepresequel">Borderlands the Presequel</option>
 			  <option value="modernwarfare2">Call of Duty: Modern Warfare 2</option>
@@ -50,22 +51,22 @@
 			  <option value="codghosts">Call of Duty: Ghosts</option>
 			  <option value="dayz">DayZ</option>
 			  <option value="deadspace">Dead Space</option>
-			  <option value="GTAV">GTA V</option>
-			  <option value="LeagueOfLegends">League of Legends</option>
-			  <option value="Left4Dead">Left 4 Dead 2</option>
-			  <option value="MedalOfHonorWarfighter">Medal of Honor: Warfighter</option>
-			  <option value="Metro2033">Metro 2033</option>
-			  <option value="Minecraft">Minecraft</option>
-			  <option value="NeedForSpeedWorld">Need for Speed World</option>
-			  <option value="Payday">Payday</option>
-			  <option value="Planetside2">PlanetSide 2</option>
-			  <option value="Portal">Portal</option>
-			  <option value="Portal2">Portal 2</option>
-			  <option value="StarwarsTheOldRepublic">StarWars: The Old Republic</option>
-			  <option value="Titanfall">Titanfall</option>
-			  <option value="TrackmaniaCanyon">Trackmania² Canyon</option>
-			  <option value="Warface">Warface</option>
-			  <option value="WormsReloaded">Worms: Reloaded</option>
+			  <option value="gta5">GTA V</option>
+			  <option value="leagueoflegends">League of Legends</option>
+			  <option value="left4dead2">Left 4 Dead 2</option>
+			  <option value="medalofhonorwarfighter">Medal of Honor: Warfighter</option>
+			  <option value="metro2033">Metro 2033</option>
+			  <option value="minecraft">Minecraft</option>
+			  <option value="needforspeedworld">Need for Speed World</option>
+			  <option value="paydaytheheist">Payday</option>
+			  <option value="planetside2">PlanetSide 2</option>
+			  <option value="portal">Portal</option>
+			  <option value="portal2">Portal 2</option>
+			  <option value="starwarstheoldrepublic">StarWars: The Old Republic</option>
+			  <option value="titanfall">Titanfall</option>
+			  <option value="trackmania2canyon">Trackmania² Canyon</option>
+			  <option value="warface">Warface</option>
+			  <option value="wormsreloaded">Worms: Reloaded</option>
 			</select>	
 		</div>
 	

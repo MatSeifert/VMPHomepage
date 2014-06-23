@@ -134,13 +134,13 @@
 
 				<iframe onload="javascript:parent.iFrameHeight('forum','forum');" style="margin-top:0px; position: static; width: inherit;"
 				id="forum" name="forum"
-				src="wbb/upload/index.php"
+				src="wbb/index.php"
 				scrolling="no"
 				frameborder="0"
 				class="wrapper" height="4400px">
 				<p>Ihr Webbrowser kann leider keine eingebetteten Frames anzeigen:
 				Sie k&ouml;nnen jedoch das eingebettete Forum &uuml;ber den folgenden Verweis
-				aufrufen: <a href="../forum/" target="_forum">Forum</a></p>
+				aufrufen: <a href="wbb" target="_forum">Forum</a></p>
 				</iframe>
 
 			</div>

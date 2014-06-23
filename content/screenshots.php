@@ -13,32 +13,32 @@
 
 	<div class="LPBlock">
 
-	<div class="LPBox">
-		<a href="?site=AdventuresOfDayZ">
-			<img src="images/ScPage_TalesOfDayZ.png" class="LetsPlayThumb" alt="Tales of DayZ">
-			<span class="LPHeadline">ADVENTURES OF DAYZ</span> <br />
-		</a>
-		<span class="LPContent">
-			<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=vsfTCJviyQg&list=PL12CD5FAF96B404D1" border="0">Slideshow</a> <br />
-			<span class="LPDate">
-				Screenshots von gemeinsamen Streifzügen durch Chernarus
+		<div class="LPBox">
+			<a href="?site=AdventuresOfDayZ">
+				<img src="images/ScPage_TalesOfDayZ.png" class="LetsPlayThumb" alt="Adventures of Day Z">
+				<span class="ScreenshotHeadline">DAYZ</span>
+			</a>
+			<span class="LPContent">
+				<p>&nbsp;</p>
+				<img src="images/play.png">&nbsp;<a target="_blank" href="https://www.flickr.com/groups/vmpdayz/pool/show/" border="0">Slideshow</a> <br />
+				<span class="LPDate">Screenshots von gemeinsamen Streifzügen durch Chernarus</span>
+				<br>
 			</span>
-		</span>
-	</div>
+		</div>
 
 		<div class="LPBox">
 			<a href="?site=MinecraftMonuments">
 				<img src="images/ScPage_MinecraftMonuments.png" class="LetsPlayThumb" alt="Minecraft Monuments">
-				<span class="LPHeadline">MINECRAFT MONUME...</span> <br />
+				<span class="ScreenshotHeadline">MINECRAFT</span>
 			</a>
 			<span class="LPContent">
-				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=mL0evO0Y5d0&list=PLMYyvoe65Ysk4YCJKEJ0QRziWfL-cmYPp">Slideshow</a> <br />
-				<span class="LPDate">
-					Werke von unserem Minecraft-server. Ohne Mods &amp; Cheats.
-				</span> 
+				<p>&nbsp;</p>
+				<img src="images/play.png">&nbsp;<a target="_blank" href="https://www.flickr.com/groups/vmpminecraft/pool/show/" border="0">Slideshow</a> <br />
+				<span class="LPDate">Werke von unserem Minecraft-server. Ohne Mods &amp; Cheats.</span>
+				<br>
 			</span>
 		</div>
-	
+
 		<div class="LPBoxEmpty">
 			&nbsp;
 		</div>
