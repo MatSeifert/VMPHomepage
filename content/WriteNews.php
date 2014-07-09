@@ -63,6 +63,7 @@
 			  <option value="portal">Portal</option>
 			  <option value="portal2">Portal 2</option>
 			  <option value="starwarstheoldrepublic">StarWars: The Old Republic</option>
+			  <option value="thedivision">The Divisoin</option>
 			  <option value="titanfall">Titanfall</option>
 			  <option value="trackmania2canyon">Trackmania² Canyon</option>
 			  <option value="warface">Warface</option>
