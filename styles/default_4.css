@@ -804,6 +804,7 @@ span.title {
 	font-weight: 100;
 	font-size: 103px;
 	margin: 20px;
+	text-shadow: #000 0px 0px 15px;
 }
 
 span.subtitle {
@@ -811,6 +812,7 @@ span.subtitle {
 	font-weight: 300;
 	font-size: 29px;	
 	margin: 20px;
+	text-shadow: #000 0px 0px 15px;
 }
 
 span.NavTitle {
@@ -1250,7 +1252,7 @@ article {
 
 .NewsTitleWithTag {
 	margin-left: 10px; 
-	width: 81%;
+	width: 37%;
 	padding: 8px;
 }
 
@@ -1503,4 +1505,13 @@ select.ArchiveMonth {
 	display: none;
 	width: 1px;
 	height: 1px;
+}
+
+.required {
+	background-color: #FFE5E5;
+	border: 1px solid #999;
+}
+
+.ju_disc {
+	padding: 8px;
 }

@@ -69,6 +69,9 @@
 
 		case "SaveBugreport": @include __DIR__ . '/../content/saveBugreport.php';
 		break;
+
+		case "thankyou": @include __DIR__ . '/../content/thankYou.php';
+		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';
   }
