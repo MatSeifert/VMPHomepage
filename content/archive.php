@@ -25,11 +25,11 @@
 
 		while($row = mysqli_fetch_array($result)) {
 		  echo '<div class="SqlNewsBox">';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
-		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
+		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
+		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
 		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '"><span class="SqlNewsSnippet">' . utf8_encode($row['content']) . '</span></a>';
-		  	echo '<span class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '">mehr lesen ...</a></span>';
+		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
+		  	echo '<span class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '">mehr lesen ...</a></span>';
 		  echo "</div>";
 		}
 		mysqli_close($database);			
@@ -48,11 +48,11 @@
 
 		while($row = mysqli_fetch_array($result)) {
 		  echo '<div class="SqlNewsBox">';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
-		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
+		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
+		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '&origin=archive">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
 		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '"><span class="SqlNewsSnippet">' . utf8_encode($row['content']) . '</span></a>';
-		  	echo '<span class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '">mehr lesen ...</a></span>';
+		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
+		  	echo '<span class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive">mehr lesen ...</a></span>';
 		  echo "</div>";
 		}
 		mysqli_close($database);		
