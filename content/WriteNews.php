@@ -13,17 +13,17 @@
 		<p>&nbsp;</p>
 		
 		<span class="smallHeadline">
-			Newsinhalt<span class="mandatory">*</span>
+			Newsinhalt<span class="mandatory">*</span> (Formatierung per HTML ist erlaubt)
 		</span>	
-		<textarea name="NewsContent" class="NewsContent" id="NewsContent" required="required"></textarea>
-		
+		<textarea name="NewsContent" class="NewsContent" id="NewsContent" required="required" maxlength="5000"></textarea>
+		<div id="textarea_feedback"></div>
 		<p>&nbsp;</p>
 
 		<div style="float: left">
 			<span class="smallHeadline">
 				Security Token<span class="mandatory">*</span>
 			</span>
-			<input type="Text" name="NewsToken" class="NewsAuthor" id="NewsToken" required="required">	
+			<input type="Password" name="NewsToken" class="NewsAuthor" id="NewsToken" required="required">	
 
 		</div>
 

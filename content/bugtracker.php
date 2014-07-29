@@ -12,7 +12,7 @@
 		<span class="smallHeadline">
 			Beschreibung des Bugs (maximal 500 Zeichen)<span class="mandatory">*</span>
 		</span>	
-		<textarea name="BugDesc" class="NewsContent" id="BugDesc" required="required" maxlength="500"></textarea>
+		<textarea name="NewsContent" class="NewsContent" id="NewsContent" required="required" maxlength="500"></textarea>
 		<div id="textarea_feedback"></div>
 		<p>&nbsp;</p>
 

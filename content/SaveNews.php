@@ -56,10 +56,22 @@
 		if (!mysqli_query($con,$sql)) {
 		  die('Error: ' . mysqli_error($con));
 		}
-		echo 'News wurde gespeichert! <a href="../index.php?site=start">Zur Startseite</a>';
+		$message = 'News wurde gespeichert! <a href="../index.php?site=start">Zur Startseite</a>';
 
 		mysqli_close($con);
 	} 
 
-	else echo ('Das Security Token stimmt nicht &uuml;berein! Bitte &uuml;berpr&uuml;fe deine Eingabe! <br> <a href="?site=AddNews">zur&uuml;ck</a>');
+	else $message = ('Das Security Token stimmt nicht &uuml;berein! Bitte &uuml;berpr&uuml;fe deine Eingabe! <br> <a href="?site=AddNews">zur&uuml;ck</a>');
 ?>
+
+<div class="whereAmI">
+    NEWS
+</div>
+
+<div class="PostTitle">
+  NEWS
+</div>
+
+<div class="PostPost">
+	<?php echo($message); ?>
+</div>

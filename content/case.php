@@ -72,6 +72,9 @@
 
 		case "thankyou": @include __DIR__ . '/../content/thankYou.php';
 		break;
+
+		case "disclaimer": @include __DIR__ . '/../content/disclaimer.php';
+		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';
   }
