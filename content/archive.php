@@ -1,14 +1,14 @@
 <?php
 	function ExecuteSqlQuery($year, $month) {
-		$monate = array('01'=>"Januar",
-		                '02'=>"Februar",
-		                '03'=>"M&auml;rz",
-		                '04'=>"April",
-		                '05'=>"Mai",
-		                '06'=>"Juni",
-		                '07'=>"Juli",
-		                '08'=>"August",
-		                '09'=>"September",
+		$monate = array('1'=>"Januar",
+		                '2'=>"Februar",
+		                '3'=>"M&auml;rz",
+		                '4'=>"April",
+		                '5'=>"Mai",
+		                '6'=>"Juni",
+		                '7'=>"Juli",
+		                '8'=>"August",
+		                '9'=>"September",
 		                '10'=>"Oktober",
 		                '11'=>"November",
 		                '12'=>"Dezember");
@@ -36,7 +36,7 @@
 	}
 
 	function ExecuteSqlDefault() {
-		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
+		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");
 		// Check connection 																		
 		if (mysqli_connect_errno()) {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -69,6 +69,62 @@
 			ExecuteSqlDefault(); 
 		}
 	}
+
+	function GenerateMenu() {
+
+	$monate = array('1'=>"Januar",
+	                '2'=>"Februar",
+	                '3'=>"M&auml;rz",
+	                '4'=>"April",
+	                '5'=>"Mai",
+	                '6'=>"Juni",
+	                '7'=>"Juli",
+	                '8'=>"August",
+	                '9'=>"September",
+	                '10'=>"Oktober",
+	                '11'=>"November",
+	                '12'=>"Dezember");
+
+		if(isset($_GET['year']) && !empty($_GET['year']) && isset($_GET['month']) && !empty($_GET['month'])) {	
+			$defaultYear =  $_GET['year'];
+			$defaultMonth = $_GET['month'];
+		}
+
+		$startYear = 2011;
+		$currentYear = date('Y');
+		$currentMonth = date('j');
+
+		// Generate Year Dropdown
+		echo '<select class="ArchiveYear" id="year" name="year" required="required">';
+		echo '<option disabled>JAHR</option>';
+
+		while($startYear <= $currentYear) {
+			if ($currentYear == $defaultYear)
+			{
+				echo '<option value="'. $currentYear . '" selected="selected">' . $currentYear . '</option>';
+			} else echo '<option value="'. $currentYear . '">' . $currentYear . '</option>';
+
+			$currentYear--;
+		}
+		echo '</select>';
+
+		// Generate Month Dropdown
+		echo '<select class="ArchiveMonth" id="month" name="month" required="required">';
+		echo '<option disabled>MONAT</option>';
+
+		$i = 1;
+
+		while($i < 13) {
+			if ($defaultMonth == $i)
+			{
+				echo '<option value="'. $i . '" selected="selected">' . $monate[$i] . '</option>';
+			} else echo '<option value="'. $i . '">' . $monate[$i] . '</option>';
+
+			$i++;
+		}
+		echo '</select>';
+
+	}
 ?>
 
 <div class="whereAmI">
@@ -85,30 +141,9 @@
 			  <option value="archive"></option>
 		</select>
 
-		<select class="ArchiveYear" id="year" name="year" required="required">
-			  <option disabled>JAHR</option>
-			  <option value="2014">2014</option>
-			  <option value="2013">2013</option>
-			  <option value="2012">2012</option>
-			  <option value="2011">2011</option>
-		</select>
-
-		<select class="ArchiveMonth" id="month" name="month" required="required">
-			  <option disabled>MONAT</option>
-			  <option value="01">Januar</option>
-			  <option value="02">Februar</option>
-			  <option value="03">März</option>
-			  <option value="04">April</option>
-			  <option value="05">Mai</option>
-			  <option value="06">Juni</option>
-			  <option value="07">Juli</option>
-			  <option value="08">August</option>
-			  <option value="09">September</option>
-			  <option value="10">Oktober</option>
-			  <option value="11">November</option>
-			  <option value="12">Dezember</option>
-		</select>
-
+		<?php 
+			GenerateMenu(); 
+		?>
 		<input type="Submit" name="" value="Anzeigen" class="ArchiveSubmit">
 	</form>
 

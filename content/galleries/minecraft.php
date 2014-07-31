@@ -9,16 +9,20 @@
 				echo '<img src="' . $item->children($namespaces['media'])->content->attributes()->url . '" alt="FlickrImage" class="FlickrImage">';
 				echo '<div class="ImageInfo"><p class="ImageInfoText"><nobr>';
 					echo $item->title . '</nobr><br>';
-					echo '<a target="_blank" href="' . $item->author->attributes($namespaces['flickr'])->profile . '">' . $item->children($namespaces['media'])->credit . '</a>';
+					echo 'von ' . $item->children($namespaces['media'])->credit;
 				echo '</p></div>';
 			echo '</div>';
 		}
 	}
 ?>
 
+<div class="whereAmI">
+    SCREENSHOTS
+</div>
+
 <div class="LpSsMobileHeadline">
 	<a href="?site=screenshots">
-		<img src="images/backButtonL.png" alt="back" style="float: left; margin: 9px 15px 0px -30px;" border="0">
+		<img src="images/backButtonL.png" alt="back" border="0" class="backL">
 	</a>
 	<img src="https://farm6.staticflickr.com/5137/buddyicons/2611823@N25.jpg?1398633302" alt="Icon" style="float: left; margin: 9px 10px 0px 5px;">
 		MINECRAFT MONUMENTE <br>
@@ -27,7 +31,7 @@
 
 <div class="PostTitle">
 	<a href="?site=screenshots">
-		<img src="images/backButtonL.png" alt="back" style="float: left; margin: 9px 15px 0px -30px;" border="0">
+		<img src="images/backButtonL.png" alt="back" border="0" class="backL">
 	</a>
 	<img src="https://farm6.staticflickr.com/5137/buddyicons/2611823@N25.jpg?1398633302" alt="Icon" style="float: left; margin: 9px 5px 0px 0px;">
 	MINECRAFT MONUMENTE <br>

@@ -1,5 +1,5 @@
 ﻿<?php
-	setlocale(LC_TIME, "de_DE");
+	$loc_de = setlocale (LC_ALL, 'de_DE@euro', 'de_DE', 'de', 'ge');
 
 	function ImageCount() {					// Zählen der Bilder im angegeben Ordner +++ NAMECONVENTION BEI NEUEN BILDERN BEACHTEN!
 		$files = scandir('images/header');
@@ -93,7 +93,7 @@
 				<section class="mobileMenu">
 					<input id="LeftMenu" name="accordion-1" type="checkbox" />
 					<label for="LeftMenu" class="ac-2">
-						<img src="images/menue.png" alt="menu" style="float: left; margin-left: 5px">
+						<img src="images/menue.png" alt="menu" style="float: left; margin-left: 0px">
 					</label>
 					<article class="mobileMenuContainer">
 						<div id="mobiMenu">
@@ -102,15 +102,6 @@
 						<div style="height: 100%; background-color: #ff9900"></div>
 					</article>
 				</section>	
-
-			</div>
-			<div class="mobileHintergrundbild">
-				<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start" class="resize"/>
-			</div>
-			<div class="mobileText">
-				<img src="images/logo_xs.png" alt="Logo" class="logo"/>
-				<span class="title">VMP CLAN</span> <br />
-				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>	
 			</div>
 		</div>
 		<!-- End of mobile Header /-->

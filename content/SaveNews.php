@@ -1,4 +1,52 @@
 <?php
+	// Funktion zum Posten der News auf Facebook
+	function PostOnFacebook($content) {
+		 //facebook application configuration
+	    $fbconfig['appid' ] = "Write app id here";
+	    $fbconfig['secret'] = "Write secrete here";
+	    try{
+	        include_once ('.\facebook-php-sdk-master\src\facebook.php');
+	    }
+	    catch(Exception $o){
+	        print_r($o);
+	    }
+	    $facebook = new Facebook(array(
+	      'appId'  => $fbconfig['351141688344396'],
+	      'secret' => $fbconfig['73d9cbc141d02aebeb5d3e6d544e43d5'],
+	      'cookie' => true,
+	    ));
+	 
+	    $user       = $facebook->getUser();
+	    $loginUrl   = $facebook->getLoginUrl(
+	            array(
+	                'scope'         => 'email'
+	            )
+	    );
+	 
+	    if ($user) {
+	      try {
+	        $user_profile = $facebook->api('/me');
+	        $user_friends = $facebook->api('/me/friends');
+	        $access_token = $facebook->getAccessToken();
+	      } catch (FacebookApiException $e) {
+	       // d($e);
+	        $user = null;
+	      }
+	    }
+	    if (!$user) {
+	        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
+	        exit;
+	    }
+		 
+		 $args = array(
+		    'message'   => 'My First Fbapplication With PHP script!',
+		    'link'      => 'http://www.c-sharpcorner.com/',
+		    'caption'   => 'Latest toorials!'
+		);
+		$post_id = $facebook->api("/me/feed", "post", $args);
+		?>		
+	}
+
 	// Überprüfung des Membertokens zur Botsicherheit
 	function TokenAuth($AuthCode) {
 		$verification;
@@ -59,6 +107,11 @@
 		$message = 'News wurde gespeichert! <a href="../index.php?site=start">Zur Startseite</a>';
 
 		mysqli_close($con);
+
+		// Post all the shit on Facebook, Twitter and Google Plus
+		PostOnFacebook($content);
+		//PostOnTwitter();
+		//PostOnGooglePlus();
 	} 
 
 	else $message = ('Das Security Token stimmt nicht &uuml;berein! Bitte &uuml;berpr&uuml;fe deine Eingabe! <br> <a href="?site=AddNews">zur&uuml;ck</a>');
