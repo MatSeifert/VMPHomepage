@@ -12,6 +12,18 @@
 		                '10'=>"Oktober",
 		                '11'=>"November",
 		                '12'=>"Dezember");
+		$monateMitNull = array( '1'=>"01",
+		                		'2'=>"02",
+		                		'3'=>"03",
+		                		'4'=>"04",
+		                		'5'=>"05",
+				                '6'=>"06",
+				                '7'=>"07",
+				                '8'=>"08",
+				                '9'=>"09",
+				                '10'=>"10",
+				                '11'=>"11",
+				                '12'=>"12");
 
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
 		// Check connection 																		
@@ -21,7 +33,7 @@
 		
 		echo '<span class="smallHeadline">Alle News vom&nbsp;' . $monate[$month] . '&nbsp' . $year . '&nbsp;werden angezeigt</span><br><br>';
 
-		$result = mysqli_query($database,"SELECT * FROM articles WHERE date LIKE '%$year-$month%' ORDER BY id DESC");
+		$result = mysqli_query($database,"SELECT * FROM articles WHERE date LIKE '%$year-$monateMitNull[$month]%' ORDER BY id DESC");
 
 		while($row = mysqli_fetch_array($result)) {
 		  echo '<div class="SqlNewsBox">';

@@ -23,39 +23,68 @@ use Facebook\GraphObject;
 use Facebook\GraphSessionInfo;
  
 // init app with app id (APPID) and secret (SECRET)
-FacebookSession::setDefaultApplication('351141688344396','73d9cbc141d02aebeb5d3e6d544e43d5');
+// FacebookSession::setDefaultApplication('351141688344396','73d9cbc141d02aebeb5d3e6d544e43d5');
  
-// login helper with redirect_uri
-$helper = new FacebookRedirectLoginHelper( 'http://www.vmp-clan.de/' );
- 
-try {
-  $session = $helper->getSessionFromRedirect();
-} catch( FacebookRequestException $ex ) {
-  // When Facebook returns an error
-} catch( Exception $ex ) {
-  // When validation fails or other local issues
+define('FACEBOOK_APP_ID', '351141688344396'); #APPLICATION ID
+define('FACEBOOK_SECRET', '73d9cbc141d02aebeb5d3e6d544e43d5'); #API-KEY
+
+$params['message'] = 'This is a test';
+		$params['access_token']=$cookie['access_token'];
+		$url = 'https://graph.facebook.com/XXXXXXXXXXXXX/feed'; #XXXXXXXX = ID der Fanpage
+		//print_r(makeRequest($url, $params));
+	//	print_r(json_decode(file_get_contents($url)));
+		print_r(makeRequest($url, $params));
+
+function makeRequest($url, $params, $ch=null) {
+if (!$ch) {
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
 }
- 
-// see if we have a session
-if($session) {
 
-  try {
-
-    $response = (new FacebookRequest(
-      $session, 'POST', '/me/feed', array(
-        'link' => 'www.example.com ',
-        'message' => 'User provided message'
-      )
-    ))->execute()->getGraphObject();
-
-    echo "Posted with id: " . $response->getProperty('id');
-
-  } catch(FacebookRequestException $e) {
-
-    echo "Exception occured, code: " . $e->getCode();
-    echo " with message: " . $e->getMessage();
-
-  }   
-
+function get_facebook_cookie($app_id, $application_secret) {
+	$args = array();
+	parse_str(trim($_COOKIE['fbs_' . $app_id], '\"'), $args);
+	ksort($args);
+	$payload = '';
+	foreach ($args as $key => $value) {
+		if ($key != 'sig') {
+			$payload .= $key . '=' . $value;
+		}
+	}
+	if (md5($payload . $application_secret) != $args['sig']) {
+		return null;
+	}
+	return $args;
 }
+
+$cookie = get_facebook_cookie(FACEBOOK_APP_ID, FACEBOOK_SECRET);
 ?>
+<html><head></head><body>
+<?php if ($cookie) { ?>
+      Your user ID is <?= $cookie['uid'] ?>
+    <?php } else { ?>
+      <fb:login-button perms="publish_stream"></fb:login-button>
+    <?php } ?>
+
+    <div id="fb-root"></div>
+<script>
+//XXX = Facebook App - ID
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId  : 'XXXXXXXXXXXXXXXX', 
+      status : true, // check login status
+      cookie : true, // enable cookies to allow the server to access the session
+      xfbml  : true  // parse XFBML
+    });
+  };
+
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+</body>
+</html>
