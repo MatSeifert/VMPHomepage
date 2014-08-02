@@ -72,8 +72,19 @@
 			  <option value="wormsreloaded">Worms: Reloaded</option>
 			</select>	
 		</div>
-	
-		<p><br /><br /><br /><br /><br /></p>
+
+		<p><br /><br /><br /><br /><br /></p>		
+
+		<span class="smallHeadline">
+			Auch posten bei
+		</span>
+			<input type="checkbox" value="twitter" class="checkbox" name="twitter" checked/>
+			&nbsp;<img src="images/twitter_S.png" alt="Twitter">&nbsp;Twitter
+			<input type="checkbox" value="twitter" class="checkbox" name="twitter" disabled/>
+			&nbsp;<img src="images/facebook_S.png" alt="Facebook">&nbsp;<span class="disabled">Facebook</span>
+			<input type="checkbox" value="twitter" class="checkbox" name="twitter" disabled />
+			&nbsp;<img src="images/gplus_S.png" alt="Google Plus">&nbsp;<span class="disabled">Google+</span>
+		<p>&nbsp;</p>
 
 		<span class="smallHeadline">
 			Quelle (wird nur intern gespeichert)

@@ -21,70 +21,109 @@ use Facebook\FacebookRequestException;
 use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphSessionInfo;
- 
-// init app with app id (APPID) and secret (SECRET)
-// FacebookSession::setDefaultApplication('351141688344396','73d9cbc141d02aebeb5d3e6d544e43d5');
- 
-define('FACEBOOK_APP_ID', '351141688344396'); #APPLICATION ID
-define('FACEBOOK_SECRET', '73d9cbc141d02aebeb5d3e6d544e43d5'); #API-KEY
 
-$params['message'] = 'This is a test';
-		$params['access_token']=$cookie['access_token'];
-		$url = 'https://graph.facebook.com/XXXXXXXXXXXXX/feed'; #XXXXXXXX = ID der Fanpage
-		//print_r(makeRequest($url, $params));
-	//	print_r(json_decode(file_get_contents($url)));
-		print_r(makeRequest($url, $params));
+// Starten der Facebook Session 
+session_start();
 
-function makeRequest($url, $params, $ch=null) {
-if (!$ch) {
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-}
+// App mit ID und Secret initialisieren  //App-ID		   // App-Secret
+FacebookSession::setDefaultApplication( '351141688344396','73d9cbc141d02aebeb5d3e6d544e43d5' );
 
-function get_facebook_cookie($app_id, $application_secret) {
-	$args = array();
-	parse_str(trim($_COOKIE['fbs_' . $app_id], '\"'), $args);
-	ksort($args);
-	$payload = '';
-	foreach ($args as $key => $value) {
-		if ($key != 'sig') {
-			$payload .= $key . '=' . $value;
+// Login-Helper mit Rediret URI
+$helper = new FacebookRedirectLoginHelper( 'http://www.vmp-clan.de' );
+
+// Prüfen, ob bereits eine Facebook Session besteht
+if ( isset( $_SESSION ) && isset( $_SESSION['fb_token'] ) ) {
+	// falls nicht, wird mit den Token eine neue Session gestartet
+	$session = new FacebookSession( $_SESSION['fb_token'] );
+
+	// Access Token validieren
+	try {
+		if ( !$session->validate() ) {
+		  $session = null;
 		}
+	} 
+	catch ( Exception $e ) {
+		// Exceptions fangen
+		$session = null;
 	}
-	if (md5($payload . $application_secret) != $args['sig']) {
-		return null;
+}  
+
+if ( !isset( $session ) || $session === null ) {
+// no session exists
+
+	try {
+		$session = $helper->getSessionFromRedirect();
+	} catch( FacebookRequestException $ex ) {
+		// When Facebook returns an error
+		// handle this better in production code
+		print_r( $ex );
+	} catch( Exception $ex ) {
+		// When validation fails or other local issues
+		// handle this better in production code
+		print_r( $ex );
 	}
-	return $args;
+
 }
 
-$cookie = get_facebook_cookie(FACEBOOK_APP_ID, FACEBOOK_SECRET);
-?>
-<html><head></head><body>
-<?php if ($cookie) { ?>
-      Your user ID is <?= $cookie['uid'] ?>
-    <?php } else { ?>
-      <fb:login-button perms="publish_stream"></fb:login-button>
-    <?php } ?>
+// see if we have a session
+if ( isset( $session ) ) {
 
-    <div id="fb-root"></div>
-<script>
-//XXX = Facebook App - ID
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId  : 'XXXXXXXXXXXXXXXX', 
-      status : true, // check login status
-      cookie : true, // enable cookies to allow the server to access the session
-      xfbml  : true  // parse XFBML
-    });
-  };
+	// save the session
+	$_SESSION['fb_token'] = $session->getToken();
+	// create a session using saved token or the new one we generated at login
+	$session = new FacebookSession( $session->getToken() );
 
-  (function() {
-    var e = document.createElement('script');
-    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
-    e.async = true;
-    document.getElementById('fb-root').appendChild(e);
-  }());
-</script>
-</body>
-</html>
+	// graph api request for user data
+	$request = new FacebookRequest( $session, 'GET', '/me' );
+	$response = $request->execute();
+	// get response
+	$graphObject = $response->getGraphObject()->asArray();
+
+	// print profile data
+	echo '<pre>' . print_r( $graphObject, 1 ) . '</pre>';
+
+	// print logout url using session and redirect_uri (logout.php page should destroy the session)
+	echo '<a href="' . $helper->getLogoutUrl( $session, 'http://yourwebsite.com/app/logout.php' ) . '">Logout</a>';
+
+} else {
+	// show login url
+	echo '<a href="' . $helper->getLoginUrl( array( 'email', 'user_friends' ) ) . '">Login</a>';
+}
+
+
+
+
+
+
+/*
+function getPageData()
+{
+    $arRS = $this->facebook->api('/me/accounts');
+
+    $pageData = new CFacebookClientPageData();
+    foreach ($arRS['data'] as $dataSet)
+    {
+        if (array_key_exists('name', $dataSet) && preg_match('/any\s*fan\s*page/i', $dataSet['name']))
+        {
+            $pageData->sCategory = $dataSet['category'];
+            $pageData->sName = $dataSet['name'];
+            $pageData->sAccessToken = $dataSet['access_token'];
+            $pageData->arPermissions = $dataSet['perms'];
+            $pageData->iPageId = $dataSet['id'];
+        }
+    }
+
+    return $pageData;
+}
+
+function uploadPhoto(CFacebookClientPageData $user, CFacebookPhotoData $photo)
+{
+    return $this->facebook->api('/' . $user->iPageId . '/photos',
+                                'POST',
+                                array(
+                                      'source' => '@' . realpath($photo->sLocalPath),
+                                      'message' => $photo->sMessage,
+                                      'access_token' => $this->sAccessToken
+                                      )
+                                );
+}    */

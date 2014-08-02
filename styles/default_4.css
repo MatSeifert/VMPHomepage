@@ -1579,3 +1579,11 @@ select.ArchiveMonth {
 .lpBackS:hover {
 	background-color: #ccc;
 }
+
+.checkbox {
+	margin: 0px 0px 0px 20px;
+}
+
+.disabled {
+	color: #ccc;
+}

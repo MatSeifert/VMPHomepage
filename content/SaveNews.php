@@ -1,50 +1,38 @@
 <?php
-	// Funktion zum Posten der News auf Facebook
-	function PostOnFacebook($content) {
-		 //facebook application configuration
-	    $fbconfig['appid' ] = "Write app id here";
-	    $fbconfig['secret'] = "Write secrete here";
-	    try{
-	        include_once ('.\facebook-php-sdk-master\src\facebook.php');
-	    }
-	    catch(Exception $o){
-	        print_r($o);
-	    }
-	    $facebook = new Facebook(array(
-	      'appId'  => $fbconfig['351141688344396'],
-	      'secret' => $fbconfig['73d9cbc141d02aebeb5d3e6d544e43d5'],
-	      'cookie' => true,
-	    ));
-	 
-	    $user       = $facebook->getUser();
-	    $loginUrl   = $facebook->getLoginUrl(
-	            array(
-	                'scope'         => 'email'
-	            )
-	    );
-	 
-	    if ($user) {
-	      try {
-	        $user_profile = $facebook->api('/me');
-	        $user_friends = $facebook->api('/me/friends');
-	        $access_token = $facebook->getAccessToken();
-	      } catch (FacebookApiException $e) {
-	       // d($e);
-	        $user = null;
-	      }
-	    }
-	    if (!$user) {
-	        echo "<script type='text/javascript'>top.location.href = '$loginUrl';</script>";
-	        exit;
-	    }
+	function PostOnTwitter($content, $link) {
+		// require codebird
+		require_once('socialSDK/twitter/src/codebird.php');
 		 
-		 $args = array(
-		    'message'   => 'My First Fbapplication With PHP script!',
-		    'link'      => 'http://www.c-sharpcorner.com/',
-		    'caption'   => 'Latest toorials!'
+		// initialize Codebird (using your access tokens) - establish connection with Twitter
+		\Codebird\Codebird::setConsumerKey("zAMCKSyNQ3NTq8YuGaXiJneWn", "It9Nc2zGuWtuFztBzcXOzsWgk68KLFmRRRhydmpTq9PCdL5xwG");
+		$cb = \Codebird\Codebird::getInstance();
+		$cb->setToken("244468649-ZGCSmULXQPiDlc92Fy2IPjAMPMloiROuPNpnFV0n", "bQbB1BucBt5KZlc9ySIzZHF1pVdh2WmguUdFuIE5XerRf");
+		 
+		// AUTOMATIC TWEET EACH TOPIC
+
+		$params = array(
+		  'status' => substr($content, 0, 100) . " " . $link
 		);
-		$post_id = $facebook->api("/me/feed", "post", $args);
-		?>		
+		$reply = $cb->statuses_update($params);
+	}
+
+
+	function GetLinkWithID($title) {
+
+		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
+		// Check connection 																		
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}			
+
+		$result = mysqli_query($database,'SELECT id FROM articles WHERE headline = "' . $title . '"');
+
+		while($row = mysqli_fetch_array($result)) {
+		   $link = 'vmp-clan.de/?site=read&id=' . $row['id'];
+		}
+		mysqli_close($database);
+
+		return $link;
 	}
 
 	// Überprüfung des Membertokens zur Botsicherheit
@@ -108,9 +96,16 @@
 
 		mysqli_close($con);
 
+		// Define Link to News for SEO-Stuff
+		$newsLink = GetLinkWithID($title);
+
 		// Post all the shit on Facebook, Twitter and Google Plus
-		PostOnFacebook($content);
-		//PostOnTwitter();
+		//PostOnFacebook($content);
+		if ($_POST['twitter'] == 'twitter')
+		{
+			PostOnTwitter($content, $newsLink);
+			$twitterMessage = "Die News wurde erfolgreich getweetet!";
+		} else $twitterMessage = "News wurde nicht getweetet.";
 		//PostOnGooglePlus();
 	} 
 
@@ -126,5 +121,9 @@
 </div>
 
 <div class="PostPost">
-	<?php echo($message); ?>
+	<?php 
+		echo($message) . '<p>&nbsp;</p>';
+		echo($twitterMessage); 
+
+	?>
 </div>
