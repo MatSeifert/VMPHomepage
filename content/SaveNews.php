@@ -3,13 +3,12 @@
 		// require codebird
 		require_once('socialSDK/twitter/src/codebird.php');
 		 
-		// initialize Codebird (using your access tokens) - establish connection with Twitter
+		// Codebird initialisieren, und auf Twitter einloggen
 		\Codebird\Codebird::setConsumerKey("zAMCKSyNQ3NTq8YuGaXiJneWn", "It9Nc2zGuWtuFztBzcXOzsWgk68KLFmRRRhydmpTq9PCdL5xwG");
 		$cb = \Codebird\Codebird::getInstance();
 		$cb->setToken("244468649-ZGCSmULXQPiDlc92Fy2IPjAMPMloiROuPNpnFV0n", "bQbB1BucBt5KZlc9ySIzZHF1pVdh2WmguUdFuIE5XerRf");
 		 
-		// AUTOMATIC TWEET EACH TOPIC
-
+		// Tweeten der News inklusive Backlink
 		$params = array(
 		  'status' => substr($content, 0, 100) . " " . $link
 		);
@@ -103,7 +102,7 @@
 		//PostOnFacebook($content);
 		if ($_POST['twitter'] == 'twitter')
 		{
-			PostOnTwitter($content, $newsLink);
+			PostOnTwitter(utf8_encode($content), $newsLink);
 			$twitterMessage = "Die News wurde erfolgreich getweetet!";
 		} else $twitterMessage = "News wurde nicht getweetet.";
 		//PostOnGooglePlus();
