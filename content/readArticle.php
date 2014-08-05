@@ -3,20 +3,11 @@
 	define('DEBUG', false);
 
 	function ConnectToDatabase() {
-		if (DEBUG) {
-			$database=mysqli_connect("localhost","news","6F5PHPTGKaPh7Gnf","webseite");
-			// Check connection
-			if (mysqli_connect_errno()) {
-			  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-			}
-		}
-		else {
-			$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
-			// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
-			if (mysqli_connect_errno()) {
-			  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-			}			
-		}
+		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
+		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}			
 
 		$id = $_GET['id'];
 		if (isset($_GET['origin']) && !empty($_GET['origin']) && isset($_GET['y']) && !empty($_GET['y']) && isset($_GET['m']) && !empty($_GET['m'])) {
@@ -33,6 +24,11 @@
 		  	echo '<span class="SqlArticleDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
 		  	echo '<span class="SqlArticleContent">' . utf8_encode($row['content']) . '</span>';
 		}
+
+		// Read Counter bei jedem Aufruf der News um eins erhöhen
+		mysqli_query($database, "UPDATE articles SET articles.read = articles.read+1 WHERE id = $id");
+
+		// Verbindung schließen
 		mysqli_close($database);
 	}
 ?>
@@ -42,6 +38,7 @@
 </div>
 
 	<?php ConnectToDatabase(); ?>
+
 <div class="PostPost">
 	<p>&nbsp;</p>
 	<div id="disqus_thread"></div>

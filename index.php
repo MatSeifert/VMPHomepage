@@ -124,10 +124,6 @@
 			
 			</div>
 
-			<div class="bugtracker" style="display: none !important">
-				<img class="left" src="images/bugtracker.png" alt="Bug"><a title="Einen Bug melden" href="?site=bugtracker">EINEN BUG MELDEN</a>
-			</div>
-
 			<div class="content">
 
 				<?php require_once ("content/case.php") ?>
@@ -188,6 +184,19 @@
 		<script>
 			document.getElementById("mobiMenu").style.height = Hoehe - 60 + 'px';
 			document.getElementById("mobiSidebar").style.height = Hoehe + 'px';
+		</script>
+
+		<script type="text/javascript">
+		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		var disqus_shortname = 'vmp-clan'; // required: replace example with your forum shortname
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
 		</script>
 	</body>
 </html>

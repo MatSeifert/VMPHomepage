@@ -1416,10 +1416,11 @@ table.mania2011 {
 .SqlNewsSnippet {
 	display: block;
 	overflow: hidden;
-	height: 90px;
+	height: 75px;
 	font-size: 14px;
 	color: #757575;
 	padding: 0px 5px 0px 155px;
+	border-bottom: 1px solid #ccc;
 }
 
 .SqlNewsSnippet a {
@@ -1427,13 +1428,24 @@ table.mania2011 {
 }
 
 .SqlNewsReadMore {
-	display: block;
+	display: inline;
 	position: absolute;
 	font-size: 14px;
 	color: #979797;
-	background-color: #EFEFEF;
 	margin: 0px 0px 0px 155px;	
+	padding: 7px 0px 0px 0px;
+	text-align: left;
+}
+
+.SqlNewsStats {
+	display: inline;
+	position: absolute;
+	font-size: 14px;
+	color: #979797;
+	margin: 8px 0px 0px 155px;	
 	padding: 0px 0px 0px 0px;
+	text-align: right;
+	height: 16px;
 }
 
 .SqlArticleHeadImage {
