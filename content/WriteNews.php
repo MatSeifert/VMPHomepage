@@ -44,11 +44,13 @@
 			  <option value="battlefield3">Battlefield 3</option>
 			  <option value="battlefield4">Battlefield 4</option>
 			  <option value="battlefieldhardline">Battlefield Hardline</option>
+			  <option value="borderlands">Borderlands</option>
 			  <option value="borderlands2">Borderlands 2</option>
 			  <option value="borderlandsthepresequel">Borderlands the Presequel</option>
 			  <option value="modernwarfare2">Call of Duty: Modern Warfare 2</option>
 			  <option value="modernwarfare3">Call of Duty: Modern Warfare 3</option>
 			  <option value="codghosts">Call of Duty: Ghosts</option>
+			  <option value="callofdutyadvancedwarfare">Call of Duty: Advanced Warfare</option>>
 			  <option value="dayz">DayZ</option>
 			  <option value="deadspace">Dead Space</option>
 			  <option value="gta5">GTA V</option>
@@ -62,6 +64,7 @@
 			  <option value="planetside2">PlanetSide 2</option>
 			  <option value="portal">Portal</option>
 			  <option value="portal2">Portal 2</option>
+			  <option value="simcity">Sim City</option>
 			  <option value="starwarstheoldrepublic">StarWars: The Old Republic</option>
 			  <option value="thecrew">The Crew</option>
 			  <option value="theelderscrollsonline">The Elder Scrolls Online</option>

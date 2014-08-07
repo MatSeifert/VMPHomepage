@@ -1,7 +1,4 @@
 <?php
-	// Falls die Seite lokal aufgerufen wird, wird die lokale Debug Umgebung aktiviert
-	define('DEBUG', false);
-
 	function ConnectToDatabase() {
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
 		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
@@ -26,7 +23,7 @@
 		}
 
 		// Read Counter bei jedem Aufruf der News um eins erhöhen
-		mysqli_query($database, "UPDATE articles SET articles.read = articles.read+1 WHERE id = $id");
+		mysqli_query($database, "UPDATE articles SET articles.articleRead = articles.articleRead+1 WHERE id = $id");
 
 		// Verbindung schließen
 		mysqli_close($database);

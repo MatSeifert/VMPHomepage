@@ -97,7 +97,7 @@
 					</label>
 					<article class="mobileMenuContainer">
 						<div id="mobiMenu">
-							<?php include("content/menue.html") ?>
+							<?php include("content/menue.php") ?>
 						</div>
 						<div style="height: 100%; background-color: #ff9900"></div>
 					</article>
@@ -120,7 +120,7 @@
 		<div class="contentWrapper">
 			<div class="menue">			
 			
-				<?php include("content/menue.html") ?>
+				<?php include("content/menue.php") ?>
 			
 			</div>
 

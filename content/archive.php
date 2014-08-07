@@ -41,7 +41,10 @@
 		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
 		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
 		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
-		  	echo '<span class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '">mehr lesen ...</a></span>';
+		  	echo '<div class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
+		  		 '&nbsp;<img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
+		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' . 
+		  		 '</div>';		  		  
 		  echo "</div>";
 		}
 		mysqli_close($database);			
@@ -64,7 +67,10 @@
 		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '&origin=archive">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
 		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
 		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
-		  	echo '<span class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive">mehr lesen ...</a></span>';
+		  	echo '<div class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
+		  		 '&nbsp;<img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
+		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' . 
+		  		 '</div>';	
 		  echo "</div>";
 		}
 		mysqli_close($database);		

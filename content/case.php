@@ -75,6 +75,9 @@
 
 		case "disclaimer": @include __DIR__ . '/../content/disclaimer.php';
 		break;
+
+		case "changelog": @include __DIR__ . '/../content/changelog.php';
+		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';
   }

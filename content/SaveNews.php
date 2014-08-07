@@ -85,8 +85,8 @@
 		$tags = mysqli_real_escape_string($con, $_POST['NewsTags']);
 		$author = GetName($token);
 
-		$sql="INSERT INTO articles (date, timestamp, headline, content, author, tags, game, source)
-		VALUES (now(), now(), '$title', '$content', '$author', '$tags', '$game', '$source')";
+		$sql="INSERT INTO articles (articleRead, date, timestamp, headline, content, author, tags, game, source)
+		VALUES (0, now(), now(), '$title', '$content', '$author', '$tags', '$game', '$source')";
 
 		if (!mysqli_query($con,$sql)) {
 		  die('Error: ' . mysqli_error($con));
@@ -102,7 +102,7 @@
 		//PostOnFacebook($content);
 		if ($_POST['twitter'] == 'twitter')
 		{
-			PostOnTwitter(utf8_encode($content), $newsLink);
+			//PostOnTwitter(utf8_encode($content), $newsLink);
 			$twitterMessage = "Die News wurde erfolgreich getweetet!";
 		} else $twitterMessage = "News wurde nicht getweetet.";
 		//PostOnGooglePlus();
