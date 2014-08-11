@@ -48,7 +48,7 @@
 		<rank>Gründer</rank>
 		<activity value="inaktiv" />
 		<birthday day="7" month="1" year="1993" />
-		<recruited in="2010" />
+		<recruited in="2008" />
 	</member>
 	<member>
 		<country>germany</country>
@@ -150,6 +150,14 @@
 		<country>germany</country>
 		<sex>male</sex>
 		<nickname>Fallen Angel</nickname>
+		<rank>Trial</rank>
+		<activity value="aktiv" />
+		<recruited in="2014" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>KolGaaaaa</nickname>
 		<rank>Trial</rank>
 		<activity value="aktiv" />
 		<recruited in="2014" />

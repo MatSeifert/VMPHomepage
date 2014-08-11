@@ -1,6 +1,10 @@
 <?php
+	/* Hier passiert die Magie, die die News auch auf Twitter veröffentlicht. Wurde
+	 * vom Autor ein Newssnippet eingetragen, wird dieses verwendet, andernfalls
+	 * wird einfach der Newsinhalt gekürzt.
+	 */
 	function PostOnTwitter($content, $link) {
-		// require codebird
+		// require codebird (php Library für die Twitter API)
 		require_once('socialSDK/twitter/src/codebird.php');
 		 
 		// Codebird initialisieren, und auf Twitter einloggen
@@ -10,12 +14,34 @@
 		 
 		// Tweeten der News inklusive Backlink
 		$params = array(
-		  'status' => substr($content, 0, 100) . " " . $link
+		  'status' => substr($content, 0, 110) . " " . $link
 		);
 		$reply = $cb->statuses_update($params);
 	}
 
+	/* Hier wird der recht lange Link auf die News auf der Clanseite mithilfe
+	 * des Lik Shorteners ow.ly gekürzt. Dadurch bleibt mehr Platz für den
+	 * eigentlichen Tweet, und es sieht weniger russisch aus
+	 */
+	function shortenLink($url) {
+		require_once('socialSDK/owly/OwlyApi.php');
+		$owly = OwlyApi::factory( array('key' => 's4Zm5Rxkm99z6CWEF9ikm') );
+		
+		try {
+			$shortenedUrl = $owly->shorten($url);
+		} catch(Exception $e) {
+			echo 'Fehler beim kürzen des Links (Error in ow.ly API):' . $e->getMessage() . "<br />";
+			$url = "";
+		}
 
+		return $shortenedUrl;
+	}
+
+	/* Direkt nachdem die News gepostet wird brauchen wir die URL, da diese auch aus der ID besteht,
+	 * die aber erst hier festgelegt wird (AUTO_INCREMENT Spalte in der DB), wird die News anhand
+	 * des Titels identifiziert. Nicht optimal, falls mal eine News einen doppelten Titel hat, hilft
+	 * momentan aber alles nix. Funktioniert, also gut is!
+	 */
 	function GetLinkWithID($title) {
 
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
@@ -31,10 +57,15 @@
 		}
 		mysqli_close($database);
 
-		return $link;
+		$shortLink = shortenLink($link);
+
+		return $shortLink;
 	}
 
-	// Überprüfung des Membertokens zur Botsicherheit
+	/* Zur sicherstellung, dass keine Bots die Seite vollspammen, gibt es ein Sicherheitstoken, anhand
+	 * dessen auch gleich identifiziert werden kann, wer die News geschrieben hat. Stimmt das Token nicht
+	 * überein, wird die News nicht angenommen.
+	 */
 	function TokenAuth($AuthCode) {
 		$verification;
 
@@ -51,6 +82,9 @@
 		return $verification;
 	}
 
+	/* Wie oben beschrieben wird hier anhand des mitgelieferten Sicherheitstokens bestimmt,
+	 * von wem die eingereichte News stammt.
+	 */
 	function GetName($AuthToken) {
 		switch ($AuthToken){
 			case "Ji4w9LwToOJ829EORD1W": return "Behemoth";
@@ -68,8 +102,7 @@
 	if (is_null($_POST['NewsSource']))
 	{
 		$source = NULL;
-	}
-	else $source = $_POST['NewsSource'];
+	} else $source = $_POST['NewsSource'];
 
 	// Token authentifizieren und News in die Datenbank schreiben
 	if (TokenAuth($token)) {
@@ -91,24 +124,31 @@
 		if (!mysqli_query($con,$sql)) {
 		  die('Error: ' . mysqli_error($con));
 		}
-		$message = 'News wurde gespeichert! <a href="../index.php?site=start">Zur Startseite</a>';
+		$message = 'Die News wurde erfolgreich veröffentlicht! <a href="../index.php?site=start">Zur Startseite</a>';
 
 		mysqli_close($con);
 
-		// Define Link to News for SEO-Stuff
+		// Define Link and shorten it for SEO-Stuff
 		$newsLink = GetLinkWithID($title);
+
+		// Define the Social Media Snippet (Selfmade or generated)
+		if ($_POST['SocialMediaSnippet'] == null)
+		{
+			$snippet = $content;
+		} else $snippet = $_POST['SocialMediaSnippet'];
 
 		// Post all the shit on Facebook, Twitter and Google Plus
 		//PostOnFacebook($content);
 		if ($_POST['twitter'] == 'twitter')
 		{
-			//PostOnTwitter(utf8_encode($content), $newsLink);
-			$twitterMessage = "Die News wurde erfolgreich getweetet!";
+			PostOnTwitter(utf8_encode($snippet), $newsLink);
+			$finalTweet = $snippet . ' <a href="' . $newsLink . '" alt="tweet" target="_blank">' . $newsLink . '</a>';
+			$twitterMessage = "Super, dass du die News auch in den sozialen Netzwerken teilst, und uns damit hilfst bekannter zu werden. Dein Post wird folgendermaßen aussehen:<br /><br />";
 		} else $twitterMessage = "News wurde nicht getweetet.";
 		//PostOnGooglePlus();
 	} 
 
-	else $message = ('Das Security Token stimmt nicht &uuml;berein! Bitte &uuml;berpr&uuml;fe deine Eingabe! <br> <a href="?site=AddNews">zur&uuml;ck</a>');
+	else $message = ('Das Security Token stimmt nicht &uuml;berein! Bitte &uuml;berpr&uuml;fe deine Eingabe! <br> Nutze die Zurück Funktion des Browsers, um deine Eingabe zu korrigieren!');
 ?>
 
 <div class="whereAmI">
@@ -121,8 +161,10 @@
 
 <div class="PostPost">
 	<?php 
+		echo '<div class="smallHeadline">Vielen Dank</div>';
 		echo($message) . '<p>&nbsp;</p>';
+		echo '<div class="smallHeadline">Social Media</div>';
 		echo($twitterMessage); 
-
+		echo '<b>' . ($finalTweet) . '</b>';
 	?>
 </div>

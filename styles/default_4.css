@@ -65,10 +65,11 @@ body {
             	font-size: 18px !important;
             	margin: 0px 0px 0px -40px !important;
             }
-            span[class=smallHeadline] {
+            .smallHeadline {
             	font-size: 28px !important;
             	padding-top: 0px !important;
             	line-height: 32px;
+            	text-align: left !important;
             }
             span[class=title] {
             	font-size: 40px !important;
@@ -82,9 +83,6 @@ body {
             	margin: -20px 0px 0px 0px !important;
             	z-index: 2 !important;
             	display: block !important;
-            }
-            span[class=smallHeadline] {
-            	text-align: left !important;
             }
             span[class=LPContent] {
             	display: block !important;
@@ -808,7 +806,7 @@ span.SPDate {
 	color: #787878;
 }
 
-span.smallHeadline {
+.smallHeadline {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	display: block;
@@ -1516,6 +1514,8 @@ table.mania2011 {
 
 .smallInline {
 	font-size: 12px;
+	width: 500px;
+	padding: 6px 0px 0px 0px;
 }
 
 /* Archiv Styles */
@@ -1602,4 +1602,16 @@ select.ArchiveMonth {
 
 .disabled {
 	color: #ccc;
+}
+
+.SocialMediaSnippet {
+	margin-left: 10px; 
+	width: 93%;
+	height: 50px;
+	padding: 8px;
+	resize: none;	
+}
+
+.feedback {
+	margin: 0px 0px 0px 10px;
 }

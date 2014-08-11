@@ -1,5 +1,5 @@
 <div class="impressum">
-	<a class="navigation" href="index.php?site=changelog" alt="changelog">VERSION 4.0.4.1</a> <br />
+	<a class="navigation" href="index.php?site=changelog" alt="changelog">VERSION 4.0.4.2</a> <br />
 	&copy; 2008 - <?php echo date("Y"); ?> DESIGN &amp; CODE BY <br />
 	<img src="images/person.png" alt="Person" /> Matthias Seifert <br />
 	<img src="images/mail.gif" alt="Person" /> <a class="navigation" href="mailto:matthe.seifert@gmail.com">Kontakt</a> <br>
