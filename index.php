@@ -161,6 +161,9 @@
 			   	<p>&nbsp;</p>
 			   	<div class="contentBox">
 			   		<span class="RightHeadline">LET'S PLAY</span>
+			   		<div class="watchmore">
+			   			<a href="?site=letsplay">&#187;</a>
+			   		</div>
 			   		<p>&nbsp;</p>
 			   		<div class="rightText">
 			   			

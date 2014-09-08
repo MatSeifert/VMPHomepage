@@ -79,8 +79,8 @@
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=ZM1halUgcOA&list=PLMYyvoe65Ysn0--WAJj-G8wH-V-zFhk1e">Playlist</a> <br />
-				<span class="LPDate">Neue Folgen immer:</span> <br>
-				Dienstag &amp; Donnerstag
+				<span class="LPDate">Let's Play Dauer:</span> <br>
+				107 Folgen
 				<br>
 			</span>
 		</div>
@@ -99,7 +99,7 @@
 
 		<div class="LPBox">
 			<img src="images/lpPage_penOver.png" class="LetsPlayThumb" alt="Penumbra Overture">
-			<span class="LPHeadline">PENUMBRA OVETURE</span>
+			<span class="LPHeadline">PENUMBRA OVERTURE</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=ZiwNW3bA-A0&list=PLMYyvoe65YslO9cftBYDWNkJYLGb7-xiG">Playlist</a> <br />

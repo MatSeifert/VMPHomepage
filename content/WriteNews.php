@@ -1,5 +1,5 @@
-﻿<div class="PostTitle">
-  NEWS HINZUFÜGEN
+﻿<div class="PostTitle" style="margin: -10px 0px 0px 20px">
+  NEWS VERFASSEN
 </div>
 <div class="PostPost">
 	<p>&nbsp;</p>

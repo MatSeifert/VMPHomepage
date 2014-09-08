@@ -17,6 +17,9 @@
 		<li>Auf der Seite einer News befindet sich der Autor und das Datum nun im Headerbild</li>
 		<li>An gleicher Stelle findet sich nun auch das betreffende Game bzw. die Kategorie</li>
 		<li>2 neue Headerbilder (The Crew)</li>
+		<li>Steam Icon durch Twitter ersetzt</li>
+		<li>Screenshotseiten an das neue Design angepasst</li>
+		<li>Let's Play Widget besser an das neue Design angepasst</li>
 	</ul>
 	<p>&nbsp;</p>
 		<span class="smallHeadline">

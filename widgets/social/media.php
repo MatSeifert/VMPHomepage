@@ -17,8 +17,8 @@
 	</div>
 	<div class="card-container">
 		<div class="card">
-			<div class="side"><a href="http://steamcommunity.com/groups/vmpclan" target="_blank"><img src="images/SocialSteamOr.png" alt="Platzhalter"></a></div>
-			<div class="side back"><a href="http://steamcommunity.com/groups/vmpclan" target="_blank"><img src="images/SocialSteamHv.png" alt="Platzhalter"></a></div>
+			<div class="side"><a href="http://twitter.com/vmpclan" target="_blank"><img src="images/SocialTwitterOr.png" alt="Platzhalter"></a></div>
+			<div class="side back"><a href="http://twitter.com/vmpclan" target="_blank"><img src="images/SocialTwitterHv.png" alt="Platzhalter"></a></div>
 		</div>
 	</div>	
 	<div class="card-container">

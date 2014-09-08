@@ -659,8 +659,9 @@ div.LPDescription {
 
 .FlickrSubTitle {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	margin: 0px 0px 15px 0px;
+	font-size: 16px;
+	color: #000;
+	margin: 15px 0px 15px 0px;
 }
 
 .FlickrImage {
@@ -677,6 +678,16 @@ div.LPDescription {
 	z-index: 100;
 	-webkit-transform:scale(2.5);
     transform:scale(2.5);
+}
+
+.ScreenshotsIcon {
+	position: absolute;
+	margin: 20px 0px 0px 400px;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	box-shadow: 
+		0px 1px 3px 0px rgba(0,0,0,0.2), 
+		0px 1px 3px 0px rgba(0,0,0,0.2);	
 }
 
 .FlickrSubText {
@@ -1670,11 +1681,11 @@ select.ArchiveMonth {
 
 .backL {
 	float: left; 
-	margin: 9px 15px 0px -30px;
+	margin: -6px 15px 0px -30px;
 }
 
 .backL:hover {
-	background-color: #ccc;
+	background-color: #5677fc;
 }
 
 .lpBackS:hover {
@@ -1708,4 +1719,37 @@ select.ArchiveMonth {
 	font-size: 26px;
 	color: #fff;
 	margin: 10px 0px 0px 20px;
+}
+
+.watchmore {
+	position: absolute;
+	color: #fff;
+	font-size: 50px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	display: block;
+	background-color: #5677fc;
+    border-radius: 50%;
+   	width: 40px;
+	height: 40px;
+	margin: -12px 0px 0px 200px;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+   	box-shadow: 
+		0px 1px 3px 0px rgba(0,0,0,0.2), 
+		0px 1px 3px 0px rgba(0,0,0,0.2);	
+}
+
+.watchmore a {
+	position: absolute;
+	margin: -20px 0px 0px -9px;
+	color: #fff;
+}
+
+.watchmore:hover {
+	background-color: #738ffe;
+}
+
+.watchmore:hover a {
+	color: #fff;
 }
