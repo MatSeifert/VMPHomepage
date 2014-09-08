@@ -7,7 +7,7 @@
 		<country>germany</country>
 		<sex>male</sex>
 		<nickname>Behemoth</nickname>
-		<rank>Admin</rank>
+		<rank>Gründer / Admin</rank>
 		<activity value="aktiv" />
 		<birthday day="14" month="3" year="1991" />
 		<recruited in="2008" />
@@ -35,10 +35,18 @@
 		<country>germany</country>
 		<sex>male</sex>
 		<nickname>Black Angel</nickname>
-		<rank>Vizeadmin</rank>
+		<rank>Admin</rank>
 		<activity value="aktiv" />
 		<birthday day="24" month="2" year="1992" />
 		<recruited in="2010" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Rabbit</nickname>
+		<rank>Admin</rank>
+		<activity value="aktiv" />
+		<recruited in="2011" />
 	</member>
 	<!-- FOUNDER -->
 	<member>
@@ -76,14 +84,6 @@
 		<activity value="inaktiv" />
 		<birthday day="13" month="6" year="1990" />
 		<recruited in="2010" />
-	</member>
-	<member>
-		<country>germany</country>
-		<sex>male</sex>
-		<nickname>Rabbit</nickname>
-		<rank>Member</rank>
-		<activity value="aktiv" />
-		<recruited in="2011" />
 	</member>
 	<member>
 		<country>germany</country>

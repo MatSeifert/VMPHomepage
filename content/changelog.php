@@ -8,6 +8,17 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
+		Date unclear - Version 4.0.4.3 
+	</span>
+	<ul style="padding: 0px 0px 0px 20px">
+		<li>Fade Effekt und farbige Hover Icons im Menü</li>
+		<li>Neues Design mit mehr Farbe</li>
+		<li>Neues Design für den "News schreiben" Button</li>
+		<li>Auf der Seite einer News befindet sich der Autor und das Datum nun im Headerbild</li>
+		<li>An gleicher Stelle findet sich nun auch das betreffende Game bzw. die Kategorie</li>
+	</ul>
+	<p>&nbsp;</p>
+		<span class="smallHeadline">
 		12.08.2014 - Version 4.0.4.2 
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">

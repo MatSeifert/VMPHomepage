@@ -1,5 +1,5 @@
 <?php
-	$loc_de = setlocale (LC_ALL, 'de_DE@euro', 'de_DE', 'de', 'ge');
+	setlocale(LC_TIME, 'de_DE');
 
 	function ImageCount() {					// Zählen der Bilder im angegeben Ordner +++ NAMECONVENTION BEI NEUEN BILDERN BEACHTEN!
 		$files = scandir('images/header');
@@ -125,7 +125,6 @@
 			</div>
 
 			<div class="content">
-
 				<?php require_once ("content/case.php") ?>
 			   	<p>&nbsp;</p>
 

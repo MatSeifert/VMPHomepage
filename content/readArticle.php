@@ -1,5 +1,22 @@
 <?php
+	function GetAlias($game)
+	{
+		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
+		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}	
+
+		$result = mysqli_query($database,"SELECT * FROM aliastable WHERE alias = '$game'");
+		
+		while($row = mysqli_fetch_array($result)) {
+			return $row['realname'];
+		}
+
+	}
+
 	function ConnectToDatabase() {
+
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
 		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
 		if (mysqli_connect_errno()) {
@@ -15,10 +32,15 @@
 		$result = mysqli_query($database,"SELECT * FROM articles WHERE id = $id");
 
 		while($row = mysqli_fetch_array($result)) {
+			$gamename = strtoupper(GetAlias($row['game']));
+
+			echo '<span class="SqlArticleGame">' . $gamename . '</span>' . 
+				 '<span class="SqlArticleDate">' . date("d.m.Y", strtotime($row['date'])) . 
+				 '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . 
+				 '&nbsp;UHR&nbsp;VON&nbsp;' . strtoupper($row['author']) . '</span>';
 		  	echo '<img class="SqlArticleHeadImage" src="images/articles/' . $row['game'] . '.jpg" alt="' . $row['game'] . '">';
 		  	echo '<a href="?site=' . $backlink . '"><img src="images/backButton.png" alt="Back" border="0" class="SqlArticleBack"></a>';
 		  	echo '<span class="SqlArticleHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span>';
-		  	echo '<span class="SqlArticleDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
 		  	echo '<span class="SqlArticleContent">' . utf8_encode($row['content']) . '</span>';
 		}
 

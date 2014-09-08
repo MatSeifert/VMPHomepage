@@ -293,6 +293,7 @@ body {
 			.SqlArticleHeadImage {
 				width: 98% !important;
 				margin: 5px 5px 0px 5px !important;
+				z-index: 0;
 			}
 
 			.SqlArticleBack {
@@ -359,6 +360,10 @@ body {
 
 			#disqus_thread {
 				width: 95%!important;
+			}
+
+			.navigationS {
+				font-size: 13px !important;
 			}
 
 			/* ----------- END OF RESPONSIVE LAYOUT DECLARATIONS ---------- */
@@ -474,10 +479,20 @@ body {
 
 /* Einstellungen für Hyperlinks */
 
-a.navigation:link{color:#787878; text-decoration:none}
-a.navigation:visited{color:#787878; text-decoration:none}
-a.navigation:hover{color:#9E0000; text-decoration:none}
-a.navigation:active{color:#9E0000; text-decoration:none}
+.navigation {
+	color:#787878 !important; 
+	text-decoration:none
+	-webkit-transition: color .4s ease-in;
+	-moz-transition: color .4s ease-in;
+	-o-transition: color .4s ease-in;
+	-ms-transition: color .4s ease-in;
+	transition: color .4s ease-in;
+}
+
+.navigation:hover {
+	color:#C40000 !important;
+	text-decoration:none
+}
 
 a:link{color:#7F0000; text-decoration:none}
 a:visited{color:#7F0000; text-decoration:none}
@@ -517,8 +532,12 @@ div.right {
 
 div.NavContainer {
 	background-color: #fff;
-	margin: 10px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	padding-top: 10px;
 	height: auto;
+	background: url('../images/bg_material.png');
+    background-size: 300px 55px;
+    background-repeat: no-repeat;
 }
 
 div.NavContainerMobile {
@@ -537,11 +556,14 @@ div.content {
 	width: 600px;
 	margin: 0px 0px 20px 20px;
 	float: left;
-	background-color: #fff;
+	background-color: #fff !important;
+	z-index: 0;
 	box-shadow: 
 		2px 2px 1px 0px rgba(0,0,0,0.1), 
 		0px 0px 1px 0px rgba(0,0,0,0.1);
-}
+    background: url('../images/bg_material.png');
+    background-size: 600px 55px;
+    background-repeat: no-repeat;}
 
 .forumContent {
 	width: 870px;
@@ -565,10 +587,13 @@ div.contentWrapper {
 }
 
 div.contentBox {
-	background-color: #fff;
+	background-color: #fff !important;
 	box-shadow: 
 		2px 2px 1px 0px rgba(0,0,0,0.1), 
-		0px 0px 1px 0px rgba(0,0,0,0.1);	
+		0px 0px 1px 0px rgba(0,0,0,0.1);
+	background: url('../images/bg_material.png');
+    background-size: 600px 55px;
+    background-repeat: no-repeat;}	
 }
 
 span.more {
@@ -711,13 +736,15 @@ div.LPBoxLatestVideo {
 	text-align: left;
 	background-color: #EFEFEF;
 	margin: 0px 3px 15px 3px;
-	width: 100%;
+	width: 520px;
 	height: 113px;
 	padding: 0px;
 	box-shadow: 
 		2px 2px 1px 0px rgba(0,0,0,0.2), 
 		0px 0px 1px 0px rgba(0,0,0,0.2);	
 	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 div.LPBox {
@@ -763,6 +790,7 @@ span.LPHeadline {
 	font-size: 16px;
 	margin-left: 0px;
 	overflow: hidden;
+	text-overflow: ellipsis;
 	white-space: nowrap;
 	display: block;
 	width: 155px;
@@ -782,6 +810,7 @@ div.LPContentLatestVideo {
 	font-size: 14px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	overflow: hidden;
+	text-overflow: ellipsis;
 	padding: 0px 10px 0px 0px;
 	margin: -16px 0px 0px 0px;
 	height: 90px;
@@ -829,23 +858,48 @@ span.RightHeadline {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 26px;
+	color: #fff;
 	border-bottom-style: solid;
-	border-bottom-width: 2px;
+	border-bottom-width: 0px;
 	border-bottom-color: #d3d3d3;	
 	width: 85%;
 	display: inline-block;
 	margin: 10px 0px 0px 20px;
 }
 
+.navigation {
+	margin: 0px 0px 0px 30px;
+}
+
+a:hover img.top{
+    opacity:0;
+}
+
 .NavPoint {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 20px;
-	margin: 2px 0px auto 25px;
+	margin: 4px 0px auto 25px;
 	border-bottom: solid 1px #e3e3e3;
 	width: 80%;
 	height: 32px;
-	display: inline-block;
+	position:relative;
+	display: block;
+}
+
+.NavPoint img {
+	position:absolute;
+    margin: 5px 0px 0px -30px;
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;    
+    transition: opacity .4s ease-in-out;
+}
+
+.NavPoint img.top:hover {
+    opacity:0;
 }
 
 span.title {
@@ -908,10 +962,11 @@ div.PostTitle {
 	font-weight: 300;
 	font-size: 26px;
 	width: 520px;
+	color: #fff;
 	margin: 10px auto;
 	padding-bottom: 3px;
 	border-bottom-style: solid;
-	border-bottom-width: 2px;
+	border-bottom-width: 0px;
 	border-bottom-color: #d3d3d3;	
 }
 
@@ -930,6 +985,7 @@ div.PostPost {
 	margin: auto auto;
 	font-size: 14px;
 	line-height: 18px;
+	padding: 30px 0px 0px 0px;
 }
 
 /* Deklarationen zur Darstellung der Memberliste auf der Homepage, tabellarische Form */
@@ -1237,6 +1293,7 @@ article {
 	overflow: auto;
 	text-align: left;
 	z-index: 5;
+	width: 400px;
 }
 
 .mobileSidebar input:checked ~ article.mobileSidebarContainer{
@@ -1474,10 +1531,26 @@ table.mania2011 {
 }
 
 .SqlArticleDate {
+	position: absolute;
 	display: block;
-	font-size: 12px;
+	padding: 5px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #bf360c;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
-	margin: 10px 0px 0px 40px;
+	margin: 210px 0px 0px 0px;
+}
+
+.SqlArticleGame {
+	position: absolute;
+	text-align: right;
+	display: block;
+	padding: 0px 10px 3px 10px;
+	font-size: 34px;
+	color: #fff;
+	background-color: #bf360c;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	margin: 150px 0px 0px 0px;
 }
 
 .SqlArticleContent {
@@ -1493,19 +1566,31 @@ table.mania2011 {
 }
 
 .AddNews {
-	float: right;
-	font-size: 16px;
-	vertical-align: middle;
-	height: auto;
+	position: absolute;
+	font-size: 46px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-align: center;
 	display: block;
-	border: 1px solid #870000;
-	background-color: #FFD6D6;
-	padding: 3px;
-	margin-top: 4px;
+	background-color: #5677fc;
+	width: 50px;
+	height: 50px;
+	margin: -15px 0px 0px 460px;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	box-shadow: 
+		0px 1px 3px 0px rgba(0,0,0,0.2), 
+		0px 1px 3px 0px rgba(0,0,0,0.2);	
+}
+
+.AddNews a {
+	position: absolute;
+	margin: -2px 0px 0px -13px;
+	color: #fff;
 }
 
 .AddNews:hover {
-	background-color: #870000;
+	background-color: #738ffe;
 }
 
 .AddNews:hover a {
@@ -1575,7 +1660,7 @@ select.ArchiveMonth {
 }
 
 .required {
-	background-color: #FFE5E5;
+	background-color: #fde0dc;
 	border: 1px solid #999;
 }
 
@@ -1614,4 +1699,13 @@ select.ArchiveMonth {
 
 .feedback {
 	margin: 0px 0px 0px 10px;
+}
+
+.NavMainTitle {
+	text-align: left;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 26px;
+	color: #fff;
+	margin: 10px 0px 0px 20px;
 }

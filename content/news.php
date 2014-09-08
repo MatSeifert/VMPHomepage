@@ -43,7 +43,7 @@
 <div class="PostTitle">
   NEWS
   <span class="AddNews">
-  	<a href="?site=AddNews">News schreiben</a>
+  	<a href="?site=AddNews">+</a>
   </span>
 </div>
 <div class="PostPost">

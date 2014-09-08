@@ -42,7 +42,7 @@
 	 * des Titels identifiziert. Nicht optimal, falls mal eine News einen doppelten Titel hat, hilft
 	 * momentan aber alles nix. Funktioniert, also gut is!
 	 */
-	function GetLinkWithID($title) {
+	function GetLinkWithID() {
 
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
 		// Check connection 																		
@@ -50,7 +50,7 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}			
 
-		$result = mysqli_query($database,'SELECT id FROM articles WHERE headline = "' . $title . '"');
+		$result = mysqli_query($database,'SELECT id FROM articles ORDER BY id DESC LIMIT 1');
 
 		while($row = mysqli_fetch_array($result)) {
 		   $link = 'vmp-clan.de/?site=read&id=' . $row['id'];
@@ -129,7 +129,7 @@
 		mysqli_close($con);
 
 		// Define Link and shorten it for SEO-Stuff
-		$newsLink = GetLinkWithID($title);
+		$newsLink = GetLinkWithID();
 
 		// Define the Social Media Snippet (Selfmade or generated)
 		if ($_POST['SocialMediaSnippet'] == null)
@@ -165,6 +165,6 @@
 		echo($message) . '<p>&nbsp;</p>';
 		echo '<div class="smallHeadline">Social Media</div>';
 		echo($twitterMessage); 
-		echo '<b>' . ($finalTweet) . '</b>';
+		echo '<b>' . (utf8_encode($finalTweet)) . '</b>';
 	?>
 </div>
