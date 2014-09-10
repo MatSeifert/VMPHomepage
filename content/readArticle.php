@@ -15,14 +15,8 @@
 
 	}
 
-	function ConnectToDatabase() {
-
-		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
-		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
-		if (mysqli_connect_errno()) {
-		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}			
-
+	function PrintArticle($database)
+	{
 		$id = $_GET['id'];
 		if (isset($_GET['origin']) && !empty($_GET['origin']) && isset($_GET['y']) && !empty($_GET['y']) && isset($_GET['m']) && !empty($_GET['m'])) {
 			$backlink = $_GET['origin'] . '&year=' . $_GET['y'] . '&month=' . $_GET['m'];
@@ -45,7 +39,70 @@
 		}
 
 		// Read Counter bei jedem Aufruf der News um eins erhöhen
-		mysqli_query($database, "UPDATE articles SET articles.articleRead = articles.articleRead+1 WHERE id = $id");
+		mysqli_query($database, "UPDATE articles SET articles.articleRead = articles.articleRead+1 WHERE id = $id");	
+	}
+
+	function GetNameAndId($database, $type)
+	{
+		$id = $_GET['id'];
+
+		$result = mysqli_query($database,"SELECT game, id FROM articles WHERE id = $id");
+
+		while($row = mysqli_fetch_array($result)) {
+			if ($type)
+			{
+				return $row['game'];
+			}
+			else {
+				return $row['id'];
+			}
+		}
+	}
+
+	function PrintSimilarArticles($database, $game, $id) 
+	{
+		$result = mysqli_query($database,"SELECT * FROM articles WHERE game = '$game' AND id != $id ORDER BY id DESC LIMIT 0, 3");
+
+		if (mysqli_num_rows($result) == 0)
+		{
+			// continue
+		}
+		else { echo '<span class="smallHeadline">	Mehr zu ' . GetAlias($game) . ':	</span>'; }
+
+
+
+		while($row = mysqli_fetch_array($result)) {
+			echo '<div class="similarArticleWrapper">';
+			echo '<a href="?site=read&id=' . $row['id'] . '"><img class="SimThumb" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
+			echo '<a href="?site=read&id=' . $row['id'] . '" alt="News"><span class="SimHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span></a>';
+			echo '<span class="SimInfo">' . date("d.m.Y", strtotime($row['date'])) . 
+				 '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . 
+				 '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
+			echo '</div>';
+		}
+
+	}
+
+	function ConnectToDatabase($article) {
+
+		$game = "nichtinderliste";	// default
+
+		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");
+		// Check connection 	
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}		
+
+		if ($article)
+		{
+			$game = PrintArticle($database);
+		}
+		else {
+			$game = GetNameAndId($database, true);
+			$id = GetNameAndId($database, false);
+
+			PrintSimilarArticles($database, $game, $id);
+		}
 
 		// Verbindung schließen
 		mysqli_close($database);
@@ -56,9 +113,12 @@
     NEWS
 </div>
 
-	<?php ConnectToDatabase(); ?>
+	<?php ConnectToDatabase(true); ?>
 
 <div class="PostPost">
+
+	<?php ConnectToDatabase(false); ?>
+
 	<p>&nbsp;</p>
 	<div id="disqus_thread"></div>
 	    <script type="text/javascript">

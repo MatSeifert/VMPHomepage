@@ -61,6 +61,26 @@
 				}
 			}
 		</script>
+
+		<script>			
+			$(window).load(function(){
+				$('click').on('click',function() {
+				    if($('#slidemenu').css('left')=='0px'){
+				        $('#slidemenu').animate({left: '-320px'}, 500);        
+				    }else{
+				        $('#slidemenu').animate({left:0}, 500); 
+				    }
+				});
+
+				$('click2').on('click',function() {
+				    if($('#slideright').css('right')=='0px'){
+				        $('#slideright').animate({right: '-300px'}, 500);        
+				    }else{
+				        $('#slideright').animate({right:0}, 500); 
+				    }
+				});
+			}); 
+		</script>
 	</head>
 
 	<body>
@@ -68,40 +88,28 @@
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
 
-				<section class="mobileSidebar">
-					<input id="RightSidebar" name="accordion-1" type="checkbox" />
-					<label for="RightSidebar" class="ac-1">
-						<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
-					</label>
-					<article class="mobileSidebarContainer">
-						<div id="mobiSidebar">
+				<click2 class="showRight">
+					<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
+				</click2>
+				<div id="slideright">
+					<iframe 
+						onload="javascript:parent.iFrameHeight('sidebar','sidebar');" 
+						src="sidebar.php" 
+						id="sidebar" name="sidebar"
+						frameborder="0" 
+						class="wrapper"
+						style="height: 1400px; overflow-x: hidden; width: 270px;">
+					</iframe>
+				</div>
 
-							<iframe 
-								onload="javascript:parent.iFrameHeight('sidebar','sidebar');" 
-								src="sidebar.php" 
-								id="sidebar" name="sidebar"
-								frameborder="0" 
-								class="wrapper"
-								style="height: 1400px; overflow-x: hidden; width: 270px;">
-							</iframe>
 
-						</div>
-						<div style="height: 100%; background-color: #ff9900"></div>
-					</article>
-				</section>	
+				<click class="show">
+					<img src="images/menue.png" alt="menu" style="float: left; margin-left: 0px">
+				</click>
+				<div id="slidemenu">
+					<?php include("content/menue.php") ?>
+				</div>
 
-				<section class="mobileMenu">
-					<input id="LeftMenu" name="accordion-1" type="checkbox" />
-					<label for="LeftMenu" class="ac-2">
-						<img src="images/menue.png" alt="menu" style="float: left; margin-left: 0px">
-					</label>
-					<article class="mobileMenuContainer">
-						<div id="mobiMenu">
-							<?php include("content/menue.php") ?>
-						</div>
-						<div style="height: 100%; background-color: #ff9900"></div>
-					</article>
-				</section>	
 			</div>
 		</div>
 		<!-- End of mobile Header /-->
@@ -135,14 +143,16 @@
 			   		<span class="RightHeadline">TEAMSPEAK 3</span>
 			   		<div class="rightText">
 			   			<p>&nbsp;</p>
-					   	<div id="ts3viewer_944104" > </div>
-				 		<script type="text/javascript" src="http://static.tsviewer.com/short_expire/js/ts3viewer_loader.js"></script>
-				 		<script type="text/javascript">
-				  			
-					   			var ts3v_url_1 = "http://www.tsviewer.com/ts3viewer.php?ID=944104&text=000000&text_size=11&text_family=1&js=1&text_s_weight=normal&text_s_style=normal&text_s_variant=normal&text_s_decoration=none&text_s_color_h=525284&text_s_weight_h=bold&text_s_style_h=normal&text_s_variant_h=normal&text_s_decoration_h=underline&text_i_weight=normal&text_i_style=normal&text_i_variant=normal&text_i_decoration=none&text_i_color_h=525284&text_i_weight_h=normal&text_i_style_h=normal&text_i_variant_h=normal&text_i_decoration_h=underline&text_c_weight=normal&text_c_style=normal&text_c_variant=normal&text_c_decoration=none&text_c_color_h=525284&text_c_weight_h=normal&text_c_style_h=normal&text_c_variant_h=normal&text_c_decoration_h=underline&text_u_weight=bold&text_u_style=normal&text_u_variant=normal&text_u_decoration=none&text_u_color_h=525284&text_u_weight_h=bold&text_u_style_h=normal&text_u_variant_h=normal&text_u_decoration_h=none";
-					   			ts3v_display.init(ts3v_url_1, 944104, 100);
-				  			
-				 		</script> 
+							<div id="ts3viewer_944104" style="width:; background-color:;"> </div>
+
+							<script type="text/javascript" src="http://static.tsviewer.com/short_expire/js/ts3viewer_loader.js"></script>
+
+							<script type="text/javascript">
+							<!--
+							var ts3v_url_1 = "http://www.tsviewer.com/ts3viewer.php?ID=944104&text=000000&text_size=11&text_family=1&js=1&text_s_color=a80000&text_s_weight=normal&text_s_style=normal&text_s_variant=small-caps&text_s_decoration=none&text_s_color_h=3f90f2&text_s_weight_h=normal&text_s_style_h=normal&text_s_variant_h=small-caps&text_s_decoration_h=underline&text_i_color=bfbfbf&text_i_weight=normal&text_i_style=normal&text_i_variant=normal&text_i_decoration=none&text_i_color_h=3f90f2&text_i_weight_h=normal&text_i_style_h=normal&text_i_variant_h=normal&text_i_decoration_h=underline&text_c_color=3b3b3b&text_c_weight=normal&text_c_style=normal&text_c_variant=small-caps&text_c_decoration=none&text_c_color_h=3f90f2&text_c_weight_h=normal&text_c_style_h=normal&text_c_variant_h=small-caps&text_c_decoration_h=underline&text_u_color=9e0000&text_u_weight=normal&text_u_style=normal&text_u_variant=small-caps&text_u_decoration=none&text_u_color_h=3f90f2&text_u_weight_h=normal&text_u_style_h=normal&text_u_variant_h=small-caps&text_u_decoration_h=none";
+							ts3v_display.init(ts3v_url_1.replace('<img src="http://static.tsviewer.com/images/teamspeak3/standard/16x16_server_pass.png" title="" alt="" align="top">', '<img src="images/disc.png">'), 944104, 100);
+							-->
+							</script>
 					   		<?php
 					   			// require_once ("widgets/TSViewer/TSViewer.php")
 					   		?>		
@@ -162,7 +172,10 @@
 			   	<div class="contentBox">
 			   		<span class="RightHeadline">LET'S PLAY</span>
 			   		<div class="watchmore">
-			   			<a href="?site=letsplay">&#187;</a>
+			   			<a href="?site=letsplay" class="tooltips">
+			   				&#187;
+			   				<span>Alle Projekte</span>
+			   			</a>
 			   		</div>
 			   		<p>&nbsp;</p>
 			   		<div class="rightText">
@@ -184,7 +197,7 @@
 			</div>
 		</div>
 		<script>
-			document.getElementById("mobiMenu").style.height = Hoehe - 60 + 'px';
+			document.getElementById("slidemenu").style.height = Hoehe - 60 + 'px';
 			document.getElementById("mobiSidebar").style.height = Hoehe + 'px';
 		</script>
 

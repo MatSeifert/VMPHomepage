@@ -42,10 +42,13 @@
 
 <div class="PostTitle">
   NEWS
-  <span class="AddNews">
-  	<a href="?site=AddNews">+</a>
-  </span>
 </div>
+  <span class="AddNews">
+  	<a href="?site=AddNews" class="tooltips">
+  		+
+  		<span>News schreiben</span>
+  	</a>
+  </span>
 <div class="PostPost">
 
 	<div class="LPBlock">

@@ -29,7 +29,16 @@
 
     echo '<div class="whereAmI">MEMBER</div>';           // Überschrift für mobile Seite
 
-    echo '<div class="PostTitle">Member</div><br />';    // Überschrift
+    echo '<div class="PostTitle">MEMBER                  
+            <span class="AddNews">
+              <a href="?site=joinus" class="tooltips">
+                +
+                <span>Mitglied werden</span>
+              </a>
+            </span>
+          </div>
+          <br>
+          <p>&nbsp;</p>';
     echo '<table class="memberlist">' .                  // Tabellenkopf
             '<tr>' .
               '<td>LAND</td>' .

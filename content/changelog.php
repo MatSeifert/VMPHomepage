@@ -13,13 +13,18 @@
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Fade Effekt und farbige Hover Icons im Menü</li>
 		<li>Neues Design mit mehr Farbe</li>
-		<li>Neues Design für den "News schreiben" Button</li>
+		<li>Neues Design für den "News schreiben" Button (und weitere Circle Buttons)</li>
 		<li>Auf der Seite einer News befindet sich der Autor und das Datum nun im Headerbild</li>
 		<li>An gleicher Stelle findet sich nun auch das betreffende Game bzw. die Kategorie</li>
 		<li>2 neue Headerbilder (The Crew)</li>
 		<li>Steam Icon durch Twitter ersetzt</li>
 		<li>Screenshotseiten an das neue Design angepasst</li>
 		<li>Let's Play Widget besser an das neue Design angepasst</li>
+		<li>Die neuen Circle Buttons haben einen Tooltip</li>
+		<li>Mobiles Menü und Widgetbar animiert, neue Technik mit weniger Quellcode</li>
+		<li>News hinzufügen Button ist nun auch mobil erreichbar</li>
+		<li>Artikelinformationen wie Kommentare und Read Counter sind nun auch mobil sichtbar</li>
+		<li>Auf der Artikelseite werden nun unter dem Text weitere Artikel zum betreffenden Game angezeigt</li>
 	</ul>
 	<p>&nbsp;</p>
 		<span class="smallHeadline">

@@ -40,6 +40,7 @@ body {
             	margin-top: 0px !important;
             }
             div[class=content] {
+            	background-image: none !important;
             	width: 100% !important;
             	margin: 0px 0px 0px 0px !important;
             	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.1) !important;
@@ -201,6 +202,7 @@ body {
             div[class=contentBox] {
             	width: 250px !important;
             	margin: 0px 0px 0px 10px !important;
+            	background-image: none !important; 
             }
             div[class=LPSubHeadline] {
             	font-size: 36px !important;
@@ -275,19 +277,19 @@ body {
 			}
 
 			.SqlNewsDate {
-				font-size: 13px !important;
-				margin: -5px 0px 0px 0px !important;
+				display: none !important;
 			}
 
 			.SqlNewsSnippet {
 				width: auto !important;
-				font-size: 17px !important;
-				line-height: 19px !important;
+				font-size: 22px !important;
+				line-height: 24px !important;
 				height: 98px !important;
 			}
 
 			.SqlNewsReadMore {
-				display: none !important;
+				font-size: 17px !important;
+				margin: -8px 0px 0px 160px !important;
 			}
 
 			.SqlArticleHeadImage {
@@ -312,15 +314,12 @@ body {
 			}
 
 			.SqlArticleDate {
-				display: block;
-				font-size: 12px;
-				font-family: 'Roboto', Arial, Helvetica, sans-serif;
-				margin: 10px 0px 0px 40px;
+				display: none !important;
 			}
 
 			.SqlArticleContent {
 				display: block;
-				font-size: 18px !important;
+				font-size: 22px !important;
 				font-family: 'Roboto', Arial, Helvetica, sans-serif;
 				text-align: justify;
 				margin: 10px 40px 0px 40px;
@@ -364,6 +363,66 @@ body {
 
 			.navigationS {
 				font-size: 13px !important;
+			}
+
+			.AddNews {
+				bottom: 0 !important;
+				right: 0 !important;
+				margin: 0px 10px 20px 0px !important;
+				position: fixed !important;
+				z-index: 10 !important;
+				width: 100px !important;
+				height: 100px !important;
+				font-size: 96px !important;
+			}
+
+			.AddNews a {
+				margin: -3px 0px 0px -27px !important;
+			}
+
+			.SqlArticleGame {
+				display: none !important;
+			}
+
+			.NavContainer {
+				background-image: none !important;
+				margin: 0px 0px 0px -20px !important;
+			}
+
+			.space {
+				display: none !important;
+			}
+
+			.NavMainTitle {
+				display: none !important;
+			}
+
+			.NavCategory {
+				text-align: left;
+				font-size: 30px !important;
+				color: #333;
+			}
+
+			.NavPoint {
+				text-align: left;
+			}
+
+			.navigation img {
+				display: none !important;
+			}
+
+			.navigation {
+				font-size: 28px;
+			}
+
+			.impressum {
+				color: #555;
+				text-align: left;
+				margin: 0px 0px 0px 30px !important;
+			}
+
+			.showRight {
+				float: right;
 			}
 
 			/* ----------- END OF RESPONSIVE LAYOUT DECLARATIONS ---------- */
@@ -480,7 +539,7 @@ body {
 /* Einstellungen für Hyperlinks */
 
 .navigation {
-	color:#787878 !important; 
+	color: #787878 !important; 
 	text-decoration:none
 	-webkit-transition: color .4s ease-in;
 	-moz-transition: color .4s ease-in;
@@ -1286,7 +1345,7 @@ div.icons {
 	overflow: hidden;
 	height: 0px;
 	z-index: 10;
-	width: 270px;
+	width: 370px;
 	float: right;
 	right: 0px;
 	position: absolute;
@@ -1304,7 +1363,7 @@ article {
 	overflow: auto;
 	text-align: left;
 	z-index: 5;
-	width: 400px;
+	width: 600px;
 }
 
 .mobileSidebar input:checked ~ article.mobileSidebarContainer{
@@ -1315,7 +1374,6 @@ article {
 	overflow: auto;
 	text-align: left;
 	z-index: 5;
-	box-shadow: 0px 0 0px rgba(0,0,0,0),  -8px 0 8px rgba(0,0,0,0.3); 
 }
 
 .mobileMenu input:checked ~ article.mobileMenuContainer{
@@ -1326,10 +1384,12 @@ article {
 	color: #000;
 	overflow: auto;
 	text-align: left;
+	width: 300px;
+	padding-right: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 5;
-	box-shadow: 
-		5px 5px 5px 5px rgba(0,0,0,0.3), 
-		8px 6px 6px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 10px 0 5px -2px #000;
+            box-shadow: 10px 0 5px -2px #000;
 }
 
 .mobileSidebar input:checked ~ article.mobileMenuContainer{
@@ -1351,7 +1411,7 @@ article {
 }
 
 #mobiSidebar {
-	width: 270px;
+	width: 290px;
 }
 
 .hr {
@@ -1586,8 +1646,13 @@ table.mania2011 {
 	background-color: #5677fc;
 	width: 50px;
 	height: 50px;
-	margin: -15px 0px 0px 460px;
+	margin: -30px 0px 0px 490px;
     border-radius: 50%;
+    -webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 	box-shadow: 
 		0px 1px 3px 0px rgba(0,0,0,0.2), 
@@ -1734,6 +1799,11 @@ select.ArchiveMonth {
    	width: 40px;
 	height: 40px;
 	margin: -12px 0px 0px 200px;
+    -webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;	
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
    	box-shadow: 
 		0px 1px 3px 0px rgba(0,0,0,0.2), 
@@ -1752,4 +1822,103 @@ select.ArchiveMonth {
 
 .watchmore:hover a {
 	color: #fff;
+}
+
+a.tooltips {
+
+}
+a.tooltips span {
+	position: absolute;
+	width: 140px;
+	color: #444;
+	background: #fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	visibility: hidden;
+	border-radius: 0px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	box-shadow: 
+		2px 2px 1px 0px rgba(0,0,0,0.2), 
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+	opacity: 0;
+	transition: opacity .35s ease-in-out;
+	-moz-transition: opacity .35s ease-in-out;
+	-webkit-transition: opacity .35s ease-in-out;
+
+}
+a.tooltips span:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -8px;
+	width: 0; height: 0;
+	border-top: 8px solid #fff;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+	visibility: visible;
+	opacity: 1;
+	bottom: 65px;
+	left: 50%;
+	margin: 0px 0px 0px -71px;
+	z-index: 999;
+}
+
+#slidemenu {
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    width: 300px;
+    left: -320px;
+    top: 60px;
+    overflow: scroll;
+	box-shadow: 
+		2px 2px 20px 0px rgba(0,0,0,0.4), 
+		0px 0px 1px 0px rgba(0,0,0,0.4);   
+}
+
+#slideright {
+    height: 100%;
+    position: fixed;
+    background: #8c0000;
+    width: 300px;
+    right: -300px;
+    top: 60px;
+    overflow: scroll;
+    z-index: 50;  
+}
+
+.similarArticleWrapper {
+	background-color: #EFEFEF;
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+				0px 0px 1px 0px rgba(0,0,0,0.2);	
+	width: 520px;
+	height: 59px;
+	margin: 0px 0px 15px 0px;	
+}
+
+.SimHeadline {
+	font-size: 18px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 5px 0px 0px 0px;
+}
+
+.SimInfo {
+	font-size: 12px;
+	display: block;
+	padding: 5px 0px 10px 0px;
+	color: #666;
+}
+
+.SimThumb {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin: -1px 10px 0px -1px;
 }

@@ -1,6 +1,6 @@
 <div class="NavContainer">
 	<span class="NavMainTitle">NAVIGATION</span>
-	<p>&nbsp;</p>
+	<p class="space">&nbsp;</p>
 	<span class="NavCategory">HOME</span> <br />
 	<span class="NavPoint">
 		<a class="navigation" href="?site=start">
