@@ -30,7 +30,7 @@
     echo '<div class="whereAmI">MEMBER</div>';           // Überschrift für mobile Seite
 
     echo '<div class="PostTitle">MEMBER                  
-            <span class="AddNews">
+            <span class="JoinUs">
               <a href="?site=joinus" class="tooltips">
                 +
                 <span>Mitglied werden</span>
