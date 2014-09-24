@@ -136,30 +136,39 @@
 		<activity value="aktiv" />
 		<recruited in="2013" />
 	</member>
-	<!-- TRIALMEMBER -->
 	<member>
 		<country>germany</country>
 		<sex>male</sex>
 		<nickname>TheBloodyRain</nickname>
-		<rank>Trial</rank>
+		<rank>Member</rank>
 		<activity value="aktiv" />
-		<birthday day="13" month="3" year="1995" />
-		<recruited in="2014" />
+		<birthday day="13" month="3" year="1991" />
+		<recruited in="2013" />
 	</member>
-	<member>
-		<country>germany</country>
-		<sex>male</sex>
-		<nickname>Fallen Angel</nickname>
-		<rank>Trial</rank>
-		<activity value="aktiv" />
-		<recruited in="2014" />
-	</member>
+	<!-- TRIALMEMBER -->
 	<member>
 		<country>germany</country>
 		<sex>male</sex>
 		<nickname>KolGaaaaa</nickname>
 		<rank>Trial</rank>
 		<activity value="aktiv" />
+		<recruited in="2014" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>female</sex>
+		<nickname>CloudCarboxyl</nickname>
+		<rank>Trial</rank>
+		<activity value="aktiv" />
+		<recruited in="2014" />
+	</member>
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>Phoenix</nickname>
+		<rank>Trial</rank>
+		<activity value="aktiv" />
+		<birthday day="15" month="9" year="1992" />
 		<recruited in="2014" />
 	</member>
 </memberlist>

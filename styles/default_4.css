@@ -104,11 +104,16 @@ body {
             	width: 300px !important;
             }
             div[class=LPHeadline] {
-            	width: 280px!important;
-            	font-size: 16px !important;
+            	width: 50% !important;
+            	font-size: 20px !important;
             	overflow: hidden !important;
+            	text-overflow: ellipsis !important;
             	white-space: nowrap !important;
             	margin: -5px 0px 0px 0px !important;
+  				padding-right: 10px !important;         	
+            	padding-left: 205px !important;
+            	position: absolute;
+            	float: left !important;
             }
             span[class=LPDate] {
             	display: inline-block !important;
@@ -154,7 +159,11 @@ body {
             }
             div[class=LPContentLatestVideo] {
             	overflow: hidden !important;
-            	margin: -36px 0px 0px 0px !important;
+            	margin: -8px 0px 0px 205px !important;
+            	position: absolute !important;
+            	width: 50% !important;
+            	font-size: 17px !important;
+            	line-height: 22px !important
             }
 			img[class=mobileHeadIcon] {
 			 	float: left; 
@@ -176,6 +185,7 @@ body {
 			}
 			div[class=LpSsMobileHeadline] {
 				display: block !important;
+				margin: 0px 0px 0px -30px !important;
 			}
 			p[class=ImageInfoText] {
 				font-size: 24px !important;
@@ -234,6 +244,7 @@ body {
             }
             .imageWrapper:hover .ImageInfo {
 				height: 60px !important;
+				z-index: 100 !important;
 			}
             div[class=maniaDescription] {
             	font-size: 22px !important;
@@ -271,9 +282,9 @@ body {
 			}
 
 			.SqlNewsHeadline {
-				padding: 3px 0px 0px 155px;
+				padding: 5px 0px 0px 155px;
 				width: auto !important;
-				font-size: 16px;
+				font-size: 22px !important;
 			}
 
 			.SqlNewsDate {
@@ -282,14 +293,21 @@ body {
 
 			.SqlNewsSnippet {
 				width: auto !important;
-				font-size: 22px !important;
+				font-size: 20px !important;
 				line-height: 24px !important;
 				height: 98px !important;
+				margin: 5px 0px 0px 0px !important;
+			}
+
+			.FlickrImage:hover {
+				z-index: 100 !important;
+				-webkit-transform: none !important;
+			    transform: none !important;
 			}
 
 			.SqlNewsReadMore {
-				font-size: 17px !important;
-				margin: -8px 0px 0px 160px !important;
+				font-size: 15px !important;
+				margin: -10px 0px 0px 160px !important;
 			}
 
 			.SqlArticleHeadImage {
@@ -358,7 +376,8 @@ body {
 			}
 
 			#disqus_thread {
-				width: 95%!important;
+				margin-right: 30px; 
+				margin-left: 30px;
 			}
 
 			.navigationS {
@@ -425,6 +444,39 @@ body {
 				float: right;
 			}
 
+			.hiddenOnMobile {
+				display: none !important;
+			}
+
+			.similarArticleWrapper {
+				margin-right: 30px !important; 
+				margin-left: 30px !important;
+				width: auto !important;
+				padding: 0px !important;
+			}
+
+			.SimHeadline {
+				white-space: nowrap;
+				padding: 0px 0px 0px 0px !important;
+				font-size: 19px !important;
+			}
+
+			.SimInfo {
+				margin-top: -10px !important;
+				font-size: 16px !important;
+			}
+
+			.LPBoxLatestVideo {
+				width: 98% !important;
+			}
+
+			.LpSsMobileHeadline a {
+				display: none !important;
+			}
+
+			.FlickrSubTitle {
+				margin: 0px 0px 0px 0px !important;
+			}
 			/* ----------- END OF RESPONSIVE LAYOUT DECLARATIONS ---------- */
 
         }
@@ -1533,6 +1585,7 @@ table.mania2011 {
 	text-align: left;
 	white-space: nowrap;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .SqlNewsDate {
@@ -1921,4 +1974,8 @@ a:hover.tooltips span {
 	height: 60px;
 	float: left;
 	margin: -1px 10px 0px -1px;
+}
+
+.hiddenOnMobile {
+	display: inline;
 }
