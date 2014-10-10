@@ -1699,7 +1699,7 @@ table.mania2011 {
 	background-color: #5677fc;
 	width: 50px;
 	height: 50px;
-	margin: -30px 0px 0px 490px;
+	margin: -30px 0px 0px 530px;
     border-radius: 50%;
     -webkit-transition: background-color .35s ease-in;
 	-moz-transition: background-color .35s ease-in;
@@ -2004,14 +2004,41 @@ a:hover.tooltips span {
 		0px 0px 1px 0px rgba(0,0,0,0.2);		
 }
 
-.ManiaIcon {
+.JoinUs {
 	position: absolute;
+	font-size: 46px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-align: center;
+	display: block;
+	background-color: #5677fc;
+	width: 50px;
+	height: 50px;
+	margin: -18px 0px 0px 490px;
     border-radius: 50%;
-    margin: -30px 0px 0px 110px;
+    -webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 	box-shadow: 
 		0px 1px 3px 0px rgba(0,0,0,0.2), 
 		0px 1px 3px 0px rgba(0,0,0,0.2);	
+}
+
+.JoinUs a {
+	position: absolute;
+	margin: -2px 0px 0px -13px;
+	color: #fff;
+}
+
+.JoinUs:hover {
+	background-color: #738ffe;
+}
+
+.JoinUs:hover a {
+	color: #fff;
 }
 
 .ManiaHeadline {
@@ -2033,4 +2060,10 @@ a:hover.tooltips span {
 		0px 1px 3px 0px rgba(0,0,0,0.2), 
 		0px 1px 3px 0px rgba(0,0,0,0.2);
     border-radius: 50%;
+}
+
+.ManiaIcon {
+	position: absolute;
+    border-radius: 50%;
+    margin: -30px 0px 0px 110px;
 }
