@@ -22,64 +22,16 @@
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
-
+			<!-- Javascript Dateien für diverse Funktionen /-->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<script src="javascript/parallax.js" type="text/javascript"></script>
 		<script src="javascript/charCount.js" type="text/javascript"></script>
-
+		<script src="javascript/smoothScroll.js" type="text/javascript"></script>		
+		<script src="javascript/windowHeight.js" type="text/javascript"></script>
+		<script src="javascript/setIFrameHeight.js" type="text/javascript"></script>
+		<script src="javascript/slideMenu.js" type="text/javascript"></script>
 		<script>
-			// Auslesen der aktuellen Fensterhöhe, eine Veränderung in Echtzeit ist unnötig
-			function Fensterhoehe () {
-			  if (window.innerHeight) {
-			    return window.innerHeight;
-			  } else if (document.body && document.body.offsetHeight) {
-			    return document.body.offsetHeight;
-			  } else {
-			    return 0;
-			  }
-			}
-			// Überwachung initialisieren
-			if (!window.Hoehe && window.innerHeight) {
-			  Hoehe = Fensterhoehe();
-			}
-		</script>
-
-		<script>
-			function iFrameHeight(n,id) 
-			{
-				var h = 0;
-				if ( !document.all ) 
-				{
-					h = document.getElementById(id).contentDocument.body.offsetHeight;
-					document.getElementById(id).style.height = h + 0 + 'px';
-				} 
-				else if( document.all ) 
-				{
-					// Extrawurst für den Internet Explorer
-					h = document.frames(n).document.body.scrollHeight;
-					document.getElementById(id).style.height = h + 0 + 'px';
-				}
-			}
-		</script>
-
-		<script>			
-			$(window).load(function(){
-				$('click').on('click',function() {
-				    if($('#slidemenu').css('left')=='0px'){
-				        $('#slidemenu').animate({left: '-320px'}, 500);        
-				    }else{
-				        $('#slidemenu').animate({left:0}, 500); 
-				    }
-				});
-
-				$('click2').on('click',function() {
-				    if($('#slideright').css('right')=='0px'){
-				        $('#slideright').animate({right: '-300px'}, 500);        
-				    }else{
-				        $('#slideright').animate({right:0}, 500); 
-				    }
-				});
-			}); 
+			var divHeight = document.getElementById("content").offsetHeight;
 		</script>
 	</head>
 
@@ -194,6 +146,19 @@
 
 				   	</div>
 			   	</div>	
+			   	<p>&nbsp;</p>
+			   	<div class="contentBox" id="PromoBox" style="display: none">
+			   		<span class="RightHeadline">VMP MOBIL</span>
+			   		<p>&nbsp;</p>
+			   		<div class="rightText">
+			   			
+						Erlebe unsere Seite jetzt auch auf deinem Smartphone! Rufe einfach wie gewohnt www.vmp-clan.de auf!
+						<br>
+						<div class="mobileScreenWrapper">
+							<img src="images/mobileScreen.png" class="mobileScreen">
+						</div>
+				   	</div>
+			   	</div>	
 			</div>
 		</div>
 		<script>
@@ -202,16 +167,16 @@
 		</script>
 
 		<script type="text/javascript">
-		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-		var disqus_shortname = 'vmp-clan'; // required: replace example with your forum shortname
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'vmp-clan'; // required: replace example with your forum shortname
 
-		/* * * DON'T EDIT BELOW THIS LINE * * */
-		(function () {
-		var s = document.createElement('script'); s.async = true;
-		s.type = 'text/javascript';
-		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-		}());
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
 		</script>
 	</body>
 </html>

@@ -58,6 +58,27 @@
 				}
 			}
 		</script>
+
+		<script>			
+			$(window).load(function(){
+				$('click').on('click',function() {
+				    if($('#slidemenu').css('left')=='0px'){
+				        $('#slidemenu').animate({left: '-320px'}, 500);        
+				    }else{
+				        $('#slidemenu').animate({left:0}, 500); 
+				    }
+				});
+
+				$('click2').on('click',function() {
+				    if($('#slideright').css('right')=='0px'){
+				        $('#slideright').animate({right: '-300px'}, 500);        
+				    }else{
+				        $('#slideright').animate({right:0}, 500); 
+				    }
+				});
+			}); 
+		</script>
+
 	</head>
 
 	<body>
@@ -65,40 +86,28 @@
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
 
-				<section class="mobileSidebar">
-					<input id="RightSidebar" name="accordion-1" type="checkbox" />
-					<label for="RightSidebar" class="ac-1">
-						<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
-					</label>
-					<article class="mobileSidebarContainer">
-						<div id="mobiSidebar">
+				<click2 class="showRight">
+					<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
+				</click2>
+				<div id="slideright">
+					<iframe 
+						onload="javascript:parent.iFrameHeight('sidebar','sidebar');" 
+						src="sidebar.php" 
+						id="sidebar" name="sidebar"
+						frameborder="0" 
+						class="wrapper"
+						style="height: 1400px; overflow-x: hidden; width: 270px;">
+					</iframe>
+				</div>
 
-							<iframe 
-								onload="javascript:parent.iFrameHeight('sidebar','sidebar');" 
-								src="sidebar.php" 
-								id="sidebar" name="sidebar"
-								frameborder="0" 
-								class="wrapper"
-								style="height: 1400px; overflow-x: hidden; width: 270px;">
-							</iframe>
 
-						</div>
-						<div style="height: 100%; background-color: #ff9900"></div>
-					</article>
-				</section>	
-
-				<section class="mobileMenu">
-					<input id="LeftMenu" name="accordion-1" type="checkbox" />
-					<label for="LeftMenu" class="ac-2">
-						<img src="images/menue.png" alt="menu" style="float: left; margin-left: 0px">
-					</label>
-					<article class="mobileMenuContainer">
-						<div id="mobiMenu">
-							<?php include("content/menueForum.php") ?>
-						</div>
-						<div style="height: 100%; background-color: #ff9900"></div>
-					</article>
-				</section>	
+				<click class="show">
+					<img src="images/menue.png" alt="menu" style="float: left; margin-left: 0px">
+				</click>
+				<div id="slidemenu">
+					<?php include("content/menueForum.php") ?>
+				</div>
+				
 			</div>
 		</div>
 		<!-- End of mobile Header /-->

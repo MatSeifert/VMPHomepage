@@ -124,50 +124,8 @@
 	}
 
 	function MonthlyAppointment() {
-	
-		$mDay = date("j");			// Tag des Monats, ohne führende 0
-		$cDay = $mDay + 7;
 
-		if ($mDay < 8 || $mDay > 24 && $cDay > 38) {
-			$wday = date("w");		// Wochentagsbestimmung
-			
-			switch ($wday) {
-				case 0:		// Sunday
-					$besprechungDate =  date('d.m.', mktime(date('H'), date('i'), date('s'), date('m'), date('d') + 1));
-					Besprechung($besprechungDate);
-					break;
-				
-				case 1:		// Monday
-					$besprechungDate =  "Heute";
-					Besprechung($besprechungDate);			
-					break;
-					
-				case 2:		// Tuesday
-					$besprechungDate =  date('d.m.', mktime(date('H'), date('i'), date('s'), date('m'), date('d') + 6));
-					Besprechung($besprechungDate);
-					break;
 
-				case 3:		// Wednesday
-					$besprechungDate =  date('d.m.', mktime(date('H'), date('i'), date('s'), date('m'), date('d') + 5));
-					Besprechung($besprechungDate);
-					break;
-					
-				case 4:		// Thursday
-					$besprechungDate =  date('d.m.', mktime(date('H'), date('i'), date('s'), date('m'), date('d') + 4));
-					Besprechung($besprechungDate);
-					break;
-					
-				case 5:		// Friday
-					$besprechungDate =  date('d.m.', mktime(date('H'), date('i'), date('s'), date('m'), date('d') + 3));
-					Besprechung($besprechungDate);
-					break;
-					
-				case 6:		// Saturday
-					$besprechungDate =  date('d.m.', mktime(date('H'), date('i'), date('s'), date('m'), date('d') + 2));
-					Besprechung($besprechungDate);
-					break;
-			}			
-		}
 	}
 	
 	function Display() {
@@ -175,6 +133,12 @@
 		WeeklyAppointment();
 		MonthlyAppointment();
 	
+		// MANIA
+		echo "<p>&nbsp;</p> <div class=\"agendaEntry\"> 
+					<img src=\"images/widgets/kalender/besprechung.png\" alt=\"besprechung\" class=\"left\"> 
+					&nbsp; VMP MANIA 2014<br /> 
+					&nbsp; <span class=\"date\">13. - 26. Oktober</span>
+				</div>";
 	}
 	
 	Display();

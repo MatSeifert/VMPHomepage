@@ -8,7 +8,18 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
-		Date unclear - Version 4.1
+		10.10.2014 - Version 4.1.1
+	</span>
+	<ul style="padding: 0px 0px 0px 20px">
+		<li>VMP Mania 2014 Seite fertiggestellt</li>
+		<li>Schweren Bug bei den Slide Out Panels im Forum behoben (mobile Version)</li>
+		<li>Bei einem Klick auf das VMP Logo im Header gelangt man nun auf die Startseite</li>
+		<li>Javascript Funktionalität in externe Dateien ausgelagert</li>
+		<li>Kleiner Bugfix bei den Newsvorschlägen unter einem Artikel</li>
+	</ul>
+
+	<span class="smallHeadline">
+		24.09.2014 - Version 4.1
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Fade Effekt und farbige Hover Icons im Menü</li>
@@ -25,6 +36,7 @@
 		<li>News hinzufügen Button ist nun auch mobil erreichbar</li>
 		<li>Artikelinformationen wie Kommentare und Read Counter sind nun auch mobil sichtbar</li>
 		<li>Auf der Artikelseite werden nun unter dem Text weitere Artikel zum betreffenden Game angezeigt</li>
+		<li>Mehrere Verbesserungen an der mobilen Version</li>
 	</ul>
 	<p>&nbsp;</p>
 		<span class="smallHeadline">

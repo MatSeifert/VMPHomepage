@@ -54,6 +54,7 @@
 			  <option value="callofdutyadvancedwarfare">Call of Duty: Advanced Warfare</option>>
 			  <option value="dayz">DayZ</option>
 			  <option value="deadspace">Dead Space</option>
+			  <option value="evolve">Evolve</option>
 			  <option value="gta5">GTA V</option>
 			  <option value="leagueoflegends">League of Legends</option>
 			  <option value="left4dead2">Left 4 Dead 2</option>
