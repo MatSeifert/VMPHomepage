@@ -68,7 +68,19 @@
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=mL0evO0Y5d0&list=PLMYyvoe65Ysk4YCJKEJ0QRziWfL-cmYPp">Playlist</a> <br />
 				<span class="LPDate">Neue Folgen immer:</span> <br>
-				Montag &amp; Freitag
+					Montag &amp; Freitag
+				<br>
+			</span>
+		</div>
+
+		<div class="LPBox">
+			<img src="images/lpPage_deadspace.png" class="LetsPlayThumb" alt="Dead Space">
+			<span class="LPHeadline">DEAD SPACE</span>
+			<span class="LPContent">
+				<p>&nbsp;</p>
+				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=vIU_XUvDyC8&list=PL7EDB5FDAD8EAD27A">Playlist</a> <br />
+				<span class="LPDate">Neue Folgen immer:</span> <br>
+					Mittwochs
 				<br>
 			</span>
 		</div>
@@ -80,7 +92,7 @@
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=ZM1halUgcOA&list=PLMYyvoe65Ysn0--WAJj-G8wH-V-zFhk1e">Playlist</a> <br />
 				<span class="LPDate">Let's Play Dauer:</span> <br>
-				107 Folgen
+					107 Folgen
 				<br>
 			</span>
 		</div>

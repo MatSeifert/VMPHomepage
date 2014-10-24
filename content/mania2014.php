@@ -19,7 +19,9 @@
 	<p>&nbsp;</p>
 
 	<div class="ManiaBox">
-		<img src="images/mania_Cod4Wallpaper.png" alt="MW2">
+		<a href="#cod4">
+			<img src="images/mania_Cod4Wallpaper.png" alt="MW2">
+		</a>
 		<img src="images/mania_cod4Icon.png" alt="MW2" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#cod4">COD 4: MW</a>
@@ -28,7 +30,9 @@
 	</div>
 
 	<div class="ManiaBox">
-		<img src="images/mania_Mw2Wallpaper.png" alt="MW2">
+		<a href="#mfw2">
+			<img src="images/mania_Mw2Wallpaper.png" alt="MW2">
+		</a>
 		<img src="images/mania_Mw2Icon.png" alt="MW2" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#mwf2">COD: MW 2</a>
@@ -36,7 +40,9 @@
 	</div>
 
 	<div class="ManiaBox">
-		<img src="images/mania_Mw3Wallpaper.png" alt="MW3">
+		<a href="#mwf3">
+			<img src="images/mania_Mw3Wallpaper.png" alt="MW3">
+		</a>
 		<img src="images/mania_Mw3Icon.png" alt="MW3" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#mwf3">COD: MW 3</a>
@@ -44,7 +50,9 @@
 	</div>
 
 	<div class="ManiaBox">
-		<img src="images/mania_Starcraft2Wallpaper.png" alt="MW2">
+		<a href="#stc2">
+			<img src="images/mania_Starcraft2Wallpaper.png" alt="MW2">
+		</a>
 		<img src="images/mania_Starcraft2Icon.png" alt="MW2" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#stc2">STARCRAFT 2</a>
@@ -52,7 +60,9 @@
 	</div>
 
 	<div class="ManiaBox">
-		<img src="images/mania_DayZWallpaper.png" alt="DayZ">
+		<a href="#dayz">
+			<img src="images/mania_DayZWallpaper.png" alt="DayZ">
+		</a>
 		<img src="images/mania_DayZIcon.png" alt="DayZ" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#dayz">DAYZ</a>
@@ -60,7 +70,9 @@
 	</div>
 
 	<div class="ManiaBox">
-		<img src="images/mania_Anno2070Wallpaper.png" alt="Anno 2070">
+		<a href="#an70">
+			<img src="images/mania_Anno2070Wallpaper.png" alt="Anno 2070">
+		</a>
 		<img src="images/mania_Anno2070Icon.png" alt="Anno 2070" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#an70">ANNO 2070</a>
@@ -68,7 +80,9 @@
 	</div>
 
 	<div class="ManiaBox">
-		<img src="images/mania_LoLWallpaper.png" alt="Anno 2070">
+		<a href="#leol">
+			<img src="images/mania_LoLWallpaper.png" alt="League of Legends">
+		</a>
 		<img src="images/mania_LoLIcon.png" alt="Anno 2070" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#leol">LEAGUE OF L.</a>
@@ -76,7 +90,9 @@
 	</div>
 
 	<div class="ManiaBox">
-		<img src="images/mania_CsGoWallpaper.png" alt="Anno 2070">
+		<a href="#csgo">
+			<img src="images/mania_CsGoWallpaper.png" alt="Counter Strike Global Offensive">
+		</a>
 		<img src="images/mania_CsGoIcon.png" alt="Anno 2070" class="ManiaIcon">
 		<span class="ManiaHeadline">
 			<a href="#csgo">CS:GO</a>

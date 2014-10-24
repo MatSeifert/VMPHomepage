@@ -8,6 +8,15 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
+		00.00.0000 - Version 4.1.2
+	</span>
+	<ul style="padding: 0px 0px 0px 20px">
+		<li>Dead Space zur Let's Play Übersicht hinzugefügt</li>
+		<li>Bugfix: Darstellung der Spielübersicht auf der VMP Mania '14 Seite im Firefox</li>
+		<li>Improvement: Bei der Spielübersicht zur Mania '14 sind nun auch die Bilder klickbar</li>
+	</ul>
+
+	<span class="smallHeadline">
 		10.10.2014 - Version 4.1.1
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
