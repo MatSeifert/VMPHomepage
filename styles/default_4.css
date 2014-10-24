@@ -1990,20 +1990,6 @@ a:hover.tooltips span {
 	clear:both;
 }
 
-.ManiaBox {
-	float: left;
-	overflow: hidden;
-	text-align: left;
-	background-color: #EFEFEF;
-	margin: 0px 3px 15px 3px;
-	width: 166px;
-	height: 108px;
-	padding: 0px;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.2), 
-		0px 0px 1px 0px rgba(0,0,0,0.2);		
-}
-
 .JoinUs {
 	position: absolute;
 	font-size: 46px;
@@ -2042,7 +2028,8 @@ a:hover.tooltips span {
 }
 
 .ManiaHeadline {
-	margin: 5px 0px 0px 8px;
+	position: absolute;
+	margin: 5px 0px 0px -155px;
 	display: inline-block;
 	font-size: 16px;
 }
@@ -2063,7 +2050,21 @@ a:hover.tooltips span {
 }
 
 .ManiaIcon {
-	position: absolute;
+	position: relative;
     border-radius: 50%;
     margin: -30px 0px 0px 110px;
+}
+
+.ManiaBox {
+	float: left;
+	overflow: hidden;
+	text-align: left;
+	background-color: #EFEFEF;
+	margin: 0px 3px 15px 3px;
+	width: 166px;
+	height: 108px;
+	padding: 0px;
+	box-shadow: 
+		2px 2px 1px 0px rgba(0,0,0,0.2), 
+		0px 0px 1px 0px rgba(0,0,0,0.2);		
 }
