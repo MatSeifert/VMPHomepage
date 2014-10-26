@@ -83,12 +83,19 @@
 		<span class="smallHeadline">
 			Auch posten bei
 		</span>
+			<!-- Checkbox for Twtter /-->
 			<input type="checkbox" value="twitter" class="checkbox" name="twitter" checked/>
 			&nbsp;<img src="images/twitter_S.png" alt="Twitter">&nbsp;Twitter
-			<input type="checkbox" value="twitter" class="checkbox" name="twitter" disabled/>
-			&nbsp;<img src="images/facebook_S.png" alt="Facebook">&nbsp;<span class="disabled">Facebook</span>
-			<input type="checkbox" value="twitter" class="checkbox" name="twitter" disabled />
+
+			<!-- Checkbox for Facebook /-->
+			<input type="checkbox" value="facebook" class="checkbox" name="twitter" checked/>
+			&nbsp;<img src="images/facebook_S.png" alt="Facebook">&nbsp;Facebook
+
+			<!-- Checkbox for Google Plus /-->
+			<input type="checkbox" value="googleplus" class="checkbox" name="twitter" disabled />
 			&nbsp;<img src="images/gplus_S.png" alt="Google Plus">&nbsp;<span class="disabled">Google+</span>
+		
+
 		<span class="smallHeadline">
 			Social Media Snippet <br>
 			<div class="smallInline">

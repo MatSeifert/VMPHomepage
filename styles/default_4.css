@@ -2068,3 +2068,53 @@ a:hover.tooltips span {
 		2px 2px 1px 0px rgba(0,0,0,0.2), 
 		0px 0px 1px 0px rgba(0,0,0,0.2);		
 }
+
+.middle {
+	vertical-align: middle;
+}
+
+.center {
+	text-align: center;
+}
+
+.grey {
+	color: #bbb;
+}
+
+.smallText {
+	font-size: 12px;
+}
+
+.online {
+	background-color: #72d572;
+	padding: 8px;
+	border-radius: 2px;
+	color: #0d5302;
+}
+
+.offline {
+	background-color: #ff8a65;
+	padding: 8px;
+	border-radius: 2px;
+	color: #dd2c00;
+}
+
+.MaterialBtn {
+	padding: 10px;
+	background-color: #f4511e;
+	box-shadow: 
+		2px 2px 1px 0px rgba(0,0,0,0.2), 
+		0px 0px 1px 0px rgba(0,0,0,0.2);	
+}
+
+.MaterialBtn a {
+	color: #ffccbc;
+}
+
+.MaterialBtn:hover {
+	background-color: #bf360c;
+}
+
+.MaterialBtn a:hover {
+	color: #fff;
+}

@@ -1,4 +1,11 @@
 <?php
+	/* Hier wird aus dem gegebenen Snippet oder dem Newsinhalt sowie dem Link zur News
+	 * ein Post für die Facebookseite des VMP Clans erstellt und auf der Wall veröffentlicht
+	 */
+	function PostOnFacebook($content, $link) {
+
+	}
+
 	/* Hier passiert die Magie, die die News auch auf Twitter veröffentlicht. Wurde
 	 * vom Autor ein Newssnippet eingetragen, wird dieses verwendet, andernfalls
 	 * wird einfach der Newsinhalt gekürzt.
@@ -138,13 +145,20 @@
 		} else $snippet = $_POST['SocialMediaSnippet'];
 
 		// Post all the shit on Facebook, Twitter and Google Plus
-		//PostOnFacebook($content);
+		// Post it on Twitter
 		if ($_POST['twitter'] == 'twitter')
 		{
 			PostOnTwitter(utf8_encode($snippet), $newsLink);
 			$finalTweet = $snippet . ' <a href="' . $newsLink . '" alt="tweet" target="_blank">' . $newsLink . '</a>';
-			$twitterMessage = "Super, dass du die News auch in den sozialen Netzwerken teilst, und uns damit hilfst bekannter zu werden. Dein Post wird folgendermaßen aussehen:<br /><br />";
+			$twitterMessage = "Super, dass du die News auch bei Twitter teilst, und uns damit hilfst bekannter zu werden. Dein Tweet wird folgendermaßen aussehen:<br /><br />";
 		} else $twitterMessage = "News wurde nicht getweetet.";
+
+		// Post it on Facebook
+		if ($_POST['facebook'] == 'facebook')
+		{
+			PostOnFacebook(utf8_encode($snippet), $newsLink);
+		}
+
 		//PostOnGooglePlus();
 	} 
 

@@ -1,0 +1,669 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"meet",
+				"meetingThisMonth"
+			],
+			[
+				"twitte",
+				"twitterMessage"
+			],
+			[
+				"monate",
+				"monateMitNull"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"paddng",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"Vid",
+				"VidData"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"Video",
+				"VideoId"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"utf8",
+				"utf8_encode"
+			],
+			[
+				"background-",
+				"background-attachment"
+			],
+			[
+				"req",
+				"require_once"
+			],
+			[
+				"none",
+				"none"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"backg",
+				"background-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "content/changelog.php",
+			"settings":
+			{
+				"buffer_size": 3436,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n	function FlickrFeed () {\n		$xmlfile='https://api.flickr.com/services/feeds/groups_pool.gne?id=2611823@N25&lang=de-de&format=rss_200';\n		$xml = simplexml_load_file(rawurlencode($xmlfile));\n		$namespaces = $xml->getNamespaces(true);\n\n		$break = 0;\n\n		foreach ($xml->channel->item as $item) {\n			echo '<div class=\"imageWrapper\">';\n				echo '<img src=\"' . $item->children($namespaces['media'])->content->attributes()->url . '\" alt=\"FlickrImage\" class=\"FlickrImage\">';\n				echo '<div class=\"ImageInfo\"><p class=\"ImageInfoText\"><nobr>';\n					echo $item->title . '</nobr><br>';\n					echo 'von ' . $item->children($namespaces['media'])->credit;\n				echo '</p></div>';\n			echo '</div>';\n\n			$break++;\n\n			if($break > 3)\n			{\n				break;\n			}\n		}\n	}\n?>\n\n<div class=\"whereAmI\">\n    MINECRAFT\n</div>\n\n<div class=\"PostTitle\">\n  MINECRAFT\n</div>\n\n<div class=\"PostPost\">\n	<span class=\"smallHeadline\">\n		Serverinformationen\n	</span>\n	<br>\n	<?php\n		require_once('mcserver/query.php');\n	?>\n\n	<p>&nbsp;</p>\n\n	<span class=\"smallHeadline\">\n		Generelle Serverregeln\n	</span>\n	<ol>\n		<li>Jeder Nutzer des Clanservers muss die folgenden Regeln vor dem ersten Spielbeitritt gelesen und akzeptiert haben.</li>\n		<li>Änderungen an diesen Regeln behält sich der VMP Clan vor. Über Änderungen wird auf der Homepage informiert.</li>\n		<li>Selbstverständlich gibt es auf dem Server, wie auch im Forum diverse Benimm-Grundregeln. Es ist verboten andere zu beleidigen, zu flamen, rassistische, pornographische \n		oder menschenverachtende Inhalte im Chat zu posten, oder durch Bauwerke darzustellen.</li>\n		<li>Jeder Bauplatz gehört dem, der ihn zuerst bebaut. zu einem Bauplatz zählt auch das Umland in Sichtweite, um später Platz für weitere Gebäude zu haben.</li>\n		<li>Gebäude in Sichtweite anderer Spieler müssen mit dem Betreffenden abgesprochen werden.</li>\n		<li>Grundsätzlich ist alles erlaubt, was ohne Cheats gebaut werden kann. Mutwillig in die Landschaft gesetzte Gebäude ohne ersichtlichen Nutzen, sowie Gebäude\n		über große Gebiete (z.B. Brücken), die ohne erkennbaren Willen, sie optisch ansprechend zu bauen, errichtet wurden, werden entweder verändert, oder können in\n		bestimmten Fällen auch abgerissen werden.</li>\n		<li>Das graben von Löchern in tiefe Höhlen, oder bis zur Bedrockebene ist prinzipiell nicht gestattet, da diese immer eine Gefahr für andere Spieler darstellt. Man sieht die\n		Löcher oftmals nicht und fällt hinein. Solltet ihr das Bedürfnis verspüren euch direkt nach unten zu graben, dann verschließt das Loch bitte umgehend wieder, oder bringt \n		Leitern an, falls es ein Höhleneingang werden soll</li>\n		<li>Mit TNT muss bewusst und vorsichtig umgegangen werden, besonders bei größeren Sprengungen. Zum einen besteht die Gefahr fremde Gebäude zu beschädigen, zum \n		anderen kann gleichzeitig gezündetes TNT die Server Performance negativ beeinflussen, und sogar zum Absturz führen.</li>\n		<li>Wer im Gebiet von anderen Spielern unterwegs ist, und von einem Creeper getroffen wird, muss die entstandenen Schäden umgehend wieder reparieren. Ist das aufgrund\n		mangelnder Materialien nicht möglich, muss der geschädigte Spieler informiert werden. Eine Reparatur ist immer zum nächst möglichen Zeitpunkt durczuführen</li>\n		<li>Das stehlen von Gegenständen aus fremden Kisten, sowie das mutwillige beschädigen anderer Gebäude ist natürlich strengstens verboten!</li>\n		<li>Farmen anderer Spieler dürfen, sofern es nicht verboten wird, genutzt werden, wenn geschlachtete Tiere umgehend nachgezüchtet, und geerntete Pflanzen nachgepflanzt\n		werden</li>\n		<li>Das spawnen eines Withers ist bis auf weiteres verboten, da dieser unheimlich viel Schaden anrichten kann, und allein praktisch kaum zu besiegen ist</li\n>	</ol>\n\n	<span class=\"smallHeadline\">\n		Zugang zum Server\n	</span>\n	<ol>\n		<li>Auf dem Server kommt eine Whitelist zum Einsatz, auf der man erst eingetragen werden muss.</li>\n		<li>Clanmitglieder werden automatisch hinzugefügt, sofern der Minecraftname einem der Administratoren bekannt ist.</li>\n		<li>Gastspieler müssen ihren Minecraftnamen einem bestehenden Clanmitglied mitteilen, der sich dann bei den Admins um den Whitelisteintrag kümmert.</li>\n		<li>Dieses Clanmitglied fungiert als so genannter Bürge für den Gastspieler, und kann für dessen Verstöße mit zur Verantwortung gezogen werden.</li>\n	</ol>\n\n	<span class=\"smallHeadline\">\n		Regeln für Gastspieler\n	</span>\n	<ol>\n		<li>Gastspieler müssen an ihren Gebäuden ein Schild anbringen, auf dem ersichtlich ist, von wem es gebaut wurde. Andernfalls kann es dazu kommen, dass es abgerissen wird.</li>\n		<li>Grundsätzlich bietet unser Server Gastspielern die gleichen Möglichkeiten wie Mitgliedern des VMP Clans.</li>\n		<li>Um Zugangsberechtigt zum Server zu sein, bedarf es eines bestehenden VMP Mitglieds (ausgenommen Trial Member), der für den Gastspieler bürgt \n		(Vgl. Zugang zum Server, Nr. 4)</li>\n		<li>Bei Inaktivität von drei Monaten wird der entsprechende Spieler wieder von der Whitelist entfernt, und unfertige oder im späteren Verlauf störende\n		Gebäude können abgerissen werden. Gebäude werden nicht abgerissen, solang der Gast noch aktiv (sprich ein mal in 3 Monaten) am Servergeschehen teilnimmt</li>\n		<li>Gebäude von VMP Mitgliedern werden auch bei Inaktivität nicht abgerissen</li>\n		<li>Für Verstöße gegen die Serverregeln wird neben dem Verursacher auch der entsprechende Bürge zur Verantwortung gezogen</li>\n		<li>Bei mehrfachen Verstößen wird ein Spieler wieder von der Whitelist entfernt.</li>\n		<li>Sind die Slots des Clanservers belegt, können Gastspieler zugunsten von Clanmitgliedern gekickt werden</li>\n	</ol>	\n	<br>\n	<i>Stand: Oktober 2014</i>\n\n	<p>&nbsp;</p>\n\n	<span class=\"smallHeadline\">\n		Screenshots\n	</span>\n\n	<?php FlickrFeed(); ?>\n\n	<p>&nbsp;<br><br></p>\n\n	<span class=\"MaterialBtn\">\n		<a href=\"?site=MinecraftMonuments\">MEHR BILDER</a>\n	</span> &nbsp; \n	<span class=\"MaterialBtn\">\n		<a href=\"https://www.flickr.com/groups/vmpminecraft/\">FLICKRALBUM</a>\n	</span>\n\n	<p>&nbsp;</p>\n</div>",
+			"file": "content/minecraft.php",
+			"file_size": 6196,
+			"file_write_time": 130587506371796959,
+			"settings":
+			{
+				"buffer_size": 6000,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/ts3server/tsstatusgen.php",
+			"settings":
+			{
+				"buffer_size": 6821,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/teamspeak.php",
+			"settings":
+			{
+				"buffer_size": 452,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/ts3server/tsstatus.php",
+			"settings":
+			{
+				"buffer_size": 10821,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "styles/default_4.css",
+			"settings":
+			{
+				"buffer_size": 42047,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"Package Control Install Package",
+			"Package Control: Install Package",
+			"PackageResourceViewer",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/clanpage",
+		"/C/xampp/htdocs/clanpage/content",
+		"/C/xampp/htdocs/clanpage/content/galleries",
+		"/C/xampp/htdocs/clanpage/styles"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/clanpage/content/ts3server/index.php",
+		"/C/xampp/htdocs/clanpage/content/socialSDK/teamspeak.php",
+		"/C/xampp/htdocs/clanpage/content/menue.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/query.php",
+		"/C/xampp/htdocs/clanpage/content/impressum.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/view.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/index.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/test/demo/index.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/test/MCServerStatus/Minecraft/Server.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/view_serverping.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/mcstat-master/mcstat-master/stat.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/mcstat-master/mcstat-master/mcstat.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/mcstat-master/mcstat-master/test/test-server.properties",
+		"/C/xampp/htdocs/clanpage/content/mcserver/status.class.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/mc/view.php",
+		"/C/xampp/htdocs/clanpage/content/case.php",
+		"/C/xampp/htdocs/clanpage/content/WriteNews.php",
+		"/C/xampp/htdocs/clanpage/content/SaveNews.php",
+		"/C/xampp/htdocs/clanpage/content/menueForum.php",
+		"/C/xampp/htdocs/clanpage/content/error404.php",
+		"/C/Users/Matthias/Downloads/Samples Environments for Microsoft Chart Controls/Windows Forms Samples Environment for Microsoft Chart Controls/C#/AssemblyInfo.cs",
+		"/C/Users/Matthias/Documents/notepad.cs",
+		"/C/Users/Matthias/Desktop/backup/StocksWidgetsHandler.cs",
+		"/C/Users/Matthias/Desktop/backup2/Kurspotential3M.cshtml",
+		"/C/xampp/htdocs/clanpage/content/rules.html",
+		"/C/xampp/htdocs/clanpage/clanpage_4.0/styles/default_4.css",
+		"/C/xampp/htdocs/clanpage/clanpage_4.0/content/mania2013.php",
+		"/C/xampp/htdocs/clanpage/clanpage_4.0/content/changelog.php",
+		"/C/xampp/htdocs/clanpage/clanpage_4.0/content/mania2014.php",
+		"/C/xampp/htdocs/clanpage/clanpage_4.0/content/news.php",
+		"/C/Users/Matthias/Desktop/tfm.html",
+		"/C/Users/Matthias/Desktop/test.php",
+		"/C/xampp/htdocs/clanpage/clanpage_4.0/index.php",
+		"/C/xampp/htdocs/clanpage/styles/default_4.css",
+		"/C/xampp/htdocs/clanpage/content/member.php",
+		"/C/Users/Matthias/Desktop/member.xml",
+		"/C/Users/Matthias/Downloads/Samples Environments for Microsoft Chart Controls/Windows Forms Samples Environment for Microsoft Chart Controls/C#/ChartFeatures/Labels/LabelsNextToAxis/LabelsNextToAxis.cs",
+		"/C/Users/Matthias/Desktop/SaveNews.php",
+		"/C/Users/Matthias/Desktop/WriteNews.php",
+		"/C/Users/Matthias/Desktop/kalender.php",
+		"/C/xampp/htdocs/clanpage/content/test/facebook.php",
+		"/C/xampp/htdocs/clanpage/content/test/twitter.php",
+		"/C/xampp/htdocs/clanpage/content/menue.html",
+		"/C/xampp/htdocs/clanpage/content/menueForum.html",
+		"/C/xampp/htdocs/clanpage/content/socialSDK/gplus/signin.php",
+		"/C/xampp/htdocs/clanpage/content/news.php",
+		"/C/xampp/htdocs/clanpage/content/galleries/dayz.php",
+		"/C/xampp/htdocs/clanpage/xml/member.xml",
+		"/C/xampp/htdocs/clanpage/.gitignore",
+		"/C/Users/Matthias/SVN/website/FN.Services.SgxXsltTransform/bin/Debug/AppData/XSDValidation/seev.031.001.04.xsd",
+		"/C/Users/Matthias/SVN/website/FN.Services.SgxXsltTransform/bin/Debug/AppData/XSLTransform/XSL/NonIsoTransformation.xsl",
+		"/C/xampp/htdocs/clanpage/content/archive.php",
+		"/C/xampp/htdocs/clanpage/test.html",
+		"/C/Users/Matthias/Desktop/sadf.cs",
+		"/C/Users/Matthias/SVN/website/FN.Services.SgxXsltTransform/bin/Debug/AppData/XSLTransform/XSL/NonIsoHeadlineTransformation.xsl",
+		"/C/Users/Matthias/SVN/website/FN.Services.SgxXsltTransform/bin/Debug/AppData/XSDValidation/NonIsoSchemaDefinition.xsd",
+		"//samba.htw-dresden.de/s67529/Dokumente/Semester 06/IS/Beleg/s67529/s67529.c",
+		"/C/Users/Matthias/Desktop/tcenter.cs",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/xampp/htdocs/clanpage/news/SaveNews.php",
+		"/C/xampp/htdocs/clanpage/forum.php",
+		"/C/xampp/htdocs/clanpage/news/WriteNews.php",
+		"/C/xampp/htdocs/forum.css",
+		"/C/xampp/htdocs/clanpage/index.php",
+		"/C/Users/Matthias/Documents/bankOfToll",
+		"/C/xampp/htdocs/clanpage/content/mania2011.php",
+		"/C/Users/Matthias/Documents/Arbeit/FnRssFeed.xml",
+		"/C/Users/Matthias/Downloads/PC_RSSReader/RssManager.cs",
+		"/C/xampp/htdocs/clanpage/content/galleries/minecraft.php",
+		"/C/xampp/htdocs/clanpage/content/letsplay.php",
+		"/C/xampp/htdocs/clanpage/content/information.html",
+		"/C/Users/Matthias/Documents/backup/WidgetController_AusArtikel_aspx.txt",
+		"/F/spawnpoint3.xml",
+		"/C/xampp/htdocs/clanpage/content/playVideo.php",
+		"/C/xampp/htdocs/clanpage/content/screenshots.php",
+		"/C/xampp/htdocs/clanpage/content/archive.html",
+		"/C/xampp/htdocs/clanpage/javascript/parallax.js",
+		"/C/Users/Matthias/Downloads/themeforest-6569811-unique-responsive-email-template/Unique - Responsive Email Template/Unique - Project/Unique - HTML Template/Red/all-modules.html",
+		"/C/xampp/htdocs/clanpage/content/member.xml",
+		"/C/xampp/htdocs/sakurani/include/news.php",
+		"/C/Users/Matthias/backup",
+		"/C/xampp/htdocs/clanpage/content/screenshots",
+		"/C/Users/Matthias/Downloads/themeforest-6569811-unique-responsive-email-template/Unique - Responsive Email Template/Unique - Project/Unique - HTML Template/Red/backup.html",
+		"/C/Users/Matthias/Downloads/themeforest-6569811-unique-responsive-email-template/Unique - Responsive Email Template/Unique - Project/Unique - HTML Template/Red/MailChimpReady.html",
+		"/C/xampp/htdocs/sakurani/include/KunstStart.php",
+		"/C/xampp/htdocs/sakurani/include/CaseKunst.php",
+		"/C/xampp/htdocs/clanpage/info.php",
+		"/C/xampp/htdocs/sakurani/styles/default.css",
+		"/C/xampp/htdocs/sakurani/include/kunst.php",
+		"/C/xampp/htdocs/sakurani/include/subMenu.php",
+		"/C/xampp/htdocs/sakurani/index.php",
+		"/C/xampp/htdocs/sakurani/javascript/jQuery18.js",
+		"/C/xampp/htdocs/clanpage/content/opfer.php",
+		"/C/xampp/htdocs/clanpage/content/kalender.php",
+		"/C/Users/Matthias/AppData/Roaming/Skype/live#3amatthe.seifert/config.xml",
+		"/C/xampp/htdocs/clanpage/widgets/kalender/kalender.php",
+		"/C/xampp/htdocs/clanpage/content/lp_test.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/WriteNews.php",
+		"/C/xampp/htdocs/clanpage/newsfeed/SaveNews.php",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2012/May/2012-05-25_EinEinblickinMinecraft1.3.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011/Dec/2011-12-13_ModernWarfare3PatchbeseitigtGlitchesundBugs.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011/Dec/2011-12-03_Origin-EAhatzumDialogaufgerufen.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011-08-15_BestesMinecraftKunstwerkgesucht.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011-07-04_NeuerSpielmodus&NeuesFahrzeuginNeedforSpeedWorld.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20110702_NeueNewsfunktion.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20140329_TitelmitUmlautenundKlammernü()äööüöß.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20140329_Ã–Ã–Ã–Ã–Ã–.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20140329_TitelBlaBlubohneLeerzeichen.xml",
+		"/C/xampp/htdocs/clanpage/newsfeed/0",
+		"/C/xampp/htdocs/clanpage/newsfeed/$content.xml",
+		"/C/xampp/htdocs/sakurani/include/indexMenu.php",
+		"/C/xampp/htdocs/sakurani/include/menue.php",
+		"/C/xampp/htdocs/sakurani/include/menu.php",
+		"/C/xampp/htdocs/sakurani/javascript/slide.js",
+		"/C/xampp/htdocs/sakurani/styles/slide.css",
+		"/C/xampp/htdocs/sakurani/SlidePushMenus/SlidePushMenus/css/default.css",
+		"/C/xampp/htdocs/sakurani/styles/slide",
+		"/C/xampp/htdocs/sakurani/menue.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"box-shadow",
+			"incl",
+			"Subjekt",
+			"AddNews",
+			"wrapper",
+			"98",
+			"mainMenu",
+			"userMenuLogout",
+			"forumContent",
+			"containerContent",
+			"main",
+			"mainContainer",
+			"headerContainer",
+			"logo",
+			"header",
+			"userMenu",
+			"tplIndex",
+			" !important",
+			"userNote",
+			"userAvatar",
+			"headerContainer",
+			"mainMenuInner",
+			"body",
+			"userMenuProfileEdit",
+			"userMenuPm",
+			"#forum",
+			"forum",
+			"maniaHoFTop",
+			"mania2011",
+			"maniaDes",
+			"ac1",
+			"ac",
+			"LPContentLatestVideo",
+			"LPHeadline",
+			"LPContent",
+			"imageinfo",
+			"wheream",
+			"PostTitle",
+			"LPHead",
+			"LPSub",
+			"PostTitle",
+			";\n",
+			"div.title",
+			"hintergrundbild",
+			"aktienSortiert",
+			"media",
+			"wrapper",
+			"['VidId']",
+			"active",
+			"backgroundMenu",
+			"backgroundMen",
+			"back",
+			"menue",
+			"background"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "content/changelog.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content/minecraft.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								891,
+								891
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "content/ts3server/tsstatusgen.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6821,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/teamspeak.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "content/ts3server/tsstatus.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10821,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5550,
+								5550
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3253.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "styles/default_4.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 42047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42047,
+								42047
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 37314.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "clanpage.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

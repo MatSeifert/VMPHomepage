@@ -68,7 +68,23 @@
 			<img src="images/menuJoinUs.png" alt="Join Us" class="top">
 			Join Us
 		</a>
-	</span> <br />		
+	</span> <br />
+
+	<span class="NavCategory">SERVER</span> <br />
+	<span class="NavPoint">
+		<a class="navigation" href="?site=teamspeak">
+			<img src="images/menuTeamspeakFade.png" alt="Member" class="bottom">
+			<img src="images/menuTeamspeak.png" alt="Member" class="top">
+			Teamspeak 3
+		</a>
+	</span>			
+	<span class="NavPoint">
+		<a class="navigation" href="?site=minecraft">
+			<img src="images/menuMinecraftFade.png" alt="Member" class="bottom">
+			<img src="images/menuMinecraft.png" alt="Member" class="top">
+			Minecraft
+		</a>
+	</span> <br />
 
 	<span class="NavCategory">VMP MANIA</span> <br />
 	<span class="NavPoint">

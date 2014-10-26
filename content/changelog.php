@@ -14,6 +14,9 @@
 		<li>Dead Space zur Let's Play Übersicht hinzugefügt</li>
 		<li>Bugfix: Darstellung der Spielübersicht auf der VMP Mania '14 Seite im Firefox</li>
 		<li>Improvement: Bei der Spielübersicht zur Mania '14 sind nun auch die Bilder klickbar</li>
+		<li>Aktualisiertes Regelwerk</li>
+		<li>Teamspeak 3 und Minecraft haben eine Infoseite erhalten</li>
+		<li>Erste Version der Minecraft Serverregeln erstellt. Diese findet ihr <a href="?site=minecraft">hier</a></li>
 	</ul>
 
 	<span class="smallHeadline">

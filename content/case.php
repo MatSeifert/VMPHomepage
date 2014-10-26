@@ -78,6 +78,12 @@
 
 		case "changelog": @include __DIR__ . '/../content/changelog.php';
 		break;
+
+		case "minecraft": @include __DIR__ . '/../content/minecraft.php';
+		break;
+
+		case "teamspeak": @include __DIR__ . '/../content/teamspeak.php';
+		break;
 		
 	   	default: @include __DIR__ . '/../content/error404.php';
   }
