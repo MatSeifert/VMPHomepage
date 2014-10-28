@@ -240,9 +240,6 @@ class TSStatus
 					<div class="tsstatusLabel">
 						<img src="' . $this->imagePath . $icon . '" />&nbsp;' . htmlentities($user["client_nickname"]) . '
 					</div>
-					<div class="tsstatusFlags">
-						' . $this->renderFlags($flags) . '
-					</div>
 				</div>';
 			}
 		}

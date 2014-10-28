@@ -2118,3 +2118,33 @@ a:hover.tooltips span {
 .MaterialBtn a:hover {
 	color: #fff;
 }
+
+/* CONFIGURATION OF THE TEAMSPEAK 3 VIEWER BELOW THIS LINE */
+
+.tsstatusServerName {
+	font-size: 11px;	
+}
+
+.tsstatusLabel {
+	display: inline;
+	margin: 0px 0px 0px 15px;
+	font-size: 11px;
+}
+
+.tsstatusItem div {
+	margin: 0px 0px 0px 15px;
+	font-size: 11px;
+}
+
+.tsstatusUser {
+	margin: 0px 0px 0px 15px;	
+	font-size: 11px;
+}
+
+.tsstatusFlags {
+	display: inline;
+}
+
+.tsstatusFlags img {
+	float: right;
+}

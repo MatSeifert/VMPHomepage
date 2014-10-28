@@ -8,7 +8,7 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
-		00.00.0000 - Version 4.1.2
+		27.10.2014 - Version 4.1.2
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Dead Space zur Let's Play Übersicht hinzugefügt</li>
@@ -17,6 +17,7 @@
 		<li>Aktualisiertes Regelwerk</li>
 		<li>Teamspeak 3 und Minecraft haben eine Infoseite erhalten</li>
 		<li>Erste Version der Minecraft Serverregeln erstellt. Diese findet ihr <a href="?site=minecraft">hier</a></li>
+		<li>Erste Version der Teamspeak Serverregeln erstellt. Diese findet ihr <a href="?site=teamspeak">hier</a></li>
 	</ul>
 
 	<span class="smallHeadline">

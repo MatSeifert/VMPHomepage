@@ -30,6 +30,7 @@
 		<script src="javascript/windowHeight.js" type="text/javascript"></script>
 		<script src="javascript/setIFrameHeight.js" type="text/javascript"></script>
 		<script src="javascript/slideMenu.js" type="text/javascript"></script>
+		<script src="javascript/async.js" type="text/javascript"></script>
 		<script>
 			var divHeight = document.getElementById("content").offsetHeight;
 		</script>
@@ -94,20 +95,12 @@
 				<div class="contentBox">
 			   		<span class="RightHeadline">TEAMSPEAK 3</span>
 			   		<div class="rightText">
-			   			<p>&nbsp;</p>
-							<div id="ts3viewer_944104" style="width:; background-color:;"> </div>
-
-							<script type="text/javascript" src="http://static.tsviewer.com/short_expire/js/ts3viewer_loader.js"></script>
-
-							<script type="text/javascript">
-							<!--
-							var ts3v_url_1 = "http://www.tsviewer.com/ts3viewer.php?ID=944104&text=000000&text_size=11&text_family=1&js=1&text_s_color=a80000&text_s_weight=normal&text_s_style=normal&text_s_variant=small-caps&text_s_decoration=none&text_s_color_h=3f90f2&text_s_weight_h=normal&text_s_style_h=normal&text_s_variant_h=small-caps&text_s_decoration_h=underline&text_i_color=bfbfbf&text_i_weight=normal&text_i_style=normal&text_i_variant=normal&text_i_decoration=none&text_i_color_h=3f90f2&text_i_weight_h=normal&text_i_style_h=normal&text_i_variant_h=normal&text_i_decoration_h=underline&text_c_color=3b3b3b&text_c_weight=normal&text_c_style=normal&text_c_variant=small-caps&text_c_decoration=none&text_c_color_h=3f90f2&text_c_weight_h=normal&text_c_style_h=normal&text_c_variant_h=small-caps&text_c_decoration_h=underline&text_u_color=9e0000&text_u_weight=normal&text_u_style=normal&text_u_variant=small-caps&text_u_decoration=none&text_u_color_h=3f90f2&text_u_weight_h=normal&text_u_style_h=normal&text_u_variant_h=small-caps&text_u_decoration_h=none";
-							ts3v_display.init(ts3v_url_1.replace('<img src="http://static.tsviewer.com/images/teamspeak3/standard/16x16_server_pass.png" title="" alt="" align="top">', '<img src="images/disc.png">'), 944104, 100);
-							-->
-							</script>
+			   			<div data-async-url="widgets/TSViewer/teamspeak.php">
+				   			<p>&nbsp;</p>
 					   		<?php
-					   			// require_once ("widgets/TSViewer/TSViewer.php")
+					   			require_once ("widgets/TSViewer/teamspeak.php")
 					   		?>		
+						</div>
 				   	</div>
 			   	</div>
 			   	<p>&nbsp;</p>

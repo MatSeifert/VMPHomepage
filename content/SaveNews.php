@@ -2,9 +2,9 @@
 	/* Hier wird aus dem gegebenen Snippet oder dem Newsinhalt sowie dem Link zur News
 	 * ein Post für die Facebookseite des VMP Clans erstellt und auf der Wall veröffentlicht
 	 */
-	function PostOnFacebook($content, $link) {
+	// function PostOnFacebook($content, $link) {
 
-	}
+	// }
 
 	/* Hier passiert die Magie, die die News auch auf Twitter veröffentlicht. Wurde
 	 * vom Autor ein Newssnippet eingetragen, wird dieses verwendet, andernfalls
@@ -154,10 +154,10 @@
 		} else $twitterMessage = "News wurde nicht getweetet.";
 
 		// Post it on Facebook
-		if ($_POST['facebook'] == 'facebook')
-		{
-			PostOnFacebook(utf8_encode($snippet), $newsLink);
-		}
+		// if ($_POST['facebook'] == 'facebook')
+		// {
+		// 	PostOnFacebook(utf8_encode($snippet), $newsLink);
+		// }
 
 		//PostOnGooglePlus();
 	} 

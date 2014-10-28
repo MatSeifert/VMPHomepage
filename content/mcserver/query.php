@@ -1,15 +1,12 @@
 <?php
-
 	// Autoloader. Use SPL in a real project.
 	foreach(array('Server', 'Stats', 'StatsException') as $file) {
 		include sprintf('/MCServerStatus/Minecraft/%s.php', $file);
 	}
 
 	// Configuration of the Server
-	$servers = array(
-		"mc.vmp-clan.de"
-	);
-
+	// $servers = array("mc.vmp-clan.de");
+	$server = "mc.vmp-clan.de";
 ?>
 
 <table class="mania2011" cellpadding="0" cellspacing="0">
@@ -24,8 +21,9 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php foreach($servers as $server): ?>
-			<?php $stats = \Minecraft\Stats::retrieve(new \Minecraft\Server($server)); ?>
+
+			<?php //$stats = Minecraft\Stats::retrieve(new Minecraft\Server($server)); ?> 
+			<?php var_dump($stats); ?>
 			<tr>
 				<td class="maniaHoFTop middle center">
 					<?php if($stats->is_online): ?>
@@ -57,6 +55,6 @@
 				</td>
 			</tr>
 			<?php unset($stats); ?>
-		<?php endforeach; ?>
+
 	</tbody>
 </table>
