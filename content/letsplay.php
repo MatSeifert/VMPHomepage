@@ -68,7 +68,19 @@
 				<p>&nbsp;</p>
 				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=mL0evO0Y5d0&list=PLMYyvoe65Ysk4YCJKEJ0QRziWfL-cmYPp">Playlist</a> <br />
 				<span class="LPDate">Neue Folgen immer:</span> <br>
-					Montag &amp; Freitag
+					Montag
+				<br>
+			</span>
+		</div>
+
+		<div class="LPBox">
+			<img src="images/lpPage_bltps.png" class="LetsPlayThumb" alt="BorderlandsThePreSequel">
+			<span class="LPHeadline">BL THE PRE-SEQUEL</span>
+			<span class="LPContent">
+				<p>&nbsp;</p>
+				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/playlist?list=PLMYyvoe65YskB_BGm3HzlLB9f3mhcj1Q_">Playlist</a> <br />
+				<span class="LPDate">Neue Folgen immer:</span> <br>
+					Dienstag &amp; Freitag
 				<br>
 			</span>
 		</div>
@@ -78,7 +90,7 @@
 			<span class="LPHeadline">DEAD SPACE</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
-				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/watch?v=vIU_XUvDyC8&list=PL7EDB5FDAD8EAD27A">Playlist</a> <br />
+				<img src="images/play.png">&nbsp;<a href="https://www.youtube.com/playlist?list=PLMYyvoe65Ysk5gIJBL4GihugmFv0j62Gz">Playlist</a> <br />
 				<span class="LPDate">Neue Folgen immer:</span> <br>
 					Mittwochs
 				<br>

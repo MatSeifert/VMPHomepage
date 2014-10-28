@@ -12,12 +12,14 @@
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Dead Space zur Let's Play Übersicht hinzugefügt</li>
+		<li>Borderlands The Pre-Sequel zur Leet's Play Übersicht hinzugefügt</li>
 		<li>Bugfix: Darstellung der Spielübersicht auf der VMP Mania '14 Seite im Firefox</li>
 		<li>Improvement: Bei der Spielübersicht zur Mania '14 sind nun auch die Bilder klickbar</li>
 		<li>Aktualisiertes Regelwerk</li>
 		<li>Teamspeak 3 und Minecraft haben eine Infoseite erhalten</li>
 		<li>Erste Version der Minecraft Serverregeln erstellt. Diese findet ihr <a href="?site=minecraft">hier</a></li>
 		<li>Erste Version der Teamspeak Serverregeln erstellt. Diese findet ihr <a href="?site=teamspeak">hier</a></li>
+		<li>Verschiedene kleinere Bugfixes &amp; Verbesserungen</li>
 	</ul>
 
 	<span class="smallHeadline">

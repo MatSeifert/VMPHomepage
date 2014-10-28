@@ -59,16 +59,16 @@
 		bestimmten Fällen auch abgerissen werden.</li>
 		<li>Das graben von Löchern in tiefe Höhlen, oder bis zur Bedrockebene ist prinzipiell nicht gestattet, da diese immer eine Gefahr für andere Spieler darstellt. Man sieht die
 		Löcher oftmals nicht und fällt hinein. Solltet ihr das Bedürfnis verspüren euch direkt nach unten zu graben, dann verschließt das Loch bitte umgehend wieder, oder bringt 
-		Leitern an, falls es ein Höhleneingang werden soll</li>
+		Leitern an, falls es ein Höhleneingang werden soll.</li>
 		<li>Mit TNT muss bewusst und vorsichtig umgegangen werden, besonders bei größeren Sprengungen. Zum einen besteht die Gefahr fremde Gebäude zu beschädigen, zum 
 		anderen kann gleichzeitig gezündetes TNT die Server Performance negativ beeinflussen, und sogar zum Absturz führen.</li>
 		<li>Wer im Gebiet von anderen Spielern unterwegs ist, und von einem Creeper getroffen wird, muss die entstandenen Schäden umgehend wieder reparieren. Ist das aufgrund
-		mangelnder Materialien nicht möglich, muss der geschädigte Spieler informiert werden. Eine Reparatur ist immer zum nächst möglichen Zeitpunkt durczuführen</li>
+		mangelnder Materialien nicht möglich, muss der geschädigte Spieler informiert werden. Eine Reparatur ist immer zum nächst möglichen Zeitpunkt durchzuführen.</li>
 		<li>Das stehlen von Gegenständen aus fremden Kisten, sowie das mutwillige beschädigen anderer Gebäude ist natürlich strengstens verboten!</li>
 		<li>Farmen anderer Spieler dürfen, sofern es nicht verboten wird, genutzt werden, wenn geschlachtete Tiere umgehend nachgezüchtet, und geerntete Pflanzen nachgepflanzt
 		werden</li>
-		<li>Das spawnen eines Withers ist bis auf weiteres verboten, da dieser unheimlich viel Schaden anrichten kann, und allein praktisch kaum zu besiegen ist</li>
-	</ol>
+		<li>Das spawnen eines Withers ist bis auf weiteres verboten, da dieser unheimlich viel Schaden anrichten kann, und allein praktisch kaum zu besiegen ist.</li
+>	</ol>
 
 	<span class="smallHeadline">
 		Zugang zum Server
@@ -89,11 +89,11 @@
 		<li>Um Zugangsberechtigt zum Server zu sein, bedarf es eines bestehenden VMP Mitglieds (ausgenommen Trial Member), der für den Gastspieler bürgt 
 		(Vgl. Zugang zum Server, Nr. 4)</li>
 		<li>Bei Inaktivität von drei Monaten wird der entsprechende Spieler wieder von der Whitelist entfernt, und unfertige oder im späteren Verlauf störende
-		Gebäude können abgerissen werden. Gebäude werden nicht abgerissen, solang der Gast noch aktiv (sprich ein mal in 3 Monaten) am Servergeschehen teilnimmt</li>
+		Gebäude können abgerissen werden. Gebäude werden nicht abgerissen, solang der Gast noch aktiv (sprich ein mal in 3 Monaten) am Servergeschehen teilnimmt.</li>
 		<li>Gebäude von VMP Mitgliedern werden auch bei Inaktivität nicht abgerissen</li>
-		<li>Für Verstöße gegen die Serverregeln wird neben dem Verursacher auch der entsprechende Bürge zur Verantwortung gezogen</li>
+		<li>Für Verstöße gegen die Serverregeln wird neben dem Verursacher auch der entsprechende Bürge zur Verantwortung gezogen.</li>
 		<li>Bei mehrfachen Verstößen wird ein Spieler wieder von der Whitelist entfernt.</li>
-		<li>Sind die Slots des Clanservers belegt, können Gastspieler zugunsten von Clanmitgliedern gekickt werden</li>
+		<li>Sind die Slots des Clanservers belegt, können Gastspieler zugunsten von Clanmitgliedern gekickt werden.</li>
 	</ol>	
 	<br>
 	<i>Stand: Oktober 2014</i>

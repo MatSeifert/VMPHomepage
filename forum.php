@@ -117,7 +117,9 @@
 				<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start"/>
 			</div>
 			<div class="text">
-				<img src="images/logo.png" alt="Logo" class="logo"/>
+				<a href="?site=start">
+					<img src="images/logo.png" alt="Logo" class="logo" border="0"/>
+				</a>
 				<span class="title">VMP CLAN</span> <br />
 				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>				
 			</div>
