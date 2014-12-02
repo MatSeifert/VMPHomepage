@@ -17,10 +17,14 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<!-- Seitentitel -->
 		<title>VMP Clan - German Multigaming</title>
-			<!-- Stylesheet- und Favicon Einbindung /-->
+			<!-- Viewporteinstellungen für das Responsive Design /-->
 		<meta name="viewport" content="width=400, initial-scale=0.7, maximum-scale=0.7, user-scalable=no" />
+			<!-- Farbige Statusleiste für Chrom v39+ unter Android 5.0+ /-->
+		<meta name="theme-color" content="#C14924">
+			<!-- Stylesheet- und Favicon Einbindung /-->	
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="shortcut icon" href="images/favicon.png">
+			<!-- Die Schriftart der Seite /-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
 			<!-- Javascript Dateien für diverse Funktionen /-->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>

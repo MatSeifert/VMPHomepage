@@ -8,6 +8,15 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
+		Date unkown - Version 4.1.3
+	</span>
+	<ul style="padding: 0px 0px 0px 20px">
+		<b>Big Mobile Update</b>
+		<li>Mobile Seite auf die neue Clanfarbe umgestellt (Material Red)</li>
+		<li>Farbige Adresszeile und Statusbar für Google Chrome (Version 39 und höher) unter Android (Version 5.0 Lollipop oder höher)
+	</ul>
+
+	<span class="smallHeadline">
 		27.10.2014 - Version 4.1.2
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">

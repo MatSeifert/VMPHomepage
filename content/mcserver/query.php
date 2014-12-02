@@ -10,10 +10,10 @@
 	<thead>
 		<tr>
 			<th class="center">STATUS</th>
-			<th class="center">VERSION</th>
+			<th class="center mobileHidden">VERSION</th>
 			<th>&nbsp;&nbsp;&nbsp;</th>
 			<th>NAME</th>
-			<th>IP</th>
+			<th class="mobileHidden">ADRESSE</th>
 			<th class="center">SPIELER</th>
 		</tr>
 	</thead>
@@ -31,7 +31,7 @@
 					<?php endif; ?>
 				</td>
 				
-				<td class="maniaHoFTop middle center">
+				<td class="maniaHoFTop middle center mobileHidden">
 					<?php echo $stats->game_version ?>
 				</td>
 				
@@ -44,7 +44,7 @@
 					</span> 
 				</td>
 
-				<td class="maniaHoFTop middle">
+				<td class="maniaHoFTop middle mobileHidden">
 					<code><?php echo $server; ?></code>
 				</td>
 

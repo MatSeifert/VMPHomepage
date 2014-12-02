@@ -116,45 +116,34 @@
 	"buffers":
 	[
 		{
-			"file": "content/minecraft.php",
+			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.vsh",
 			"settings":
 			{
-				"buffer_size": 6000,
+				"buffer_size": 178,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "content/mcserver/query.php",
+			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.fsh",
 			"settings":
 			{
-				"buffer_size": 1459,
+				"buffer_size": 200,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "content/mcserver/MCServerStatus/Minecraft/StatsException.php",
+			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.vsh",
 			"settings":
 			{
-				"buffer_size": 71,
-				"line_ending": "Windows"
+				"buffer_size": 1477,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "content/mcserver/MCServerStatus/Minecraft/Stats.php",
+			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.fsh",
 			"settings":
 			{
-				"buffer_size": 890,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace Minecraft;\n\nclass Server {\n\n	protected $hostname;\n	protected $port;\n\n	public function __construct($hostname = '127.0.0.1', $port = 25565) {\n		// Overload for hostname:port syntax.\n		if (stristr(':', $hostname)) {\n			list($hostname, $port) = explode(':', $hostname);\n		}\n\n		$this->setHostname($hostname);\n		$this->setPort($port);\n	}\n\n	public function setHostname($hostname) {\n		// If hostname doesn't resolve, throw error.\n		// Must be IP or domain. (only IPv4)\n		$this->hostname = $hostname;\n		return $this;\n	}\n\n	public function getHostname() {\n		return $this->hostname;\n	}\n\n	public function setPort($port) {\n\n		if (is_int($port)) {\n			$this->port = $port;\n		}\n\n		return $this;\n	}\n\n	public function getPort() {\n		return $this->port;\n	}\n\n}",
-			"file": "content/mcserver/MCServerStatus/Minecraft/Server.php",
-			"file_size": 798,
-			"file_write_time": 130588427821706470,
-			"settings":
-			{
-				"buffer_size": 755,
+				"buffer_size": 25650,
 				"line_ending": "Windows"
 			}
 		}
@@ -193,21 +182,29 @@
 		"/D/xampp/htdocs/HTML/clanpage_4.0",
 		"/D/xampp/htdocs/HTML/clanpage_4.0/content",
 		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus/Minecraft",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/javascript",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/widgets",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/widgets/TSViewer"
+		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus"
 	],
 	"file_history":
 	[
-		"/D/xampp/htdocs/HTML/clanpage_4.0/phpinfo.php",
+		"/F/.fuse_hidden0000000d00000001",
+		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.vsh",
+		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.fsh",
+		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shade-it-baby/shaders/final.fsh",
+		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shade-it-baby/shaders/final.vsh",
 		"/D/xampp/htdocs/HTML/clanpage_4.0/styles/default_4.css",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/forum.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/impressum.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/sidebar.php",
 		"/D/xampp/htdocs/HTML/clanpage_4.0/index.php",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/query.php",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/content/impressum.php",
 		"/D/xampp/htdocs/HTML/clanpage_4.0/content/changelog.php",
+		"/K/Downloads/Flo/Flo",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/sidebar.php",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/forum.php",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus/Minecraft/Server.php",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus/Minecraft/Stats.php",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus/Minecraft/StatsException.php",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/content/minecraft.php",
+		"/G/syslinux.cfg",
+		"/D/xampp/htdocs/HTML/clanpage_4.0/phpinfo.php",
 		"/D/xampp/htdocs/HTML/clanpage_4.0/content/SaveNews.php",
 		"/D/xampp/htdocs/HTML/clanpage_4.0/widgets/TSViewer/teamspeak.php",
 		"/C/Users/Matze/Desktop/index.php",
@@ -316,19 +313,7 @@
 		"/C/Users/Matthias/AppData/Roaming/Skype/live#3amatthe.seifert/config.xml",
 		"/C/xampp/htdocs/clanpage/widgets/kalender/kalender.php",
 		"/C/xampp/htdocs/clanpage/content/lp_test.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/WriteNews.php",
-		"/C/xampp/htdocs/clanpage/newsfeed/SaveNews.php",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2012/May/2012-05-25_EinEinblickinMinecraft1.3.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011/Dec/2011-12-13_ModernWarfare3PatchbeseitigtGlitchesundBugs.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011/Dec/2011-12-03_Origin-EAhatzumDialogaufgerufen.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011-08-15_BestesMinecraftKunstwerkgesucht.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2011-07-04_NeuerSpielmodus&NeuesFahrzeuginNeedforSpeedWorld.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20110702_NeueNewsfunktion.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20140329_TitelmitUmlautenundKlammernü()äööüöß.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20140329_Ã–Ã–Ã–Ã–Ã–.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/20140329_TitelBlaBlubohneLeerzeichen.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/0",
-		"/C/xampp/htdocs/clanpage/newsfeed/$content.xml"
+		"/C/xampp/htdocs/clanpage/newsfeed/WriteNews.php"
 	],
 	"find":
 	{
@@ -346,6 +331,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rainStrength;",
+			"rainStrength",
+			"mobileHead",
 			"servers",
 			"utf8",
 			"render",
@@ -423,58 +411,85 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "content/minecraft.php",
+					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.vsh",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6000,
+						"buffer_size": 178,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								938,
-								938
+								12,
+								12
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Java/Java.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 456.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "content/mcserver/query.php",
+					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.fsh",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1459,
+						"buffer_size": 200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								608,
-								608
+								199,
+								199
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.vsh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								525,
+								525
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -485,89 +500,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "content/mcserver/MCServerStatus/Minecraft/StatsException.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 71,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "content/mcserver/MCServerStatus/Minecraft/Stats.php",
+					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.fsh",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 890,
+						"buffer_size": 25650,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								442,
-								442
+								2481,
+								2481
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1197.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "content/mcserver/MCServerStatus/Minecraft/Server.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 755,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								286,
-								286
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -646,7 +604,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 226.0,
+	"side_bar_width": 248.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

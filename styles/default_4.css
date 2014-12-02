@@ -539,7 +539,7 @@ body {
 .mobileHead {
 	display: none;
 	height: 60px;
-	background-color: #8C0000;
+	background-color: #C14924;
 	position: fixed;
 	width: 100%;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -605,8 +605,8 @@ body {
 	text-decoration:none
 }
 
-a:link{color:#7F0000; text-decoration:none}
-a:visited{color:#7F0000; text-decoration:none}
+a:link{color:#C14924; text-decoration:none}
+a:visited{color:#C14924; text-decoration:none}
 a:hover{color:#b5b5b5; text-decoration:none}
 a:active{color:#b5b5b5; text-decoration:none}
 
@@ -1937,7 +1937,7 @@ a:hover.tooltips span {
 #slideright {
     height: 100%;
     position: fixed;
-    background: #8c0000;
+    background: #C14924;
     width: 300px;
     right: -300px;
     top: 60px;

@@ -6,7 +6,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body style="background-color: #8C0000;">
+	<body style="background-color: #C14924;">
 			<p>&nbsp;</p>
 			<div class="contentBox">
 		   		<span class="NavCategory">TEAMSPEAK 3</span>
