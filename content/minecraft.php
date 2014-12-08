@@ -67,8 +67,8 @@
 		<li>Das stehlen von Gegenständen aus fremden Kisten, sowie das mutwillige beschädigen anderer Gebäude ist natürlich strengstens verboten!</li>
 		<li>Farmen anderer Spieler dürfen, sofern es nicht verboten wird, genutzt werden, wenn geschlachtete Tiere umgehend nachgezüchtet, und geerntete Pflanzen nachgepflanzt
 		werden</li>
-		<li>Das spawnen eines Withers ist bis auf weiteres verboten, da dieser unheimlich viel Schaden anrichten kann, und allein praktisch kaum zu besiegen ist.</li
->	</ol>
+		<li>Das spawnen eines Withers ist bis auf weiteres verboten, da dieser unheimlich viel Schaden anrichten kann, und allein praktisch kaum zu besiegen ist.</li>	
+	</ol>
 
 	<span class="smallHeadline">
 		Zugang zum Server
@@ -95,8 +95,31 @@
 		<li>Bei mehrfachen Verstößen wird ein Spieler wieder von der Whitelist entfernt.</li>
 		<li>Sind die Slots des Clanservers belegt, können Gastspieler zugunsten von Clanmitgliedern gekickt werden.</li>
 	</ol>	
+
+
+	<span class="smallHeadline" id="changeDec2014">
+		Serverperformance
+	</span>
+	<ol>
+		<li>
+			Da wir uns allein über Spenden finanzieren, steht uns natürlich kein gigantischer Root Server mit endloser Leistung zur Verfügung. Um die Serverperformance dennoch
+			nicht zu beeinträchtigen, müssen einige Regeln beachtet werden. pielen allein benötigt nicht viel Leistung. Aber alles, was berechnet werden muss zieht an der 
+			Performance. 
+		</li>
+		<li>
+			Fließende Flüssigkeiten (nicht stehende!) können die Performance beeinflussen, wenn sie in großen Mengen autreten. Hüllt eure Gebäude also nicht unbedingt in Wasser,
+			und füllt eure Burgmauern besser nicht mit Lava. Wasserfälle von Bergen beeinträchtigen die Performance kaum.</li>
+		<li>
+			Den größten Leistungsfresser stellen Tierfarmen dar. Bitte züchtet euch nur gerade so viele Tiere, wie ihr benötigt, und teilt euch ggf. mit Spielern rein, die in
+			der Nähe wohnen (ein Spieler züchtet Schafe, ein anderer Kühe, usw.).
+		</li>
+		<li>
+			Kommt es durch von Spielern erzeugten bzw. gebauten Elementen zur Beeinträchtigung der Serverperformance, behalten wir uns das Recht vor Tiere und Anlagen zu entfernen,
+			die sich negativ auf die Leistung auswirken.
+		</li>
+	</ol>		
 	<br>
-	<i>Stand: Oktober 2014</i>
+	<i>Stand: Dezember 2014</i>
 
 	<p>&nbsp;</p>
 

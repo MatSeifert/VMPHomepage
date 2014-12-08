@@ -11,7 +11,7 @@
 				<tr>
 					<td class="maniaHoFTop">1.</td>
 					<td class="maniaHoFTop">[VMP] Behemoth</td>
-					<td class="maniaHoFTop">4</td>
+					<td class="maniaHoFTop">5</td>
 					<td class="maniaHoFTop space50px mobileHidden">&nbsp;</td>
 					<td class="maniaHoFTop mobileHidden">
 						<table border="0">
@@ -25,6 +25,10 @@
 							</tr>
 							<tr>
 								<td style="vertical-align: top;">2013</td>
+								<td>Modern Warfare 3</td>								
+							</tr>
+							<tr>
+								<td style="vertical-align: top;">2014</td>
 								<td>Modern Warfare 3</td>								
 							</tr>
 						</table>
@@ -59,14 +63,18 @@
 					</td>
 				</tr>				
 				<tr>
-					<td class="maniaHoFDefault">4.</td>
+					<td>&nbsp;</td>
 					<td class="maniaHoFDefault">[VMP] Chimera</td>
-					<td class="maniaHoFDefault">1</td>
+					<td class="maniaHoFDefault">2</td>
 					<td class="maniaHoFDefault space50px mobileHidden">&nbsp;</td>
 					<td class="maniaHoFDefault mobileHidden">
 						<table border="0">
 							<tr>
 								<td style="vertical-align: top; width: 40px;">2013</td>
+								<td>Modern Warfare 2</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: top; width: 40px;">2014</td>
 								<td>Modern Warfare 2</td>
 							</tr>
 						</table>
@@ -75,7 +83,7 @@
 				<tr>
 					<td>&nbsp;</td>
 					<td class="maniaHoFDefault">[VMP] Paintex</td>
-					<td class="maniaHoFDefault">1</td>
+					<td class="maniaHoFDefault">2</td>
 					<td class="maniaHoFDefault space50px mobileHidden">&nbsp;</td>
 					<td class="maniaHoFDefault mobileHidden">
 						<table border="0">
@@ -83,11 +91,15 @@
 								<td style="vertical-align: top; width: 40px;">2013</td>
 								<td>Call of Duty 4</td>
 							</tr>
+							<tr>
+								<td style="vertical-align: top; width: 40px;">2014</td>
+								<td>Counter Strike: GO</td>
+							</tr>
 						</table>
 					</td>
 				</tr>
 				<tr>
-					<td>&nbsp;</td>
+					<td class="maniaHoFDefault">4.</td>
 					<td class="maniaHoFDefault">[VMP] Uhrisch</td>
 					<td class="maniaHoFDefault">1</td>
 					<td class="maniaHoFDefault space50px mobileHidden">&nbsp;</td>
@@ -128,6 +140,34 @@
 						</table>
 					</td>
 				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td class="maniaHoFDefault">[VMP] Black Angel</td>
+					<td class="maniaHoFDefault">1</td>
+					<td class="maniaHoFDefault space50px mobileHidden">&nbsp;</td>
+					<td class="maniaHoFDefault mobileHidden">
+						<table border="0">
+							<tr>
+								<td style="vertical-align: top; width: 40px;">2014</td>
+								<td>Starcraft 2</td>
+							</tr>
+						</table>
+					</td>
+				</tr>	
+				<tr>
+					<td>&nbsp;</td>
+					<td class="maniaHoFDefault">[VMP] Patoyz</td>
+					<td class="maniaHoFDefault">1</td>
+					<td class="maniaHoFDefault space50px mobileHidden">&nbsp;</td>
+					<td class="maniaHoFDefault mobileHidden">
+						<table border="0">
+							<tr>
+								<td style="vertical-align: top; width: 40px;">2014</td>
+								<td>League of Legends</td>
+							</tr>
+						</table>
+					</td>
+				</tr>			
 			</table>
 		</div>
 	</div>

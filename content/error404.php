@@ -4,6 +4,7 @@
 
 <div class="Error404">
 	<div class="HttpError404Headline">
+		<img src="images/error.png">
 		Error 404
 	</div>
 

@@ -11,9 +11,14 @@
 		Date unkown - Version 4.1.3
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
-		<b>Big Mobile Update</b>
 		<li>Mobile Seite auf die neue Clanfarbe umgestellt (Material Red)</li>
-		<li>Farbige Adresszeile und Statusbar für Google Chrome (Version 39 und höher) unter Android (Version 5.0 Lollipop oder höher)
+		<li>Farbige Adresszeile und Statusbar für Google Chrome (Version 39 und höher) unter Android (Version 5.0 Lollipop oder höher)</li>
+		<li>zahlreiche kleinere Tweaks und Bugfixes</li>
+		<li>Ergebnisse und Sieger der VMP Mania 2014 eingetragen</li>
+		<li>Aktualisierung der Mania Hall of Fame</li>
+		<li>Aktualisierung der <a href="?site=minecraft#changeDec2014">Minecraft Serverregeln </a>(Abschnitt <i>Serverperformance</i>)</li>
+		<li>Eintrag für die Mania im Terminwidget entfernt</li>
+		<li>Neue Flickr Fotoalben für Anno 2070 und Borderlands 2</li>
 	</ul>
 
 	<span class="smallHeadline">

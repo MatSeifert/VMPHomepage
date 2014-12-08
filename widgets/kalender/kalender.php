@@ -134,11 +134,11 @@
 		MonthlyAppointment();
 	
 		// MANIA
-		echo "<p>&nbsp;</p> <div class=\"agendaEntry\"> 
-					<img src=\"images/widgets/kalender/besprechung.png\" alt=\"besprechung\" class=\"left\"> 
-					&nbsp; VMP MANIA 2014<br /> 
-					&nbsp; <span class=\"date\">13. - 26. Oktober</span>
-				</div>";
+		// echo "<p>&nbsp;</p> <div class=\"agendaEntry\"> 
+		// 			<img src=\"images/widgets/kalender/besprechung.png\" alt=\"besprechung\" class=\"left\"> 
+		// 			&nbsp; VMP MANIA 2014<br /> 
+		// 			&nbsp; <span class=\"date\">13. - 26. Oktober</span>
+		// 		</div>";
 	}
 	
 	Display();

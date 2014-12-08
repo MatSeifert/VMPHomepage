@@ -19,17 +19,6 @@
 	<p>&nbsp;</p>
 
 	<div class="ManiaBox">
-		<a href="#cod4">
-			<img src="images/mania_Cod4Wallpaper.png" alt="MW2">
-		</a>
-		<img src="images/mania_cod4Icon.png" alt="MW2" class="ManiaIcon">
-		<span class="ManiaHeadline">
-			<a href="#cod4">COD 4: MW</a>
-		</span>
-
-	</div>
-
-	<div class="ManiaBox">
 		<a href="#mfw2">
 			<img src="images/mania_Mw2Wallpaper.png" alt="MW2">
 		</a>
@@ -60,26 +49,6 @@
 	</div>
 
 	<div class="ManiaBox">
-		<a href="#dayz">
-			<img src="images/mania_DayZWallpaper.png" alt="DayZ">
-		</a>
-		<img src="images/mania_DayZIcon.png" alt="DayZ" class="ManiaIcon">
-		<span class="ManiaHeadline">
-			<a href="#dayz">DAYZ</a>
-		</span>
-	</div>
-
-	<div class="ManiaBox">
-		<a href="#an70">
-			<img src="images/mania_Anno2070Wallpaper.png" alt="Anno 2070">
-		</a>
-		<img src="images/mania_Anno2070Icon.png" alt="Anno 2070" class="ManiaIcon">
-		<span class="ManiaHeadline">
-			<a href="#an70">ANNO 2070</a>
-		</span>
-	</div>
-
-	<div class="ManiaBox">
 		<a href="#leol">
 			<img src="images/mania_LoLWallpaper.png" alt="League of Legends">
 		</a>
@@ -102,73 +71,7 @@
 	<div class="clear">
 	</div>
 
-	<!-- +++++++++++++++++++++++++++ CALL OF DUTY 4: MODERN WARFARE +++++++++++++++++++++++++++ /-->
-	<p>&nbsp;</p>
-	<span class="smallHeadline" id="cod4">
-		<img src="images/mania_cod4Icon.png" alt="CoD4" class="ManiaInlineImage">
-		Call of Duty 4: Modern Warfare
-	</span>
-	<span class="maniaBtt">
-		<img src="images/backToTop.png" alt="zurück nach oben">
-		<a href="#pageTop">Zur Spieleübersicht</a>
-	</span>
-	<p>&nbsp;</p>
-	<table class="mania2011" cellspacing="0" cellpadding="0">
-		<tr style="height: 25px">
-			<th colspan="5">TEILNEHMER &amp; BEGEGNUNGEN</th>
-		</tr>
-		<tr>
-			<td class="maniaHoFTop">Behemoth</td>
-			<td class="maniaHoFTop">vs</td>
-			<td class="maniaHoFTop">TheBloodyRain</td>
-			<td class="maniaHoFTop mobileHidden">-</td>
-			<td class="maniaHoFTop right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">PaiNTeX</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Behemoth</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">TheBloodyRain</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">PaiNTeX</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-	</table>
-	<p>&nbsp;</p>
-	<table class="mania2011" cellspacing="0" cellpadding="0">
-		<tr style="height: 25px">
-			<th colspan="5">TABELLE &amp; GEWINNER</th>
-		</tr>
-		<tr>
-			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">3.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right negative">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-	</table>
+
 
 	<!-- +++++++++++++++++++++++++++ CALL OF DUTY: MODERN WARFARE 2 +++++++++++++++++++++++++++ /-->
 	<p>&nbsp;</p>
@@ -189,106 +92,106 @@
 			<td class="maniaHoFTop">Behemoth</td>
 			<td class="maniaHoFTop">vs</td>
 			<td class="maniaHoFTop">Kakadu</td>
-			<td class="maniaHoFTop mobileHidden">Wasteland</td>
-			<td class="maniaHoFTop right">- : -</td>
+			<td class="maniaHoFTop mobileHidden">Skidrow</td>
+			<td class="maniaHoFTop right">4 : 1</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Behemoth</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Fou</td>
 			<td class="maniaHoFDefault mobileHidden">Quarry</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">5 : 3</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Behemoth</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault mobileHidden">Derail</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Invasion</td>
+			<td class="maniaHoFDefault right">4 : 3</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Behemoth</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">Estate</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Wasteland</td>
+			<td class="maniaHoFDefault right">7 : 5</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Behemoth</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Chimera</td>
 			<td class="maniaHoFDefault mobileHidden">Terminal</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">4 : 13</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Kakadu</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Fou</td>
-			<td class="maniaHoFDefault mobileHidden">Highrise</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Afghan</td>
+			<td class="maniaHoFDefault right">7 : 10</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Kakadu</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault mobileHidden">Wasteland</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Rust</td>
+			<td class="maniaHoFDefault right">7 : 25</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Kakadu</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
 			<td class="maniaHoFDefault mobileHidden">Afghan</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right"><i>nicht gespielt</i></td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Kakadu</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Chimera</td>
 			<td class="maniaHoFDefault mobileHidden">Rundown</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">3 : 13</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Fou</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault mobileHidden">Favela</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">6 : 5</td>
 		</tr>	
 		<tr>
 			<td class="maniaHoFDefault">Fou</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">Terminal</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Highrise</td>
+			<td class="maniaHoFDefault right">19 : 12</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Fou</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Chimera</td>
-			<td class="maniaHoFDefault mobileHidden">Derail</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Estate</td>
+			<td class="maniaHoFDefault right">3 : 3</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">Derail</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Scrapyard</td>
+			<td class="maniaHoFDefault right">21 : 7</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Chimera</td>
 			<td class="maniaHoFDefault mobileHidden">Afghan</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">2 : 5</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Chimera</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">Underpass</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Skidrow</td>
+			<td class="maniaHoFDefault right">9 : 1</td>
 		</tr>
 	</table>
 	<p>&nbsp;</p>
@@ -298,51 +201,51 @@
 		</tr>
 		<tr>
 			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
+			<td class="maniaHoFTop winner">Chimera</td>
+			<td class="maniaHoFTop mobileHidden winner">5</td>
+			<td class="maniaHoFTop mobileHidden winner">43 : 13</td>
+			<td class="maniaHoFTop right winner positive">+ 30</td>
+			<td class="maniaHoFTop right bold winner">13</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Behemoth</td>
+			<td class="maniaHoFDefault mobileHidden ">5</td>
+			<td class="maniaHoFDefault mobileHidden">24 : 25</td>
+			<td class="maniaHoFDefault right negative">- 1</td>
+			<td class="maniaHoFDefault right bold">12</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">3.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right negative">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Fou</td>
+			<td class="maniaHoFDefault mobileHidden ">5</td>
+			<td class="maniaHoFDefault mobileHidden">41 : 32</td>
+			<td class="maniaHoFDefault right positive">+ 9</td>
+			<td class="maniaHoFDefault right bold">10</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">4.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right negative">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Rabbit</td>
+			<td class="maniaHoFDefault mobileHidden ">5</td>
+			<td class="maniaHoFDefault mobileHidden">55 : 29</td>
+			<td class="maniaHoFDefault right positive">+ 26</td>
+			<td class="maniaHoFDefault right bold">6</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">5.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right negative">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Paintex</td>
+			<td class="maniaHoFDefault mobileHidden ">5</td>
+			<td class="maniaHoFDefault mobileHidden">25 : 66</td>
+			<td class="maniaHoFDefault right negative">- 41</td>
+			<td class="maniaHoFDefault right bold">0</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">6.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right negative">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Kakadu</td>
+			<td class="maniaHoFDefault mobileHidden ">5</td>
+			<td class="maniaHoFDefault mobileHidden">18 : 72</td>
+			<td class="maniaHoFDefault right negative">- 54</td>
+			<td class="maniaHoFDefault right bold">0</td>
 		</tr>
 	</table>
 
@@ -365,43 +268,43 @@
 			<td class="maniaHoFTop">Behemoth</td>
 			<td class="maniaHoFTop">vs</td>
 			<td class="maniaHoFTop">Fou</td>
-			<td class="maniaHoFTop mobileHidden">Carbon</td>
-			<td class="maniaHoFTop right">- : -</td>
+			<td class="maniaHoFTop mobileHidden">Mission</td>
+			<td class="maniaHoFTop right">4 : 3</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Behemoth</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault mobileHidden">Seatown</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">6 : 2</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Behemoth</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
 			<td class="maniaHoFDefault mobileHidden">Terminal</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">9 : 4</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Fou</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault mobileHidden">Dome</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Bakaara</td>
+			<td class="maniaHoFDefault right">4 : 8</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Fou</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
 			<td class="maniaHoFDefault mobileHidden">Bootleg</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">4 : 5</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
 			<td class="maniaHoFDefault mobileHidden">Underground</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault right">7 : 4</td>
 		</tr>
 	</table>
 	<p>&nbsp;</p>
@@ -411,35 +314,35 @@
 		</tr>
 		<tr>
 			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
+			<td class="maniaHoFTop winner">Behemoth</td>
+			<td class="maniaHoFTop mobileHidden  winner">3</td>
+			<td class="maniaHoFTop mobileHidden winner">19 : 9</td>
+			<td class="maniaHoFTop right winner positive">+ 10</td>
+			<td class="maniaHoFTop right bold winner">9</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Rabbit</td>
+			<td class="maniaHoFDefault mobileHidden ">3</td>
+			<td class="maniaHoFDefault mobileHidden">17 : 14</td>
+			<td class="maniaHoFDefault right positive">+ 3</td>
+			<td class="maniaHoFDefault right bold">6</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">3.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right negative">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Paintex</td>
+			<td class="maniaHoFDefault mobileHidden ">3</td>
+			<td class="maniaHoFDefault mobileHidden">13 : 20</td>
+			<td class="maniaHoFDefault right negative">- 7</td>
+			<td class="maniaHoFDefault right bold">3</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">4.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right negative">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Fou</td>
+			<td class="maniaHoFDefault mobileHidden ">3</td>
+			<td class="maniaHoFDefault mobileHidden">11 : 18</td>
+			<td class="maniaHoFDefault right negative">- 7</td>
+			<td class="maniaHoFDefault right bold">0</td>
 		</tr>
 	</table>
 
@@ -462,276 +365,11 @@
 			<td class="maniaHoFTop">Kakadu</td>
 			<td class="maniaHoFTop">vs</td>
 			<td class="maniaHoFTop">Black Angel</td>
-			<td class="maniaHoFTop mobileHidden">-</td>
-			<td class="maniaHoFTop right">- : -</td>
-		</tr>
-	</table>
-	<p>&nbsp;</p>
-	<table class="mania2011" cellspacing="0" cellpadding="0">
-		<tr style="height: 25px">
-			<th colspan="5">TABELLE &amp; GEWINNER</th>
-		</tr>
-		<tr>
-			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFTop"><i>Gewinner:</i></td>
+			<td class="maniaHoFTop right">Black Angel</td>
 		</tr>
 	</table>
 
-	<!-- +++++++++++++++++++++++++++ DAYZ +++++++++++++++++++++++++++ /-->
-	<p>&nbsp;</p>
-	<span class="smallHeadline" id="dayz">
-		<img src="images/mania_DayZIcon.png" alt="DayZ" class="ManiaInlineImage">
-		DayZ
-	</span>
-	<span class="maniaBtt">
-		<img src="images/backToTop.png" alt="zurück nach oben">
-		<a href="#pageTop">Zur Spieleübersicht</a>
-	</span>
-	<p>&nbsp;</p>
-	<table class="mania2011" cellspacing="0" cellpadding="0">
-		<tr style="height: 25px">
-			<th colspan="5">TEILNEHMER &amp; BEGEGNUNGEN</th>
-		</tr>
-		<tr>
-			<td class="maniaHoFTop">Behemoth</td>
-			<td class="maniaHoFTop">vs</td>
-			<td class="maniaHoFTop">Rabbit</td>
-			<td class="maniaHoFTop mobileHidden">-</td>
-			<td class="maniaHoFTop right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Behemoth</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Behemoth</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Hellbourne</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Behemoth</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">TheBloodyRain</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Behemoth</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Phoenix</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Hellbourne</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Bloodrain</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Phoenix</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Hellbourne</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">TheBloodyRain</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Phoenix</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Hellbourne</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">TheBloodyRain</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Hellbourne</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Phoenix</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">TheBloodyRain</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Phoenix</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-	</table>
-	<p>&nbsp;</p>
-	<table class="mania2011" cellspacing="0" cellpadding="0">
-		<tr style="height: 25px">
-			<th colspan="5">TABELLE &amp; GEWINNER</th>
-		</tr>
-		<tr>
-			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">3.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">4.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">5.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">6.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-	</table>
-
-	<!-- +++++++++++++++++++++++++++ ANNO 2070 +++++++++++++++++++++++++++ /-->
-	<p>&nbsp;</p>
-	<span class="smallHeadline" id="an70">
-		<img src="images/mania_Anno2070Icon.png" alt="Anno 2070" class="ManiaInlineImage">
-		Anno 2070
-	</span>
-	<span class="maniaBtt">
-		<img src="images/backToTop.png" alt="zurück nach oben">
-		<a href="#pageTop">Zur Spieleübersicht</a>
-	</span>
-	<p>&nbsp;</p>
-	<table class="mania2011" cellspacing="0" cellpadding="0">
-		<tr style="height: 25px">
-			<th colspan="5">TEILNEHMER &amp; BEGEGNUNGEN</th>
-		</tr>
-		<tr>
-			<td class="maniaHoFTop">Behemoth</td>
-			<td class="maniaHoFTop">vs</td>
-			<td class="maniaHoFTop">Rabbit</td>
-			<td class="maniaHoFTop mobileHidden">-</td>
-			<td class="maniaHoFTop right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Behemoth</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault">vs</td>
-			<td class="maniaHoFDefault">Rabbit</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
-		</tr>
-	</table>
-	<p>&nbsp;</p>
-	<table class="mania2011" cellspacing="0" cellpadding="0">
-		<tr style="height: 25px">
-			<th colspan="5">TABELLE &amp; GEWINNER</th>
-		</tr>
-		<tr>
-			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-		<tr>
-			<td class="maniaHoFDefault">3.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
-		</tr>
-	</table>
 
 	<!-- +++++++++++++++++++++++++++ LEAGUE OF LEGENDS +++++++++++++++++++++++++++ /-->
 	<p>&nbsp;</p>
@@ -752,43 +390,43 @@
 			<td class="maniaHoFTop">Rabbit</td>
 			<td class="maniaHoFTop">vs</td>
 			<td class="maniaHoFTop">Patoyz</td>
-			<td class="maniaHoFTop mobileHidden">-</td>
-			<td class="maniaHoFTop right">- : -</td>
+			<td class="maniaHoFTop mobileHidden">Howling Abbys</td>
+			<td class="maniaHoFTop right">0 : 3</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Howling Abbys</td>
+			<td class="maniaHoFDefault right">3 : 0</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Black Angel</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Howling Abbys</td>
+			<td class="maniaHoFDefault right">3 : 0</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Patoyz</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Paintex</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Howling Abbys</td>
+			<td class="maniaHoFDefault right">3 : 0</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Patoyz</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Black Angel</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">Howling Abbys</td>
+			<td class="maniaHoFDefault right">3 : 0</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Paintex</td>
 			<td class="maniaHoFDefault">vs</td>
 			<td class="maniaHoFDefault">Black Angel</td>
-			<td class="maniaHoFDefault mobileHidden">-</td>
-			<td class="maniaHoFDefault right">- : -</td>
+			<td class="maniaHoFDefault mobileHidden">&nbsp;</td>
+			<td class="maniaHoFDefault right"><i>nicht gespielt</i></td>
 		</tr>
 	</table>
 	<p>&nbsp;</p>
@@ -798,35 +436,34 @@
 		</tr>
 		<tr>
 			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
+			<td class="maniaHoFTop winner">Patoyz</td>
+			<td class="maniaHoFTop mobileHidden  winner">3</td>
+			<td class="maniaHoFTop mobileHidden winner">9 : 0</td>
+			<td class="maniaHoFTop right winner positive">+ 9</td>
+			<td class="maniaHoFTop right bold winner">9</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Rabbit</td>
+			<td class="maniaHoFDefault mobileHidden ">3</td>
+			<td class="maniaHoFDefault mobileHidden">6 : 3</td>
+			<td class="maniaHoFDefault right positive">+ 3</td>
+			<td class="maniaHoFDefault right bold">6</td>
 		</tr>
 		<tr>
-			<td class="maniaHoFDefault">3.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault" rowspan="2">3.</td>
+			<td class="maniaHoFDefault">Paitex</td>
+			<td class="maniaHoFDefault mobileHidden ">3</td>
+			<td class="maniaHoFDefault mobileHidden">0 : 9</td>
+			<td class="maniaHoFDefault right negative">- 9</td>
+			<td class="maniaHoFDefault right bold">0</td>
 		</tr>
 		<tr>
-			<td class="maniaHoFDefault">4.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Black Angel</td>
+			<td class="maniaHoFDefault mobileHidden ">3</td>
+			<td class="maniaHoFDefault mobileHidden">0 : 9</td>
+			<td class="maniaHoFDefault right negative">- 9</td>
+			<td class="maniaHoFDefault right bold">0</td>
 		</tr>
 	</table>
 
@@ -850,8 +487,8 @@
 			<td class="maniaHoFTop">Paintex</td>
 			<td class="maniaHoFTop">vs</td>
 			<td class="maniaHoFTop">Rabbit</td>
-			<td class="maniaHoFTop mobileHidden">-</td>
-			<td class="maniaHoFTop right">- : -</td>
+			<td class="maniaHoFTop mobileHidden">&nbsp;</td>
+			<td class="maniaHoFTop right">3 : 1</td>
 		</tr>
 	</table>
 	<p>&nbsp;</p>
@@ -861,19 +498,19 @@
 		</tr>
 		<tr>
 			<td class="maniaHoFTop winner">1.</td>
-			<td class="maniaHoFTop winner">-</td>
-			<td class="maniaHoFTop mobileHidden  winner">-</td>
-			<td class="maniaHoFTop mobileHidden winner">- : -</td>
-			<td class="maniaHoFTop right winner positive">-</td>
-			<td class="maniaHoFTop right bold winner">-</td>
+			<td class="maniaHoFTop winner">Paintex</td>
+			<td class="maniaHoFTop mobileHidden  winner">1</td>
+			<td class="maniaHoFTop mobileHidden winner">3 : 1</td>
+			<td class="maniaHoFTop right winner positive">+ 2</td>
+			<td class="maniaHoFTop right bold winner">3</td>
 		</tr>
 		<tr>
 			<td class="maniaHoFDefault">2.</td>
-			<td class="maniaHoFDefault">-</td>
-			<td class="maniaHoFDefault mobileHidden ">-</td>
-			<td class="maniaHoFDefault mobileHidden">- : -</td>
-			<td class="maniaHoFDefault right positive">-</td>
-			<td class="maniaHoFDefault right bold">-</td>
+			<td class="maniaHoFDefault">Rabbit</td>
+			<td class="maniaHoFDefault mobileHidden ">1</td>
+			<td class="maniaHoFDefault mobileHidden">1 : 3</td>
+			<td class="maniaHoFDefault right negative">- 2</td>
+			<td class="maniaHoFDefault right bold">0</td>
 		</tr>
 	</table>
 

@@ -85,6 +85,12 @@
 		case "teamspeak": @include __DIR__ . '/../content/teamspeak.php';
 		break;
 		
+		case "CitiesOfAnno2070": @include __DIR__ . '/../content/galleries/anno2070.php';
+		break;
+
+		case "FunWithGuns": @include __DIR__ . '/../content/galleries/borderlands2.php';
+		break;
+
 	   	default: @include __DIR__ . '/../content/error404.php';
   }
 ?>	

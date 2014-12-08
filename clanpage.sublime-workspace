@@ -4,10 +4,6 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-indent"
-			],
-			[
 				"back",
 				"background-color"
 			],
@@ -108,6 +104,10 @@
 				"none"
 			],
 			[
+				"text",
+				"text-align"
+			],
+			[
 				"backg",
 				"background-size"
 			]
@@ -116,34 +116,42 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.vsh",
+			"file": "content/changelog.php",
 			"settings":
 			{
-				"buffer_size": 178,
+				"buffer_size": 4434,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.fsh",
+			"file": "content/screenshots.php",
 			"settings":
 			{
-				"buffer_size": 200,
+				"buffer_size": 2582,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.vsh",
+			"file": "content/case.php",
 			"settings":
 			{
-				"buffer_size": 1477,
-				"line_ending": "Unix"
+				"buffer_size": 2494,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.fsh",
+			"file": "content/galleries/anno2070.php",
 			"settings":
 			{
-				"buffer_size": 25650,
+				"buffer_size": 1820,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/galleries/minecraft.php",
+			"settings":
+			{
+				"buffer_size": 1830,
 				"line_ending": "Windows"
 			}
 		}
@@ -151,11 +159,27 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 81.0,
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -179,47 +203,58 @@
 	},
 	"expanded_folders":
 	[
-		"/D/xampp/htdocs/HTML/clanpage_4.0",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus"
+		"/C/xampp/htdocs/clanpage",
+		"/C/xampp/htdocs/clanpage/content",
+		"/C/xampp/htdocs/clanpage/content/galleries",
+		"/C/xampp/htdocs/clanpage/styles",
+		"/C/xampp/htdocs/clanpage/widgets",
+		"/C/xampp/htdocs/clanpage/widgets/kalender",
+		"/C/xampp/htdocs/clanpage/xml"
 	],
 	"file_history":
 	[
-		"/F/.fuse_hidden0000000d00000001",
-		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.vsh",
-		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.fsh",
-		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shade-it-baby/shaders/final.fsh",
-		"/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shade-it-baby/shaders/final.vsh",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/styles/default_4.css",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/index.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/query.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/impressum.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/changelog.php",
-		"/K/Downloads/Flo/Flo",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/sidebar.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/forum.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus/Minecraft/Server.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus/Minecraft/Stats.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/MCServerStatus/Minecraft/StatsException.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/minecraft.php",
-		"/G/syslinux.cfg",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/phpinfo.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/SaveNews.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/widgets/TSViewer/teamspeak.php",
-		"/C/Users/Matze/Desktop/index.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/teamspeak.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/mcserver/README.md",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/wbb/upload/index.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/javascript/async.js",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/widgets/TSViewer/tsstatus.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/ts3server/tsstatus.php",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/widgets/TSViewer/tsstatus.css",
-		"/D/xampp/htdocs/HTML/clanpage_4.0/content/ts3server/tsstatusgen.php",
+		"/C/xampp/htdocs/clanpage/widgets/kalender/kalender.php",
+		"/C/xampp/htdocs/clanpage/content/minecraft.php",
+		"/C/xampp/htdocs/clanpage/styles/default_4.css",
+		"/C/xampp/htdocs/clanpage/content/ManiaHallOfFame.php",
+		"/C/xampp/htdocs/clanpage/content/mania2014.php",
+		"/C/xampp/htdocs/clanpage/content/mania2013.php",
+		"/C/xampp/htdocs/clanpage/content/error404.php",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/composite.fsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/composite.vsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.vsh",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.fsh",
+		"/C/xampp/htdocs/clanpage/content/screenshots.php",
+		"/C/Users/Matthias/Desktop/Newsletter_LKS_Weihnachtskarten.html",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/Naelego's Cel Shaders 1.0.4/shaders/composite.fsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/Naelego's Cel Shaders 1.0.4/shaders/composite.vsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.vsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/Naelego's Cel Shaders 1.0.4/shaders/final.vsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/Naelego's Cel Shaders 1.0.4/shaders/final.fsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.fsh",
+		"/C/xampp/htdocs/clanpage/wbb/upload/wcf/lib/system/auth/UserAuth.class.php",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/ShadeItBaby/shaders/final.vsh",
+		"/C/xampp/htdocs/clanpage/wbb/upload/wcf/lib/system/auth/UserAuthDefault.class.php",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/.git/config",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/ShadeItBaby/shaders/final.fsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/ShadeItBaby/shader/final.vsh",
+		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/ShadeItBaby/shader/final.fsh",
+		"/C/xampp/htdocs/clanpage/content/changelog.php",
+		"/C/xampp/htdocs/clanpage/content/teamspeak.php",
+		"/C/xampp/htdocs/clanpage/widgets/TSViewer/teamspeak.php",
+		"/C/Program Files (x86)/Google/Chrome/Application/master_preferences",
+		"/C/xampp/htdocs/clanpage/content/letsplay.php",
+		"/C/xampp/htdocs/clanpage/forum.php",
+		"/C/xampp/htdocs/clanpage/index.php",
+		"/C/xampp/htdocs/clanpage/content/mcserver/query.php",
+		"/C/Users/Matthias/Desktop/WriteNews.php",
+		"/C/xampp/htdocs/clanpage/xml/member.xml",
+		"/C/xampp/htdocs/clanpage/content/ts3server/tsstatus.php",
+		"/C/xampp/htdocs/clanpage/content/ts3server/tsstatusgen.php",
 		"/C/xampp/htdocs/clanpage/content/ts3server/index.php",
 		"/C/xampp/htdocs/clanpage/content/socialSDK/teamspeak.php",
 		"/C/xampp/htdocs/clanpage/content/menue.php",
-		"/C/xampp/htdocs/clanpage/content/mcserver/query.php",
 		"/C/xampp/htdocs/clanpage/content/impressum.php",
 		"/C/xampp/htdocs/clanpage/content/mcserver/view.php",
 		"/C/xampp/htdocs/clanpage/content/mcserver/index.php",
@@ -235,7 +270,6 @@
 		"/C/xampp/htdocs/clanpage/content/WriteNews.php",
 		"/C/xampp/htdocs/clanpage/content/SaveNews.php",
 		"/C/xampp/htdocs/clanpage/content/menueForum.php",
-		"/C/xampp/htdocs/clanpage/content/error404.php",
 		"/C/Users/Matthias/Downloads/Samples Environments for Microsoft Chart Controls/Windows Forms Samples Environment for Microsoft Chart Controls/C#/AssemblyInfo.cs",
 		"/C/Users/Matthias/Documents/notepad.cs",
 		"/C/Users/Matthias/Desktop/backup/StocksWidgetsHandler.cs",
@@ -249,12 +283,10 @@
 		"/C/Users/Matthias/Desktop/tfm.html",
 		"/C/Users/Matthias/Desktop/test.php",
 		"/C/xampp/htdocs/clanpage/clanpage_4.0/index.php",
-		"/C/xampp/htdocs/clanpage/styles/default_4.css",
 		"/C/xampp/htdocs/clanpage/content/member.php",
 		"/C/Users/Matthias/Desktop/member.xml",
 		"/C/Users/Matthias/Downloads/Samples Environments for Microsoft Chart Controls/Windows Forms Samples Environment for Microsoft Chart Controls/C#/ChartFeatures/Labels/LabelsNextToAxis/LabelsNextToAxis.cs",
 		"/C/Users/Matthias/Desktop/SaveNews.php",
-		"/C/Users/Matthias/Desktop/WriteNews.php",
 		"/C/Users/Matthias/Desktop/kalender.php",
 		"/C/xampp/htdocs/clanpage/content/test/facebook.php",
 		"/C/xampp/htdocs/clanpage/content/test/twitter.php",
@@ -263,7 +295,6 @@
 		"/C/xampp/htdocs/clanpage/content/socialSDK/gplus/signin.php",
 		"/C/xampp/htdocs/clanpage/content/news.php",
 		"/C/xampp/htdocs/clanpage/content/galleries/dayz.php",
-		"/C/xampp/htdocs/clanpage/xml/member.xml",
 		"/C/xampp/htdocs/clanpage/.gitignore",
 		"/C/Users/Matthias/SVN/website/FN.Services.SgxXsltTransform/bin/Debug/AppData/XSDValidation/seev.031.001.04.xsd",
 		"/C/Users/Matthias/SVN/website/FN.Services.SgxXsltTransform/bin/Debug/AppData/XSLTransform/XSL/NonIsoTransformation.xsl",
@@ -274,23 +305,18 @@
 		"/C/Users/Matthias/SVN/website/FN.Services.SgxXsltTransform/bin/Debug/AppData/XSDValidation/NonIsoSchemaDefinition.xsd",
 		"//samba.htw-dresden.de/s67529/Dokumente/Semester 06/IS/Beleg/s67529/s67529.c",
 		"/C/Users/Matthias/Desktop/tcenter.cs",
-		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/xampp/htdocs/clanpage/news/SaveNews.php",
-		"/C/xampp/htdocs/clanpage/forum.php",
 		"/C/xampp/htdocs/clanpage/news/WriteNews.php",
 		"/C/xampp/htdocs/forum.css",
-		"/C/xampp/htdocs/clanpage/index.php",
 		"/C/Users/Matthias/Documents/bankOfToll",
 		"/C/xampp/htdocs/clanpage/content/mania2011.php",
 		"/C/Users/Matthias/Documents/Arbeit/FnRssFeed.xml",
 		"/C/Users/Matthias/Downloads/PC_RSSReader/RssManager.cs",
 		"/C/xampp/htdocs/clanpage/content/galleries/minecraft.php",
-		"/C/xampp/htdocs/clanpage/content/letsplay.php",
 		"/C/xampp/htdocs/clanpage/content/information.html",
 		"/C/Users/Matthias/Documents/backup/WidgetController_AusArtikel_aspx.txt",
 		"/F/spawnpoint3.xml",
 		"/C/xampp/htdocs/clanpage/content/playVideo.php",
-		"/C/xampp/htdocs/clanpage/content/screenshots.php",
 		"/C/xampp/htdocs/clanpage/content/archive.html",
 		"/C/xampp/htdocs/clanpage/javascript/parallax.js",
 		"/C/Users/Matthias/Downloads/themeforest-6569811-unique-responsive-email-template/Unique - Responsive Email Template/Unique - Project/Unique - HTML Template/Red/all-modules.html",
@@ -311,13 +337,14 @@
 		"/C/xampp/htdocs/clanpage/content/opfer.php",
 		"/C/xampp/htdocs/clanpage/content/kalender.php",
 		"/C/Users/Matthias/AppData/Roaming/Skype/live#3amatthe.seifert/config.xml",
-		"/C/xampp/htdocs/clanpage/widgets/kalender/kalender.php",
 		"/C/xampp/htdocs/clanpage/content/lp_test.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/WriteNews.php"
+		"/C/xampp/htdocs/clanpage/newsfeed/WriteNews.php",
+		"/C/xampp/htdocs/clanpage/newsfeed/SaveNews.php",
+		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2012/May/2012-05-25_EinEinblickinMinecraft1.3.xml"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -331,14 +358,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"rainStrength;",
-			"rainStrength",
-			"mobileHead",
-			"servers",
-			"utf8",
-			"render",
-			"renderUser",
-			"TSStatus",
+			"main",
+			"viewWidth",
 			"box-shadow",
 			"incl",
 			"Subjekt",
@@ -411,57 +432,59 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.vsh",
+					"file": "content/changelog.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 178,
+						"buffer_size": 4434,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12,
-								12
+								848,
+								848
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Java/Java.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
+						"translation.x": 10.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.fsh",
+					"file": "content/screenshots.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 200,
+						"buffer_size": 2582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								199,
-								199
+								756,
+								756
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Java/Java.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -472,24 +495,53 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.vsh",
+					"file": "content/case.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1477,
+						"buffer_size": 2494,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								525,
-								525
+								2424,
+								2424
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/galleries/anno2070.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								956,
+								956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -500,32 +552,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/C/Users/Matze/AppData/Roaming/.minecraft/shaderpacks/SEUS-v10.1-Standard/shaders/final.fsh",
-					"semi_transient": false,
+					"buffer": 4,
+					"file": "content/galleries/minecraft.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 25650,
+						"buffer_size": 1830,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2481,
-								2481
+								1269,
+								1389
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1197.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -604,7 +656,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 248.0,
+	"side_bar_width": 274.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
