@@ -45,6 +45,20 @@
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
 
+				<section class="wrapper">
+				  <section class="material-design-hamburger">
+				    <button class="material-design-hamburger__icon">
+				      <span class="material-design-hamburger__layer"></span>
+				    </button>
+				  </section>
+
+				  <section class="menu menu--off" id="wrapper">
+		
+					<?php include("content/menue.php") ?>
+
+				  </section>  
+				</section>
+
 				<click2 class="showRight">
 					<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
 				</click2>
@@ -58,15 +72,6 @@
 						style="height: 1400px; overflow-x: hidden; width: 270px;">
 					</iframe>
 				</div>
-
-
-				<click class="show">
-					<img src="images/menue.png" alt="menu" style="float: left; margin-left: 0px">
-				</click>
-				<div id="slidemenu">
-					<?php include("content/menue.php") ?>
-				</div>
-
 			</div>
 		</div>
 		<!-- End of mobile Header /-->
@@ -160,8 +165,10 @@
 			   	</div>	
 			</div>
 		</div>
+
+
 		<script>
-			document.getElementById("slidemenu").style.height = Hoehe - 60 + 'px';
+			document.getElementById("wrapper").style.height = Hoehe - 60 + 'px';
 			document.getElementById("mobiSidebar").style.height = Hoehe + 'px';
 		</script>
 
@@ -176,6 +183,43 @@
 			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
 			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 			}());
+		</script>
+
+		<script>
+			(function() {
+
+			  'use strict';
+
+			  document.querySelector('.material-design-hamburger__icon').addEventListener(
+			    'click',
+			    function() {      
+			      var child;
+			      
+			      document.body.classList.toggle('background--blur');
+			      this.parentNode.nextElementSibling.classList.toggle('menu--on');
+
+			      child = this.childNodes[1].classList;
+
+			      if (child.contains('material-design-hamburger__icon--to-arrow')) {
+			        child.remove('material-design-hamburger__icon--to-arrow');
+			        child.add('material-design-hamburger__icon--from-arrow');
+			      } else {
+			        child.remove('material-design-hamburger__icon--from-arrow');
+			        child.add('material-design-hamburger__icon--to-arrow');
+			      }
+
+			    });
+
+			})();
+		</script>
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-46156385-1', 'cssscript.com');
+			  ga('send', 'pageview');
 		</script>
 	</body>
 </html>

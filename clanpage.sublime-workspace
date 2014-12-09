@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font-",
+				"font-size"
+			],
+			[
 				"back",
 				"background-color"
 			],
@@ -116,10 +120,21 @@
 	"buffers":
 	[
 		{
-			"file": "content/changelog.php",
+			"file": "/C/Users/Matthias/Desktop/NeighborhoodWorker.cs",
 			"settings":
 			{
-				"buffer_size": 4434,
+				"buffer_size": 13826,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n	setlocale(LC_TIME, 'de_DE');\n\n	function ImageCount() {					// Zählen der Bilder im angegeben Ordner +++ NAMECONVENTION BEI NEUEN BILDERN BEACHTEN!\n		$files = scandir('images/header');\n		$count = count($files)-3;			//-2 wegen . und .., und nochmal -1, da rand Funktion bei 0 anfängt\n\n		return $count;\n	}\n?>\n\n<!DOCTYPE html>\n\n<html>\n	<head>\n			<!-- Metadaten und WOT Verifizierung /-->\n		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n			<!-- Seitentitel -->\n		<title>VMP Clan - German Multigaming</title>\n			<!-- Viewporteinstellungen für das Responsive Design /-->\n		<meta name=\"viewport\" content=\"width=400, initial-scale=0.7, maximum-scale=0.7, user-scalable=no\" />\n			<!-- Farbige Statusleiste für Chrom v39+ unter Android 5.0+ /-->\n		<meta name=\"theme-color\" content=\"#C14924\">\n			<!-- Stylesheet- und Favicon Einbindung /-->	\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/default_4.css\">\n		<link rel=\"shortcut icon\" href=\"images/favicon.png\">\n			<!-- Die Schriftart der Seite /-->\n		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>\n			<!-- Javascript Dateien für diverse Funktionen /-->\n		<script src=\"http://code.jquery.com/jquery-1.9.1.min.js\" type=\"text/javascript\"></script>\n		<script src=\"javascript/parallax.js\" type=\"text/javascript\"></script>\n		<script src=\"javascript/charCount.js\" type=\"text/javascript\"></script>\n		<script src=\"javascript/smoothScroll.js\" type=\"text/javascript\"></script>		\n		<script src=\"javascript/windowHeight.js\" type=\"text/javascript\"></script>\n		<script src=\"javascript/setIFrameHeight.js\" type=\"text/javascript\"></script>\n		<script src=\"javascript/slideMenu.js\" type=\"text/javascript\"></script>\n		<script src=\"javascript/async.js\" type=\"text/javascript\"></script>\n		<script>\n			var divHeight = document.getElementById(\"content\").offsetHeight;\n		</script>\n	</head>\n\n	<body>\n	<!-- Mobile Header /-->\n		<div class=\"mobileSektion\" id=\"start\">\n			<div class=\"mobileHead\" style=\"text-align: center\">\n\n				<section class=\"wrapper\">\n					<section class=\"material-design-hamburger\">\n						<button class=\"material-design-hamburger__icon\">\n							<span class=\"material-design-hamburger__layer\"></span>\n						</button>\n					</section>\n\n					<section class=\"menu menu--off\" id=\"wrapper\">\n						<?php include(\"content/menue.php\") ?>\n					</section>  \n				</section>\n\n				<click2 class=\"showRight\">\n					<img src=\"images/widgets.png\" alt=\"menu\" style=\"float: right; margin-right: 5px\">\n				</click2>\n				<div id=\"slideright\">\n					<iframe \n						onload=\"javascript:parent.iFrameHeight('sidebar','sidebar');\" \n						src=\"sidebar.php\" \n						id=\"sidebar\" name=\"sidebar\"\n						frameborder=\"0\" \n						class=\"wrapper\"\n						style=\"height: 1400px; overflow-x: hidden; width: 270px;\">\n					</iframe>\n				</div>\n			</div>\n		</div>\n		<!-- End of mobile Header /-->\n\n		<div class=\"sektion\" id=\"start\">\n			<div class=\"hintergrundbild\">\n				<img src=\"images/header/<?php echo rand(0, ImageCount());?>.jpg\" alt=\"Hintergrundbild Start\"/>\n			</div>\n			<div class=\"text\">\n				<a href=\"?site=start\">\n					<img src=\"images/logo.png\" alt=\"Logo\" class=\"logo\" border=\"0\"/>\n				</a>\n				<span class=\"title\">VMP CLAN</span> <br />\n				<span class=\"subtitle\">GERMAN MULTIGAMING SINCE 2008</span>				\n			</div>\n		</div>\n		\n		<div class=\"contentWrapper\">\n			<div class=\"menue\">			\n			\n				<?php include(\"content/menue.php\") ?>\n			\n			</div>\n\n			<div class=\"content\">\n				<?php require_once (\"content/case.php\") ?>\n			   	<p>&nbsp;</p>\n\n			</div>\n\n			<div class=\"right\">\n				<div class=\"contentBox\">\n			   		<span class=\"RightHeadline\">TEAMSPEAK 3</span>\n			   		<div class=\"rightText\">\n			   			<div data-async-url=\"widgets/TSViewer/teamspeak.php\">\n				   			<p>&nbsp;</p>\n					   		<?php\n					   			require_once (\"widgets/TSViewer/teamspeak.php\")\n					   		?>		\n						</div>\n				   	</div>\n			   	</div>\n			   	<p>&nbsp;</p>\n			   	<div class=\"contentBox\">\n			   		<span class=\"RightHeadline\">TERMINE</span>\n			   		<div class=\"rightText\">\n				   		<?php\n				   			include(\"widgets/kalender/kalender.php\")\n				   		?>\n				   		<p>&nbsp;</p>\n				   	</div>\n			   	</div>\n			   	<p>&nbsp;</p>\n			   	<div class=\"contentBox\">\n			   		<span class=\"RightHeadline\">LET'S PLAY</span>\n			   		<div class=\"watchmore\">\n			   			<a href=\"?site=letsplay\" class=\"tooltips\">\n			   				&#187;\n			   				<span>Alle Projekte</span>\n			   			</a>\n			   		</div>\n			   		<p>&nbsp;</p>\n			   		<div class=\"rightText\">\n			   			\n						<?php require_once(\"widgets/letsplay/LetsPlay.html\"); ?>\n\n				   	</div>\n			   	</div>		\n			   	<p>&nbsp;</p>\n			   	<div class=\"contentBox\">\n			   		<span class=\"RightHeadline\">SOCIAL MEDIA</span>\n			   		<p>&nbsp;</p>\n			   		<div class=\"rightText\">\n			   			\n						<?php require_once(\"widgets/social/media.php\"); ?>\n\n				   	</div>\n			   	</div>	\n			   	<p>&nbsp;</p>\n			   	<div class=\"contentBox\" id=\"PromoBox\" style=\"display: none\">\n			   		<span class=\"RightHeadline\">VMP MOBIL</span>\n			   		<p>&nbsp;</p>\n			   		<div class=\"rightText\">\n			   			\n						Erlebe unsere Seite jetzt auch auf deinem Smartphone! Rufe einfach wie gewohnt www.vmp-clan.de auf!\n						<br>\n						<div class=\"mobileScreenWrapper\">\n							<img src=\"images/mobileScreen.png\" class=\"mobileScreen\">\n						</div>\n				   	</div>\n			   	</div>	\n			</div>\n		</div>\n\n\n		<script>\n			document.getElementById(\"wrapper\").style.height = Hoehe - 60 + 'px';\n			document.getElementById(\"mobiSidebar\").style.height = Hoehe + 'px';\n		</script>\n\n		<script type=\"text/javascript\">\n			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */\n			var disqus_shortname = 'vmp-clan'; // required: replace example with your forum shortname\n\n			/* * * DON'T EDIT BELOW THIS LINE * * */\n			(function () {\n			var s = document.createElement('script'); s.async = true;\n			s.type = 'text/javascript';\n			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';\n			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);\n			}());\n		</script>\n\n		<script>\n			(function() {\n\n			  'use strict';\n\n			  document.querySelector('.material-design-hamburger__icon').addEventListener(\n			    'click',\n			    function() {      \n			      var child;\n			      \n			      document.body.classList.toggle('background--blur');\n			      this.parentNode.nextElementSibling.classList.toggle('menu--on');\n\n			      child = this.childNodes[1].classList;\n\n			      if (child.contains('material-design-hamburger__icon--to-arrow')) {\n			        child.remove('material-design-hamburger__icon--to-arrow');\n			        child.add('material-design-hamburger__icon--from-arrow');\n			      } else {\n			        child.remove('material-design-hamburger__icon--from-arrow');\n			        child.add('material-design-hamburger__icon--to-arrow');\n			      }\n\n			    });\n\n			})();\n		</script>\n		<script>\n			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n			  ga('create', 'UA-46156385-1', 'cssscript.com');\n			  ga('send', 'pageview');\n		</script>\n	</body>\n</html>",
+			"file": "index.php",
+			"file_size": 7582,
+			"file_write_time": 130625976134024733,
+			"settings":
+			{
+				"buffer_size": 7339,
 				"line_ending": "Windows"
 			}
 		},
@@ -132,26 +147,10 @@
 			}
 		},
 		{
-			"file": "content/case.php",
+			"file": "styles/default_4.css",
 			"settings":
 			{
-				"buffer_size": 2494,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "content/galleries/anno2070.php",
-			"settings":
-			{
-				"buffer_size": 1820,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "content/galleries/minecraft.php",
-			"settings":
-			{
-				"buffer_size": 1830,
+				"buffer_size": 48357,
 				"line_ending": "Windows"
 			}
 		}
@@ -205,7 +204,6 @@
 	[
 		"/C/xampp/htdocs/clanpage",
 		"/C/xampp/htdocs/clanpage/content",
-		"/C/xampp/htdocs/clanpage/content/galleries",
 		"/C/xampp/htdocs/clanpage/styles",
 		"/C/xampp/htdocs/clanpage/widgets",
 		"/C/xampp/htdocs/clanpage/widgets/kalender",
@@ -213,6 +211,12 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/clanpage/content/galleries/borderlands2.php",
+		"/C/xampp/htdocs/clanpage/content/screenshots.php",
+		"/C/xampp/htdocs/clanpage/content/galleries/anno2070.php",
+		"/C/xampp/htdocs/clanpage/styles/hamburger",
+		"/C/xampp/htdocs/clanpage/content/changelog.php",
+		"/C/xampp/htdocs/clanpage/content/case.php",
 		"/C/xampp/htdocs/clanpage/widgets/kalender/kalender.php",
 		"/C/xampp/htdocs/clanpage/content/minecraft.php",
 		"/C/xampp/htdocs/clanpage/styles/default_4.css",
@@ -225,7 +229,6 @@
 		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.vsh",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/shade-it-baby/shaders/final.fsh",
-		"/C/xampp/htdocs/clanpage/content/screenshots.php",
 		"/C/Users/Matthias/Desktop/Newsletter_LKS_Weihnachtskarten.html",
 		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/Naelego's Cel Shaders 1.0.4/shaders/composite.fsh",
 		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/Naelego's Cel Shaders 1.0.4/shaders/composite.vsh",
@@ -240,7 +243,6 @@
 		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/ShadeItBaby/shaders/final.fsh",
 		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/ShadeItBaby/shader/final.vsh",
 		"/C/Users/Matthias/AppData/Roaming/.minecraft/shaderpacks/ShadeItBaby/shader/final.fsh",
-		"/C/xampp/htdocs/clanpage/content/changelog.php",
 		"/C/xampp/htdocs/clanpage/content/teamspeak.php",
 		"/C/xampp/htdocs/clanpage/widgets/TSViewer/teamspeak.php",
 		"/C/Program Files (x86)/Google/Chrome/Application/master_preferences",
@@ -266,7 +268,6 @@
 		"/C/xampp/htdocs/clanpage/content/mcserver/mcstat-master/mcstat-master/test/test-server.properties",
 		"/C/xampp/htdocs/clanpage/content/mcserver/status.class.php",
 		"/C/xampp/htdocs/clanpage/content/mcserver/mc/view.php",
-		"/C/xampp/htdocs/clanpage/content/case.php",
 		"/C/xampp/htdocs/clanpage/content/WriteNews.php",
 		"/C/xampp/htdocs/clanpage/content/SaveNews.php",
 		"/C/xampp/htdocs/clanpage/content/menueForum.php",
@@ -337,10 +338,7 @@
 		"/C/xampp/htdocs/clanpage/content/opfer.php",
 		"/C/xampp/htdocs/clanpage/content/kalender.php",
 		"/C/Users/Matthias/AppData/Roaming/Skype/live#3amatthe.seifert/config.xml",
-		"/C/xampp/htdocs/clanpage/content/lp_test.xml",
-		"/C/xampp/htdocs/clanpage/newsfeed/WriteNews.php",
-		"/C/xampp/htdocs/clanpage/newsfeed/SaveNews.php",
-		"/C/xampp/htdocs/clanpage/newsfeed/archiv/2012/May/2012-05-25_EinEinblickinMinecraft1.3.xml"
+		"/C/xampp/htdocs/clanpage/content/lp_test.xml"
 	],
 	"find":
 	{
@@ -358,6 +356,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"NavContainer",
+			"NavCategory",
+			"navigation",
+			".top",
+			".bottom",
+			"bottom",
+			"material-design-hamburger",
+			".menu",
+			"FlickrSubText",
 			"main",
 			"viewWidth",
 			"box-shadow",
@@ -437,37 +444,64 @@
 			[
 				{
 					"buffer": 0,
-					"file": "content/changelog.php",
+					"file": "/C/Users/Matthias/Desktop/NeighborhoodWorker.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4434,
+						"buffer_size": 13826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								848,
-								848
+								3256,
+								3256
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/C#/C#.tmLanguage"
 						},
-						"translation.x": 10.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 918.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "content/screenshots.php",
+					"file": "index.php",
 					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2635,
+								2635
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 635.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "content/screenshots.php",
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 2582,
@@ -477,8 +511,8 @@
 						"selection":
 						[
 							[
-								756,
-								756
+								1756,
+								1756
 							]
 						],
 						"settings":
@@ -487,36 +521,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "content/case.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2494,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2424,
-								2424
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1026.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -524,60 +529,30 @@
 				},
 				{
 					"buffer": 3,
-					"file": "content/galleries/anno2070.php",
+					"file": "styles/default_4.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1820,
+						"buffer_size": 48357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								956,
-								956
+								11880,
+								11880
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 6881.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "content/galleries/minecraft.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1830,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1269,
-								1389
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]

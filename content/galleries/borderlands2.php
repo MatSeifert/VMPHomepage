@@ -1,6 +1,6 @@
 <?php
 	function FlickrFeed () {
-		$xmlfile='https://api.flickr.com/services/feeds/groups_pool.gne?id=2765499@N22&lang=de-de&format=rss_200';
+		$xmlfile='https://api.flickr.com/services/feeds/groups_pool.gne?id=2766102@N21&lang=de-de&format=rss_200';
 		$xml = simplexml_load_file(rawurlencode($xmlfile));
 		$namespaces = $xml->getNamespaces(true);
 
@@ -24,25 +24,25 @@
 	<a href="?site=screenshots">
 		<img src="images/backButtonL.png" alt="back" border="0" class="backL">
 	</a>
-	<img src="http://c1.staticflickr.com/9/8606/buddyicons/2765499@N22_l.jpg?1417255900" alt="Icon" style="float: left; margin: 9px 10px 0px 5px; width: 50px;">
-		CITIES OF ANNO 2070 <br>
-		<div class="FlickrSubTitle">Screenshots von gemeinsamen Anno 2070 Partien</div>
+	<img src="http://c2.staticflickr.com/8/7478/buddyicons/2766102@N21_l.jpg?1417739307" alt="Icon" style="float: left; margin: 9px 10px 0px 5px; width: 50px;">
+		BORDERLAND 2 - FUN WITH GUNS <br>
+		<div class="FlickrSubTitle">Lustiges und Kurioses von Pandora</div>
 </div>
 
 <div class="PostTitle">
 	<a href="?site=screenshots">
 		<img src="images/backButtonL.png" alt="back" border="0" class="backL">
 	</a>
-	<img src="http://c1.staticflickr.com/9/8606/buddyicons/2765499@N22_l.jpg?1417255900" alt="Icon" class="ScreenshotsIcon">
-		CITIES OF ANNO 2070 <br>
-		<div class="FlickrSubTitle">Screenshots von gemeinsamen Anno 2070 Partien</div>
+	<img src="http://c2.staticflickr.com/8/7478/buddyicons/2766102@N21_l.jpg?1417739307" alt="Icon" class="ScreenshotsIcon">
+		BORDERLAND 2 - FUN WITH GUNS <br>
+		<div class="FlickrSubTitle">Lustiges und Kurioses von Pandora</div>
 </div>
 
 <div class="ScreenshotContent">
 	<?php FlickrFeed(); ?>
 	<div class="FlickrSubText">
 		Bei Alben, die mehr als 20 Bilder beinhalten, werden nur die 20 letzten Uploads angezeigt. 
-		<a target="_blank" href="https://www.flickr.com/groups/2765499@N22/">
+		<a target="_blank" href="https://www.flickr.com/groups/2766102@N21/">
 			Hier das ganze Album auf Flickr ansehen.
 		</a>
 	</div>
