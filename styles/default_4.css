@@ -213,7 +213,7 @@ body {
             }
             div[class=contentBox] {
             	width: 250px !important;
-            	margin: 0px 0px 0px 10px !important;
+            	margin: -20px 0px 10px 10px !important;
             	background-image: none !important; 
             }
             div[class=LPSubHeadline] {
@@ -366,7 +366,8 @@ body {
 			}
 
 			.navigation {
-				font-size: 24px;
+				font-size: 28px;
+				text-decoration: none !important;
 			}
 
 			.SPDate {
@@ -380,10 +381,6 @@ body {
 			#disqus_thread {
 				margin-right: 30px; 
 				margin-left: 30px;
-			}
-
-			.navigationS {
-				font-size: 13px !important;
 			}
 
 			.AddNews {
@@ -410,10 +407,6 @@ body {
 				margin: 0px 0px 0px -20px !important;
 			}
 
-			.NavContainer br {
-				display: none;
-			}
-
 			.space {
 				display: none !important;
 			}
@@ -436,13 +429,11 @@ body {
 				display: none !important;
 			}
 
-			.navigation {
-				font-size: 28px;
-			}
-
 			.impressum {
 				color: #555;
 				text-align: left;
+				line-height: 25px !important;
+				font-size: 16px !important;
 				margin: 0px 0px 0px 30px !important;
 			}
 
@@ -482,6 +473,10 @@ body {
 
 			.FlickrSubTitle {
 				margin: 0px 0px 0px 0px !important;
+			}
+
+			.navigationS {
+				font-size: 16px !important;
 			}
 			/* ----------- END OF RESPONSIVE LAYOUT DECLARATIONS ---------- */
 
@@ -598,6 +593,7 @@ body {
 
 .navigation {
 	color: #787878 !important; 
+	margin: 0px 0px 0px 30px;
 	text-decoration:none
 	-webkit-transition: color .4s ease-in;
 	-moz-transition: color .4s ease-in;
@@ -616,6 +612,17 @@ a:visited{color:#C14924; text-decoration:none}
 a:hover{color:#b5b5b5; text-decoration:none}
 a:active{color:#b5b5b5; text-decoration:none}
 
+.navigationS {
+	font-size: 13px;
+	color: #787878; 
+	text-decoration: none !important;
+	-webkit-transition: color .4s ease-in;
+	-moz-transition: color .4s ease-in;
+	-o-transition: color .4s ease-in;
+	-ms-transition: color .4s ease-in;
+	transition: color .4s ease-in;
+}
+
 
 /* Linkes Menü, auch mobil bedienbar, Gestaltung und Konfiguration mit folgenden CSS-Deklarationen */
 
@@ -630,6 +637,7 @@ div.pageContainer {
 div.menue {
 	width: 250px;
 	vertical-align: top;
+	margin: 0px 0px 20px 0px;
 	background-color: #fff;
 	float: left;
 	color: #000;
@@ -724,6 +732,8 @@ div.rightText {
 	font size: 9px;
 	margin: 5px 20px 10px 20px;
 	display: block;
+	overflow: hidden;
+	text-align: justify;
 }
 
 div.newsTitle {
@@ -995,10 +1005,6 @@ span.RightHeadline {
 	width: 85%;
 	display: inline-block;
 	margin: 10px 0px 0px 20px;
-}
-
-.navigation {
-	margin: 0px 0px 0px 30px;
 }
 
 a:hover img.top{
@@ -1946,8 +1952,8 @@ a:hover.tooltips span {
     height: 100%;
     position: fixed;
     background: #C14924;
-    width: 300px;
-    right: -300px;
+    width: 270px;
+    right: -270px;
     top: 60px;
     overflow: scroll;
     z-index: 50;  
@@ -1990,8 +1996,7 @@ a:hover.tooltips span {
 }
 
 .mobileScreen {
-	width: 230px;
-	margin: 0px 0px 0px -12px;
+	margin: 0px 0px 0px -17px;
 }
 
 .clear {
@@ -2179,11 +2184,6 @@ a:hover.tooltips span {
   margin: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid #ccc;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #3367d6;
 }
 
 .menu a:hover {
@@ -2425,4 +2425,14 @@ a:hover.tooltips span {
   }
   100% {
   }
+}
+
+.h30 {
+	height: 30px;
+}
+
+.leftInline {
+	float: left; 
+	width: 140px;
+	padding: 20px 10px 10px 0px;
 }

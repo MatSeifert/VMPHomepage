@@ -91,6 +91,12 @@
 		case "FunWithGuns": @include __DIR__ . '/../content/galleries/borderlands2.php';
 		break;
 
+		case "authority": @include __DIR__ . '/../content/responsibilities.php';
+		break;
+
+		case "mobile": @include __DIR__ . '/../content/mobile.php';
+		break;
+
 	   	default: @include __DIR__ . '/../content/error404.php';
   }
 ?>	

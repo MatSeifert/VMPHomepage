@@ -8,7 +8,7 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
-		Date unkown - Version 4.1.3
+		10.12.2014 - Version 4.1.3
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Mobile Seite auf die neue Clanfarbe umgestellt (Material Red)</li>
@@ -19,6 +19,9 @@
 		<li>Aktualisierung der <a href="?site=minecraft#changeDec2014">Minecraft Serverregeln </a>(Abschnitt <i>Serverperformance</i>)</li>
 		<li>Eintrag für die Mania im Terminwidget entfernt</li>
 		<li>Neue Flickr Fotoalben für Anno 2070 und Borderlands 2</li>
+		<li>Neues "Hamburger Menü" für die Mobile Version der Webseite</li>
+		<li>Offizielles Promo Widget für unseren Webauftritt für Smartphone und Tablet</li>
+		<li>Impressum angepasst und erweitert</li>
 	</ul>
 
 	<span class="smallHeadline">

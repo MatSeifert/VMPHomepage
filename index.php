@@ -90,16 +90,13 @@
 		</div>
 		
 		<div class="contentWrapper">
-			<div class="menue">			
-			
+			<div class="menue">					
 				<?php include("content/menue.php") ?>
-			
 			</div>
 
-			<div class="content">
+			<div class="content" id="main">
 				<?php require_once ("content/case.php") ?>
 			   	<p>&nbsp;</p>
-
 			</div>
 
 			<div class="right">
@@ -151,16 +148,19 @@
 				   	</div>
 			   	</div>	
 			   	<p>&nbsp;</p>
-			   	<div class="contentBox" id="PromoBox" style="display: none">
+			   	<div class="contentBox mobileHidden" id="mobilePromo">
 			   		<span class="RightHeadline">VMP MOBIL</span>
+			   		<div class="watchmore">
+			   			<a href="?site=mobile" class="tooltips">
+			   				&#187;
+			   				<span>Mehr erfahren</span>
+			   			</a>
+			   		</div>
 			   		<p>&nbsp;</p>
 			   		<div class="rightText">
-			   			
-						Erlebe unsere Seite jetzt auch auf deinem Smartphone! Rufe einfach wie gewohnt www.vmp-clan.de auf!
-						<br>
-						<div class="mobileScreenWrapper">
-							<img src="images/mobileScreen.png" class="mobileScreen">
-						</div>
+   						<img src="images/responsive.png" alt="VMP Mobil" class="mobileScreen">
+						Auch unterwegs immer auf dem aktuellsten Stand. Mit der mobilen Webseite des VMP Clans kein Problem!
+						<p>&nbsp;</p>
 				   	</div>
 			   	</div>	
 			</div>
@@ -170,6 +170,17 @@
 		<script>
 			document.getElementById("wrapper").style.height = Hoehe - 60 + 'px';
 			document.getElementById("mobiSidebar").style.height = Hoehe + 'px';
+		</script>
+
+		<script>
+		// Höhe des Seiteninhalts auslesen, und Mobile Promo nur anzeigen, wenn der Platz da ist
+		var contentHeight = document.getElementById('main').offsetHeight;
+
+			if(contentHeight < 1000)
+			{
+				document.getElementById('mobilePromo').style.display = 'none';
+			} 
+
 		</script>
 
 		<script type="text/javascript">
