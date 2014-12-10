@@ -2444,7 +2444,7 @@ a:hover.tooltips span {
 
 .watermark {
 	position: absolute;
-	margin: -20px 0px 0px -40px;
+	margin: -20px 0px 0px 120px;
 }
 
 .desktopHidden {
