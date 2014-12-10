@@ -86,6 +86,20 @@
 		<div class="mobileSektion" id="start">
 			<div class="mobileHead" style="text-align: center">
 
+				<section class="wrapper">
+				  <section class="material-design-hamburger">
+				    <button class="material-design-hamburger__icon">
+				      <span class="material-design-hamburger__layer"></span>
+				    </button>
+				  </section>
+
+				  <section class="menu menu--off" id="wrapper">
+		
+					<?php include("content/menueForum.php") ?>
+
+				  </section>  
+				</section>
+
 				<click2 class="showRight">
 					<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
 				</click2>
@@ -99,15 +113,7 @@
 						style="height: 1400px; overflow-x: hidden; width: 270px;">
 					</iframe>
 				</div>
-
-
-				<click class="show">
-					<img src="images/menue.png" alt="menu" style="float: left; margin-left: 0px">
-				</click>
-				<div id="slidemenu">
-					<?php include("content/menueForum.php") ?>
-				</div>
-				
+		
 			</div>
 		</div>
 		<!-- End of mobile Header /-->
@@ -156,8 +162,36 @@
 			</div>
 		</div>
 		<script>
-			document.getElementById("mobiMenu").style.height = Hoehe - 60 + 'px';
+			document.getElementById("wrapper").style.height = Hoehe - 60 + 'px';
 			document.getElementById("mobiSidebar").style.height = Hoehe + 'px';
+		</script>
+
+		<script>
+			(function() {
+
+			  'use strict';
+
+			  document.querySelector('.material-design-hamburger__icon').addEventListener(
+			    'click',
+			    function() {      
+			      var child;
+			      
+			      document.body.classList.toggle('background--blur');
+			      this.parentNode.nextElementSibling.classList.toggle('menu--on');
+
+			      child = this.childNodes[1].classList;
+
+			      if (child.contains('material-design-hamburger__icon--to-arrow')) {
+			        child.remove('material-design-hamburger__icon--to-arrow');
+			        child.add('material-design-hamburger__icon--from-arrow');
+			      } else {
+			        child.remove('material-design-hamburger__icon--from-arrow');
+			        child.add('material-design-hamburger__icon--to-arrow');
+			      }
+
+			    });
+
+			})();
 		</script>
 	</body>
 </html>

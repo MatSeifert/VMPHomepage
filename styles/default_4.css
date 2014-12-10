@@ -256,6 +256,10 @@ body {
 			.mobileHidden {
 				display: none !important;
 			}
+			.desktopHidden {
+				display: block !important;
+			}
+
 			td[class=maniaHoFTop] {
 				font-size: 20px !important;
 			}
@@ -435,6 +439,7 @@ body {
 				line-height: 25px !important;
 				font-size: 16px !important;
 				margin: 0px 0px 0px 30px !important;
+				border: 0px !important;
 			}
 
 			.showRight {
@@ -2435,4 +2440,13 @@ a:hover.tooltips span {
 	float: left; 
 	width: 140px;
 	padding: 20px 10px 10px 0px;
+}
+
+.watermark {
+	position: absolute;
+	margin: -20px 0px 0px -40px;
+}
+
+.desktopHidden {
+	display: none;
 }

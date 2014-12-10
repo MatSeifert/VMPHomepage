@@ -120,4 +120,5 @@
 	<?php
 		include('content/impressum.php');
 	?>
+	<img src="images/logoEngraved.png" class="watermark desktopHidden">
 </div>

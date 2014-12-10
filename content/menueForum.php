@@ -15,7 +15,7 @@
 			<img src="images/menuArchive.png" alt="Archiv" class="top">
 			Archiv
 		</a>
-	</span> <br />
+	</span> <div class="h30 mobileHidden"></div>
 
 	<span class="NavCategory">VMP CLAN</span> <br />
 	<span class="NavPoint">
@@ -52,7 +52,7 @@
 			<img src="images/menuForum.png" alt="Forum" class="top">
 			Forum
 		</a>
-	</span> <br />
+	</span> <div class="h30 mobileHidden"></div>
 
 	<span class="NavCategory">MEMBER</span> <br />
 	<span class="NavPoint">
@@ -68,7 +68,7 @@
 			<img src="images/menuJoinUs.png" alt="Join Us" class="top">
 			Join Us
 		</a>
-	</span> <br />		
+	</span> <div class="h30 mobileHidden"></div>	
 
 	<span class="NavCategory">SERVER</span> <br />
 	<span class="NavPoint">
@@ -84,7 +84,7 @@
 			<img src="images/menuMinecraft.png" alt="Member" class="top">
 			Minecraft
 		</a>
-	</span> <br />
+	</span> <div class="h30 mobileHidden"></div>
 
 	<span class="NavCategory">VMP MANIA</span> <br />
 	<span class="NavPoint">
@@ -114,12 +114,11 @@
 			<img src="images/menuMania.png" alt="VMP Mania 2014" class="top">
 			2014
 		</a>
-	</span> <br />	
+	</span> <div class="h30 mobileHidden"></div>	
 
-	<p />
-	
-	<span class="NavCategory">IMPRESSUM</span> <br>
+	<span class="NavCategory">&Uuml;BER DIE SEITE</span> <br>
 	<?php
 		include('content/impressum.php');
 	?>
+	<img src="images/logoEngraved.png" class="watermark">
 </div>

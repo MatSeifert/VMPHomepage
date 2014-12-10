@@ -1,2 +1,4 @@
 /wbb/upload/wcf/cache
 /wbb
+*.sublime-project
+*.sublime-workspace
