@@ -35,9 +35,6 @@
 		<script src="javascript/setIFrameHeight.js" type="text/javascript"></script>
 		<script src="javascript/slideMenu.js" type="text/javascript"></script>
 		<script src="javascript/async.js" type="text/javascript"></script>
-		<script>
-			var divHeight = document.getElementById("content").offsetHeight;
-		</script>
 	</head>
 
 	<body>
@@ -169,7 +166,6 @@
 
 		<script>
 			document.getElementById("wrapper").style.height = Hoehe - 60 + 'px';
-			document.getElementById("mobiSidebar").style.height = Hoehe + 'px';
 		</script>
 
 		<script>

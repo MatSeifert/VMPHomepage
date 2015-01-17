@@ -1082,7 +1082,8 @@ img.left {
 }
 
 img.logo {
-	margin: 35px;
+	margin: 20px 0px 0px 50px;
+	padding: 0px 100px 0px 0px;
 	float: left;
 }
 
