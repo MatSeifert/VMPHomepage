@@ -8,6 +8,17 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
+		??.??.2015 - Version 4.1.4
+	</span>
+	<ul style="padding: 0px 0px 0px 20px">
+		<li>Highlightfarbe bei markiertem Text angepasst</li>
+        <li>Neuer Look der Formulare auf der Joinus Seite und beim Schreiben einer News</li>
+        <li>Einheitlichere Buttons</li>
+        <li>Eigene Seite für die diesjährige VMP Mania, inklusive Anmeldeformular</li>
+        <li>Kleinere Anpassungen am Design für mehr Konsistenz</li>
+	</ul>
+
+	<span class="smallHeadline">
 		10.12.2014 - Version 4.1.3
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
@@ -72,7 +83,7 @@
 	</ul>
 	<p>&nbsp;</p>
 		<span class="smallHeadline">
-		12.08.2014 - Version 4.0.4.2 
+		12.08.2014 - Version 4.0.4.2
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Es gibt nun die Option, eine neue News mit ein bis zwei Sätzen für die sozialen Medien zu beschreiben (max. 110 Zeichen)</li>

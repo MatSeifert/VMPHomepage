@@ -11,6 +11,14 @@ body {
 	height: 100%;
 }
 
+/* Selection Color */
+::selection {
+	background: #BC6147; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: #BC6147; /* Gecko Browsers */
+}
+
 
 /* --- BEGIN OF Responsive Style Declarations --- */
 
@@ -23,7 +31,7 @@ body {
             	margin: 80px 0px 0px 0px !important;
             }
             span[class=NavPoint] {
-				margin: 12px 0px auto 25px !important;            	
+				margin: 12px 0px auto 25px !important;
             	height: 42px !important;
             }
             div[class=back] {
@@ -36,7 +44,7 @@ body {
             }
             div[class=menue] {display: none !important;}
             div[class=contentWrapper] {
-            	width: 100% !important; 
+            	width: 100% !important;
             	margin-top: 0px !important;
             }
             div[class=content] {
@@ -51,7 +59,7 @@ body {
             	display: block !important;
             	z-index: 1 !important;
             }
-            div[class=PostPost] { 
+            div[class=PostPost] {
             	width: 98% !important;
             	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
             	font-size: 24px !important;
@@ -110,7 +118,7 @@ body {
             	text-overflow: ellipsis !important;
             	white-space: nowrap !important;
             	margin: -5px 0px 0px 0px !important;
-  				padding-right: 10px !important;         	
+  				padding-right: 10px !important;
             	padding-left: 205px !important;
             	position: absolute;
             	float: left !important;
@@ -118,7 +126,7 @@ body {
             span[class=LPDate] {
             	display: inline-block !important;
             	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
-            	font-size: 20px !important; 
+            	font-size: 20px !important;
             	padding: 0px 0px 0px 0px !important;
             	margin: -10px 0px 0px 0px !important;
             	line-height: 24px;
@@ -132,7 +140,7 @@ body {
             }
             div[class=mobileHintergrundbild] {
             	width: 100% !important;
-            	height: 150px !important;        	
+            	height: 150px !important;
             	overflow: hidden !important;
             	padding-top: 60px !important;
             	position: absolute !important;
@@ -166,7 +174,7 @@ body {
             	line-height: 22px !important
             }
 			img[class=mobileHeadIcon] {
-			 	float: left; 
+			 	float: left;
 			 	margin: 6px 0px 0px 0px;
 			}
 			div[class=imageWrapper] {
@@ -214,7 +222,7 @@ body {
             div[class=contentBox] {
             	width: 250px !important;
             	margin: -20px 0px 10px 10px !important;
-            	background-image: none !important; 
+            	background-image: none !important;
             }
             div[class=LPSubHeadline] {
             	font-size: 36px !important;
@@ -239,7 +247,7 @@ body {
             	margin: -235px 0px 0px -5px;
             }
             .mobileResize50per {
-   				width: 50% !important;         	
+   				width: 50% !important;
             }
             .mobileResize100per {
             	width: 100% !important;
@@ -383,7 +391,7 @@ body {
 			}
 
 			#disqus_thread {
-				margin-right: 30px; 
+				margin-right: 30px;
 				margin-left: 30px;
 			}
 
@@ -451,7 +459,7 @@ body {
 			}
 
 			.similarArticleWrapper {
-				margin-right: 30px !important; 
+				margin-right: 30px !important;
 				margin-left: 30px !important;
 				width: auto !important;
 				padding: 0px !important;
@@ -514,8 +522,8 @@ body {
 	width: 100%;
 	height: auto;
 	padding: 0px 0px 0px 0px;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.2), 
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
 		0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 
@@ -532,7 +540,7 @@ body {
 	height: auto;
 	margin: 20px 5px 0px 5px;
 	padding: 190px 0px 10px 0px;
-	overflow: hidden;     
+	overflow: hidden;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
 	font-size: 14px !important;
 	line-height: 19px;
@@ -571,7 +579,7 @@ body {
 .mobileSektion {
 	position: relative;
 	height: 60px;
-	overflow: hidden;	
+	overflow: hidden;
 	display: none;
 }
 
@@ -582,7 +590,7 @@ body {
 }
 
 .mobileText {
-	display: none;	
+	display: none;
 }
 
 .text {
@@ -597,7 +605,7 @@ body {
 /* Einstellungen für Hyperlinks */
 
 .navigation {
-	color: #787878 !important; 
+	color: #787878 !important;
 	margin: 0px 0px 0px 30px;
 	text-decoration:none
 	-webkit-transition: color .4s ease-in;
@@ -619,7 +627,7 @@ a:active{color:#b5b5b5; text-decoration:none}
 
 .navigationS {
 	font-size: 13px;
-	color: #787878; 
+	color: #787878;
 	text-decoration: none !important;
 	-webkit-transition: color .4s ease-in;
 	-moz-transition: color .4s ease-in;
@@ -649,15 +657,15 @@ div.menue {
 	height: 100%;
 	display: block;
 	bottom: auto;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.1), 
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.1),
 		0px 0px 1px 0px rgba(0,0,0,0.1);
 }
 
 div.right {
 	width: 250px !important;
 	margin: 20px 0px 0px 890px !important;
-	text-align: left; 
+	text-align: left;
 }
 
 div.NavContainer {
@@ -688,8 +696,8 @@ div.content {
 	float: left;
 	background-color: #fff !important;
 	z-index: 0;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.1), 
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.1),
 		0px 0px 1px 0px rgba(0,0,0,0.1);
     background: url('../images/bg_material.png');
     background-size: 600px 55px;
@@ -700,8 +708,8 @@ div.content {
 	margin: 0px 0px 20px 20px;
 	float: left;
 	background-color: #fff;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.1), 
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.1),
 		0px 0px 1px 0px rgba(0,0,0,0.1);
 }
 
@@ -718,12 +726,12 @@ div.contentWrapper {
 
 div.contentBox {
 	background-color: #fff !important;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.1), 
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.1),
 		0px 0px 1px 0px rgba(0,0,0,0.1);
 	background: url('../images/bg_material.png');
     background-size: 600px 55px;
-    background-repeat: no-repeat;}	
+    background-repeat: no-repeat;}
 }
 
 span.more {
@@ -772,12 +780,12 @@ div.LPDescription {
 
 .ScreenshotContent {
 	text-align: justify;
-	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;	
+	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;
 	width: 520px;
 	margin: auto auto;
 	font-size: 14px;
 	line-height: 18px;
-	position: relative;	
+	position: relative;
 }
 
 .disclaimerBottomRight {
@@ -819,9 +827,9 @@ div.LPDescription {
 	margin: 20px 0px 0px 400px;
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-	box-shadow: 
-		0px 1px 3px 0px rgba(0,0,0,0.2), 
-		0px 1px 3px 0px rgba(0,0,0,0.2);	
+	box-shadow:
+		0px 1px 3px 0px rgba(0,0,0,0.2),
+		0px 1px 3px 0px rgba(0,0,0,0.2);
 }
 
 .FlickrSubText {
@@ -867,7 +875,7 @@ div.cropThumb {
 	overflow: hidden;
 	width: 200px;
 	height: 113px;
-    float: left;	
+    float: left;
 }
 
 img.thumbnail {
@@ -884,9 +892,9 @@ div.LPBoxLatestVideo {
 	width: 520px;
 	height: 113px;
 	padding: 0px;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.2), 
-		0px 0px 1px 0px rgba(0,0,0,0.2);	
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -901,9 +909,9 @@ div.LPBox {
 	width: 157px;
 	height: 270px;
 	padding: 5px;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.2), 
-		0px 0px 1px 0px rgba(0,0,0,0.2);	
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -921,7 +929,7 @@ div.LPSubHeadline {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	display: block;
-	margin: 20px 0px 10px 10px;	
+	margin: 20px 0px 10px 10px;
 }
 
 img.LetsPlayThumb {
@@ -992,7 +1000,7 @@ span.NavCategory {
 	font-size: 20px;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
-	border-bottom-color: #d3d3d3;	
+	border-bottom-color: #d3d3d3;
 	width: 85%;
 	display: inline-block;
 	margin: 10px 0px 0px 20px;
@@ -1006,7 +1014,7 @@ span.RightHeadline {
 	color: #fff;
 	border-bottom-style: solid;
 	border-bottom-width: 0px;
-	border-bottom-color: #d3d3d3;	
+	border-bottom-color: #d3d3d3;
 	width: 85%;
 	display: inline-block;
 	margin: 10px 0px 0px 20px;
@@ -1035,7 +1043,7 @@ a:hover img.top{
     -webkit-transition: opacity .4s ease-in-out;
     -moz-transition: opacity .4s ease-in-out;
     -o-transition: opacity .4s ease-in-out;
-    -ms-transition: opacity .4s ease-in-out;    
+    -ms-transition: opacity .4s ease-in-out;
     transition: opacity .4s ease-in-out;
 }
 
@@ -1054,7 +1062,7 @@ span.title {
 span.subtitle {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 29px;	
+	font-size: 29px;
 	margin: 20px;
 	text-shadow: #000 0px 0px 15px;
 }
@@ -1066,7 +1074,7 @@ span.NavTitle {
 	font-size: 26px;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
-	border-bottom-color: #d3d3d3;	
+	border-bottom-color: #d3d3d3;
 	width: 85%;
 	display: inline-block;
 	margin: 0px 0px 30px 20px;
@@ -1091,9 +1099,9 @@ img.inlineImageL {
 	float: left;
 	clear: both;
 	margin: 3px 6px 6px 0px;
-	box-shadow: 
-		3px 3px 2px 0px rgba(0,0,0,0.1), 
-		0px 0px 2px 0px rgba(0,0,0,0.1);	
+	box-shadow:
+		3px 3px 2px 0px rgba(0,0,0,0.1),
+		0px 0px 2px 0px rgba(0,0,0,0.1);
 }
 
 /* Folgende CSS-Deklarationen dienen zum gestalten der von Tumblr inkludierten News bzw. Blog Posts */
@@ -1109,7 +1117,7 @@ div.PostTitle {
 	padding-bottom: 3px;
 	border-bottom-style: solid;
 	border-bottom-width: 0px;
-	border-bottom-color: #d3d3d3;	
+	border-bottom-color: #d3d3d3;
 }
 
 div.PostDate {
@@ -1122,7 +1130,7 @@ div.PostDate {
 
 div.PostPost {
 	text-align: justify;
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;	
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	width: 520px;
 	margin: auto auto;
 	font-size: 14px;
@@ -1133,7 +1141,7 @@ div.PostPost {
 /* Deklarationen zur Darstellung der Memberliste auf der Homepage, tabellarische Form */
 
 table.memberlist {
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;		
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	width: 85%;
 	border-spacing: 0px;
 	font-size: 13px;
@@ -1152,14 +1160,14 @@ span.inactive {
 }
 
 td.normal {
-	border-bottom-style: solid; 
+	border-bottom-style: solid;
 	border-bottom-width: thin;
 	border-bottom-color: #DDDDDD;
 	padding: 2px;
 }
 
 td.bottom {
-	border-bottom-style: solid; 
+	border-bottom-style: solid;
 	border-bottom-width: thin;
 	border-bottom-color: #777777;
 	padding: 2px;
@@ -1169,12 +1177,12 @@ td.bottom {
 
 span.month {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
-	font-size: 35px;	
+	font-size: 35px;
 	margin: 0px 0px 0px 70px;
 }
 
 table.calendar {
-	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;		
+	font-family: 'Roboto'sl, Arial, Helvetica, sans-serif;
 	width: 90%;
 	border-spacing: 1px;
 	font-size: 13px;
@@ -1209,7 +1217,7 @@ td.StandDay {
 	border-top: solid 5px #C1C1C1;
 }
 
-td.ActDay {	
+td.ActDay {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color: #9E0000;
 	height: 70px;
@@ -1242,7 +1250,7 @@ div.HttpError404SubHeadline {
 
 div.HttpError404Helper {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
-	font-size: 15px;	
+	font-size: 15px;
 	width: 520px;
 	margin: 30px auto 0px auto;
 	text-align: justify;
@@ -1251,9 +1259,20 @@ div.HttpError404Helper {
 /* Styledefinitionen für das News Formular zum schreiben neuer News */
 
 input.NewsTitle {
-	margin-left: 10px; 
-	width: 93%;
+	margin-left: 10px;
+	width: 480px;
 	padding: 8px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
+}
+
+input.NewsTitle:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
 }
 
 span.mandatory {
@@ -1261,41 +1280,97 @@ span.mandatory {
 }
 
 textarea.NewsContent {
-	margin-left: 10px; 
-	width: 93%;
-	height: 250px;
-	padding: 8px;
+	width: 480px;
+	padding: 8px 0px 0px 8px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
+	margin: 0px 0px 0px 10px;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+textarea.NewsContent:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
 }
 
 input.NewsAuthor {
-	margin-left: 10px; 
+	margin-left: 10px;
 	width: 250px;
-	padding: 8px;	
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
+}
+
+input.NewsAuthor:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
 }
 
 select.NewsGame {
-	margin-left: 10px; 
+	margin: -2px 0px 0px 10px;
 	width: 220px;
-	padding: 8px;	
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
+}
+
+select.NewsGame option {
+	height: 20px;
+}
+
+select.NewsGame:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
 }
 
 input.NewsSubmit {
-	margin: auto auto; 
-	width: 250px;
-	padding: 8px;
+	margin: auto auto;
+	width: 200px;
+	height: 50px;
+	background-color: #5677fc;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+input.NewsSubmit:hover {
+	background-color: #738ffe;
 }
 
 div.NewsSubmit {
-	width: 100%; 
-	text-align: center; 
-	display: block; 
-	height: 30px; 
-	margin: 20px 0px 40px 0px; 
+	width: 100%;
+	text-align: center;
+	display: block;
+	height: 30px;
+	margin: 20px 0px 40px 0px;
 	float: left
 }
 
-option.seperator { 
-	border-bottom: 1px dotted #000; 
+option.seperator {
+	border-bottom: 1px dotted #000;
 	width: 100%;
 }
 
@@ -1372,7 +1447,7 @@ div.icons {
 .mobileSidebar {
 	width: 48%;
 	overflow: auto;
-	z-index: 10;	
+	z-index: 10;
 	float: right;
 	text-align: right;
 }
@@ -1473,8 +1548,8 @@ article {
 	overflow: auto;
 	text-align: left;
 	z-index: 5;
-	box-shadow: 
-		5px 5px 5px 5px rgba(0,0,0,0.3), 
+	box-shadow:
+		5px 5px 5px 5px rgba(0,0,0,0.3),
 		8px 6px 6px rgba(0,0,0,0.1);
 }
 
@@ -1500,16 +1575,39 @@ article {
 }
 
 .NewsTitleWithTag {
-	margin-left: 10px; 
+	margin-left: 10px;
 	width: 37%;
 	padding: 8px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
+}
+
+.NewsTitleWithTag:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
 }
 
 .InputAge {
 	width: 100px;
-	margin-left: 10px; 
+	margin-left: 10px;
 	padding: 8px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
 }
+
+.InputAge:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
+}
+
 
 .DefaultFormCheckbox {
 	margin: 0px 0px 0px 10px;
@@ -1530,15 +1628,15 @@ table.mania2011 {
 }
 
 .maniaHoFTop {
-	vertical-align: top; 
+	vertical-align: top;
 	border-top: 2px solid #bbb;
 	padding: 5px 0px 5px 0px;
 }
 
 .maniaHoFDefault {
-	vertical-align: top; 
+	vertical-align: top;
 	border-top: 1px solid #ccc;
-	padding: 5px 0px 5px 0px;	
+	padding: 5px 0px 5px 0px;
 }
 
 .space50px {
@@ -1564,7 +1662,7 @@ table.mania2011 {
 
 .negative {
 	color: #ff0000;
-	vertical-align: middle;	
+	vertical-align: middle;
 }
 
 .bold {
@@ -1584,8 +1682,8 @@ table.mania2011 {
 
 .SqlNewsBox {
 	background-color: #EFEFEF;
-	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
-				0px 0px 1px 0px rgba(0,0,0,0.2);	
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
+				0px 0px 1px 0px rgba(0,0,0,0.2);
 	width: 520px;
 	height: 150px;
 	margin: 0px 0px 15px 0px;
@@ -1610,7 +1708,7 @@ table.mania2011 {
 
 .SqlNewsDate {
 	padding: 3px 0px 0px 155px;
-	width: 365px;	
+	width: 365px;
 	font-size: 11px;
 	color: #979797;
 	display: block;
@@ -1635,7 +1733,7 @@ table.mania2011 {
 	position: absolute;
 	font-size: 14px;
 	color: #979797;
-	margin: 0px 0px 0px 155px;	
+	margin: 0px 0px 0px 155px;
 	padding: 7px 0px 0px 0px;
 	text-align: left;
 }
@@ -1645,7 +1743,7 @@ table.mania2011 {
 	position: absolute;
 	font-size: 14px;
 	color: #979797;
-	margin: 8px 0px 0px 155px;	
+	margin: 8px 0px 0px 155px;
 	padding: 0px 0px 0px 0px;
 	text-align: right;
 	height: 16px;
@@ -1727,9 +1825,9 @@ table.mania2011 {
 	-ms-transition: background-color .35s ease-in;
 	transition: background-color .35s ease-in;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-	box-shadow: 
-		0px 1px 3px 0px rgba(0,0,0,0.2), 
-		0px 1px 3px 0px rgba(0,0,0,0.2);	
+	box-shadow:
+		0px 1px 3px 0px rgba(0,0,0,0.2),
+		0px 1px 3px 0px rgba(0,0,0,0.2);
 }
 
 .AddNews a {
@@ -1755,19 +1853,19 @@ table.mania2011 {
 /* Archiv Styles */
 
 select.ArchiveYear {
-	margin-left: 0px; 
+	margin-left: 0px;
 	width: 100px;
-	padding: 8px;	
+	padding: 8px;
 }
 
 select.ArchiveMonth {
-	margin-left: 10px; 
+	margin-left: 10px;
 	width: 280px;
-	padding: 8px;	
+	padding: 8px;
 }
 
 .ArchiveSubmit {
-	margin-left: 10px; 
+	margin-left: 10px;
 	width: 110px;
 	padding: 8px;
 }
@@ -1779,9 +1877,9 @@ select.ArchiveMonth {
 	padding: 8px 0px 8px 0px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	background-color: #fff;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.1), 
-		0px 0px 1px 0px rgba(0,0,0,0.1);	
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.1),
+		0px 0px 1px 0px rgba(0,0,0,0.1);
 }
 
 #textarea_feedback {
@@ -1809,8 +1907,8 @@ select.ArchiveMonth {
 }
 
 .required {
-	background-color: #fde0dc;
-	border: 1px solid #999;
+	background-color: #fff;
+	/*border: 1px solid #999;*/
 }
 
 .ju_disc {
@@ -1818,7 +1916,7 @@ select.ArchiveMonth {
 }
 
 .backL {
-	float: left; 
+	float: left;
 	margin: -6px 15px 0px -30px;
 }
 
@@ -1839,11 +1937,11 @@ select.ArchiveMonth {
 }
 
 .SocialMediaSnippet {
-	margin-left: 10px; 
+	margin-left: 10px;
 	width: 93%;
 	height: 50px;
 	padding: 8px;
-	resize: none;	
+	resize: none;
 }
 
 .feedback {
@@ -1876,11 +1974,11 @@ select.ArchiveMonth {
 	-moz-transition: background-color .35s ease-in;
 	-o-transition: background-color .35s ease-in;
 	-ms-transition: background-color .35s ease-in;
-	transition: background-color .35s ease-in;	
+	transition: background-color .35s ease-in;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-   	box-shadow: 
-		0px 1px 3px 0px rgba(0,0,0,0.2), 
-		0px 1px 3px 0px rgba(0,0,0,0.2);	
+   	box-shadow:
+		0px 1px 3px 0px rgba(0,0,0,0.2),
+		0px 1px 3px 0px rgba(0,0,0,0.2);
 }
 
 .watchmore a {
@@ -1912,8 +2010,8 @@ a.tooltips span {
 	border-radius: 0px;
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.2), 
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
 		0px 0px 1px 0px rgba(0,0,0,0.2);
 	opacity: 0;
 	transition: opacity .35s ease-in-out;
@@ -1949,9 +2047,9 @@ a:hover.tooltips span {
     left: -320px;
     top: 60px;
     overflow: scroll;
-	box-shadow: 
-		2px 2px 20px 0px rgba(0,0,0,0.4), 
-		0px 0px 1px 0px rgba(0,0,0,0.4);   
+	box-shadow:
+		2px 2px 20px 0px rgba(0,0,0,0.4),
+		0px 0px 1px 0px rgba(0,0,0,0.4);
 }
 
 #slideright {
@@ -1962,16 +2060,16 @@ a:hover.tooltips span {
     right: -270px;
     top: 60px;
     overflow: scroll;
-    z-index: 50;  
+    z-index: 50;
 }
 
 .similarArticleWrapper {
 	background-color: #EFEFEF;
-	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
-				0px 0px 1px 0px rgba(0,0,0,0.2);	
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
+				0px 0px 1px 0px rgba(0,0,0,0.2);
 	width: 520px;
 	height: 59px;
-	margin: 0px 0px 15px 0px;	
+	margin: 0px 0px 15px 0px;
 }
 
 .SimHeadline {
@@ -2027,9 +2125,9 @@ a:hover.tooltips span {
 	-ms-transition: background-color .35s ease-in;
 	transition: background-color .35s ease-in;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-	box-shadow: 
-		0px 1px 3px 0px rgba(0,0,0,0.2), 
-		0px 1px 3px 0px rgba(0,0,0,0.2);	
+	box-shadow:
+		0px 1px 3px 0px rgba(0,0,0,0.2),
+		0px 1px 3px 0px rgba(0,0,0,0.2);
 }
 
 .JoinUs a {
@@ -2062,8 +2160,8 @@ a:hover.tooltips span {
 	float: left;
 	margin: 0px 10px 0px -10px;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-	box-shadow: 
-		0px 1px 3px 0px rgba(0,0,0,0.2), 
+	box-shadow:
+		0px 1px 3px 0px rgba(0,0,0,0.2),
 		0px 1px 3px 0px rgba(0,0,0,0.2);
     border-radius: 50%;
 }
@@ -2083,9 +2181,9 @@ a:hover.tooltips span {
 	width: 166px;
 	height: 108px;
 	padding: 0px;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.2), 
-		0px 0px 1px 0px rgba(0,0,0,0.2);		
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 
 .middle {
@@ -2121,9 +2219,9 @@ a:hover.tooltips span {
 .MaterialBtn {
 	padding: 10px;
 	background-color: #f4511e;
-	box-shadow: 
-		2px 2px 1px 0px rgba(0,0,0,0.2), 
-		0px 0px 1px 0px rgba(0,0,0,0.2);	
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 
 .MaterialBtn a {
@@ -2141,7 +2239,7 @@ a:hover.tooltips span {
 /* CONFIGURATION OF THE TEAMSPEAK 3 VIEWER BELOW THIS LINE */
 
 .tsstatusServerName {
-	font-size: 11px;	
+	font-size: 11px;
 }
 
 .tsstatusLabel {
@@ -2156,7 +2254,7 @@ a:hover.tooltips span {
 }
 
 .tsstatusUser {
-	margin: 0px 0px 0px 15px;	
+	margin: 0px 0px 0px 15px;
 	font-size: 11px;
 }
 
@@ -2172,7 +2270,7 @@ a:hover.tooltips span {
 .wrapper {
   height: 100%;
   -webkit-transition: all 300ms ease-in-out;
-          transition: all 300ms ease-in-out;  
+          transition: all 300ms ease-in-out;
   margin: 0em 0;
   padding: 0;
   width: 60px;
@@ -2438,7 +2536,7 @@ a:hover.tooltips span {
 }
 
 .leftInline {
-	float: left; 
+	float: left;
 	width: 140px;
 	padding: 20px 10px 10px 0px;
 }
@@ -2450,4 +2548,29 @@ a:hover.tooltips span {
 
 .desktopHidden {
 	display: none;
+}
+
+.button_v2 {
+	width: 200px;
+	height: 35px;
+	background-color: #5677fc;
+	border-radius: 3px;
+	margin: auto auto;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px 0px 0px 0px;
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.button_v2:hover {
+	background-color: #738ffe;
 }

@@ -4,27 +4,27 @@
 <div class="PostPost">
 	<p>&nbsp;</p>
 	<form action="?site=SaveNews" method="post" accept-charset="ISO-8859-1" autocomplete="off">
-	 
+
 		<span class="smallHeadline">
 			Titel der News
 		</span>
 		<input type="Text" name="NewsTitle" class="NewsTitle required" id="NewsTitle" required="required">
 
 		<p>&nbsp;</p>
-		
+
 		<span class="smallHeadline">
 			Newsinhalt <br>
 			<span class="smallInline">(Formatierung per HTML ist erlaubt)</span>
-		</span>	
+		</span>
 		<textarea name="NewsContent" class="NewsContent required" id="NewsContent" required="required" maxlength="5000"></textarea>
 		<div id="feedbackC" class="feedback"></div>
 		<p>&nbsp;</p>
 
 		<div style="float: left">
 			<span class="smallHeadline">
-				Security Token<span class="mandatory" autocomplete="off">*</span>
+				Security Token<span class="mandatory">*</span>
 			</span>
-			<input type="Password" name="NewsToken" class="NewsAuthor required" id="NewsToken" required="required">	
+			<input type="Password" name="NewsToken" class="NewsAuthor required" id="NewsToken" required="required">
 
 		</div>
 
@@ -75,10 +75,10 @@
 			  <option value="trackmania2canyon">Trackmania² Canyon</option>
 			  <option value="warface">Warface</option>
 			  <option value="wormsreloaded">Worms: Reloaded</option>
-			</select>	
+			</select>
 		</div>
 
-		<p><br /><br /><br /><br /><br /></p>		
+		<p><br /><br /><br /><br /><br /></p>
 
 		<span class="smallHeadline">
 			Auch posten bei
@@ -87,49 +87,52 @@
 			<input type="checkbox" value="twitter" class="checkbox" name="twitter" checked/>
 			&nbsp;<img src="images/twitter_S.png" alt="Twitter">&nbsp;Twitter
 
-			<!-- Checkbox for Facebook /-->
-			<input type="checkbox" value="facebook" class="checkbox" name="twitter" checked/>
-			&nbsp;<img src="images/facebook_S.png" alt="Facebook">&nbsp;Facebook
+			<!-- Checkbox for Facebook
+			<input type="checkbox" value="facebook" class="checkbox" name="twitter" disabled />
+			&nbsp;<img src="images/facebook_S.png" alt="Facebook">&nbsp;Facebook /-->
 
 			<!-- Checkbox for Google Plus /-->
 			<input type="checkbox" value="googleplus" class="checkbox" name="twitter" disabled />
 			&nbsp;<img src="images/gplus_S.png" alt="Google Plus">&nbsp;<span class="disabled">Google+</span>
-		
+
 
 		<span class="smallHeadline">
 			Social Media Snippet <br>
 			<div class="smallInline">
-				Optionale Angabe. Beschreibe deine News kurz in ein bis zwei Sätzen. Dieses Snippet wird dann mit dem Link zur News 
+				Optionale Angabe. Beschreibe deine News kurz in ein bis zwei Sätzen. Dieses Snippet wird dann mit dem Link zur News
 				auf den oben gewählten Social Media Plattformen veröffentlicht. Bleibt das Feld leer, wird der Inhalt der News nach
 				110 Zeichen gekürzt und als Social Media Snippet verwendet!
 			</div>
 		</span>
-		<textarea name="SocialMediaSnippet" class="SocialMediaSnippet" id="SocialMediaSnippet" maxlength="110"></textarea>
+		<textarea name="SocialMediaSnippet" class="NewsContent" id="SocialMediaSnippet" maxlength="110"></textarea>
 		<div id="feedbackS" class="feedback"></div>
 
 		<p>&nbsp;</p>
 		<span class="smallHeadline">
-			Quelle <br>
+			Quelle<span class="mandatory">**</span><br>
 			<span class="smallInline">(wird nur intern gespeichert)</span>
-		</span>	
+		</span>
 		<input type="Text" name="NewsSource" class="NewsTitle" id="NewsSource">
-		
+
 		<p>&nbsp;</p>
 		<span class="smallHeadline">
 			Tags <br>
 			<div class="smallInline">(bitte tagge deine News, damit sie in der Suche gelistet werden kann. Ein Leerzeichen nach jedem Tag reicht als Seperator)</div>
-		</span>	
+		</span>
 		<input type="Text" name="NewsTags" class="NewsTitle required" id="NewsTags">
-		
+
 		<p>&nbsp;</p>
 		<div class="NewsSubmit">
 			<input type="Submit" name="" value="Veröffentlichen" class="NewsSubmit">
 		</div>
 
-		Alle rot markierten Felder müssen ausgefüllt werden.
 	 	<div class="smallInline">
-	 	<span class="mandatory">*</span>Du musst deinen Nickname nicht mit angeben, er wird anhand deines Security Tokens erkannt. Das Security Token verhindert, dass
-	 	fremde User oder Bots News posten können, und dient der Identifizierung. Falls du noch kein Token hast, aber gern News schreiben möchtest, wende bitte dich an einen Admin.
+	 	          <span class="mandatory">*</span>Du musst deinen Nickname nicht mit angeben, er wird anhand deines Security Tokens erkannt. Das Security Token
+                   verhindert, dass	fremde User oder Bots News posten können, und dient der Identifizierung. Falls du noch kein Token hast, aber gern News schreiben
+                   möchtest, wende bitte dich an einen Admin.<br>
+                   <b>Bitte beachte, dass die News in deinem Namen gepostet wird. Damit bist nur du für die veröffentlichten Inhalte verantwortlich!</b><br>
+                  <span class="mandatory">**</span>
+                   Eine Quellenangabe ist nicht verpflichtend, aber hilfreich, wenn die Informationen von einer anderen Seite stammen!
 	 	</div>
 	</form>
 </div>

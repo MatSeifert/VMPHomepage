@@ -21,16 +21,17 @@
 		<meta name="viewport" content="width=400, initial-scale=0.7, maximum-scale=0.7, user-scalable=no" />
 			<!-- Farbige Statusleiste für Chrom v39+ unter Android 5.0+ /-->
 		<meta name="theme-color" content="#C14924">
-			<!-- Stylesheet- und Favicon Einbindung /-->	
+			<!-- Stylesheet- und Favicon Einbindung /-->
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 			<!-- Die Schriftart der Seite /-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
 			<!-- Javascript Dateien für diverse Funktionen /-->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="http://jquery-elastic.googlecode.com/svn/trunk/jquery.elastic.source.js" type="text/javascript"></script>
 		<script src="javascript/parallax.js" type="text/javascript"></script>
 		<script src="javascript/charCount.js" type="text/javascript"></script>
-		<script src="javascript/smoothScroll.js" type="text/javascript"></script>		
+		<script src="javascript/smoothScroll.js" type="text/javascript"></script>
 		<script src="javascript/windowHeight.js" type="text/javascript"></script>
 		<script src="javascript/setIFrameHeight.js" type="text/javascript"></script>
 		<script src="javascript/slideMenu.js" type="text/javascript"></script>
@@ -50,21 +51,21 @@
 				  </section>
 
 				  <section class="menu menu--off" id="wrapper">
-		
+
 					<?php include("content/menue.php") ?>
 
-				  </section>  
+				  </section>
 				</section>
 
 				<click2 class="showRight">
 					<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
 				</click2>
 				<div id="slideright">
-					<iframe 
-						onload="javascript:parent.iFrameHeight('sidebar','sidebar');" 
-						src="sidebar.php" 
+					<iframe
+						onload="javascript:parent.iFrameHeight('sidebar','sidebar');"
+						src="sidebar.php"
 						id="sidebar" name="sidebar"
-						frameborder="0" 
+						frameborder="0"
 						class="wrapper"
 						style="height: 1400px; overflow-x: hidden; width: 270px;">
 					</iframe>
@@ -82,12 +83,12 @@
 					<img src="images/logo.png" alt="Logo" class="logo" border="0"/>
 				</a>
 				<span class="title">VMP CLAN</span> <br />
-				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>				
+				<span class="subtitle">GERMAN MULTIGAMING SINCE 2008</span>
 			</div>
 		</div>
-		
+
 		<div class="contentWrapper">
-			<div class="menue">					
+			<div class="menue">
 				<?php include("content/menue.php") ?>
 			</div>
 
@@ -104,7 +105,7 @@
 				   			<p>&nbsp;</p>
 					   		<?php
 					   			require_once ("widgets/TSViewer/teamspeak.php")
-					   		?>		
+					   		?>
 						</div>
 				   	</div>
 			   	</div>
@@ -129,21 +130,21 @@
 			   		</div>
 			   		<p>&nbsp;</p>
 			   		<div class="rightText">
-			   			
+
 						<?php require_once("widgets/letsplay/LetsPlay.html"); ?>
 
 				   	</div>
-			   	</div>		
+			   	</div>
 			   	<p>&nbsp;</p>
 			   	<div class="contentBox">
 			   		<span class="RightHeadline">SOCIAL MEDIA</span>
 			   		<p>&nbsp;</p>
 			   		<div class="rightText">
-			   			
+
 						<?php require_once("widgets/social/media.php"); ?>
 
 				   	</div>
-			   	</div>	
+			   	</div>
 			   	<p>&nbsp;</p>
 			   	<div class="contentBox mobileHidden" id="mobilePromo">
 			   		<span class="RightHeadline">VMP MOBIL</span>
@@ -159,7 +160,7 @@
 						Auch unterwegs immer auf dem aktuellsten Stand. Mit der mobilen Webseite des VMP Clans kein Problem!
 						<p>&nbsp;</p>
 				   	</div>
-			   	</div>	
+			   	</div>
 			</div>
 		</div>
 
@@ -175,7 +176,7 @@
 			if(contentHeight < 1000)
 			{
 				document.getElementById('mobilePromo').style.display = 'none';
-			} 
+			}
 
 		</script>
 
@@ -199,9 +200,9 @@
 
 			  document.querySelector('.material-design-hamburger__icon').addEventListener(
 			    'click',
-			    function() {      
+			    function() {
 			      var child;
-			      
+
 			      document.body.classList.toggle('background--blur');
 			      this.parentNode.nextElementSibling.classList.toggle('menu--on');
 

@@ -3,6 +3,8 @@ $(document).ready(function() {
     var textMaxContent = 5000;
     var textMaxSnippet = 110;
 
+    $('#NewsContent').elastic();
+
     // Anzeigen der übrigen Zeichen für den Newsinhalt
     $('#feedbackC').html(textMaxContent + ' Zeichen übrig');
 

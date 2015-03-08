@@ -5,13 +5,13 @@
 	<span class="NavPoint">
 		<a class="navigation" href="?site=start">
 			<img src="images/menuNewsFade.png" alt="News" class="bottom">
-			<img src="images/menuNews.png" alt="News" class="top">				
+			<img src="images/menuNews.png" alt="News" class="top">
 			News
 		</a>
-	</span> 
+	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=archive">
-			<img src="images/menuArchiveFade.png" alt="Archiv" class="bottom">		
+			<img src="images/menuArchiveFade.png" alt="Archiv" class="bottom">
 			<img src="images/menuArchive.png" alt="Archiv" class="top">
 			Archiv
 		</a>
@@ -77,7 +77,7 @@
 			<img src="images/menuTeamspeak.png" alt="Member" class="top">
 			Teamspeak 3
 		</a>
-	</span>			
+	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=minecraft">
 			<img src="images/menuMinecraftFade.png" alt="Member" class="bottom">
@@ -107,15 +107,22 @@
 			<img src="images/menuMania.png" alt="VMP Mania 2013" class="top">
 			2013
 		</a>
-	</span>	
+	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=mania2014">
 			<img src="images/menuManiaFade.png" alt="VMP Mania 2014" class="bottom">
 			<img src="images/menuMania.png" alt="VMP Mania 2014" class="top">
 			2014
 		</a>
+	</span>
+	<span class="NavPoint">
+		<a class="navigation" href="?site=mania2015">
+			<img src="images/menuManiaFade.png" alt="VMP Mania 2015" class="bottom">
+			<img src="images/menuMania.png" alt="VMP Mania 2015" class="top">
+			2015
+		</a>
 	</span> <div class="h30 mobileHidden"></div>
-	
+
 	<span class="NavCategory">&Uuml;BER DIE SEITE</span> <br>
 	<?php
 		include('content/impressum.php');

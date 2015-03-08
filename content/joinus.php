@@ -21,18 +21,19 @@
             <input type="number" name="Alter" placeholder="Alter" class="InputAge required"/><span class="tag" required>Du musst mindestens 18 Jahre alt sein!</span>
             <br><br>
             <input type="checkbox" name="RegelnGelesen" value="regeln" class="DefaultFormCheckbox" required/>
-                <span class="tag">&nbsp;Ich habe die <a href="?site=rules">Clanregeln</a> gelesen &amp; akzeptiert</span>
+                <span class="tag">&nbsp;Ich habe die <a href="?site=rules" target="_blank">Clanregeln</a> gelesen &amp; akzeptiert</span>
             <br><br>
-            <textarea name="Bemerkungen" class="NewsContent required" placeholder="Warum passt du zu uns?" required></textarea>
+            <textarea name="Bemerkungen" class="NewsContent required" placeholder="Warum passt du zu uns?" id="NewsContent" required></textarea>
         <!-- Ende der Formularfelder -->
         	<div class="ju_disc">
-        		Alle rot markierten Felder müssen ausgefüllt werden. Wenn du deinen Steamnamen mit angibst, 
-        		werden wir versuchen dich in erster Linie darüber zu kontaktieren!
+        		Die Angabe deines Steam Namens ist optional. Falls das Feld ausgefüllt wird, werden wir versuchen dich direkt über Steam zu erreichen, andernfalls
+                erhältst du von uns eine Antwort Email.
         	</div>
         <!-- Senden und Zurücksetzenbuttons -->
             <div class="NewsSubmit">
-                <input type="Submit" name="" value="Anfrage senden" class="NewsSubmit">
-                <input type="Reset" name="" value="Formular zurücksetzen" class="NewsSubmit">               
+                <input type="Submit" name="" value="Jetzt bewerben!" class="NewsSubmit">
+                <span style="width: 30px; display: inline-block;">&nbsp;</span>
+                <input type="Reset" name="" value="Felder leeren" class="NewsSubmit">
             </div>
         <!-- Ende der Buttons -->
     </form>
