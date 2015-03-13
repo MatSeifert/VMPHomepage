@@ -16,6 +16,7 @@
         <li>Einheitlichere Buttons</li>
         <li>Eigene Seite für die diesjährige VMP Mania, inklusive Anmeldeformular</li>
         <li>Kleinere Anpassungen am Design für mehr Konsistenz</li>
+        <li>Die News auf der Startseite und im Archiv können ab jetzt Seitenweise durchgeblättert werden</li>
 	</ul>
 
 	<span class="smallHeadline">

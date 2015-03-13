@@ -1,6 +1,33 @@
 <?php
-	// Falls die Seite lokal aufgerufen wird, wird die lokale Debug Umgebung aktiviert
+	// I have no idea, if i still need this, but at this point, I'm too afraid to delete it
 	define('DEBUG', false);
+
+	function pagination($page, $rows) {
+		if ($rows % 10 == 0)
+		{
+			$pages = $rows/10;
+		}
+		// To Display the last page, we need to add 1
+		else $pages = (int)($rows/10)+1;
+
+		if ($pages <= 5)
+		{
+			echo '<div class="center" style="margin: 20px 0px -10px 0px">';
+
+			for ($i = 1; $i <= $pages; $i++)
+			{
+				if ($i == $page)
+				{
+					// DON'T remove the space at the beginning. Otherwise a puppy wil die in pain!
+					$class = " activePage";
+				} else $class = "pagination";
+
+				echo '<a href="?site=start&page=' . $i . '"><span class="' . $class . '">' . $i . '</span></a>';
+			}
+
+			echo "</div>";
+		}
+	}
 
 	function newsfeed() {
 		if (DEBUG) {
@@ -11,11 +38,11 @@
 			}
 		}
 		else {
-			$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
-			// Check connection 																		
+			$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");
+			// Check connection
 			if (mysqli_connect_errno()) {
 			  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-			}			
+			}
 		}
 
 		$result = mysqli_query($database,"SELECT * FROM articles ORDER BY id DESC LIMIT 0, 10");
@@ -26,12 +53,24 @@
 		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
 		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
 		  	echo '<a href="?site=read&id=' . $row['id'] . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 250)) . '</span></a>';
-		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><a href="?site=read&id=' . $row['id'] . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' . 
-		  		 '&nbsp;</span><img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' . 
-		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' . 
+		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><a href="?site=read&id=' . $row['id'] . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
+		  		 '&nbsp;</span><img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
+		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
 		  		 '</div>';
 		  echo "</div>";
 		}
+
+		$page = @$_GET["page"];
+		if (!isset($page) || empty($page)) $page = 1;
+
+		// I can't believe how much time it took for me to find out how to count the rows. Yes, I am that stupid!
+		$countArticles = mysqli_query($database, "SELECT COUNT(1) FROM articles");
+
+		$row = mysqli_fetch_array($countArticles);
+		$total = $row[0];
+
+		pagination($page, $total);
+
 		mysqli_close($database);
 	}
 ?>
@@ -52,7 +91,10 @@
 <div class="PostPost">
 
 	<div class="LPBlock">
-		<?php newsfeed(); ?>
+		<?php
+			newsfeed();
+			//pagination();
+		?>
 	</div>
 	<p>&nbsp;</p>
 </div>

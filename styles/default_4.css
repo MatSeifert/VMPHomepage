@@ -1853,21 +1853,62 @@ table.mania2011 {
 /* Archiv Styles */
 
 select.ArchiveYear {
-	margin-left: 0px;
+	margin: 0px 0px 0px 0px;
 	width: 100px;
-	padding: 8px;
+	padding: 14px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
+}
+
+select.ArchiveYear:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
 }
 
 select.ArchiveMonth {
-	margin-left: 10px;
+	margin: 0px 0px 0px 10px;
 	width: 280px;
-	padding: 8px;
+	padding: 14px;
+	border-bottom: 1px solid #ccc;
+	border-top: 0px solid #fff;
+	border-right: 0px solid #fff;
+	border-left: 0px solid #fff;
+	color: #aaa;
+}
+
+select.ArchiveMonth:focus {
+	border-bottom: 1px solid #FF6030;
+	outline-width: 0;
+	color: #D85229;
 }
 
 .ArchiveSubmit {
-	margin-left: 10px;
-	width: 110px;
-	padding: 8px;
+	margin: 0px 0px 0px 5px;
+	width: 120px;
+	height: 50px;
+	background-color: #5677fc;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.ArchiveSubmit:hover {
+	background-color: #738ffe;
 }
 
 .bugtracker {
@@ -2572,5 +2613,48 @@ a:hover.tooltips span {
 }
 
 .button_v2:hover {
+	background-color: #738ffe;
+}
+
+/* This CSS File becomes even fatter than your mom */
+.pagination {
+	padding: 2px 6px 2px 6px;
+	margin: 0px 5px 0px 5px;
+	background-color: #BBDEFB;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.pagination:hover {
+	background-color: #738ffe;
+}
+
+.activePage {
+	padding: 2px 6px 2px 6px;
+	margin: 0px 5px 0px 5px;
+	background-color: #5677fc;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.activePage:hover {
 	background-color: #738ffe;
 }

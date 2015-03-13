@@ -26,11 +26,11 @@
 				                '12'=>"12");
 
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
-		// Check connection 																		
+		// Check connection
 		if (mysqli_connect_errno()) {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}	
-		
+		}
+
 		echo '<span class="smallHeadline">Alle News vom&nbsp;' . $monate[$month] . '&nbsp' . $year . '&nbsp;werden angezeigt</span><br><br>';
 
 		$result = mysqli_query($database,"SELECT * FROM articles WHERE date LIKE '%$year-$monateMitNull[$month]%' ORDER BY id DESC");
@@ -43,20 +43,20 @@
 		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
 		  	echo '<div class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
 		  		 '&nbsp;<img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
-		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' . 
-		  		 '</div>';		  		  
+		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
+		  		 '</div>';
 		  echo "</div>";
 		}
-		mysqli_close($database);			
+		mysqli_close($database);
 	}
 
 	function ExecuteSqlDefault() {
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");
-		// Check connection 																		
+		// Check connection
 		if (mysqli_connect_errno()) {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}		
-		
+		}
+
 		echo '<span class="smallHeadline">Letzte News:</span><br><br>';
 
 		$result = mysqli_query($database,"SELECT * FROM articles ORDER BY id DESC LIMIT 0, 6");
@@ -69,11 +69,11 @@
 		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
 		  	echo '<div class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
 		  		 '&nbsp;<img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
-		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' . 
-		  		 '</div>';	
+		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
+		  		 '</div>';
 		  echo "</div>";
 		}
-		mysqli_close($database);		
+		mysqli_close($database);
 	}
 
 	function ShowArchive() {
@@ -84,7 +84,7 @@
 			ExecuteSqlQuery($year, $month);
 		}
 		else {
-			ExecuteSqlDefault(); 
+			ExecuteSqlDefault();
 		}
 	}
 
@@ -103,7 +103,7 @@
 	                '11'=>"November",
 	                '12'=>"Dezember");
 
-		if(isset($_GET['year']) && !empty($_GET['year']) && isset($_GET['month']) && !empty($_GET['month'])) {	
+		if(isset($_GET['year']) && !empty($_GET['year']) && isset($_GET['month']) && !empty($_GET['month'])) {
 			$defaultYear =  $_GET['year'];
 			$defaultMonth = $_GET['month'];
 		}
@@ -153,14 +153,14 @@
   ARCHIV
 </div>
 <div class="PostPost">
- 
+
 	<form action="?site=archive" method="GET" accept-charset="ISO-8859-1">
 		<select class="hidden" id="site" name="site">
 			  <option value="archive"></option>
 		</select>
 
-		<?php 
-			GenerateMenu(); 
+		<?php
+			GenerateMenu();
 		?>
 		<input type="Submit" name="" value="Anzeigen" class="ArchiveSubmit">
 	</form>
