@@ -1,0 +1,16 @@
+<div class="whereAmI">
+    MANIA '15
+</div>
+
+<div class="PostTitle">
+  VMP MANIA 2015 - ANMELDUNG
+</div>
+<div class="PostPost">
+    <span class="smallHeadline">
+        Für ein Spiel eintragen ...
+    </span>
+
+    <span class="smallHeadline">
+        Ein neues Spiel vorschlagen ...
+    </span>
+</div>

@@ -30,6 +30,19 @@
 	}
 
 	function newsfeed() {
+
+		$page = @$_GET["page"];
+		if (!isset($page) || empty($page)) $page = 1;
+
+		if ($page == 1)
+		{
+			$offset = 0;
+		}
+		else {
+			$offset = $page * 10 - 10;
+		}
+
+
 		if (DEBUG) {
 			$database=mysqli_connect("localhost","news","6F5PHPTGKaPh7Gnf","webseite");
 			// Check connection
@@ -45,7 +58,7 @@
 			}
 		}
 
-		$result = mysqli_query($database,"SELECT * FROM articles ORDER BY id DESC LIMIT 0, 10");
+		$result = mysqli_query($database,"SELECT * FROM articles ORDER BY id DESC LIMIT 10 OFFSET $offset");
 
 		while($row = mysqli_fetch_array($result)) {
 		  echo '<div class="SqlNewsBox">';
@@ -59,9 +72,6 @@
 		  		 '</div>';
 		  echo "</div>";
 		}
-
-		$page = @$_GET["page"];
-		if (!isset($page) || empty($page)) $page = 1;
 
 		// I can't believe how much time it took for me to find out how to count the rows. Yes, I am that stupid!
 		$countArticles = mysqli_query($database, "SELECT COUNT(1) FROM articles");

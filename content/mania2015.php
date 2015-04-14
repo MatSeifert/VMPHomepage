@@ -1,6 +1,3 @@
-<?php
-
-?>
 <div class="whereAmI">
     MANIA '15
 </div>

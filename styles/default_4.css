@@ -2658,3 +2658,7 @@ a:hover.tooltips span {
 .activePage:hover {
 	background-color: #738ffe;
 }
+
+.inlineb {
+	display: inline-block; 
+}
