@@ -1,9 +1,9 @@
 <?php
 /**
-* PHPMailer language file: refer to English translation for definitive list
-* Arabic Version, UTF-8
-* by : bahjat al mostafa <bahjat983@hotmail.com>
-*/
+ * Arabic PHPMailer language file: refer to English translation for definitive list
+ * @package PHPMailer
+ * @author bahjat al mostafa <bahjat983@hotmail.com>
+ */
 
 $PHPMAILER_LANG['authenticate']         = 'خطأ SMTP : لا يمكن تأكيد الهوية.';
 $PHPMAILER_LANG['connect_host']         = 'خطأ SMTP: لا يمكن الاتصال بالخادم SMTP.';
@@ -24,3 +24,4 @@ $PHPMAILER_LANG['signing']              = 'خطأ في التوقيع: ';
 $PHPMAILER_LANG['smtp_connect_failed']  = 'SMTP Connect() غير ممكن.';
 $PHPMAILER_LANG['smtp_error']           = 'خطأ على مستوى الخادم SMTP: ';
 $PHPMAILER_LANG['variable_set']         = 'لا يمكن تعيين أو إعادة تعيين متغير: ';
+//$PHPMAILER_LANG['extension_missing']    = 'Extension missing: ';
