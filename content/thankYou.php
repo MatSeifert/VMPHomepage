@@ -11,7 +11,11 @@
 			"\n\nWarum passt du zu uns?\n" . $_POST['Bemerkungen'];
 	$sender = "memberscout@vmp-clan.de";
 
-	//mail($receiver, $subject, $body, "From: $sender\n");
+	$header = 'From: memberscout@vmp-clan.de' . "\r\n" .
+		      'Reply-To: memberscout@vmp-clan.de' . "\r\n" .
+		      'X-Mailer: PHP/' . phpversion();
+
+	mail($receiver, $subject, $body, $header);
 
 	$message =
 		"Vielen Dank für deine Bewerbung! Wir werden uns innerhalb von 24h über Steam oder Email bei dir melden. <br><br>
