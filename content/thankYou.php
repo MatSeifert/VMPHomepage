@@ -1,44 +1,41 @@
 <?php
-	require("phpmailer/PHPMailerAutoload.php");
+	// Config
+	$receiver = "vmp.clan2008@gmail.com, matthe.seifert@gmail.com";
+	$subject = "Neue Memberanfrage";
+	$body = "Neue Memberanfrage von " .
+			$_POST['Name'] .
+			" (" . $_POST['Nickname'] . ") \n\n" .
+			"Steamname: " . $_POST['Steamname'] .
+			"\nEmail: " . $_POST['E-Mail'] .
+			"\nAlter: " . $_POST['Alter'] .
+			"\n\nWarum passt du zu uns?\n" . $_POST['Bemerkungen'];
+	$sender = "memberscout@vmp-clan.de";
+	$header = 'From: memberscout@vmp-clan.de' . "\r\n" .
+		      'Reply-To: memberscout@vmp-clan.de' . "\r\n" .
+		      'X-Mailer: PHP/' . phpversion();
 
-	$mail = new PHPMailer;
+	mail($receiver, $subject, $body, $header);
 
-	//// ABSENDER ////
-	$mail->isSMTP();
-
-	$mail->SMTPDebug = 2;
-	$mail->Debugoutput = 'html';
-	$mail->Host = 'smtp.googlemail.com';
-	$mail->Port = 465;
-	$mail->SMTPSecure = 'ssl';
-	$mail->SMTPAuth = true;
-	$mail->Username = "vmp.clan2008";
-	// FIXME: Password verschlüsselt aus der Db oder einer Datei ziehen
-	$mail->Password = "VMPClan2008.#g00gle";
-	$mail->setFrom('vmp.clan2008@gmail.com', 'VMP Clan');
-
-	//// EMPFÄNGER & INHALT////
-	$mail->addAddress('matthe.seifert@gmail.com');
-	$mail->addAddress('lehmrob@gmail.com');
-
-	$mail->Subject = "Neue Memberanfrage";
-	$mail->Body = 	"Neue Memberanfrage von " .
-					$_POST['Name'] .
-					" (" . $_POST['Nickname'] . ") \n\n" .
-					"Steamname: " . $_POST['Steamname'] .
-					"\nEmail: " . $_POST['E-Mail'] .
-					"\nAlter: " . $_POST['Alter'] .
-					"\n\nWarum passt du zu uns?\n" . $_POST['Bemerkungen'];
-
-	//// SENDEN ////
-	if (!$mail->send()) {
-    	$message = "Beim Senden der Mail ist ein Fehler aufgetreten. Bitte versuche es später erneut. Sollte der Fehler auch weiterhin " .
-		"auftreten, wende dich bitte an <a href=\"mailto:vmp.clan2008@gmail.com\">den Webmaster</a> und füge die folgende Fehlermeldung hinzu: <br><br>"
-		. $mail->ErrorInfo;
-	} else {
-    	$message = 'Vielen Dank für deine Anfrage, wir werden uns innerhalb von 24 Stunden mit dir in Verbindung setzen!<br><br>
-		<a href="?site=start" alt="Startseite">Zurück zur Startseite</a>';
-	}
+	$message =
+		"Vielen Dank für deine Bewerbung! Wir werden uns innerhalb von 24h über Steam oder Email bei dir melden. <br><br>
+		<span class=\"smallHeadline\"><a href=\"?site=start\">Hier</a> geht es wieder zur Startseite.</span><br><br>
+		Zur Überprüfung siehst Du hier noch einmal die an uns übermittelten Daten:<br><br>
+		<div style=\"float: right; padding: 0 0 0 20px; width: 300px\">"
+			. $_POST['Name'] . "<br>"
+			. $_POST['Nickname'] . "<br>"
+			. $_POST['Steamname'] . "<br>"
+			. $_POST['E-Mail'] . "<br>"
+			. $_POST['Alter'] . "<br>"
+			. $_POST['Bemerkungen'] . "<br><br><br>
+		</div>
+		<div style=\"float: left; width: 150px;\">
+			NAME: <br>
+			NICKNAME: <br>
+			STEAMNAME: <br>
+			EMAIL ADRESSE: <br>
+			ALTER: <br>
+			WARUM PASST DU ZU UNS?
+		</div>";
 ?>
 
 

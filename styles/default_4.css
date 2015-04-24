@@ -574,6 +574,13 @@ body {
 	height: 100%;
 	z-index: 1;
 }
+
+.hintergrundbild img {
+	min-width: 1920px;
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+}
 /* --- END OF Responsive Style Declarations --- */
 
 .mobileSektion {
@@ -2660,5 +2667,5 @@ a:hover.tooltips span {
 }
 
 .inlineb {
-	display: inline-block; 
+	display: inline-block;
 }
