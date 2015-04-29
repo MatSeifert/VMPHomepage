@@ -31,17 +31,28 @@
 		} else {
 			echo '<div class="center" style="margin: 20px 0px -10px 0px">';
 
+			$showFirst = true;
+			$showLast = true;
+
 			// determine start and endpage
 			if ($page <= 3)
 			{
 				$startpage = 1;
+				$showFirst = false;
 			}
 			else $startpage = ($page - 3);
 
 			if ($page >= ($pages -3))
 			{
 				$endpage = $pages;
-			} else $endpage = ($page + 3);
+				$showLast = false;
+			}
+			else $endpage = ($page + 3);
+
+			if($showFirst)
+			{
+				echo '<a href="?site=start&page=1"><span class="pagination">Erste Seite</span></a>';
+			}
 
 			for ($i = $startpage; $i <= $endpage; $i++)
 			{
@@ -53,6 +64,12 @@
 
 				echo '<a href="?site=start&page=' . $i . '"><span class="' . $class . '">' . $i . '</span></a>';
 			}
+
+			if($showLast)
+			{
+				echo '<a href="?site=start&page=' . $pages . '"><span class="pagination">Letzte Seite</span></a>';
+			}
+
 
 			echo "</div>";
 		}

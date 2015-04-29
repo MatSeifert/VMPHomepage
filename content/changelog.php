@@ -16,7 +16,10 @@
         <li>Einheitlichere Buttons</li>
         <li>Eigene Seite für die diesjährige VMP Mania, inklusive Anmeldeformular</li>
         <li>Kleinere Anpassungen am Design für mehr Konsistenz</li>
-        <li>Die News auf der Startseite und im Archiv können ab jetzt Seitenweise durchgeblättert werden</li>
+        <li>Die News auf der Startseite können ab jetzt Seitenweise durchgeblättert werden</li>
+        <li>Neue Bildergalerien für Cities Skylines und GTA 5</li>
+        <li>Anpassung der Schriftgrößen für einen klareren Look</li>
+        <li>Bugfix am JoinUs Formular (diesmal funktioniert es wirklich!)</li>
 	</ul>
 
 	<span class="smallHeadline">

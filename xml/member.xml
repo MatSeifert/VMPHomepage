@@ -15,12 +15,12 @@
 	<member>
 		<country>germany</country>
 		<sex>male</sex>
-		<nickname>Chiemra</nickname>
+		<nickname>Chimera</nickname>
 		<rank>Admin</rank>
 		<activity value="aktiv" />
 		<birthday day="10" month="7" year="1989" />
 		<recruited in="2010" />
-	</member>	
+	</member>
 	<member>
 		<country>germany</country>
 		<sex>male</sex>
@@ -29,7 +29,7 @@
 		<activity value="aktiv" />
 		<birthday day="1" month="12" year="1990" />
 		<recruited in="2008" />
-	</member>	
+	</member>
 	<!-- VICE ADMINISTRATION -->
 	<member>
 		<country>germany</country>
@@ -65,7 +65,7 @@
 		<rank>Gründer</rank>
 		<activity value="inaktiv" />
 		<recruited in="2008" />
-	</member>	
+	</member>
 	<!-- MEMBER -->
 	<member>
 		<country>germany</country>
@@ -161,13 +161,12 @@
 		<activity value="aktiv" />
 		<birthday day="15" month="9" year="1991" />
 		<recruited in="2014" />
-	</member>	
-	<!-- TRIALMEMBER -->
+	</member>
 	<member>
 		<country>germany</country>
 		<sex>female</sex>
 		<nickname>CloudCarboxyl</nickname>
-		<rank>Trial</rank>
+		<rank>Member</rank>
 		<activity value="aktiv" />
 		<recruited in="2014" />
 	</member>
@@ -175,8 +174,18 @@
 		<country>germany</country>
 		<sex>male</sex>
 		<nickname>Lightline</nickname>
-		<rank>Trial</rank>
+		<rank>Member</rank>
 		<activity value="aktiv" />
 		<recruited in="2014" />
 	</member>
+	<!-- TRIALMEMBER -->
+	<member>
+		<country>germany</country>
+		<sex>male</sex>
+		<nickname>NKT2x</nickname>
+		<rank>Trial</rank>
+		<activity value="aktiv" />
+		<recruited in="2015" />
+	</member>
+
 </memberlist>

@@ -1816,6 +1816,91 @@ table.mania2011 {
 	margin: 20px 0px 0px 0px;
 }
 
+.SqlArticleShare {
+	width: 100%;
+	height: 90px;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	margin: 20px 0px -30px 0px;
+	font-size: 20px;
+	line-height: 20px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.SqlArticleShareInnerRight {
+	float: right;
+	padding: 5px 40px 0px 0px;
+}
+
+.circle {
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+}
+
+.ShareOnFacebook {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #3B5998;
+	display: inline-block;
+	margin: 5px 0px 0px 10px;
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+	behavior: url(PIE.htc);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),
+	0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+
+.ShareOnFacebook:hover {
+		background-color: #5582DB;
+}
+
+.ShareOnTwitter {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #5EA9DD;
+	display: inline-block;
+	margin: 5px 0px 0px 10px;
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+	behavior: url(PIE.htc);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),
+	0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+
+.ShareOnTwitter:hover {
+	background-color: #7FCCFF;
+}
+
+.ShareOnGooglePlus {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #DA4835;
+	display: inline-block;
+	margin: 5px 0px 0px 10px;
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+	behavior: url(PIE.htc);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),
+	0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+
+.ShareOnGooglePlus:hover {
+	background-color: #FF6759;
+}
+
 .AddNews {
 	position: absolute;
 	font-size: 46px;
