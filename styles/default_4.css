@@ -1140,8 +1140,8 @@ div.PostPost {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	width: 520px;
 	margin: auto auto;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 15px;
+	line-height: 20px;
 	padding: 30px 0px 0px 0px;
 }
 
@@ -1704,7 +1704,7 @@ table.mania2011 {
 .SqlNewsHeadline {
 	padding: 3px 0px 0px 155px;
 	width: 360px;
-	font-size: 16px;
+	font-size: 20px;
 	display: block;
 	line-height: 18px;
 	text-align: left;
@@ -1724,9 +1724,10 @@ table.mania2011 {
 .SqlNewsSnippet {
 	display: block;
 	overflow: hidden;
-	height: 75px;
-	font-size: 14px;
+	height: 78px;
+	font-size: 15px;
 	color: #757575;
+	margin-top: -3px;
 	padding: 0px 5px 0px 155px;
 	border-bottom: 1px solid #ddd;
 }
@@ -1738,10 +1739,10 @@ table.mania2011 {
 .SqlNewsReadMore {
 	display: inline;
 	position: absolute;
-	font-size: 14px;
+	font-size: 15px;
 	color: #979797;
 	margin: 0px 0px 0px 155px;
-	padding: 7px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
 	text-align: left;
 }
 
@@ -1783,7 +1784,7 @@ table.mania2011 {
 	position: absolute;
 	display: block;
 	padding: 5px;
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	background-color: #bf360c;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -1804,7 +1805,8 @@ table.mania2011 {
 
 .SqlArticleContent {
 	display: block;
-	font-size: 14px;
+	font-size: 15px;
+	line-height: 20px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	text-align: justify;
 	margin: 10px 40px 0px 40px;
@@ -2121,7 +2123,7 @@ a:hover.tooltips span {
 }
 
 .SimHeadline {
-	font-size: 18px;
+	font-size: 20px;
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -2668,4 +2670,10 @@ a:hover.tooltips span {
 
 .inlineb {
 	display: inline-block;
+}
+
+.SCContent {
+	vertical-align: middle;
+	display: block;
+	line-height: 18px;
 }

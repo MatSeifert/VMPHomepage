@@ -3,10 +3,12 @@
 	define('DEBUG', false);
 
 	function pagination($page, $rows) {
+
 		if ($rows % 10 == 0)
 		{
 			$pages = $rows/10;
 		}
+
 		// To Display the last page, we need to add 1
 		else $pages = (int)($rows/10)+1;
 
@@ -15,6 +17,33 @@
 			echo '<div class="center" style="margin: 20px 0px -10px 0px">';
 
 			for ($i = 1; $i <= $pages; $i++)
+			{
+				if ($i == $page)
+				{
+					// DON'T remove the space at the beginning. Otherwise a puppy wil die in pain!
+					$class = " activePage";
+				} else $class = "pagination";
+
+				echo '<a href="?site=start&page=' . $i . '"><span class="' . $class . '">' . $i . '</span></a>';
+			}
+
+			echo "</div>";
+		} else {
+			echo '<div class="center" style="margin: 20px 0px -10px 0px">';
+
+			// determine start and endpage
+			if ($page <= 3)
+			{
+				$startpage = 1;
+			}
+			else $startpage = ($page - 3);
+
+			if ($page >= ($pages -3))
+			{
+				$endpage = $pages;
+			} else $endpage = ($page + 3);
+
+			for ($i = $startpage; $i <= $endpage; $i++)
 			{
 				if ($i == $page)
 				{
@@ -66,8 +95,8 @@
 		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
 		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
 		  	echo '<a href="?site=read&id=' . $row['id'] . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 250)) . '</span></a>';
-		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><a href="?site=read&id=' . $row['id'] . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
-		  		 '&nbsp;</span><img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
+		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><a href="?site=read&id=' . $row['id'] . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;' .
+		  		 '&nbsp;</span><img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;' .
 		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
 		  		 '</div>';
 		  echo "</div>";
@@ -103,7 +132,6 @@
 	<div class="LPBlock">
 		<?php
 			newsfeed();
-			//pagination();
 		?>
 	</div>
 	<p>&nbsp;</p>

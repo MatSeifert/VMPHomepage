@@ -39,6 +39,19 @@
 			</span>
 		</div>
 
+        <div class="LPBox">
+            <a href="?site=MinecraftMonuments">
+                <img src="images/ScPage_WeBuildThisCity.png" class="LetsPlayThumb" alt="Minecraft Monuments">
+                <span class="ScreenshotHeadline">CITIES SKYLINES</span>
+            </a>
+            <span class="SCContent">
+                <p>&nbsp;</p>
+                <a target="_blank" href="https://www.flickr.com/groups/2818710@N23/pool" border="0">Alle Bilder auf <img src="images/flickr.png" border="0"></a><br />
+                <span class="SPDate">Auf dem Weg zur glorreichen Hauptstadt.</span>
+                <br>
+            </span>
+        </div>
+
 		<div class="LPBox">
 			<a href="?site=AdventuresOfDayZ">
 				<img src="images/ScPage_TalesOfDayZ.png" class="LetsPlayThumb" alt="Adventures of Day Z">
@@ -52,7 +65,20 @@
 			</span>
 		</div>
 
-		<div class="LPBox" style="clear: both;">
+        <div class="LPBox">
+            <a href="?site=StoriesFromLosSantos">
+                <img src="images/ScPage_StoriesFromLosSantos.png" class="LetsPlayThumb" alt="Stories From Los Santos">
+                <span class="ScreenshotHeadline">GTA V</span>
+            </a>
+            <span class="SCContent">
+                <p>&nbsp;</p>
+                <a target="_blank" href="https://www.flickr.com/groups/2868276@N22/pool" border="0">Alle Bilder auf <img src="images/flickr.png" border="0"></a><br />
+                <span class="SPDate">Oh, war das eben ein Passant? Meine schöne Stoßstange!</span>
+                <br>
+            </span>
+        </div>
+
+		<div class="LPBox">
 			<a href="?site=MinecraftMonuments">
 				<img src="images/ScPage_MinecraftMonuments.png" class="LetsPlayThumb" alt="Minecraft Monuments">
 				<span class="ScreenshotHeadline">MINECRAFT</span>
@@ -65,15 +91,9 @@
 			</span>
 		</div>
 
-		<div class="LPBoxEmpty">
-			&nbsp;
-		</div>
-		<div class="LPBoxEmpty">
-			&nbsp;
-		</div>
 		<p>&nbsp;</p>
 		<div class="disclaimerBottomRight">
-		Pictures hostet at <img src="images/flickr.png"> Embedding provided by <img src="images/rss.png"> RSS &copy; 
+		Pictures hostet at <img src="images/flickr.png"> Embedding provided by <img src="images/rss.png"> RSS &copy;
 		</div>
 
 	</div>
