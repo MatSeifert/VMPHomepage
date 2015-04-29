@@ -1,10 +1,39 @@
 <?php
-	function share() {
+	function shortenLink($url) {
+		require_once('socialSDK/owly/OwlyApi.php');
+		$owly = OwlyApi::factory( array('key' => 's4Zm5Rxkm99z6CWEF9ikm') );
+
+		try {
+			$shortenedUrl = $owly->shorten($url);
+		} catch(Exception $e) {
+			echo 'Fehler beim kürzen des Links (Error in ow.ly API):' . $e->getMessage() . "<br />";
+			$url = "";
+		}
+
+		return $shortenedUrl;
+	}
+
+	function share($id, $article) {
+		$shortlink = shortenLink("http://www.vmp-clan.de/?site=read&id=" . $id);
+
 		echo '<div class="SqlArticleShare">';
 			echo '<div class="SqlArticleShareInnerRight"><img src="images/share.png"> Teile diesen Artikel <br>';
-				echo '<div class="ShareOnFacebook"><img src="images/facebook_transparent.png" class="circle"></div>';
-				echo '<div class="ShareOnTwitter"><img src="images/twitter_transparent.png" class="circle"></div>';
-				echo '<div class="ShareOnGooglePlus"><img src="images/googleplus_transparent.png" class="circle"></div>';
+				echo '<div class="ShareOnFacebook"' .
+					     ' onclick="popupwindow(\'https://www.facebook.com/sharer/sharer.php?u=' . $shortlink . '\', 500, 400)">' .
+						'<a href="#"><img src="images/facebook_transparent.png" class="circle"></a>' .
+						'</div>';
+				echo '<div class="ShareOnTwitter"' .
+						' onclick="popupwindow(\'https://twitter.com/home?status=' . $shortlink . '\', 500, 400)">' .
+						'<a href="#"><img src="images/twitter_transparent.png" class="circle"></a>' .
+						'</div>';
+				echo '<div class="ShareOnGooglePlus"' .
+						' onclick="popupwindow(\'https://plus.google.com/share?url=' . $shortlink . '\', 500, 400)">' .
+						'<a href="#"><img src="images/googleplus_transparent.png" class="circle"></a>' .
+						'</div>';
+			echo '</div>';
+
+			echo '<div class="SqlArticleShareInnerLeft">Mehr zum Spiel';
+
 			echo '</div>';
 		echo '</div>';
 	}
@@ -46,7 +75,7 @@
 		  	echo '<a href="?site=' . $backlink . '"><img src="images/backButton.png" alt="Back" border="0" class="SqlArticleBack"></a>';
 		  	echo '<span class="SqlArticleHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span>';
 		  	echo '<span class="SqlArticleContent">' . utf8_encode($row['content']) . '</span>';
-			share();
+			share($id, $row);
 		}
 
 		// Read Counter bei jedem Aufruf der News um eins erhöhen
@@ -127,6 +156,13 @@
 	<?php ConnectToDatabase(true); ?>
 
 <div class="PostPost">
+	<script>
+		function popupwindow(url, w, h) {
+			var left = (screen.width/2)-(w/2);
+			var top = (screen.height/2)-(h/2);
+			return window.open(url, "_blank", "scrollbars=no, resizable=no, width="+w+", height="+h+", top="+top+", left="+left);
+		}
+	</script>
 
 	<?php ConnectToDatabase(false); ?>
 

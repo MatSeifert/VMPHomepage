@@ -13,13 +13,17 @@
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Highlightfarbe bei markiertem Text angepasst</li>
         <li>Neuer Look der Formulare auf der Joinus Seite und beim Schreiben einer News</li>
-        <li>Einheitlichere Buttons</li>
         <li>Eigene Seite für die diesjährige VMP Mania, inklusive Anmeldeformular</li>
-        <li>Kleinere Anpassungen am Design für mehr Konsistenz</li>
         <li>Die News auf der Startseite können ab jetzt Seitenweise durchgeblättert werden</li>
         <li>Neue Bildergalerien für Cities Skylines und GTA 5</li>
-        <li>Anpassung der Schriftgrößen für einen klareren Look</li>
-        <li>Bugfix am JoinUs Formular (diesmal funktioniert es wirklich!)</li>
+        <li>Share Buttons unter den Artikeln. Teile die News mit deinen Freunden!</li>
+        <li>Einheitlichere Buttons</li>
+        <li>Einheitlichere Schriftgrößen für einen strukturierteren Look</li>
+        <li>Weitere kleinere Anpassungen am Design für mehr Konsistenz</li>
+        <li>Bugfix: JoinUs Formular repariert (diesmal funktioniert es wirklich!)</li>
+        <li>Bugfix: Die Minecraft Seite zeigt den Server nun korrekterweise als offline an (wenn er das ist), statt den Aufbau der Seite abzubrechen</li>
+        <li> Zahlreiche weitere kleine Bugfixes</li>
+
 	</ul>
 
 	<span class="smallHeadline">

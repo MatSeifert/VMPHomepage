@@ -1817,11 +1817,11 @@ table.mania2011 {
 }
 
 .SqlArticleShare {
-	width: 100%;
+	width: 90%;
 	height: 90px;
-	border-top: 1px solid #efefef;
-	border-bottom: 1px solid #efefef;
-	margin: 20px 0px -30px 0px;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	margin: 20px auto -40px auto;
 	font-size: 20px;
 	line-height: 20px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -1829,7 +1829,14 @@ table.mania2011 {
 
 .SqlArticleShareInnerRight {
 	float: right;
-	padding: 5px 40px 0px 0px;
+	width: 200px;
+	padding: 5px 0px 0px 0px;
+}
+
+.SqlArticleShareInnerLeft {
+	float: right;
+	width: 310px;
+	padding: 5px 10px 0px 20px;
 }
 
 .circle {
@@ -2347,6 +2354,8 @@ a:hover.tooltips span {
 .offline {
 	background-color: #ff8a65;
 	padding: 8px;
+	position: absolute;
+	margin: -7px 0px 0px -20px;
 	border-radius: 2px;
 	color: #dd2c00;
 }
@@ -2761,4 +2770,19 @@ a:hover.tooltips span {
 	vertical-align: middle;
 	display: block;
 	line-height: 18px;
+}
+
+.ErrorMessage {
+	padding: 10px 10px 10px 50px;
+	margin: 0px 0px 30px 0px;
+	border: 1px solid;
+	vertical-align: middle;
+	color: #DD2C00;
+	border-radius: 5px;
+	background-color: #FF8A65;
+}
+
+.ErrorMessage img {
+	position: absolute;
+	margin: -7px 0px 0px -40px;
 }

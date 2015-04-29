@@ -1,12 +1,20 @@
 #userAvatar {
 	display: block !important;
 	position: absolute !important;
+
+}
+
+a {	color: #A5A5A5 !important; text-decoration: none}
+a:hover {color: #D3655B !important; text-decoration: underline}
+
+#boardLink1, #boardLink7, #boardLink17, #boardLink23, #boardLink27, #boardLink37, #boardLink38, #boardLink42, #boardLink66 {
+	color: #fff !important;
 }
 
 #userPanel {
-	width: 96%;
+	width: 98%;
 	margin: 10px 0px 0px 10px;
-	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
 	 			0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 
@@ -63,7 +71,14 @@ body {
 	padding-left: 110px;
 	width: 600px;
 	display: block;
+font-weight: thin;
 }
+
+#userNote a {
+text-decoration: none;
+color: #cc1100!important;
+}
+
 #userMenu {
 	width: 98%;
 	padding: 10px 0px 0px 110px;
@@ -88,8 +103,14 @@ body {
 	min-width: 0px;
 	font-size: 16px;
 	padding: 0px 5px 0px 0px;
-}	
+}
 #userMenuPm {
+	width: auto;
+	min-width: 0px;
+	font-size: 16px;
+	padding: 0px 5px 0px 0px;
+}
+#userMenuSubscriptions {
 	width: auto;
 	min-width: 0px;
 	font-size: 16px;
@@ -103,9 +124,9 @@ body {
 #mainMenu {
 	margin: 20px 0px 0px 10px;
 	padding: 5px 0px 5px 0px;
-	width: 96%;
+	width: 98%;
 	border-width: 0px 0px 0px 0px !important;
-	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
 	 			0px 0px 1px 0px rgba(0,0,0,0.2);
 	background: #EFEFEF;
 }
@@ -143,14 +164,14 @@ a:hover {
 
 .border {
 	border: 0px;
-	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
 	 			0px 0px 1px 0px rgba(0,0,0,0.2);
 	background: #EFEFEF;
 	padding: 0px 0px 0px 0px;
 }
 
 .containerHead {
-	background-color: #870000;
+	background-color: #C14924;
 	background-image: none;
 	margin: -1px 0px 0px -1px;
 }
@@ -182,7 +203,7 @@ a:hover {
 
 .category {
 	margin: 0px 0px 20px 0px;
-	padding: 0px 0px 10px 0px; 
+	padding: 0px 0px 10px 0px;
 }
 
 #footerContainer {
@@ -191,10 +212,25 @@ a:hover {
 
 .largeButtons li a, .pmEditFolders a {
 	background-image: none;
-	background-color: #FFD6D6;
-	border:1px solid #870000;
-	color: #870000;
+	background-color: #5677fc;
+	border: none;
+	color: #fff;
 	padding: 4px;
+    box-shadow:
+        2px 2px 1px 0px rgba(0,0,0,0.2),
+        0px 0px 1px 0px rgba(0,0,0,0.2);
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+	border-radius: 3px;
+}
+
+.largeButtons li a:hover, .pmEditFolders a:hover {
+    background-color: #738ffe !important;
+	background-image: none;
+	color: #fff;
 }
 
 .mainHeadline {
@@ -206,17 +242,53 @@ a:hover {
 }
 
 .memberList li .memberName, .messageNumber, .optionButtons a, .smallButtons a, li.extraButton a {
-	background-color: #FFD6D6;
+	background-color: #5677fc;
 	background-image: none;
-	color: #870000 !important;
-	border: 1px solid #870000;
-	padding: 3px;
+	color: #fff !important;
+	border: none;
+	padding: 4px;
+    box-shadow:
+        2px 2px 1px 0px rgba(0,0,0,0.2),
+        0px 0px 1px 0px rgba(0,0,0,0.2);
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+	border-radius: 3px;
+}
+
+.tabMenu li.activeTabMenu a {
+	background-image: none !important;
+	background-color: #C14924;
+	color: #fff;
+}
+
+.tabMenu li a {
+	background-image: none !important;
+	color: #888;
+}
+
+.tabMenu li a:hover {
+	color: #333;
+}
+
+.optionButtons li {
+	border: none !important;
+}
+
+div.pageMenu a  {
+	background-color: #C14924;
+}
+
+.postEditMarkedLinkMenu {
+	background-color: #C14924;
 }
 
 .optionButtons a:hover, .smallButtons a:hover, li.extraButton a:hover {
-	color: #fff !important;
-	border: 1px solid #870000;
-	padding: 3px;
+	background-color: #738ffe !important;
+	background-image: none;
+	color: #fff;
 }
 
 .smallButtons li {
@@ -226,8 +298,8 @@ a:hover {
 
 .message {
 	border: none !important;
-	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2), 
-	 			0px 0px 1px 0px rgba(0,0,0,0.2);	
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
+	 			0px 0px 1px 0px rgba(0,0,0,0.2);
 	margin-bottom: 15px;
 }
 
@@ -285,7 +357,12 @@ a:hover {
 	margin: -8px 0px 20px -1px;
 }
 
+.quickReply {
+       display: none !important;
+}
+
 @media only screen and (max-width: 869px) {
+
 	.searchContainer {
 		display: none !important;
 	}
@@ -295,6 +372,108 @@ a:hover {
 	}
 
 	.boardlistStats {
-		display: none !important; 
+		display: none !important;
 	}
+
+.mainMenuInner {
+font-size: 18px !important;
+}
+
+.boardTitle {
+font-size: 22px !important;
+}
+
+h5 {
+font-size: 16px !important;
+text-decoration: none;
+}
+
+.boardTitle a {
+text-decoration: none;
+}
+
+.boardlistDescription {
+display: none;
+}
+
+.boardlistTitle  {
+width: 100% !important;
+}
+
+.containerContent {
+font-size: 18px !important;
+}
+
+.columnMark {
+display: none !important;
+}
+
+.columnMarkTopics {
+display:none !important;
+}
+
+.columnLastPost {
+display:none !important;
+}
+
+.columnTopic{
+font-size: 16px !important;
+}
+
+.columnReplies {
+font-size: 16px !important;
+}
+
+.columnViews{
+font-size: 16px !important;
+}
+
+.messageAuthor, .userSymbols, .userCredits, .userMessenger {
+display:none !important;
+}
+
+.userAvatar {
+width: 45px !important;
+height: 45px !important;
+position: absolute !important;
+margin: 0px 0px 0px 1px !important;
+padding: 5px 0px 0px -5px !important;
+border-style: none !important;
+}
+
+.userAvatar img {
+width: 46px !important;
+height: 46px !important;
+position: absolute !important;
+margin: -7px 0px 0px -39px !important;
+}
+
+.messageSidebar {
+width: 0px !important;
+}
+
+.messageContent {
+margin: 0px 0px 0px 0px !important;
+}
+
+.messageHeader {
+margin: -10px -15px 0px 26px !important;
+padding: 10px 0px 5px 10px !important;
+background-color: #C14924 !important;
+}
+
+.containerContent, .formFieldDesc {
+color: #fff !important;
+}
+
+.messageMarkCheckBox, .messageCount {
+display: none !important;
+}
+
+.messageContentInner{
+background-color: #EFEFEF!important;
+}
+
+.containerContent p {
+color: #fff !important;
 }

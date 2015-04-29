@@ -19,9 +19,15 @@
 	</thead>
 	<tbody>
 
-			<?php 
-				$stats = \Minecraft\Stats::retrieve(new \Minecraft\Server($server)); 
-			?> 
+			<?php
+				try {
+					$stats = \Minecraft\Stats::retrieve(new \Minecraft\Server($server));
+				}
+				catch (Exception $e) {
+					echo '<div class="ErrorMessage"><img src="images/error_small.png" title="Error">Error: ',  $e->getMessage(), "\n";
+					echo '</div>';
+				}
+			?>
 			<tr>
 				<td class="maniaHoFTop middle center">
 					<?php if($stats->is_online): ?>
@@ -30,18 +36,18 @@
 						<span class="offline">OFFLINE</span>
 					<?php endif; ?>
 				</td>
-				
+
 				<td class="maniaHoFTop middle center mobileHidden">
 					<?php echo $stats->game_version ?>
 				</td>
-				
+
 				<td class="maniaHoFTop">&nbsp;</td>
 
 				<td class="maniaHoFTop">
 					VMP Minecraft Server <br>
 					<span class="grey smallText">
 						<?php echo $stats->motd;?>
-					</span> 
+					</span>
 				</td>
 
 				<td class="maniaHoFTop middle mobileHidden">
