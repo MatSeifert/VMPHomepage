@@ -10,6 +10,7 @@
 			"\nAlter: " . $_POST['Alter'] .
 			"\n\nWarum passt du zu uns?\n" . $_POST['Bemerkungen'];
 	$sender = "memberscout@vmp-clan.de";
+
 	$header = 'From: memberscout@vmp-clan.de' . "\r\n" .
 		      'Reply-To: memberscout@vmp-clan.de' . "\r\n" .
 		      'X-Mailer: PHP/' . phpversion();

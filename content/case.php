@@ -103,6 +103,9 @@
 		case "mania15_register": @include ___DIR__ . '/../content/maniaRegister.php';
 		break;
 
+		case "area51": @include ___DIR__ . '/../content/area51.php';
+		break;
+
 	   	default: @include __DIR__ . '/../content/error404.php';
   }
 ?>
