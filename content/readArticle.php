@@ -20,20 +20,23 @@
 			echo '<div class="SqlArticleShareInnerRight"><img src="images/share.png"> Teile diesen Artikel <br>';
 				echo '<div class="ShareOnFacebook"' .
 					     ' onclick="popupwindow(\'https://www.facebook.com/sharer/sharer.php?u=' . $shortlink . '\', 500, 400)">' .
-						'<a href="#"><img src="images/facebook_transparent.png" class="circle"></a>' .
+						'<a href=""><img src="images/facebook_transparent.png" class="circle"></a>' .
 						'</div>';
 				echo '<div class="ShareOnTwitter"' .
 						' onclick="popupwindow(\'https://twitter.com/home?status=' . $shortlink . '\', 500, 400)">' .
-						'<a href="#"><img src="images/twitter_transparent.png" class="circle"></a>' .
+						'<a href=""><img src="images/twitter_transparent.png" class="circle"></a>' .
 						'</div>';
 				echo '<div class="ShareOnGooglePlus"' .
 						' onclick="popupwindow(\'https://plus.google.com/share?url=' . $shortlink . '\', 500, 400)">' .
-						'<a href="#"><img src="images/googleplus_transparent.png" class="circle"></a>' .
+						'<a href=""><img src="images/googleplus_transparent.png" class="circle"></a>' .
 						'</div>';
 			echo '</div>';
 
-			echo '<div class="SqlArticleShareInnerLeft">Mehr zum Spiel';
-
+			echo '<div class="SqlArticleShareInnerLeft"><img src="images/moredetails.png"> Weitere Informationen <br>';
+				echo '<span class="SqlArticleFurtherInformationFirst">Release Datum</span><span class="SqlArticleFurtherInformationR2">15. April 2015</span><br>';
+				echo '<span class="SqlArticleFurtherInformation">Entwickler / Publisher</span><span class="SqlArticleFurtherInformationR2">Rockstar Games / 2K</span><br>';
+				echo '<span class="SqlArticleFurtherInformation">Offizielle Webseite</span><span class="SqlArticleFurtherInformationR2">www.rockstar-games.de</span><br>';
+				echo '<span class="SqlArticleFurtherInformation">Bei Amazon kaufen</span><span class="SqlArticleFurtherInformationR2">www.amazon.de</span><br>';
 			echo '</div>';
 		echo '</div>';
 	}
@@ -107,7 +110,7 @@
 		{
 			// continue
 		}
-		else { echo '<span class="smallHeadline">	Mehr zu ' . GetAlias($game) . ':	</span>'; }
+		else { echo '<span class="smallHeadline"><img src="images/morearticles.png">	Mehr zu ' . GetAlias($game) . ':	</span>'; }
 
 
 
@@ -160,7 +163,10 @@
 		function popupwindow(url, w, h) {
 			var left = (screen.width/2)-(w/2);
 			var top = (screen.height/2)-(h/2);
-			return window.open(url, "_blank", "scrollbars=no, resizable=no, width="+w+", height="+h+", top="+top+", left="+left);
+
+			window.open(url, "_blank", "scrollbars=no, resizable=no, width=" + w + ", height=" + h + " top=" + top + " left=" + left);
+
+			event.preventDefault();
 		}
 	</script>
 

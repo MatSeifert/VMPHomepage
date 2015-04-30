@@ -8,7 +8,7 @@
 
 <div class="PostPost">
 	<span class="smallHeadline">
-		??.??.2015 - Version 4.1.4
+		??.??.2015 - Version 4.2
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Highlightfarbe bei markiertem Text angepasst</li>

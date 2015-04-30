@@ -1821,7 +1821,8 @@ table.mania2011 {
 	height: 90px;
 	border-top: 1px solid #dedede;
 	border-bottom: 1px solid #dedede;
-	margin: 20px auto -40px auto;
+	margin: 20px auto -30px auto;
+	padding: 5px 0px 10px 0px;
 	font-size: 20px;
 	line-height: 20px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -1833,10 +1834,35 @@ table.mania2011 {
 	padding: 5px 0px 0px 0px;
 }
 
+.SqlArticleFurtherInformationR2 {
+	font-size: 12px;
+	color: #454545;
+	display: inline;
+	width: 100%;
+}
+
+.SqlArticleFurtherInformationFirst {
+	margin: 10px 0px 0px 0px;
+	display: inline-block;
+	width: 130px;
+	font-size: 12px;
+	color: #454545;
+	font-weight: bold;
+}
+
+.SqlArticleFurtherInformation {
+	font-size: 12px;
+	color: #454545;
+	display: inline-block;
+	width: 130px;
+	font-weight: bold;
+}
+
 .SqlArticleShareInnerLeft {
 	float: right;
 	width: 310px;
 	padding: 5px 10px 0px 20px;
+	line-height: 12px;
 }
 
 .circle {
