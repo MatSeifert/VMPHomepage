@@ -106,6 +106,12 @@
 		case "area51": @include ___DIR__ . '/../content/area51.php';
 		break;
 
+		case "StoriesFromLosSantos": include __DIR__ . '/../content/galleries/gta5.php';
+		break;
+
+		case "WeBuildThisCity": include __DIR__ . '/../content/galleries/citiesSkylines.php';
+		break;
+
 	   	default: @include __DIR__ . '/../content/error404.php';
   }
 ?>

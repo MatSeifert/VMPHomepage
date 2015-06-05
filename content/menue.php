@@ -59,7 +59,7 @@
 		<a class="navigation" href="?site=member">
 			<img src="images/menuMemberFade.png" alt="Member" class="bottom">
 			<img src="images/menuMember.png" alt="Member" class="top">
-			Übersicht
+			&Uuml;bersicht
 		</a>
 	</span>
 	<span class="NavPoint">
@@ -115,7 +115,7 @@
 			2014
 		</a>
 	</span>
-	<span class="NavPoint">
+	<span class="NavPoint" style="display:none">
 		<a class="navigation" href="?site=mania2015">
 			<img src="images/menuManiaFade.png" alt="VMP Mania 2015" class="bottom">
 			<img src="images/menuMania.png" alt="VMP Mania 2015" class="top">

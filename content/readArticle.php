@@ -13,6 +13,21 @@
 		return $shortenedUrl;
 	}
 
+	function GetAdvertisement($alias)
+	{
+		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
+		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+
+		$result = mysqli_query($database,"SELECT * FROM aliastable WHERE alias = '$alias'");
+
+		while($row = mysqli_fetch_array($result)) {
+			return $row['amazon'];
+		}
+	}
+
 	function share($id, $article) {
 		$shortlink = shortenLink("http://www.vmp-clan.de/?site=read&id=" . $id);
 
@@ -32,11 +47,13 @@
 						'</div>';
 			echo '</div>';
 
-			echo '<div class="SqlArticleShareInnerLeft"><img src="images/moredetails.png"> Weitere Informationen <br>';
-				echo '<span class="SqlArticleFurtherInformationFirst">Release Datum</span><span class="SqlArticleFurtherInformationR2">15. April 2015</span><br>';
-				echo '<span class="SqlArticleFurtherInformation">Entwickler / Publisher</span><span class="SqlArticleFurtherInformationR2">Rockstar Games / 2K</span><br>';
-				echo '<span class="SqlArticleFurtherInformation">Offizielle Webseite</span><span class="SqlArticleFurtherInformationR2">www.rockstar-games.de</span><br>';
-				echo '<span class="SqlArticleFurtherInformation">Bei Amazon kaufen</span><span class="SqlArticleFurtherInformationR2">www.amazon.de</span><br>';
+			$ad = GetAdvertisement($article['game']);
+
+			echo '<div class="SqlArticleShareInnerLeft"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
+				echo '<img src="images/articles/cover/' . $article['game'] . '.jpg" alt="Cover" class="adCoverImage">';
+				echo '<div class="adWrapper">';
+			        echo $ad;
+			    echo '</div>';
 			echo '</div>';
 		echo '</div>';
 	}
@@ -54,7 +71,6 @@
 		while($row = mysqli_fetch_array($result)) {
 			return $row['realname'];
 		}
-
 	}
 
 	function PrintArticle($database)

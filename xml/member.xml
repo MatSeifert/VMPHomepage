@@ -98,7 +98,7 @@
 		<sex>female</sex>
 		<nickname>Lisa</nickname>
 		<rank>Member</rank>
-		<activity value="aktiv" />
+		<activity value="inaktiv" />
 		<recruited in="2012" />
 	</member>
 	<member>
@@ -108,15 +108,6 @@
 		<rank>Member</rank>
 		<activity value="aktiv" />
 		<birthday day="14" month="3" year="1995" />
-		<recruited in="2012" />
-	</member>
-	<member>
-		<country>germany</country>
-		<sex>male</sex>
-		<nickname>Hellbourne</nickname>
-		<rank>Member</rank>
-		<activity value="aktiv" />
-		<birthday day="30" month="7" year="1991" />
 		<recruited in="2012" />
 	</member>
 	<member>
@@ -187,5 +178,14 @@
 		<activity value="aktiv" />
 		<recruited in="2015" />
 	</member>
+	<member>
+		<country>austria</country>
+		<sex>male</sex>
+		<nickname>Kaosk</nickname>
+		<rank>Trial</rank>
+		<activity value="aktiv" />
+		<recruited in="2015" />
+	</member>
+
 
 </memberlist>

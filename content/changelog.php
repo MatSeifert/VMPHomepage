@@ -7,23 +7,34 @@
 </div>
 
 <div class="PostPost">
+    <span class="smallHeadline">
+        05.06..2015 - Version 4.2.1
+    </span>
+    <ul style="padding: 0px 0px 0px 20px">
+        <li>
+            Leerer Raum neben dem Teilen Menü in Artikel gefüllt (Ein bisschen Werbung, ganz dezent. Wirklich.) <br>
+            <span class="smallInline">(Wenn du ein Spiel über den Amazon Link im Artikel kaufst, unterstützt du uns dadurch finanziell ein wenig, ohne dass es dich etwas kostet!)</span>
+        </li>
+        <li>Alle Flickr Gallerien auf die neuen Slideshows umgestellt</li>
+        <li>Bugfix: Galerien zu GTA 5 und Cities Skylines hinzugefügt</li>
+    </ul>
+
 	<span class="smallHeadline">
-		??.??.2015 - Version 4.2
+		02.06.2015 - Version 4.2
 	</span>
 	<ul style="padding: 0px 0px 0px 20px">
 		<li>Highlightfarbe bei markiertem Text angepasst</li>
         <li>Neuer Look der Formulare auf der Joinus Seite und beim Schreiben einer News</li>
-        <li>Eigene Seite für die diesjährige VMP Mania, inklusive Anmeldeformular</li>
         <li>Die News auf der Startseite können ab jetzt Seitenweise durchgeblättert werden</li>
         <li>Neue Bildergalerien für Cities Skylines und GTA 5</li>
-        <li>Share Buttons unter den Artikeln. Teile die News mit deinen Freunden!</li>
+        <li>Share Buttons unter den Artikeln. Teile die News mit deinen Freunden! (Beta)</li>
         <li>Einheitlichere Buttons</li>
         <li>Einheitlichere Schriftgrößen für einen strukturierteren Look</li>
+        <li>Neue Bildergalerien für die News (später auch für die Screenshot Seiten)</li>
         <li>Weitere kleinere Anpassungen am Design für mehr Konsistenz</li>
         <li>Bugfix: JoinUs Formular repariert (diesmal funktioniert es wirklich!)</li>
         <li>Bugfix: Die Minecraft Seite zeigt den Server nun korrekterweise als offline an (wenn er das ist), statt den Aufbau der Seite abzubrechen</li>
         <li> Zahlreiche weitere kleine Bugfixes</li>
-
 	</ul>
 
 	<span class="smallHeadline">
