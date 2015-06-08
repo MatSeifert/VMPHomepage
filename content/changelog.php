@@ -8,6 +8,13 @@
 
 <div class="PostPost">
     <span class="smallHeadline">
+        ??.??..2015 - Version 4.2.2
+    </span>
+    <ul style="padding: 0px 0px 0px 20px">
+        <li>DLC's werden auf der Let's Play Seite nun gesondert angezeigt</li>
+    </ul>
+
+    <span class="smallHeadline">
         05.06..2015 - Version 4.2.1
     </span>
     <ul style="padding: 0px 0px 0px 20px">
@@ -17,6 +24,7 @@
         </li>
         <li>Alle Flickr Gallerien auf die neuen Slideshows umgestellt</li>
         <li>Bugfix: Galerien zu GTA 5 und Cities Skylines hinzugefügt</li>
+        <li>Bugfix: Umstellung auf die YouTube API v3. Die neusten YouTube Uploads werden nun wieder angezeigt.</li>
     </ul>
 
 	<span class="smallHeadline">

@@ -1,26 +1,25 @@
 <?php
 	function YoutubeXml () {
-		$xmlfile='http://gdata.youtube.com/feeds/api/users/VMPCLanMedia/uploads';
+		$xmlfile='https://www.youtube.com/feeds/videos.xml?channel_id=UCcWQgwwm9rCj6tx099W31Hg';
 		$xml = simplexml_load_file(rawurlencode($xmlfile));
 
 		$i = 0;		// Abbruchvariable, da sonst zu viele Videos eingebettet werden
 
 		foreach ($xml->entry as $entry) {
 			if ($i==7) break;
-			if ($i==0)
-			{
-				$i++;
-				continue;
-			}
 
-			$VideoId = substr($entry->id, -11);
-			$title = str_replace('#', '~raute~', $entry->title);
-			$desc = nl2br(str_replace('&', '~and~', $entry->content));
+			// XML Namespaces
+			$yt = $entry->children('http://www.youtube.com/xml/schemas/2015');
+			$media = $entry->children('http://search.yahoo.com/mrss/');
+
+			$VideoId = $yt->videoId;
+			$title = str_replace('#', '~raute~', $media->group->title);
+			$desc = nl2br(str_replace('&', '~and~', addslashes($media->group->description)));
 
 			echo '<div class="LPBoxLatestVideo">';
 				echo '<div class="cropThumb"><img src="http://img.youtube.com/vi/' . $VideoId . '/0.jpg" alt="Thumbnail" class="thumbnail"></div>';
 				echo '<div style="float: left; height: 113px">&nbsp;</div>';
-				echo '<div class="LPHeadline"><a href="?site=playVideo&VideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(str_replace('~raute~', '#', $title)) . '</a></div><br />';
+				echo '<div class="LPHeadline"><a href="?site=playVideo&VideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(str_replace('~raute~', '#', substr($title, 12))) . '</a></div><br />';
 				echo '<div class="LPContentLatestVideo">' . $desc . '... </div>';
 			echo '</div>';
 
@@ -42,8 +41,12 @@
 	</div>
 
 	<div class="LPBlock">
-		<div class="LPBox">
+		<div class="LPBoxWithDLC">
 			<img src="images/lpPage_fnv.png" class="LetsPlayThumb" alt="Fallout: New Vegas">
+			<img src="images/lpPage_fnv_DlcOldWorldBlues.png" class="LetsPlayThumbDlcRight">
+			<img src="images/lpPage_fnv_DlcDeadMoney.png" class="LetsPlayThumbDlcLeft">
+			<img src="images/lpPage_fnv_DlcLonesomeRoad.png" class="LetsPlayThumbDlcBRight">
+			<img src="images/lpPage_fnv_DlcOldHonestHearts.png" class="LetsPlayThumbDlcBLeft">
 			<span class="LPHeadline">FALLOUT NEW VEGAS</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
@@ -54,8 +57,10 @@
 			</span>
 		</div>
 
-		<div class="LPBox">
+		<div class="LPBoxWithDLC">
 			<img src="images/lpPage_bl.png" class="LetsPlayThumb" alt="Borderlands">
+			<img src="images/lpPage_bl_DlcCNRR.png" class="LetsPlayThumbDlcRight">
+			<img src="images/lpPage_bl_DlcTZIODN.png" class="LetsPlayThumbDlcLeft">
 			<span class="LPHeadline">BORDERLANDS</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
@@ -66,7 +71,7 @@
 			</span>
 		</div>
 
-		<div class="LPBox">
+		<div class="LPBoxWithoutDLC">
 			<img src="images/lpPage_bl2.png" class="LetsPlayThumb" alt="Borderlands2">
 			<span class="LPHeadline">BORDERLANDS 2</span>
 			<span class="LPContent">

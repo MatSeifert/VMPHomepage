@@ -921,6 +921,34 @@ div.LPBox {
 		0px 0px 1px 0px rgba(0,0,0,0.2);
 }
 
+.LPBoxWithDLC {
+	float: left;
+	overflow: hidden;
+	text-align: left;
+	background-color: #EFEFEF;
+	margin: 0px 3px 15px 3px;
+	width: 157px;
+	height: 350px;
+	padding: 5px;
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+}
+
+.LPBoxWithoutDLC {
+	float: left;
+	overflow: hidden;
+	text-align: left;
+	background-color: #EFEFEF;
+	margin: 0px 3px 95px 3px;
+	width: 157px;
+	height: 270px;
+	padding: 5px;
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+}
+
 
 div.LPBoxEmpty {
 	float: left;
@@ -943,6 +971,36 @@ img.LetsPlayThumb {
 	width: 167px;
 	margin: -5px -5px 10px -5px;
 	float: left;
+}
+
+.LetsPlayThumbDlcLeft {
+	width: 83px;
+	height: 83px;
+	margin: -9px 0px 0px -5px;
+	float: left;
+}
+
+.LetsPlayThumbDlcRight {
+	width: 83px;
+	height: 83px;
+	margin: -9px -5px 5px 0px;
+	float: right;
+	clear: both;
+}
+
+.LetsPlayThumbDlcBLeft {
+	width: 83px;
+	height: 83px;
+	margin: -4px 0px 5px -5px;
+	float: left;
+}
+
+.LetsPlayThumbDlcBRight {
+	width: 83px;
+	height: 83px;
+	margin: -4px -5px 0px 0px;
+	float: right;
+	clear: both;
 }
 
 span.LPHeadline {
