@@ -44,7 +44,7 @@
 		<div class="LPBoxWithDLC">
 			<img src="images/lpPage_fnv.png" class="LetsPlayThumb" alt="Fallout: New Vegas">
 			<img src="images/lpPage_fnv_DlcOldWorldBlues.png" class="LetsPlayThumbDlcRight">
-			<img src="images/lpPage_fnv_DlcDeadMoney.png" class="LetsPlayThumbDlcLeft">
+			<div class="LetsPlayThumbDlcLeft" style="background-image: url('images/lpPage_fnv_DlcDeadMoney.png');"></div>
 			<img src="images/lpPage_fnv_DlcLonesomeRoad.png" class="LetsPlayThumbDlcBRight">
 			<img src="images/lpPage_fnv_DlcOldHonestHearts.png" class="LetsPlayThumbDlcBLeft">
 			<span class="LPHeadline">FALLOUT NEW VEGAS</span>
