@@ -107,6 +107,10 @@
 			$defaultYear =  $_GET['year'];
 			$defaultMonth = $_GET['month'];
 		}
+		else {
+			$defaultYear = date('Y');
+			$defaultMonth = date('j');
+		}
 
 		$startYear = 2011;
 		$currentYear = date('Y');

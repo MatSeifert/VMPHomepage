@@ -1,7 +1,7 @@
 <?php
-
-	$seite = @$_GET["site"];
-	if (!isset($seite) || empty($seite)) $seite = "start";
+	if ($_GET["site"] != null) {
+		$seite = $_GET["site"];
+	} else $seite = "start";
 
 	switch($seite) {
 	   	case "start": @include __DIR__ . '/../content/news.php';

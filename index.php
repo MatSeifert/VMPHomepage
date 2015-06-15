@@ -1,6 +1,43 @@
 <?php
 	setlocale(LC_TIME, 'de_DE');
 
+	ini_set('display_errors', '0');
+	ini_set("max_execution_time",15 );
+
+	register_shutdown_function('shutdown');
+
+	function shutdown()
+	{
+		$error = error_get_last();
+
+		if ($error == null) {
+			require_once ("content/case.php");
+		}
+
+		else {
+			$i = 0;
+			// continue the static content, and display the error
+			echo '<div class="HttpError404Headline"><img src="images/error.png"> Error</div>';
+			echo '<span class="smallHeadline">Beim Laden des Inhaltes ist ein Fehler aufgetreten!</span><br><hr><br>';
+			foreach ($error as $detail)
+			{
+				if ($i == 0 || $i > 2)
+				{
+					$i++;
+					continue;
+				}
+
+				echo $detail . '<br>';
+
+				$i++;
+			}
+
+			echo '<p>&nbsp;</p></div></div>';
+
+			require_once('content/sidebar.php');
+		}
+	}
+
 	function ImageCount() {					// Zählen der Bilder im angegeben Ordner +++ NAMECONVENTION BEI NEUEN BILDERN BEACHTEN!
 		$files = scandir('images/header');
 		$count = count($files)-3;			//-2 wegen . und .., und nochmal -1, da rand Funktion bei 0 anfängt
@@ -23,12 +60,14 @@
 		<meta name="theme-color" content="#C14924">
 			<!-- Stylesheet- und Favicon Einbindung /-->
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 			<!-- Die Schriftart der Seite /-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
 			<!-- Javascript Dateien für diverse Funktionen /-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="http://jquery-elastic.googlecode.com/svn/trunk/jquery.elastic.source.js" type="text/javascript"></script>
+		<script src="javascript/bootstrap.min.js" type="text/javascript"></script>
 		<script src="javascript/jquery.bxslider.js" type="text/javascript"></script>	<!-- The Image Gallery /-->
 		<script src="javascript/parallax.js" type="text/javascript"></script>			<!-- Parallax Effect of the header Image /-->
 		<script src="javascript/charCount.js" type="text/javascript"></script>			<!-- Show the left Characters in Textareas /-->
@@ -94,75 +133,11 @@
 			</div>
 
 			<div class="content" id="main">
-				<?php require_once ("content/case.php") ?>
+				<?php shutdown(); ?>
 			   	<p>&nbsp;</p>
 			</div>
 
-			<div class="right">
-				<div class="contentBox">
-			   		<span class="RightHeadline">TEAMSPEAK 3</span>
-			   		<div class="rightText">
-			   			<div data-async-url="widgets/TSViewer/teamspeak.php">
-				   			<p>&nbsp;</p>
-					   		<?php
-					   			require_once ("widgets/TSViewer/teamspeak.php")
-					   		?>
-						</div>
-				   	</div>
-			   	</div>
-			   	<p>&nbsp;</p>
-			   	<div class="contentBox">
-			   		<span class="RightHeadline">TERMINE</span>
-			   		<div class="rightText">
-				   		<?php
-				   			include("widgets/kalender/kalender.php")
-				   		?>
-				   		<p>&nbsp;</p>
-				   	</div>
-			   	</div>
-			   	<p>&nbsp;</p>
-			   	<div class="contentBox">
-			   		<span class="RightHeadline">LET'S PLAY</span>
-			   		<div class="watchmore">
-			   			<a href="?site=letsplay" class="tooltips">
-			   				&#187;
-			   				<span>Alle Projekte</span>
-			   			</a>
-			   		</div>
-			   		<p>&nbsp;</p>
-			   		<div class="rightText">
-
-						<?php require_once("widgets/letsplay/LetsPlay.html"); ?>
-
-				   	</div>
-			   	</div>
-			   	<p>&nbsp;</p>
-			   	<div class="contentBox">
-			   		<span class="RightHeadline">SOCIAL MEDIA</span>
-			   		<p>&nbsp;</p>
-			   		<div class="rightText">
-
-						<?php require_once("widgets/social/media.php"); ?>
-
-				   	</div>
-			   	</div>
-			   	<p>&nbsp;</p>
-			   	<div class="contentBox mobileHidden" id="mobilePromo">
-			   		<span class="RightHeadline">VMP MOBIL</span>
-			   		<div class="watchmore">
-			   			<a href="?site=mobile" class="tooltips">
-			   				&#187;
-			   				<span>Mehr erfahren</span>
-			   			</a>
-			   		</div>
-			   		<p>&nbsp;</p>
-			   		<div class="rightText">
-   						<img src="images/responsive.png" alt="VMP Mobil" class="mobileScreen">
-						Auch unterwegs immer auf dem aktuellsten Stand. Mit der mobilen Webseite des VMP Clans kein Problem!
-						<p>&nbsp;</p>
-				   	</div>
-			   	</div>
-			</div>
+			<?php require_once("content/sidebar.php"); ?>
 		</div>
 
 

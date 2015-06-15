@@ -77,8 +77,9 @@
 
 	function newsfeed() {
 
-		$page = @$_GET["page"];
-		if (!isset($page) || empty($page)) $page = 1;
+		if (!isset($page) || empty($page)) {
+			$page = 1;
+		} else $page = @$_GET['page'];
 
 		if ($page == 1)
 		{
