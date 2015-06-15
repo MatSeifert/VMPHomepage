@@ -983,6 +983,17 @@ img.LetsPlayThumb {
 	height: 83px;
 	margin: -9px 0px 0px -5px;
 	float: left;
+	background-color: #000;
+	opacity: 1.0;
+	-webkit-transition: opacity .25s ease-in;
+	-moz-transition: opacity .25s ease-in;
+	-o-transition: opacity .25s ease-in;
+	-ms-transition: opacity .25s ease-in;
+}
+
+.LetsPlayThumbDlcLeft:hover {
+	opacity: 0.4;
+	background-image: url('../images/lpPage_fnv_DlcDeadMoneyHover.png') !important;
 }
 
 .LetsPlayThumbDlcRight {
