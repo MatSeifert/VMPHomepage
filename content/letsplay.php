@@ -41,12 +41,8 @@
 	</div>
 
 	<div class="LPBlock">
-		<div class="LPBoxWithDLC">
+		<div class="LPBox">
 			<img src="images/lpPage_fnv.png" class="LetsPlayThumb" alt="Fallout: New Vegas">
-			<img src="images/lpPage_fnv_DlcOldWorldBlues.png" class="LetsPlayThumbDlcRight">
-			<div class="LetsPlayThumbDlcLeft" style="background-image: url('images/lpPage_fnv_DlcDeadMoney.png');"></div>
-			<img src="images/lpPage_fnv_DlcLonesomeRoad.png" class="LetsPlayThumbDlcBRight">
-			<img src="images/lpPage_fnv_DlcOldHonestHearts.png" class="LetsPlayThumbDlcBLeft">
 			<span class="LPHeadline">FALLOUT NEW VEGAS</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
@@ -57,10 +53,8 @@
 			</span>
 		</div>
 
-		<div class="LPBoxWithDLC">
+		<div class="LPBox">
 			<img src="images/lpPage_bl.png" class="LetsPlayThumb" alt="Borderlands">
-			<img src="images/lpPage_bl_DlcCNRR.png" class="LetsPlayThumbDlcRight">
-			<img src="images/lpPage_bl_DlcTZIODN.png" class="LetsPlayThumbDlcLeft">
 			<span class="LPHeadline">BORDERLANDS</span>
 			<span class="LPContent">
 				<p>&nbsp;</p>
@@ -71,7 +65,7 @@
 			</span>
 		</div>
 
-		<div class="LPBoxWithoutDLC">
+		<div class="LPBox">
 			<img src="images/lpPage_bl2.png" class="LetsPlayThumb" alt="Borderlands2">
 			<span class="LPHeadline">BORDERLANDS 2</span>
 			<span class="LPContent">

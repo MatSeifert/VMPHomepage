@@ -3,9 +3,12 @@
 
 	function AddAttachments($RawContent, $id) {
 		// Check for Galleries
-		$result = str_replace("@Gallery", ArticleGallery($id), $RawContent);
+		$galleryString = ArticleGallery($id);
+
+		$result = str_replace("@Gallery", "$galleryString", $RawContent);
+
 		return $result;
- }
+ 	}
 
 	function shortenLink($url) {
 		require_once('socialSDK/owly/OwlyApi.php');
@@ -196,6 +199,19 @@
 	</script>
 
 	<?php ConnectToDatabase(false); ?>
+
+	<script>
+		$('.bxslider').bxSlider({
+		pagerCustom: '#bx-pager'
+		});
+	</script>
+
+	<script type="text/javascript">
+		;( function( $ ) {
+			$( '.swipebox' ).swipebox();
+		} )( jQuery );
+
+	</script>
 
 	<p>&nbsp;</p>
 	<div id="disqus_thread"></div>
