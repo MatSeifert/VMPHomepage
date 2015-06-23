@@ -61,6 +61,7 @@
 			<!-- Stylesheet- und Favicon Einbindung /-->
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="styles/swipebox.min.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 			<!-- Die Schriftart der Seite /-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -68,6 +69,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="http://jquery-elastic.googlecode.com/svn/trunk/jquery.elastic.source.js" type="text/javascript"></script>
 		<script src="javascript/bootstrap.min.js" type="text/javascript"></script>
+		<script src="javascript/jquery.swipebox.min.js" type="text/javascript"></script><!-- The New Image Gallery /-->
 		<script src="javascript/jquery.bxslider.js" type="text/javascript"></script>	<!-- The Image Gallery /-->
 		<script src="javascript/parallax.js" type="text/javascript"></script>			<!-- Parallax Effect of the header Image /-->
 		<script src="javascript/charCount.js" type="text/javascript"></script>			<!-- Show the left Characters in Textareas /-->
@@ -80,7 +82,7 @@
 
 	<body>
 	<!-- Mobile Header /-->
-		<div class="mobileSektion" id="start">
+		<div class="mobileSektion">
 			<div class="mobileHead" style="text-align: center">
 
 				<section class="wrapper">
@@ -127,7 +129,7 @@
 			</div>
 		</div>
 
-		<div class="contentWrapper">
+		<div class="contentWrapper" id="contentWrapper">
 			<div class="menue">
 				<?php include("content/menue.php") ?>
 			</div>

@@ -1,6 +1,6 @@
 <?php
-	if ($_GET["site"] != null) {
-		$seite = $_GET["site"];
+	if (isset($_GET["site"]) && @$_GET["site"] != null) {
+		$seite = @$_GET["site"];
 	} else $seite = "start";
 
 	switch($seite) {
@@ -103,7 +103,7 @@
 		case "mania15_register": @include ___DIR__ . '/../content/maniaRegister.php';
 		break;
 
-		case "area51": @include ___DIR__ . '/../content/area51.php';
+		case "area51": @include __DIR__ . '/../content/area51.php';
 		break;
 
 		case "StoriesFromLosSantos": include __DIR__ . '/../content/galleries/gta5.php';

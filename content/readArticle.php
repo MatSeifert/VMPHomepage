@@ -1,4 +1,12 @@
 <?php
+	require_once('content/galleries/showGallery.php');
+
+	function AddAttachments($RawContent, $id) {
+		// Check for Galleries
+		$result = str_replace("@Gallery", ArticleGallery($id), $RawContent);
+		return $result;
+ }
+
 	function shortenLink($url) {
 		require_once('socialSDK/owly/OwlyApi.php');
 		$owly = OwlyApi::factory( array('key' => 's4Zm5Rxkm99z6CWEF9ikm') );
@@ -13,8 +21,7 @@
 		return $shortenedUrl;
 	}
 
-	function GetAdvertisement($alias)
-	{
+	function GetAdvertisement($alias) {
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
 		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
 		if (mysqli_connect_errno()) {
@@ -86,6 +93,10 @@
 		while($row = mysqli_fetch_array($result)) {
 			$gamename = strtoupper(GetAlias($row['game']));
 
+			// Check for included Stuff like Galleries
+			$raw = utf8_encode($row['content']);
+			$ContentWithAttachments = AddAttachments($raw, $id);
+
 			echo '<span class="SqlArticleGame">' . $gamename . '</span>' .
 				 '<span class="SqlArticleDate">' . date("d.m.Y", strtotime($row['date'])) .
 				 '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
@@ -93,7 +104,7 @@
 		  	echo '<img class="SqlArticleHeadImage" src="images/articles/' . $row['game'] . '.jpg" alt="' . $row['game'] . '">';
 		  	echo '<a href="?site=' . $backlink . '"><img src="images/backButton.png" alt="Back" border="0" class="SqlArticleBack"></a>';
 		  	echo '<span class="SqlArticleHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span>';
-		  	echo '<span class="SqlArticleContent">' . utf8_encode($row['content']) . '</span>';
+		  	echo '<span class="SqlArticleContent">' . $ContentWithAttachments . '</span>';
 			share($id, $row);
 		}
 
@@ -127,8 +138,6 @@
 			// continue
 		}
 		else { echo '<span class="smallHeadline"><img src="images/morearticles.png">	Mehr zu ' . GetAlias($game) . ':	</span>'; }
-
-
 
 		while($row = mysqli_fetch_array($result)) {
 			echo '<div class="similarArticleWrapper">';

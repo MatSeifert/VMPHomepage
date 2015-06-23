@@ -12,7 +12,7 @@
     </span>
     <ul style="padding: 0px 0px 0px 20px">
         <li>DLC's werden auf der Let's Play Seite nun gesondert angezeigt</li>
-        <li>Bildergalerien können nun vergrößert werden</li>
+        <li>Neue Bildergalerien mit Zoom Funktion</li>
         <li>Parallax Effekt ein wenig verändert</li>
         <li>Neue Art der Fehlerbehandlung (was natürlich nie nötig sein wird)</li>
     </ul>

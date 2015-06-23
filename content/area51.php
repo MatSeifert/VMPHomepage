@@ -9,15 +9,37 @@
 <div class="PostPost">
     <div class="galleryWrapper">
         <ul class="bxslider">
-            <li><img src="images/test/001.jpg" /></li>
-            <li><img src="images/test/002.jpg" /></li>
-            <li><img src="images/test/003.jpg" /></li>
-            <li><img src="images/test/001.jpg" /></li>
-            <li><img src="images/test/002.jpg" /></li>
-            <li><img src="images/test/003.jpg" /></li>
+            <li>
+                <a href="images/test/001.jpg" class="swipebox" title="My Caption">
+                    <img src="images/test/001.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="images/test/002.jpg" width="520" class="swipebox" title="My Caption">
+                    <img src="images/test/002.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="images/test/003.jpg" width="520" class="swipebox" title="My Caption">
+                    <img src="images/test/003.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="images/test/001.jpg" width="520" class="swipebox" title="My Caption">
+                    <img src="images/test/001.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="images/test/002.jpg" width="520" class="swipebox" title="My Caption">
+                    <img src="images/test/002.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="images/test/003.jpg" width="520" class="swipebox" title="My Caption">
+                    <img src="images/test/003.jpg">
+                </a>
+            </li>
         </ul>
-
-
         <div id="bx-pager">
             <a data-slide-index="0" href="" class="bxThumb"><img src="images/test/001.jpg" /></a>
             <a data-slide-index="1" href="" class="bxThumb"><img src="images/test/002.jpg" /></a>
@@ -27,6 +49,14 @@
             <a data-slide-index="2" href="" class="bxThumb"><img src="images/test/003.jpg" /></a>
         </div>
     </div>
+
+    <script>
+        $('.bxslider').bxSlider({
+          pagerCustom: '#bx-pager'
+        });
+    </script>
+
+    <br><hr><br>
 
     <div class="adWrapper" style="width: 120px; height: 120px; overflow: hidden;">
         <iframe
@@ -39,10 +69,17 @@
         </iframe>
     </div>
 
-</div>
+    <br><hr><br>
 
-<script>
-    $('.bxslider').bxSlider({
-      pagerCustom: '#bx-pager'
-    });
-</script>
+    <a href="images/test/001.jpg" width="520" class="swipebox" title="My Caption">
+        <img src="images/test/001.jpg" alt="image" width="100">
+    </a>
+
+    <script type="text/javascript">
+        ;( function( $ ) {
+        	$( '.swipebox' ).swipebox();
+        } )( jQuery );
+
+    </script>
+
+</div>

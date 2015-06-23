@@ -41,6 +41,7 @@
 			  <option value="technik">Technik</option>
 			  <option disabled>&nbsp;&nbsp;&nbsp;GAMES</option>
 			  <option value="anno2070">Anno 2070</option>
+			  <option value="anno2205">Anno 2205</option>
 			  <option value="annoonline">Anno Online</option>
 			  <option value="battlefield3">Battlefield 3</option>
 			  <option value="battlefield4">Battlefield 4</option>

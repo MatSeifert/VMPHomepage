@@ -1,28 +1,5 @@
 <?php
-	function FlickrFeed () {
-		$xmlfile='https://api.flickr.com/services/feeds/groups_pool.gne?id=2669756@N23&lang=de-de&format=rss_200';
-		$xml = simplexml_load_file(rawurlencode($xmlfile));
-		$namespaces = $xml->getNamespaces(true);
-
-		$count = 0;
-
-		// The Image Gallery
-		echo '<div class="galleryWrapper">';
-			echo '<ul class="bxslider">';
-				foreach ($xml->channel->item as $item) {
-					echo '<li><img src="' . $item->children($namespaces['media'])->content->attributes()->url . '" class="w520"/></li>';
-					echo $item->title;
-				}
-			echo '</ul>';
-			echo '<div id="bx-pager">';
-				foreach ($xml->channel->item as $item) {
-					echo '<a data-slide-index="' . $count . '" href="" class="bxThumb"><img src="' . $item->children($namespaces['media'])->content->attributes()->url . '" /></a>';
-
-					$count++;
-				}
-			echo '</div>';
-		echo '</div>';
-	}
+	require_once("showGallery.php");
 ?>
 
 <div class="whereAmI">
@@ -48,7 +25,7 @@
 </div>
 
 <div class="ScreenshotContent">
-	<?php FlickrFeed(); ?>
+	<?php FlickrGallery('https://api.flickr.com/services/feeds/groups_pool.gne?id=2669756@N23&lang=de-de&format=rss_200'); ?>
 	<div class="FlickrSubText">
 		Bei Alben, die mehr als 20 Bilder beinhalten, werden nur die 20 letzten Uploads angezeigt.
 		<a target="_blank" href="https://www.flickr.com/groups/vmpdayz/">
@@ -57,8 +34,15 @@
 	</div>
 
 	<script>
-		$('.bxslider').bxSlider({
-		pagerCustom: '#bx-pager'
-		});
+	    $('.bxslider').bxSlider({
+	      pagerCustom: '#bx-pager'
+	    });
+	</script>
+
+	<script type="text/javascript">
+		;( function( $ ) {
+			$( '.swipebox' ).swipebox();
+		} )( jQuery );
+
 	</script>
 </div>

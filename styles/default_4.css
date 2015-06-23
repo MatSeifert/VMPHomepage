@@ -2942,18 +2942,7 @@ a:hover.tooltips span {
 	width: 36px;
 	height: 36px;
 	padding: 4px;
-	margin: -30px 0px 0px 460px;
-	background-color: #5677fc;
-	border-radius: 50%;
-	border: none;
-	-webkit-transition: background-color .35s ease-in;
-	-moz-transition: background-color .35s ease-in;
-	-o-transition: background-color .35s ease-in;
-	-ms-transition: background-color .35s ease-in;
-	transition: background-color .35s ease-in;
-	behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),
- 				0px 1px 3px 0px rgba(0,0,0,0.2);
+	margin: -45px 0px 0px 470px;
 }
 
 .bx-prev:hover {
@@ -2964,12 +2953,8 @@ a:hover.tooltips span {
 	background-color: #738ffe;
 }
 
-.bx-zoom:hover {
-	background-color: #738ffe;
-}
-
 .bxThumb img {
-	width: 106px;
+	width: 107px;
 	margin: 10px 10px 0px 10px;
 	box-shadow:
 		2px 2px 1px 0px rgba(0,0,0,0.2),
@@ -2978,28 +2963,12 @@ a:hover.tooltips span {
 
 #bx-pager {
 	padding: 20px 0px 0px 0px;
-}
-
-.bx-wrapperL .bx-viewportL {
-	min-height: 400px;
+	margin: auto auto;
 }
 
 .w520 {
 	width: 520px;
 }
-
-.modal-body > .bx-wrapper {
-	height: 500px;
-}
-
-.modal-body > .bx-wrapper > .bx-viewport {
-	height: 500px !important;
-}
-
-.modal-body > .bx-wrapper > .bx-viewport > .bxslider > li {
-	width: 900px !important;
-}
-
 /* Advertisement */
 
 .adCoverImage {
