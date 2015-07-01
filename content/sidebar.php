@@ -13,6 +13,13 @@
    <p>&nbsp;</p>
    <div class="contentBox">
        <span class="RightHeadline">TERMINE</span>
+       <div class="watchmore">
+           <a href="?site=termine" class="tooltips">
+               &#187;
+               <span>Alle Termine</span>
+           </a>
+       </div>
+       <p>&nbsp;</p>
        <div class="rightText">
            <?php
                include("widgets/kalender/kalender.php")

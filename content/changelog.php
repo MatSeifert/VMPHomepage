@@ -11,10 +11,13 @@
         ??.??..2015 - Version 4.2.2
     </span>
     <ul style="padding: 0px 0px 0px 20px">
-        <li>DLC's werden auf der Let's Play Seite nun gesondert angezeigt</li>
-        <li>Neue Bildergalerien mit Zoom Funktion</li>
+        <li>Neues und erweitertes Termin Widget</li>
+        <li>Neue Termin Übersichtsseite</li>
+        <li>Möglichkeit eigene Termine und Events anzulegen</li>
+        <li>Neue Bildergalerien mit großer Bildansicht</li>
         <li>Parallax Effekt ein wenig verändert</li>
         <li>Neue Art der Fehlerbehandlung (was natürlich nie nötig sein wird)</li>
+        <li>Anpassungen und Fehlerbehebungen an der mobilen Version der Seite</li>
     </ul>
 
     <span class="smallHeadline">
