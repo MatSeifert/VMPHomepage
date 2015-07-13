@@ -85,6 +85,9 @@
 		case "minecraft": @include __DIR__ . '/../content/minecraft.php';
 		break;
 
+		case "minecraftMap": @include __DIR__ . '/../content/minecraftMap.php';
+		break;
+
 		case "teamspeak": @include __DIR__ . '/../content/teamspeak.php';
 		break;
 
