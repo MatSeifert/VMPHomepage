@@ -1,5 +1,7 @@
 <?php if (is_readable($filename = 'content/mapcrafter/build/index.html')): ?>
-  <?php require_once($filename); ?>
+
+  <iframe src="content/mapcrafter/build/index.html" width="100%" height="720px" frameborder="0"></iframe>
+
 <?php else: ?>
 
   <div class="whereAmI">
