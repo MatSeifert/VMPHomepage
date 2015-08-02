@@ -82,7 +82,7 @@ body {
 				color: #fff !important;
 				margin: 140px -10px 0px 40px;
 			}
-			
+
 			.mobileMenuHorizontal {
 				position: absolute;
 				top: 0;
@@ -129,7 +129,7 @@ body {
             	margin: 0px 0px 0px -40px !important;
             }
             .smallHeadline {
-            	font-size: 28px !important;
+            	font-size: 20px !important;
             	padding-top: 0px !important;
             	line-height: 32px;
             	text-align: left !important;
@@ -393,7 +393,7 @@ body {
 
 			.SqlArticleBack {
 				float: left;
-				margin: 5px 10px 0px 5px;
+				margin: 15px 10px 0px 5px !important;
 				border: none;
 			}
 
@@ -403,7 +403,7 @@ body {
 				text-align: left;
 				margin-left: 5px;
 				display: block;
-				margin: 0px 0px 0px 40px;
+				margin: 10px 0px 0px 40px !important;
 			}
 
 			.SqlArticleDate {
@@ -574,9 +574,87 @@ body {
 				right: -9999px;
 				margin: auto;
 			}
+
+			.artileInfoboxMobile {
+				display: block !important;
+				margin: 10px 0 10px 45px;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 24px;
+				color: #898989;
+		}
+
+			.articleInfoboxMobileTop {
+				height: 50px;
+				padding: 10px 10px 0 0;
+				background-color: #C14924;
+				color: #fff;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				font-size: 26px;
+				text-align: right;
+			}
 			/* ----------- END OF RESPONSIVE LAYOUT DECLARATIONS ---------- */
 
+			.NewsTitle {
+				width:90% !important;
+				font-size: 18px !important;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				position: absolute !important;
+				margin-top: -18px !important;
+			}
+
+			.smallInline {
+				margin: -12px 0 40px 0 !important;
+				line-height: 14px !important;
+				width: 90% !important;
+				text-align: justify;
+			}
+
+			.NewsContent {
+				width:90% !important;
+				font-size: 18px !important;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+			}
+
+			.NewsAuthor, .NewsGame {
+				width:90% !important;
+				font-size: 18px !important;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				position: absolute !important;
+				margin-top: -14px !important;
+				margin-bottom: 20px !important;
+			}
+
+			.NewsSubmit {
+				
+			}
+
+			.feedback {
+				font-size: 12px !important;
+				position: absolute !important;
+				margin: -15px 0 0 10px !important;
+			}
+
+			.mobileClear {
+				clear: both;
+			}
+
+			.mAbsolute {
+				position: absolute !important;
+			}
+
+			.mTop40 {
+				margin-top: 40px !important;
+			}
+
+			.mTop60 {
+				margin-top: 60px !important;
+			}
         }
+
+.artileInfoboxMobile {
+	display: none;
+}
 
 .LpSsMobileHeadline {
 	display: none;

@@ -2,7 +2,6 @@
     if (isset($_GET["site"]) && @$_GET["site"] != null) {
         $seite = @$_GET["site"];
     } else $seite = "start";
-
     // Define VARIABLES
     $start = "";
     $archive = "";
@@ -28,117 +27,80 @@
     $mobile = "";
     $area51 = "";
     $screenshots = "";
-
     switch($seite)
     {
         case "start": $start = 'class="MobileMenuLinkActive"';
         break;
-
         case "archive": $archive = 'class="MobileMenuLinkActive"';
         break;
-
         case "information": $information = 'class="MobileMenuLinkActive"';
         break;
-
         case "rules": $rules = 'class="MobileMenuLinkActive"';
         break;
-
         case "calendar": $calendar = 'class="MobileMenuLinkActive"';
         break;
-
         case "letsplay": $letsplay = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "forum": $forum = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "member": $member = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "joinus": $joinus = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "mania2011": $mania2011 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "mania2012": $mania2012 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "mania2013": $mania2013 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "mania2014": $mania2014 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "mania2015": $mania2015 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "AddNews": $start = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "SaveNews": $start = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "playVideo": $letsplay = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "screenshots": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "MinecraftMonuments": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "AdventuresOfDayZ": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "read": $start = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "bugtracker": $bugtracker = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "SaveBugreport": $bugtracker = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "thankyou": $joinus = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "disclaimer": $disclaimer = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "changelog": $changelog = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "minecraft": $minecraft = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "teamspeak": $teamspeak3 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "CitiesOfAnno2070": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "FunWithGuns": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "authority": $authority = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "mobile": $mobile = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "mania15_register": $mania2015 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "area51": $area51 = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "StoriesFromLosSantos": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-
 		case "WeBuildThisCity": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-
 	   	default: @include __DIR__ . '/../content/error404.php';
     }
 ?>

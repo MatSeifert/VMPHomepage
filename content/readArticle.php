@@ -100,6 +100,7 @@
 			$raw = utf8_encode($row['content']);
 			$ContentWithAttachments = AddAttachments($raw, $id);
 
+			// The Desktop Version
 			echo '<span class="SqlArticleGame">' . $gamename . '</span>' .
 				 '<span class="SqlArticleDate">' . date("d.m.Y", strtotime($row['date'])) .
 				 '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
@@ -107,6 +108,13 @@
 		  	echo '<img class="SqlArticleHeadImage" src="images/articles/' . $row['game'] . '.jpg" alt="' . $row['game'] . '">';
 		  	echo '<a href="?site=' . $backlink . '"><img src="images/backButton.png" alt="Back" border="0" class="SqlArticleBack"></a>';
 		  	echo '<span class="SqlArticleHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span>';
+			// Mobile Exclusive Stuff
+			echo '<div class="artileInfoboxMobile">';
+				echo '<i class="fa fa-gamepad"></i> ' . $gamename . '<br>';
+				echo '<i class="fa fa-calendar"></i> ' . date("d.m.Y", strtotime($row['date'])) .
+				'&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
+				'&nbsp;UHR&nbsp;VON&nbsp;' . strtoupper($row['author']);
+			echo '</div>';
 		  	echo '<span class="SqlArticleContent">' . $ContentWithAttachments . '</span>';
 			share($id, $row);
 		}
