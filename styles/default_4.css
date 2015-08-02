@@ -82,7 +82,7 @@ body {
 				color: #fff !important;
 				margin: 140px -10px 0px 40px;
 			}
-			
+
 			.mobileMenuHorizontal {
 				position: absolute;
 				top: 0;
@@ -393,7 +393,7 @@ body {
 
 			.SqlArticleBack {
 				float: left;
-				margin: 5px 10px 0px 5px;
+				margin: 15px 10px 0px 5px !important;
 				border: none;
 			}
 
@@ -403,7 +403,7 @@ body {
 				text-align: left;
 				margin-left: 5px;
 				display: block;
-				margin: 0px 0px 0px 40px;
+				margin: 10px 0px 0px 40px !important;
 			}
 
 			.SqlArticleDate {
@@ -574,9 +574,32 @@ body {
 				right: -9999px;
 				margin: auto;
 			}
+
+			.artileInfoboxMobile {
+				display: block !important;
+				margin: 10px 0 10px 45px;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 24px;
+				color: #898989;
+		}
+
+			.articleInfoboxMobileTop {
+				height: 50px;
+				padding: 10px 10px 0 0;
+				background-color: #C14924;
+				color: #fff;
+				font-family: 'Roboto', Arial, Helvetica, sans-serif;
+				font-size: 26px;
+				text-align: right;
+			}
 			/* ----------- END OF RESPONSIVE LAYOUT DECLARATIONS ---------- */
 
         }
+
+.artileInfoboxMobile {
+	display: none;
+}
 
 .LpSsMobileHeadline {
 	display: none;
