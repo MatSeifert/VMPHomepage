@@ -26,7 +26,9 @@
 ?>
 
 <div class="whereAmI">
-    MINECRAFT
+    <div class="whereAmICircle">
+		<i class="fa fa-server"></i>
+	</div>
 </div>
 
 <div class="PostTitle">

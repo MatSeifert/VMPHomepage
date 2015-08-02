@@ -1,5 +1,7 @@
 <div class="whereAmI">
-    JOIN US
+    <div class="whereAmICircle">
+		<i class="fa fa-user-plus"></i>
+	</div>
 </div>
 
 <div class="PostTitle">

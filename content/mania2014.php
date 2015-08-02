@@ -2,7 +2,9 @@
 
 ?>
 <div class="whereAmI">
-    MANIA '14
+    <div class="whereAmICircle">
+		<i class="fa fa-trophy"></i>
+	</div>
 </div>
 
 <div class="PostTitle">
@@ -11,7 +13,7 @@
 <div class="PostPost">
 
 	<!-- Standard Header - Erklärung der Mania und kurze Historie /-->
-	<?php require_once("WhatIsMania.php") ?> 
+	<?php require_once("WhatIsMania.php") ?>
 
 	<!-- SEKTION I - Spieleübersicht und Schnelllinks /-->
 	<p>&nbsp;</p>
@@ -157,7 +159,7 @@
 			<td class="maniaHoFDefault">Rabbit</td>
 			<td class="maniaHoFDefault mobileHidden">Favela</td>
 			<td class="maniaHoFDefault right">6 : 5</td>
-		</tr>	
+		</tr>
 		<tr>
 			<td class="maniaHoFDefault">Fou</td>
 			<td class="maniaHoFDefault">vs</td>

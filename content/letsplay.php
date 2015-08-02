@@ -28,7 +28,9 @@
 	}
 ?>
 <div class="whereAmI">
-    LET'S PLAY
+    <div class="whereAmICircle">
+		<i class="fa fa-youtube-play"></i>
+	</div>
 </div>
 
 <div class="PostTitle">

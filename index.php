@@ -81,7 +81,7 @@
 		<script src="javascript/async.js" type="text/javascript"></script>
 	</head>
 
-	<body>
+	<body onload="mobileOffset()">
 	<!-- Mobile Header /-->
 		<div class="mobileSektion">
 			<div class="mobileHead" style="text-align: center">
@@ -196,6 +196,12 @@
 			    }
 
 			});
+		</script>
+
+		<script>
+			function mobileOffset() {
+				document.getElementById("sticky").scrollLeft = 100
+			}
 		</script>
 	</body>
 </html>

@@ -150,8 +150,11 @@
 ?>
 
 <div class="whereAmI">
-    ARCHIV
+    <div class="whereAmICircle">
+		<i class="fa fa-inbox"></i>
+	</div>
 </div>
+
 
 <div class="PostTitle">
   ARCHIV

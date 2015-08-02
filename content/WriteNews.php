@@ -1,3 +1,9 @@
+<div class="whereAmI">
+    <div class="whereAmICircle">
+		<i class="fa fa-newspaper-o"></i>
+	</div>
+</div>
+
 ﻿<div class="PostTitle" style="margin: -10px 0px 0px 20px">
   NEWS VERFASSEN
 </div>
