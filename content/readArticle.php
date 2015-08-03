@@ -42,7 +42,7 @@
 		$shortlink = shortenLink("http://www.vmp-clan.de/?site=read&id=" . $id);
 
 		echo '<div class="SqlArticleShare">';
-			echo '<div class="SqlArticleShareInnerRight"><img src="images/share.png"> Teile diesen Artikel <br>';
+			echo '<div class="SqlArticleShareInnerRight mobileClear"><img src="images/share.png"> Teile diesen Artikel <br>';
 				echo '<div class="ShareOnFacebook"' .
 					     ' onclick="popupwindow(\'https://www.facebook.com/sharer/sharer.php?u=' . $shortlink . '\', 500, 400)">' .
 						'<a href=""><img src="images/facebook_transparent.png" class="circle"></a>' .
@@ -59,7 +59,7 @@
 
 			$ad = GetAdvertisement($article['game']);
 
-			echo '<div class="SqlArticleShareInnerLeft"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
+			echo '<div class="SqlArticleShareInnerLeft mobileClear"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
 				echo '<img src="images/articles/cover/' . $article['game'] . '.jpg" alt="Cover" class="adCoverImage">';
 				echo '<div class="adWrapper">';
 			        echo $ad;

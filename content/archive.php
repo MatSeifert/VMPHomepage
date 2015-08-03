@@ -31,21 +31,21 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-		echo '<span class="smallHeadline">Alle News vom&nbsp;' . $monate[$month] . '&nbsp' . $year . '&nbsp;werden angezeigt</span><br><br>';
+		echo '<span class="smallHeadline">Alle News vom&nbsp;' . $monate[$month] . '&nbsp' . $year . '&nbsp;werden angezeigt</span><p class="mobileHidden">&nbsp;</p>';
 
 		$result = mysqli_query($database,"SELECT * FROM articles WHERE date LIKE '%$year-$monateMitNull[$month]%' ORDER BY id DESC");
 
 		while($row = mysqli_fetch_array($result)) {
-		  echo '<div class="SqlNewsBox">';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
-		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
-		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
-		  	echo '<div class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive&y=' . $year . '&m=' . $month . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
-		  		 '&nbsp;<img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
-		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
-		  		 '</div>';
-		  echo "</div>";
+			echo '<div class="SqlNewsBox">';
+	  		  	echo '<a href="?site=read&id=' . $row['id'] . '"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
+	  		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
+	  		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
+	  		  	echo '<a href="?site=read&id=' . $row['id'] . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 250)) . '</span></a>';
+	  		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><a href="?site=read&id=' . $row['id'] . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;' .
+	  		  		 '&nbsp;</span><i class="fa fa-comments"></i>&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><i class="fa fa-spinner fa-spin"></i></a>&nbsp;&nbsp;' .
+	  		  		 '&nbsp;<i class="fa fa-eye"></i>&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
+	  		  		 '</div>';
+  		  	echo "</div>";
 		}
 		mysqli_close($database);
 	}
@@ -57,21 +57,21 @@
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-		echo '<span class="smallHeadline">Letzte News:</span><br><br>';
+		echo '<span class="smallHeadline">Letzte News:</span><p class="mobileHidden">&nbsp;</p>';
 
 		$result = mysqli_query($database,"SELECT * FROM articles ORDER BY id DESC LIMIT 0, 6");
 
 		while($row = mysqli_fetch_array($result)) {
-		  echo '<div class="SqlNewsBox">';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
-		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '&origin=archive">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
-		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
-		  	echo '<a href="?site=read&id=' . $row['id'] . '&origin=archive"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 400)) . '</span></a>';
-		  	echo '<div class="SqlNewsReadMore"><a href="?site=read&id=' . $row['id'] . '&origin=archive"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;&nbsp;' .
-		  		 '&nbsp;<img src="images/comments.png">&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><img src="images/loadingS.gif"></a>&nbsp;&nbsp;&nbsp;' .
-		  		 '&nbsp;<img src="images/readCounter.png">&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
-		  		 '</div>';
-		  echo "</div>";
+			echo '<div class="SqlNewsBox">';
+	  		  	echo '<a href="?site=read&id=' . $row['id'] . '"><img class="SqlNewsThumbnail" src="images/articles/thumbnails/' . $row['game'] . '.jpg" alt="' . $row['game'] . '"></a>';
+	  		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
+	  		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
+	  		  	echo '<a href="?site=read&id=' . $row['id'] . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 250)) . '</span></a>';
+	  		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><a href="?site=read&id=' . $row['id'] . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;' .
+	  		  		 '&nbsp;</span><i class="fa fa-comments"></i>&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><i class="fa fa-spinner fa-spin"></i></a>&nbsp;&nbsp;' .
+	  		  		 '&nbsp;<i class="fa fa-eye"></i>&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
+	  		  		 '</div>';
+  		  	echo "</div>";
 		}
 		mysqli_close($database);
 	}
