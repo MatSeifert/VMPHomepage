@@ -6,8 +6,7 @@
 
 	register_shutdown_function('shutdown');
 
-	function shutdown()
-	{
+	function shutdown()	{
 		$error = error_get_last();
 
 		if ($error == null) {
@@ -19,21 +18,17 @@
 			// continue the static content, and display the error
 			echo '<div class="HttpError404Headline"><img src="images/error.png"> Error</div>';
 			echo '<span class="smallHeadline">Beim Laden des Inhaltes ist ein Fehler aufgetreten!</span><br><hr><br>';
-			foreach ($error as $detail)
-			{
-				if ($i == 0 || $i > 2)
-				{
+			foreach ($error as $detail) {
+				if ($i == 0 || $i > 2) {
 					$i++;
 					continue;
 				}
 
 				echo $detail . '<br>';
-
 				$i++;
 			}
 
 			echo '<p>&nbsp;</p></div></div>';
-
 			require_once('content/sidebar.php');
 		}
 	}
@@ -150,23 +145,6 @@
 		</script>
 
 		<script>
-			function sticky_relocate() {
-				var window_top = $(window).scrollTop();
-				var div_top = $('#sticky-anchor').offset().top;
-				if (window_top > div_top) {
-					$('#sticky').addClass('stick');
-				} else {
-					$('#sticky').removeClass('stick');
-				}
-				}
-
-				$(function () {
-				$(window).scroll(sticky_relocate);
-				sticky_relocate();
-			});
-		</script>
-
-		<script>
 			var parH = $('.parent').outerHeight(true);
 			var areaH = $('.scrollable').outerHeight(true);
 			var scrH = parH / (areaH/parH);
@@ -189,9 +167,10 @@
 		</script>
 
 		<script>
+			// Displays the Quick Menu on mobile Devices (The bottom Bar)
 			$(document).scroll(function () {
 			    var y = $(this).scrollTop();
-			    if (y > 220) {
+			    if (y > 200) {
 			        $('.scrollMenu').fadeIn();
 			    } else {
 			        $('.scrollMenu').fadeOut();
@@ -202,7 +181,7 @@
 
 		<script>
 			function mobileOffset() {
-				document.getElementById("sticky").scrollLeft = 100
+				document.getElementById("sticky").scrollLeft = 0
 			}
 		</script>
 	</body>

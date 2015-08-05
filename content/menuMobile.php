@@ -21,7 +21,7 @@
     $disclaimer = "";
     $changelog = "";
     $minecraft = "";
-    $teamspeak3 = "";
+    $teamspeak = "";
     $mania2012 = "";
     $authority = "";
     $mobile = "";
@@ -83,7 +83,7 @@
 		break;
 		case "minecraft": $minecraft = 'class="MobileMenuLinkActive"';
 		break;
-		case "teamspeak": $teamspeak3 = 'class="MobileMenuLinkActive"';
+		case "teamspeak": $teamspeak = 'class="MobileMenuLinkActive"';
 		break;
 		case "CitiesOfAnno2070": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
@@ -114,7 +114,7 @@
     <a href="?site=forum" <?php echo $forum ?>>Forum </a>
     <a href="?site=member" <?php echo $member ?>>Übersicht </a>
     <a href="?site=joinus" <?php echo $joinus ?>>Join Us </a>
-    <a href="?site=teamspeak3" <?php echo $teamspeak3 ?>>Teamspeak 3 </a>
+    <a href="?site=teamspeak" <?php echo $teamspeak ?>>Teamspeak 3 </a>
     <a href="?site=minecraft" <?php echo $minecraft ?>>Minecraft</a>
     <a href="?site=mania2011" <?php echo $mania2011 ?>>Mania 2011</a>
     <a href="?site=mania2012" <?php echo $mania2012 ?>>Mania 2012</a>

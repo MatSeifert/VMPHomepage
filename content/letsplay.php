@@ -17,7 +17,11 @@
 			$desc = nl2br(str_replace('&', '~and~', addslashes($media->group->description)));
 
 			echo '<div class="LPBoxLatestVideo">';
-				echo '<div class="cropThumb"><img src="http://img.youtube.com/vi/' . $VideoId . '/0.jpg" alt="Thumbnail" class="thumbnail"></div>';
+				echo '<div class="cropThumb">
+						<a href="?site=playVideo&VideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">
+							<img src="http://img.youtube.com/vi/' . $VideoId . '/0.jpg" alt="Thumbnail" class="thumbnail">
+						</a>
+					  </div>';
 				echo '<div style="float: left; height: 113px">&nbsp;</div>';
 				echo '<div class="LPHeadline"><a href="?site=playVideo&VideoId=' . $VideoId .'&VideoTitle=' . $title . '&VideoDescription=' . $desc . '">' . strtoupper(str_replace('~raute~', '#', substr($title, 12))) . '</a></div><br />';
 				echo '<div class="LPContentLatestVideo">' . $desc . '... </div>';
@@ -39,7 +43,7 @@
 <div class="PostPost">
 	<div class="LPSubHeadline">
 		Unsere Projekte
-		<p>&nbsp;</p>
+		<p class="mobileHidden">&nbsp;</p>
 	</div>
 
 	<div class="LPBlock">
@@ -170,7 +174,7 @@
 	<p> &nbsp; </p>
 	<div class="LPSubHeadline">
 		Neuste Videos
-		<p>&nbsp;</p>
+		<p class="mobileHidden">&nbsp;</p>
 	</div>
 
 	<div class="LPBlock">

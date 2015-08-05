@@ -97,7 +97,7 @@
 		<div class="disclaimerBottomRight">
 		Pictures hostet at <img src="images/flickr.png"> Embedding provided by <img src="images/rss.png"> RSS &copy;
 		</div>
-
+        <p class="desktopHidden">&nbsp;</p>
 	</div>
 	<p>&nbsp;</p>
 </div>
