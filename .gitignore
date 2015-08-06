@@ -2,3 +2,4 @@
 /wbb
 *.sublime-project
 *.sublime-workspace
+/content/mapcrafter/build
