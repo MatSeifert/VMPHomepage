@@ -6,8 +6,7 @@
 
 	register_shutdown_function('shutdown');
 
-	function shutdown()
-	{
+	function shutdown()	{
 		$error = error_get_last();
 
 		if ($error == null) {
@@ -19,21 +18,17 @@
 			// continue the static content, and display the error
 			echo '<div class="HttpError404Headline"><img src="images/error.png"> Error</div>';
 			echo '<span class="smallHeadline">Beim Laden des Inhaltes ist ein Fehler aufgetreten!</span><br><hr><br>';
-			foreach ($error as $detail)
-			{
-				if ($i == 0 || $i > 2)
-				{
+			foreach ($error as $detail) {
+				if ($i == 0 || $i > 2) {
 					$i++;
 					continue;
 				}
 
 				echo $detail . '<br>';
-
 				$i++;
 			}
 
 			echo '<p>&nbsp;</p></div></div>';
-
 			require_once('content/sidebar.php');
 		}
 	}
@@ -55,7 +50,7 @@
 			<!-- Seitentitel -->
 		<title>VMP Clan - German Multigaming</title>
 			<!-- Viewporteinstellungen für das Responsive Design /-->
-		<meta name="viewport" content="width=400, initial-scale=0.7, maximum-scale=0.7, user-scalable=no" />
+		<meta name="viewport" content="width=device-width" />
 			<!-- Farbige Statusleiste für Chrom v39+ unter Android 5.0+ /-->
 		<meta name="theme-color" content="#C14924">
 			<!-- Stylesheet- und Favicon Einbindung /-->
@@ -78,39 +73,51 @@
 		<script src="javascript/setIFrameHeight.js" type="text/javascript"></script>	<!-- For the Mobile Version /-->
 		<script src="javascript/slideMenu.js" type="text/javascript"></script>			<!-- For the Mobile Version /-->
 		<script src="javascript/async.js" type="text/javascript"></script>
+
+		<script>
+			function PopUp(hideOrshow) {
+				if (hideOrshow == 'hide') {
+					document.getElementById('ac-wrapper').style.display = "none";
+				}
+				else  if(localStorage.getItem("popupWasShown") == null) {
+					localStorage.setItem("popupWasShown",1);
+					document.getElementById('ac-wrapper').removeAttribute('style');
+				}
+			}
+			window.onload = function () {
+				setTimeout(function () {
+					PopUp('show');
+				}, 0);
+			}
+
+			function hideNow(e) {
+				if (e.target.id == 'ac-wrapper') document.getElementById('ac-wrapper').style.display = 'none';
+			}
+		</script>
 	</head>
 
-	<body>
+	<body onload="mobileOffset()" name="top">
 	<!-- Mobile Header /-->
 		<div class="mobileSektion">
 			<div class="mobileHead" style="text-align: center">
+				<div id="ac-wrapper"style='display:none' onClick="hideNow(event)">
+					<div id="popup">
+						Navigiere einfach per <br>swipe Geste durch das Menü <br>
+						<img src="images/swipe.png" class="swipteHintImg"> <br>
+						<input type="submit" name="submit" value="OK" onClick="PopUp('hide')" class="swipeHintOk"/>
+					</div>
+				</div>
 
-				<section class="wrapper">
-				  <section class="material-design-hamburger">
-				    <button class="material-design-hamburger__icon">
-				      <span class="material-design-hamburger__layer"></span>
-				    </button>
-				  </section>
-
-				  <section class="menu menu--off" id="wrapper">
-
-					<?php include("content/menue.php") ?>
-
-				  </section>
-				</section>
-
-				<click2 class="showRight">
-					<img src="images/widgets.png" alt="menu" style="float: right; margin-right: 5px">
-				</click2>
-				<div id="slideright">
-					<iframe
-						onload="javascript:parent.iFrameHeight('sidebar','sidebar');"
-						src="sidebar.php"
-						id="sidebar" name="sidebar"
-						frameborder="0"
-						class="wrapper"
-						style="height: 1400px; overflow-x: hidden; width: 270px;">
-					</iframe>
+				<div class="hintergrundbild">
+					<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start"/>
+				</div>
+				<div class="mobileOverlay">
+				</div>
+				<div class="scrollMenu">
+					<?php require_once("content/menuMobileScrolled.php") ?>
+				</div>
+				<div class="mobileMenuHorizontal" id="sticky">
+					<?php require_once("content/menuMobile.php") ?>
 				</div>
 			</div>
 		</div>
@@ -172,34 +179,6 @@
 		</script>
 
 		<script>
-			(function() {
-
-			  'use strict';
-
-			  document.querySelector('.material-design-hamburger__icon').addEventListener(
-			    'click',
-			    function() {
-			      var child;
-
-			      document.body.classList.toggle('background--blur');
-			      this.parentNode.nextElementSibling.classList.toggle('menu--on');
-
-			      child = this.childNodes[1].classList;
-
-			      if (child.contains('material-design-hamburger__icon--to-arrow')) {
-			        child.remove('material-design-hamburger__icon--to-arrow');
-			        child.add('material-design-hamburger__icon--from-arrow');
-			      } else {
-			        child.remove('material-design-hamburger__icon--from-arrow');
-			        child.add('material-design-hamburger__icon--to-arrow');
-			      }
-
-			    });
-
-			})();
-		</script>
-
-		<script>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -207,6 +186,17 @@
 
 			  ga('create', 'UA-46156385-1', 'cssscript.com');
 			  ga('send', 'pageview');
+
+			// Displays the Quick Menu on mobile Devices (The bottom Bar)
+			$(document).scroll(function () {
+			    var y = $(this).scrollTop();
+			    if (y > 200) {
+			        $('.scrollMenu').fadeIn();
+			    } else {
+			        $('.scrollMenu').fadeOut();
+			    }
+
+			});
 		</script>
 	</body>
 </html>

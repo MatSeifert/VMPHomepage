@@ -1,8 +1,14 @@
+<div class="whereAmI">
+    <div class="whereAmICircle">
+		<i class="fa fa-newspaper-o"></i>
+	</div>
+</div>
+
 ﻿<div class="PostTitle" style="margin: -10px 0px 0px 20px">
   NEWS VERFASSEN
 </div>
 <div class="PostPost">
-	<p>&nbsp;</p>
+	<p class="mobileHidden">&nbsp;</p>
 	<form action="?site=SaveNews" method="post" accept-charset="ISO-8859-1" autocomplete="off">
 
 		<span class="smallHeadline">
@@ -14,21 +20,21 @@
 
 		<span class="smallHeadline">
 			Newsinhalt <br>
-			<span class="smallInline">(Formatierung per HTML ist erlaubt)</span>
+			<span class="smallInline mAbsolute">(Formatierung per HTML ist erlaubt)</span>
 		</span>
 		<textarea name="NewsContent" class="NewsContent required" id="NewsContent" required="required" maxlength="5000"></textarea>
 		<div id="feedbackC" class="feedback"></div>
 		<p>&nbsp;</p>
 
-		<div style="float: left">
-			<span class="smallHeadline">
-				Security Token<span class="mandatory">*</span>
-			</span>
-			<input type="Password" name="NewsToken" class="NewsAuthor required" id="NewsToken" required="required">
+        <div style="float: left" class="mobileClear">
+            <span class="smallHeadline">
+                Security Token<span class="mandatory">*</span>
+            </span>
+            <input type="Password" name="NewsToken" class="NewsAuthor required" id="NewsToken" required="required">
 
-		</div>
+        </div>
 
-		<div style="float: left">
+		<div style="float: left" class="mobileClear mTop40">
 			<span class="smallHeadline">
 				Spiel/Kategorie wählen
 			</span>
@@ -82,7 +88,7 @@
 
 		<p><br /><br /><br /><br /><br /></p>
 
-		<span class="smallHeadline">
+		<span class="smallHeadline mTop60">
 			Auch posten bei
 		</span>
 			<!-- Checkbox for Twtter /-->
@@ -106,6 +112,7 @@
 				110 Zeichen gekürzt und als Social Media Snippet verwendet!
 			</div>
 		</span>
+        <p class="desktopHidden mTop40">&nbsp;</p>
 		<textarea name="SocialMediaSnippet" class="NewsContent" id="SocialMediaSnippet" maxlength="110"></textarea>
 		<div id="feedbackS" class="feedback"></div>
 

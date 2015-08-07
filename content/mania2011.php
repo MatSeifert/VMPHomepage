@@ -2,7 +2,9 @@
 
 ?>
 <div class="whereAmI">
-    MANIA '11
+    <div class="whereAmICircle">
+		<i class="fa fa-trophy"></i>
+	</div>
 </div>
 
 <div class="PostTitle">
@@ -10,7 +12,7 @@
 </div>
 <div class="PostPost">
 
-	<?php require_once("WhatIsMania.php") ?> 
+	<?php require_once("WhatIsMania.php") ?>
 
 	<span class="smallHeadline">Spiele &amp; Sieger 2011</span>
 	<table class="mania2011" cellspacing="0" cellpadding="0">

@@ -42,7 +42,7 @@
 		$shortlink = shortenLink("http://www.vmp-clan.de/?site=read&id=" . $id);
 
 		echo '<div class="SqlArticleShare">';
-			echo '<div class="SqlArticleShareInnerRight"><img src="images/share.png"> Teile diesen Artikel <br>';
+			echo '<div class="SqlArticleShareInnerRight mobileClear"><img src="images/share.png"> Teile diesen Artikel <br>';
 				echo '<div class="ShareOnFacebook"' .
 					     ' onclick="popupwindow(\'https://www.facebook.com/sharer/sharer.php?u=' . $shortlink . '\', 500, 400)">' .
 						'<a href=""><img src="images/facebook_transparent.png" class="circle"></a>' .
@@ -59,7 +59,7 @@
 
 			$ad = GetAdvertisement($article['game']);
 
-			echo '<div class="SqlArticleShareInnerLeft"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
+			echo '<div class="SqlArticleShareInnerLeft mobileClear"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
 				echo '<img src="images/articles/cover/' . $article['game'] . '.jpg" alt="Cover" class="adCoverImage">';
 				echo '<div class="adWrapper">';
 			        echo $ad;
@@ -100,6 +100,7 @@
 			$raw = utf8_encode($row['content']);
 			$ContentWithAttachments = AddAttachments($raw, $id);
 
+			// The Desktop Version
 			echo '<span class="SqlArticleGame">' . $gamename . '</span>' .
 				 '<span class="SqlArticleDate">' . date("d.m.Y", strtotime($row['date'])) .
 				 '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
@@ -107,6 +108,13 @@
 		  	echo '<img class="SqlArticleHeadImage" src="images/articles/' . $row['game'] . '.jpg" alt="' . $row['game'] . '">';
 		  	echo '<a href="?site=' . $backlink . '"><img src="images/backButton.png" alt="Back" border="0" class="SqlArticleBack"></a>';
 		  	echo '<span class="SqlArticleHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span>';
+			// Mobile Exclusive Stuff
+			echo '<div class="artileInfoboxMobile">';
+				echo '<i class="fa fa-gamepad"></i> ' . $gamename . '<br>';
+				echo '<i class="fa fa-calendar"></i> ' . date("d.m.Y", strtotime($row['date'])) .
+				'&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
+				'&nbsp;UHR&nbsp;VON&nbsp;' . strtoupper($row['author']);
+			echo '</div>';
 		  	echo '<span class="SqlArticleContent">' . $ContentWithAttachments . '</span>';
 			share($id, $row);
 		}
@@ -181,7 +189,9 @@
 ?>
 
 <div class="whereAmI">
-    NEWS
+    <div class="whereAmICircle">
+		<i class="fa fa-newspaper-o"></i>
+	</div>
 </div>
 
 	<?php ConnectToDatabase(true); ?>

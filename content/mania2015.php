@@ -1,5 +1,7 @@
 <div class="whereAmI">
-    MANIA '15
+    <div class="whereAmICircle">
+		<i class="fa fa-trophy"></i>
+	</div>
 </div>
 
 <div class="PostTitle">

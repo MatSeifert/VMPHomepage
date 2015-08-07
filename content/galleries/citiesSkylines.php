@@ -3,7 +3,9 @@
 ?>
 
 <div class="whereAmI">
-    SCREENSHOTS
+    <div class="whereAmICircle">
+		<i class="fa fa-picture-o"></i>
+	</div>
 </div>
 
 <div class="LpSsMobileHeadline">
