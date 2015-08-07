@@ -133,7 +133,9 @@
 ?>
 
 <div class="whereAmI">
-    NEWS
+    <div class="whereAmICircle">
+		<i class="fa fa-newspaper-o"></i>
+	</div>
 </div>
 
 <div class="PostTitle">

@@ -22,7 +22,7 @@
        <p>&nbsp;</p>
        <div class="rightText">
            <?php
-               include("widgets/kalender/kalender.php")
+              // include("widgets/kalender/kalender.php")
            ?>
            <p>&nbsp;</p>
        </div>

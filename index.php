@@ -50,13 +50,14 @@
 			<!-- Seitentitel -->
 		<title>VMP Clan - German Multigaming</title>
 			<!-- Viewporteinstellungen für das Responsive Design /-->
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<!-- Farbige Statusleiste für Chrom v39+ unter Android 5.0+ /-->
 		<meta name="theme-color" content="#C14924">
 			<!-- Stylesheet- und Favicon Einbindung /-->
 		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles/swipebox.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
 		<link rel="shortcut icon" href="images/favicon.png">
 			<!-- Die Schriftart der Seite /-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -100,6 +101,7 @@
 	<!-- Mobile Header /-->
 		<div class="mobileSektion">
 			<div class="mobileHead" style="text-align: center">
+
 				<div id="ac-wrapper"style='display:none' onClick="hideNow(event)">
 					<div id="popup">
 						Navigiere einfach per <br>swipe Geste durch das Menü <br>
@@ -149,22 +151,6 @@
 			<?php require_once("content/sidebar.php"); ?>
 		</div>
 
-
-		<script>
-			document.getElementById("wrapper").style.height = Hoehe - 60 + 'px';
-		</script>
-
-		<script>
-		// Höhe des Seiteninhalts auslesen, und Mobile Promo nur anzeigen, wenn der Platz da ist
-		var contentHeight = document.getElementById('main').offsetHeight;
-
-			if(contentHeight < 1000)
-			{
-				document.getElementById('mobilePromo').style.display = 'none';
-			}
-
-		</script>
-
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 			var disqus_shortname = 'vmp-clan'; // required: replace example with your forum shortname
@@ -186,7 +172,9 @@
 
 			  ga('create', 'UA-46156385-1', 'cssscript.com');
 			  ga('send', 'pageview');
+		</script>
 
+		<script>
 			// Displays the Quick Menu on mobile Devices (The bottom Bar)
 			$(document).scroll(function () {
 			    var y = $(this).scrollTop();
