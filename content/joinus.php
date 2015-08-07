@@ -41,5 +41,5 @@
             </div>
         <!-- Ende der Buttons -->
     </form>
-
+    <p class="desktopHidden">&nbsp;</p>
 </div>

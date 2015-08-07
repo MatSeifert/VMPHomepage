@@ -10,7 +10,7 @@
 <div class="PostPost">
 	<div class="LPSubHeadline">
 		Alben
-		<p>&nbsp;</p>
+		<p class="mobileHidden">&nbsp;</p>
 	</div>
 
 	<div class="LPBlock">

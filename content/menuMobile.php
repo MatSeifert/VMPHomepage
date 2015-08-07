@@ -2,7 +2,7 @@
     if (isset($_GET["site"]) && @$_GET["site"] != null) {
         $seite = @$_GET["site"];
     } else $seite = "start";
-    // Define VARIABLES
+    // Predefine Variables, to prevent php from Q_Q
     $start = "";
     $archive = "";
     $information = "";
@@ -105,19 +105,107 @@
     }
 ?>
 
-    <a href="?site=start" <?php echo $start ?>>News</a>
-    <a href="?site=archive" <?php echo $archive ?>>Archiv</a>
-    <a href="?site=information" <?php echo $information ?>>Informationen </a>
-    <a href="?site=rules" <?php echo $rules ?>>Clanregeln </a>
-    <a href="?site=screenshots" <?php echo $screenshots ?>>Screenshots </a>
-    <a href="?site=letsplay" <?php echo $letsplay ?>>Let's Play </a>
-    <a href="?site=forum" <?php echo $forum ?>>Forum </a>
-    <a href="?site=member" <?php echo $member ?>>Übersicht </a>
-    <a href="?site=joinus" <?php echo $joinus ?>>Join Us </a>
-    <a href="?site=teamspeak" <?php echo $teamspeak ?>>Teamspeak 3 </a>
-    <a href="?site=minecraft" <?php echo $minecraft ?>>Minecraft</a>
-    <a href="?site=mania2011" <?php echo $mania2011 ?>>Mania 2011</a>
-    <a href="?site=mania2012" <?php echo $mania2012 ?>>Mania 2012</a>
-    <a href="?site=mania2013" <?php echo $mania2013 ?>>Mania 2013</a>
-    <a href="?site=mania2014" <?php echo $mania2014 ?>>Mania 2014</a>
-    <a href="?site=mania2015" <?php echo $mania2015 ?>>Mania 2015</a>
+    <script>
+        // Get the GET Variable (because getting get is getting important here)
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+            });
+            return vars;
+        }
+
+        function determineOffset(viewport, offset, elementwidth) {
+            var halfViewport = viewport / 2;
+
+            if (offset > halfViewport)
+            {
+                // I don't reeeeaaaly know, why we need to add 5, but it looks more "centered", so fuck it
+                return ((offset - halfViewport) + (elementwidth / 2) + 5);
+            }
+
+            return 0;
+        }
+
+        function mobileOffset() {
+            var site = getUrlVars()["site"];
+            var offset = 0;
+            var viewport = window.innerWidth;
+
+            switch (site) {
+                case 'start':
+                    offset = determineOffset(viewport, document.getElementById("start").offsetLeft, document.getElementById("start").offsetWidth)
+                    break;
+                case 'archive':
+                    offset = determineOffset(viewport, document.getElementById("archive").offsetLeft, document.getElementById("archive").offsetWidth)
+                    break;
+                case 'information':
+                    offset = determineOffset(viewport, document.getElementById("information").offsetLeft, document.getElementById("information").offsetWidth)
+                    break;
+                case 'rules':
+                    offset = determineOffset(viewport, document.getElementById("rules").offsetLeft, document.getElementById("rules").offsetWidth)
+                    break;
+                case 'screenshots':
+                    offset = determineOffset(viewport, document.getElementById("screenshots").offsetLeft, document.getElementById("screenshots").offsetWidth)
+                    break;
+                case 'letsplay':
+                    offset = determineOffset(viewport, document.getElementById("letsplay").offsetLeft, document.getElementById("letsplay").offsetWidth)
+                    break;
+                case 'forum':
+                    offset = determineOffset(viewport, document.getElementById("forum").offsetLeft, document.getElementById("forum").offsetWidth)
+                    break;
+                case 'member':
+                    offset = determineOffset(viewport, document.getElementById("member").offsetLeft, document.getElementById("member").offsetWidth)
+                    break;
+                case 'joinus':
+                    offset = determineOffset(viewport, document.getElementById("joinus").offsetLeft, document.getElementById("joinus").offsetWidth)
+                    break;
+                case 'teamspeak':
+                    offset = determineOffset(viewport, document.getElementById("teamspeak").offsetLeft, document.getElementById("teamspeak").offsetWidth)
+                    break;
+                case 'minecraft':
+                    offset = determineOffset(viewport, document.getElementById("minecraft").offsetLeft, document.getElementById("minecraft").offsetWidth)
+                    break;
+                case 'mania2011':
+                    offset = determineOffset(viewport, document.getElementById("mania2011").offsetLeft, document.getElementById("mania2011").offsetWidth)
+                    break;
+                case 'mania2012':
+                    offset = determineOffset(viewport, document.getElementById("mania2012").offsetLeft, document.getElementById("mania2012").offsetWidth)
+                    break;
+                case 'mania2013':
+                    offset = determineOffset(viewport, document.getElementById("mania2013").offsetLeft, document.getElementById("mania2013").offsetWidth)
+                    break;
+                case 'mania2014':
+                    offset = determineOffset(viewport, document.getElementById("mania2014").offsetLeft, document.getElementById("mania2014").offsetWidth)
+                    break;
+                case 'mania2015':
+                    offset = determineOffset(viewport, document.getElementById("mania2015").offsetLeft, document.getElementById("mania2015").offsetWidth)
+                    break;
+                default: 0
+            }
+
+            $(document).ready(function() {
+                $("#sticky").animate( {
+                    scrollLeft: offset
+                }, 400);
+            });
+        }
+    </script>
+
+    <a id="start" href="index.php?site=start" <?php echo $start ?>>News</a>
+    <a id="archive" href="index.php?site=archive" <?php echo $archive ?>>Archiv</a>
+    <a id="information" href="index.php?site=information" <?php echo $information ?>>Informationen </a>
+    <a id="rules" href="index.php?site=rules" <?php echo $rules ?>>Clanregeln </a>
+    <a id="screenshots" href="index.php?site=screenshots" <?php echo $screenshots ?>>Screenshots </a>
+    <a id="letsplay" href="index.php?site=letsplay" <?php echo $letsplay ?>>Let&#39;s Play </a>
+    <a id="forum" href="forum.php?site=forum" <?php echo $forum ?>>Forum </a>
+    <a id="member" href="index.php?site=member" <?php echo $member ?>>Übersicht </a>
+    <a id="joinus" href="index.php?site=joinus" <?php echo $joinus ?>>Join Us </a>
+    <a id="teamspeak" href="index.php?site=teamspeak" <?php echo $teamspeak ?>>Teamspeak 3 </a>
+    <a id="minecraft" href="index.php?site=minecraft" <?php echo $minecraft ?>>Minecraft</a>
+    <a id="mania2011" href="index.php?site=mania2011" <?php echo $mania2011 ?>>Mania 2011</a>
+    <a id="mania2012" href="index.php?site=mania2012" <?php echo $mania2012 ?>>Mania 2012</a>
+    <a id="mania2013" href="index.php?site=mania2013" <?php echo $mania2013 ?>>Mania 2013</a>
+    <a id="mania2014" href="index.php?site=mania2014" <?php echo $mania2014 ?>>Mania 2014</a>
+    <a id="mania2015" href="index.php?site=mania2015" <?php echo $mania2015 ?>>Mania 2015</a>
+    <span class="w30"></span>

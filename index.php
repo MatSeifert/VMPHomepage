@@ -50,7 +50,7 @@
 			<!-- Seitentitel -->
 		<title>VMP Clan - German Multigaming</title>
 			<!-- Viewporteinstellungen für das Responsive Design /-->
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<!-- Farbige Statusleiste für Chrom v39+ unter Android 5.0+ /-->
 		<meta name="theme-color" content="#C14924">
 			<!-- Stylesheet- und Favicon Einbindung /-->
@@ -74,12 +74,42 @@
 		<script src="javascript/setIFrameHeight.js" type="text/javascript"></script>	<!-- For the Mobile Version /-->
 		<script src="javascript/slideMenu.js" type="text/javascript"></script>			<!-- For the Mobile Version /-->
 		<script src="javascript/async.js" type="text/javascript"></script>
+
+		<script>
+			function PopUp(hideOrshow) {
+				if (hideOrshow == 'hide') {
+					document.getElementById('ac-wrapper').style.display = "none";
+				}
+				else  if(localStorage.getItem("popupWasShown") == null) {
+					localStorage.setItem("popupWasShown",1);
+					document.getElementById('ac-wrapper').removeAttribute('style');
+				}
+			}
+			window.onload = function () {
+				setTimeout(function () {
+					PopUp('show');
+				}, 0);
+			}
+
+			function hideNow(e) {
+				if (e.target.id == 'ac-wrapper') document.getElementById('ac-wrapper').style.display = 'none';
+			}
+		</script>
 	</head>
 
 	<body onload="mobileOffset()" name="top">
 	<!-- Mobile Header /-->
 		<div class="mobileSektion">
 			<div class="mobileHead" style="text-align: center">
+
+				<div id="ac-wrapper"style='display:none' onClick="hideNow(event)">
+					<div id="popup">
+						Navigiere einfach per <br>swipe Geste durch das Menü <br>
+						<img src="images/swipe.png" class="swipteHintImg"> <br>
+						<input type="submit" name="submit" value="OK" onClick="PopUp('hide')" class="swipeHintOk"/>
+					</div>
+				</div>
+
 				<div class="hintergrundbild">
 					<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start"/>
 				</div>
@@ -145,28 +175,6 @@
 		</script>
 
 		<script>
-			var parH = $('.parent').outerHeight(true);
-			var areaH = $('.scrollable').outerHeight(true);
-			var scrH = parH / (areaH/parH);
-
-			function dragging(){
-			var scrPos = $('.scrollbar').position().top;
-			$('.scrollable').css({top: -(scrPos*(areaH/parH)-1)});
-			}
-
-
-			$('.scrollbar').height(scrH);
-			$('.scrollbar').draggable({
-			axis: 'y',
-			containment: 'parent',
-			drag: function() {
-				dragging()
-			}
-
-			});
-		</script>
-
-		<script>
 			// Displays the Quick Menu on mobile Devices (The bottom Bar)
 			$(document).scroll(function () {
 			    var y = $(this).scrollTop();
@@ -177,12 +185,6 @@
 			    }
 
 			});
-		</script>
-
-		<script>
-			function mobileOffset() {
-				document.getElementById("sticky").scrollLeft = 0
-			}
 		</script>
 	</body>
 </html>
