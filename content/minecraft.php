@@ -1,28 +1,5 @@
 <?php
-	function FlickrFeed () {
-		$xmlfile='https://api.flickr.com/services/feeds/groups_pool.gne?id=2611823@N25&lang=de-de&format=rss_200';
-		$xml = simplexml_load_file(rawurlencode($xmlfile));
-		$namespaces = $xml->getNamespaces(true);
-
-		$break = 0;
-
-		foreach ($xml->channel->item as $item) {
-			echo '<div class="imageWrapper">';
-				echo '<img src="' . $item->children($namespaces['media'])->content->attributes()->url . '" alt="FlickrImage" class="FlickrImage">';
-				echo '<div class="ImageInfo"><p class="ImageInfoText"><nobr>';
-					echo $item->title . '</nobr><br>';
-					echo 'von ' . $item->children($namespaces['media'])->credit;
-				echo '</p></div>';
-			echo '</div>';
-
-			$break++;
-
-			if($break > 3)
-			{
-				break;
-			}
-		}
-	}
+	require_once("galleries/showGallery.php");
 ?>
 
 <div class="whereAmI">
@@ -40,11 +17,29 @@
 		Serverinformationen
 	</span>
 	<br>
+
 	<?php
 		require_once('mcserver/query.php');
 	?>
 
 	<p>&nbsp;</p>
+
+	<div class="McMapWrapper">
+		<div class="McMapSubtext">
+			<div class="McMapCircle">
+				<a href="?site=minecraftMap" class="tooltips">
+					<i class="fa fa-map"></i>
+					<span>Zur Karte</span>
+				</a>
+			</div>
+
+			<h2>VMP Server Map</h2>
+
+			<span>
+				Eine &Uuml;bersichtskarte über unsere komplette Servermap, drehbar und mit Nachtansicht. Die Karte aktualisiert sich täglich!
+			</span>
+		</div>
+	</div>
 
 	<span class="smallHeadline">
 		Generelle Serverregeln
@@ -129,19 +124,27 @@
 		Screenshots
 	</span>
 
-	<?php FlickrFeed(); ?>
+	<?php FlickrGallery('https://api.flickr.com/services/feeds/groups_pool.gne?id=2611823@N25&lang=de-de&format=rss_200'); ?>
 
 	<p>&nbsp;<br><br></p>
-	<a href="?site=MinecraftMonuments">
+	<a href="?site=screenshots">
 		<div class="button_v2">
-			MEHR BILDER
+			Screenshot Übersicht
 		</div> &nbsp;
 	</a>
-	<a href="https://www.flickr.com/groups/vmpminecraft/">
-		<div class="button_v2">
-			FLICKRALBUM
-		</div>
-	</a>
-
 	<p>&nbsp;</p>
+
+	<!-- Javascript for the gallery  -->
+	<script>
+		$('.bxslider').bxSlider({
+		  pagerCustom: '#bx-pager'
+		});
+	</script>
+
+	<script type="text/javascript">
+		;( function( $ ) {
+			$( '.swipebox' ).swipebox();
+		} )( jQuery );
+
+	</script>
 </div>

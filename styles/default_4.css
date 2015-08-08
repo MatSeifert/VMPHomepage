@@ -256,7 +256,7 @@ body {
             div[class=whereAmI] {
             	display: inline-block !important;
             	position: absolute !important;
-            	width: 100% !important;
+            	width: 99% !important;
 				text-align: center !important;
             	top: 40px;
             	z-index: 1002 !important;
@@ -678,12 +678,14 @@ body {
 
 			.SqlArticleShareInnerRight {
 				position: absolute !important;
+				z-index: 1 !important;
 				width: 90% !important;
 				padding: 10px 0px 0px 10px !important;
 			}
 
 			.SqlArticleShareInnerLeft {
 				position: absolute !important;
+				z-index: 0 !important;
 				width: 90% !important;
 				padding: 105px 0px 0px 10px !important;
 			}
@@ -799,6 +801,9 @@ body {
 				background-image: url("../images/swipeBgDark.png");
 				font-size: 16px;
 				padding: 20px 0 0 20%;
+			}
+			.tooltips span {
+				display: none !important;
 			}
         }
 
@@ -3316,4 +3321,75 @@ a:hover.tooltips span {
 
 .FstNmHdnSpm {
 	visibility: hidden;
+}
+
+.McMapWrapper {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	background-image: url("../images/McMapBg.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	box-shadow:
+		2px 2px 1px 0px rgba(0,0,0,0.2),
+		0px 0px 1px 0px rgba(0,0,0,0.2);
+}
+
+.McMapCircle {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: #5677fc;
+	margin-top: -25px;
+	right: 5%;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 24px;
+	-webkit-transition: background-color .35s ease-in;
+	-moz-transition: background-color .35s ease-in;
+	-o-transition: background-color .35s ease-in;
+	-ms-transition: background-color .35s ease-in;
+	transition: background-color .35s ease-in;
+	box-shadow:
+		0px 1px 3px 0px rgba(0,0,0,0.2),
+		0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+
+.McMapCircle a {
+	position: absolute;
+	margin: 13px 0 0 -11px;
+	color: #fff;
+}
+
+.McMapCircle a:hover {
+	color: #fff;
+}
+
+.McMapCircle:hover {
+	background-color: #738ffe;
+}
+
+.McMapSubtext {
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	bottom: 0;
+	background-color: #4CAF50;
+	color: #fff;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.McMapSubtext h2 {
+	padding: 5px;
+}
+
+.McMapSubtext span {
+	padding: 5px 5px 5px 5px;
+	font-size: 14px;
+	line-height: 14px;
+	display: inline-block;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 300;
 }

@@ -27,6 +27,7 @@
     $mobile = "";
     $area51 = "";
     $screenshots = "";
+    $authority = "";
     switch($seite)
     {
         case "start": $start = 'class="MobileMenuLinkActive"';
@@ -83,6 +84,8 @@
 		break;
 		case "minecraft": $minecraft = 'class="MobileMenuLinkActive"';
 		break;
+        case "minecraftMap": $minecraft = 'class="MobileMenuLinkActive"';
+        break;
 		case "teamspeak": $teamspeak = 'class="MobileMenuLinkActive"';
 		break;
 		case "CitiesOfAnno2070": $screenshots = 'class="MobileMenuLinkActive"';
@@ -101,7 +104,9 @@
 		break;
 		case "WeBuildThisCity": $screenshots = 'class="MobileMenuLinkActive"';
 		break;
-	   	default: @include __DIR__ . '/../content/error404.php';
+        case "authority": $authority = 'class="MobileMenuLinkActive"';
+        break;
+	   	default:  $start = 'class="MobileMenuLinkActive"';
     }
 ?>
 
@@ -166,6 +171,9 @@
                 case 'minecraft':
                     offset = determineOffset(viewport, document.getElementById("minecraft").offsetLeft, document.getElementById("minecraft").offsetWidth)
                     break;
+                case 'minecraftMap':
+                    offset = determineOffset(viewport, document.getElementById("minecraft").offsetLeft, document.getElementById("minecraft").offsetWidth)
+                    break;
                 case 'mania2011':
                     offset = determineOffset(viewport, document.getElementById("mania2011").offsetLeft, document.getElementById("mania2011").offsetWidth)
                     break;
@@ -180,6 +188,9 @@
                     break;
                 case 'mania2015':
                     offset = determineOffset(viewport, document.getElementById("mania2015").offsetLeft, document.getElementById("mania2015").offsetWidth)
+                    break;
+                case 'authority':
+                    offset = determineOffset(viewport, document.getElementById("authority").offsetLeft, document.getElementById("authority").offsetWidth)
                     break;
                 default: 0
             }
@@ -208,4 +219,5 @@
     <a id="mania2013" href="index.php?site=mania2013" <?php echo $mania2013 ?>>Mania 2013</a>
     <a id="mania2014" href="index.php?site=mania2014" <?php echo $mania2014 ?>>Mania 2014</a>
     <!-- <a id="mania2015" href="index.php?site=mania2015" <?php echo $mania2015 ?>>Mania 2015</a> -->
+    <a id="authority" href="index.php?site=authority" <?php echo $authority ?>>Impressum</a>
     <span class="w30"></span>

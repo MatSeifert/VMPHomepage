@@ -1,5 +1,7 @@
 <div class="whereAmI">
-    VERANTWORTLICHE
+    <div class="whereAmICircle">
+		<i class="fa fa-balance-scale"></i>
+	</div>
 </div>
 
 <div class="PostTitle">
@@ -23,4 +25,8 @@
 	Matthias Seifert <br>
 	Budapester Straße 55 <br>
 	01069 Dresden <br><br>
+
+    <div class="desktopHidden">
+        <?php require_once("content/disclaimer.php") ?>        
+    </div>
 </div>
