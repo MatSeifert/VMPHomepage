@@ -12,13 +12,13 @@
 	 */
 	function PostOnTwitter($content, $link) {
 		// require codebird (php Library für die Twitter API)
-		require_once('socialSDK/twitter/src/codebird.php');
-		 
+		require_once('../vendor/jublonet/codebird-php/src/codebird.php');
+
 		// Codebird initialisieren, und auf Twitter einloggen
 		\Codebird\Codebird::setConsumerKey("zAMCKSyNQ3NTq8YuGaXiJneWn", "It9Nc2zGuWtuFztBzcXOzsWgk68KLFmRRRhydmpTq9PCdL5xwG");
 		$cb = \Codebird\Codebird::getInstance();
 		$cb->setToken("244468649-ZGCSmULXQPiDlc92Fy2IPjAMPMloiROuPNpnFV0n", "bQbB1BucBt5KZlc9ySIzZHF1pVdh2WmguUdFuIE5XerRf");
-		 
+
 		// Tweeten der News inklusive Backlink
 		$params = array(
 		  'status' => substr($content, 0, 110) . " " . $link
@@ -31,9 +31,9 @@
 	 * eigentlichen Tweet, und es sieht weniger russisch aus
 	 */
 	function shortenLink($url) {
-		require_once('socialSDK/owly/OwlyApi.php');
+		require_once('../vendor/invokemedia/owly-api-php/OwlyApi.php');
 		$owly = OwlyApi::factory( array('key' => 's4Zm5Rxkm99z6CWEF9ikm') );
-		
+
 		try {
 			$shortenedUrl = $owly->shorten($url);
 		} catch(Exception $e) {
@@ -52,10 +52,10 @@
 	function GetLinkWithID() {
 
 		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");					// später die Adresse der DB auf dem Server
-		// Check connection 																		
+		// Check connection
 		if (mysqli_connect_errno()) {
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}			
+		}
 
 		$result = mysqli_query($database,'SELECT id FROM articles ORDER BY id DESC LIMIT 1');
 
@@ -83,7 +83,7 @@
 
 		if ($AuthCode == "Ji4w9LwToOJ829EORD1W" || $AuthCode == "PsTcK27EdklNZ2w33nHW") {
 			$verification = True;
-		} 
+		}
 		else $verification = False;
 
 		return $verification;
@@ -160,7 +160,7 @@
 		// }
 
 		//PostOnGooglePlus();
-	} 
+	}
 
 	else $message = ('Das Security Token stimmt nicht &uuml;berein! Bitte &uuml;berpr&uuml;fe deine Eingabe! <br> Nutze die Zurück Funktion des Browsers, um deine Eingabe zu korrigieren!');
 ?>
@@ -174,11 +174,11 @@
 </div>
 
 <div class="PostPost">
-	<?php 
+	<?php
 		echo '<div class="smallHeadline">Vielen Dank</div>';
 		echo($message) . '<p>&nbsp;</p>';
 		echo '<div class="smallHeadline">Social Media</div>';
-		echo($twitterMessage); 
+		echo($twitterMessage);
 		echo '<b>' . (utf8_encode($finalTweet)) . '</b>';
 	?>
 </div>
