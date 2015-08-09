@@ -1,5 +1,6 @@
 {
     "name": "VMPHomepage",
+    "description": "Website of the VMP-Clan",
     "version": "4.2.1",
     "repositories": [
         {
@@ -12,9 +13,23 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "invokemedia/owly-api-php",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/invokemedia/owly-api-php.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
         }
     ],
     "require": {
-        "sebastien/tsstatus": "2013-08-31"
+        "sebastien/tsstatus": "2013-08-31",
+        "jublonet/codebird-php": "2.5.0",
+        "invokemedia/owly-api-php": "1.0.0"
     }
 }
