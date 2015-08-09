@@ -11,7 +11,7 @@
  	}
 
 	function shortenLink($url) {
-		require_once('socialSDK/owly/OwlyApi.php');
+		require_once('../vendor/invokemedia/owly-api-php/OwlyApi.php');
 		$owly = OwlyApi::factory( array('key' => 's4Zm5Rxkm99z6CWEF9ikm') );
 
 		try {
