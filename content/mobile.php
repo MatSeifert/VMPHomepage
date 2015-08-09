@@ -29,5 +29,12 @@
 	unseren <a href="mailto:matthe.seifert@gmail.com">Webmaster</a> schreiben. Vergesst nicht eurem Feedback ein paar Informationen, wie etwa das
 	von euch verwendete Gerät mitzugeben, das macht es einfacher Probleme zu lokalisieren, oder Features zu implementieren. Vielen Dank
 	schonmal für deine Meinung!
-	<p> &nbsp; </p>
+
+    <span class="smallHeadline">
+        Probier es aus!
+    </span>
+    <div class="mobileTestWrapper">
+        <iframe src="index.php" scrolling="yes" class="mobileTestIframe mobileHidden"></iframe>
+    </div>
+    <p> &nbsp; </p>
 </div>

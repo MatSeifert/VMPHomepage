@@ -58,7 +58,7 @@
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles/swipebox.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="shortcut icon" href="images/favicon.ico">
 			<!-- Die Schriftart der Seite /-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>
 			<!-- Javascript Dateien für diverse Funktionen /-->
@@ -127,6 +127,8 @@
 
 		<div class="sektion" id="start">
 			<div class="hintergrundbild">
+				<div class="coloroverlay">
+				</div>
 				<img src="images/header/<?php echo rand(0, ImageCount());?>.jpg" alt="Hintergrundbild Start"/>
 			</div>
 			<div class="text">
@@ -162,19 +164,15 @@
 			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
 			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 			}());
-		</script>
 
-		<script>
-			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			  ga('create', 'UA-46156385-1', 'cssscript.com');
-			  ga('send', 'pageview');
-		</script>
+			ga('create', 'UA-46156385-1', 'cssscript.com');
+			ga('send', 'pageview');
 
-		<script>
 			// Displays the Quick Menu on mobile Devices (The bottom Bar)
 			$(document).scroll(function () {
 			    var y = $(this).scrollTop();

@@ -106,7 +106,7 @@ body {
 			    width: 100%;
 			    height: 50px;
 			    background: #C14924;
-			    z-index: 1;
+			    z-index: 998;
 			}
 			.scrollMenuBox {
 				display: inline-block;
@@ -479,7 +479,7 @@ body {
 				right: 0 !important;
 				margin: 0px 10px 20px 0px !important;
 				position: fixed !important;
-				z-index: 10 !important;
+				z-index: 999 !important;
 				width: 60px !important;
 				height: 60px !important;
 				font-size: 48px !important;
@@ -805,6 +805,10 @@ body {
 			.tooltips span {
 				display: none !important;
 			}
+			.galleryWrapper {
+				padding: 0px !important;
+				background-color: #D84315 !important;
+			}
         }
 
 .artileInfoboxMobile {
@@ -913,6 +917,14 @@ body {
 	overflow: hidden;
 	margin: auto auto;
 	z-index: 90;
+}
+
+.coloroverlay {
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	background-color: #C14924;
+	opacity: 0.5;
 }
 
 .mobileText {
@@ -3388,6 +3400,23 @@ a:hover.tooltips span {
 	font-size: 14px;
 	line-height: 14px;
 	display: inline-block;
+}
+
+.mobileTestWrapper {
+	background-image: url("../images/mobileTestWrapper.png");
+	z-index: 10;
+	width: 450px;
+	height: 865px;
+	margin: auto auto;
+	background-repeat: no-repeat;
+}
+
+.mobileTestIframe {
+	margin: 102px 0 0 27px;
+	width: 397px;
+	height: 653px;
+	border: none;
+	z-index: 9;
 }
 
 h1, h2, h3, h4, h5 {
