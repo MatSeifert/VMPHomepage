@@ -4,4 +4,3 @@
 *.sublime-workspace
 /content/mapcrafter/build
 vendor/
-*.lock
