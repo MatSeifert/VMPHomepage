@@ -1,13 +1,13 @@
 <?php
 	// Funktion zum Berechnen des Alters
-	
+
 	function alter($jahr, $monat, $tag)
 	{
 		$alter = (date('Y') - $jahr) - intval(date('md') < sprintf('%02d%02d' , $monat , $tag ));
-		
-		echo '<td class="normal"><span class="number">' . $alter . '</span></td>';
+
+		echo '<td class="normal mobileHidden"><span class="number">' . $alter . '</span></td>';
 	}
-	
+
   // Funktion zum Berechnen der "Dienstzeit"
 
 	function dienstzeit($since) {
@@ -27,9 +27,13 @@
     $xmlfile='xml/member.xml';
     $memberXml = simplexml_load_file($xmlfile);
 
-    echo '<div class="whereAmI">MEMBER</div>';           // Überschrift für mobile Seite
+    echo '<div class="whereAmI">
+			    <div class="whereAmICircle">
+					<i class="fa fa-users"></i>
+				</div>
+			</div>';           // Überschrift für mobile Seite
 
-    echo '<div class="PostTitle">MEMBER                  
+    echo '<div class="PostTitle">MEMBER
             <span class="JoinUs">
               <a href="?site=joinus" class="tooltips">
                 +
@@ -46,7 +50,7 @@
               '<td>NICKNAME</td>' .
               '<td>RANG</td>' .
               '<td class="mobileHidden"> &nbsp; </td>' .
-              '<td> <span class="number"> ALTER </span> </td>' .
+              '<td class="mobileHidden"> <span class="number"> ALTER </span> </td>' .
               '<td> <span class="number"> DABEI SEIT ... </span> </td>' .
             '</tr>' .
             '<tr>' .
@@ -70,7 +74,7 @@
 	      $year = $member->birthday['year'];
 	      alter($year, $month, $day);
   	  }
-  	  else echo '<td class="normal">&nbsp;</td>';
+  	  else echo '<td class="normal mobileHidden">&nbsp;</td>';
 
         $RecrYr = $member->recruited['in'];
         dienstzeit($RecrYr);

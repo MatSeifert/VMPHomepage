@@ -1,5 +1,7 @@
 <div class="whereAmI">
-    TEAMSPEAK 3
+    <div class="whereAmICircle">
+		<i class="fa fa-server"></i>
+	</div>
 </div>
 
 <div class="PostTitle">
@@ -12,7 +14,7 @@
 	</span>
 	Unser Teamspeak 3 Server ist neben unserem Forum der Dreh und Angelpunkt des Clans. Hier treffen sich die Member
 	um gemeinsam zu zocken, oder auch um nur ein wenig zu plaudern. Dabei entstehen für die Nutzer keinerlei Kosten,
-	denn wie alles bei uns wird der Server über freiwillige Spenden finanziert. Wenn mal niemand zum zocken da ist, 
+	denn wie alles bei uns wird der Server über freiwillige Spenden finanziert. Wenn mal niemand zum zocken da ist,
 	oder das Spiel so speziell ist, dass es im Clan kaum jemand hat, dürft ihr auch jederzeit eure Freunde oder andere
 	Mitspieler mit auf den Server bringen. Diese erhalten durch die Guest (temporär) oder Friend (permanent) Group
 	ebenfalls einige rudimentäre Rechte, und können unseren Server mitnutzen.
@@ -28,7 +30,7 @@
 		<li>Gäste erhalten auf unserem Server die Gruppe <code>Guest</code>. Die Gruppe <code>Friend</code> ist nur für Freunde
 		gedacht, die öfters auf dem TS sind.</li>
 		<li>User verschieben ist nur zum eigentlichen Zweck des Channelwechsels gedacht, nicht zum trollen.</li>
-		<li>Nutzt bitte die entsprechenden Channel, wenn ihr ein Spiel gemeinsam zockt. Wenn ihr in anderen Channels gemeinsam 
+		<li>Nutzt bitte die entsprechenden Channel, wenn ihr ein Spiel gemeinsam zockt. Wenn ihr in anderen Channels gemeinsam
 		spielt, fragt bitte, ob das für diejenigen ok ist.</li>
 		<li>Für alle gängigen Spiele haben wir Channel, sonst dient der "Sonstige Games" Channel als Anlaufstelle. Ist dieser
 		schon voll, kann auf andere (leere) Channels ausgewichen werden.</li>

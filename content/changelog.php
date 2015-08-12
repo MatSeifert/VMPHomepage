@@ -1,5 +1,7 @@
 <div class="whereAmI">
-    CHANGELOG
+    <div class="whereAmICircle">
+        <i class="fa fa-files-o"></i>
+    </div>
 </div>
 
 <div class="PostTitle">

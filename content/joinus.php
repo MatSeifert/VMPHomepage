@@ -1,5 +1,7 @@
 <div class="whereAmI">
-    JOIN US
+    <div class="whereAmICircle">
+		<i class="fa fa-user-plus"></i>
+	</div>
 </div>
 
 <div class="PostTitle">
@@ -7,7 +9,9 @@
 </div>
 
 <div class="PostPost">
-
+    <span class="smallHeadline desktopHidden">
+        Join Us
+    </span>
     <form action="?site=thankyou" method="post">
         <!-- Formularfelder -->
             <br>
@@ -33,9 +37,9 @@
             <div class="NewsSubmit">
                 <input type="Submit" name="" value="Jetzt bewerben!" class="NewsSubmit">
                 <span style="width: 30px; display: inline-block;">&nbsp;</span>
-                <input type="Reset" name="" value="Felder leeren" class="NewsSubmit">
+                <input type="Reset" name="" value="Felder leeren" class="NewsSubmit mobileHidden">
             </div>
         <!-- Ende der Buttons -->
     </form>
-
+    <p class="desktopHidden">&nbsp;</p>
 </div>

@@ -4,9 +4,11 @@
 
 <?php else: ?>
 
-  <div class="whereAmI">
-    MINECRAFT MAP
-  </div>
+    <div class="whereAmI">
+        <div class="whereAmICircle">
+    		<i class="fa fa-server"></i>
+    	</div>
+    </div>
 
   <div class="PostTitle">
     MINECRAFT MAP

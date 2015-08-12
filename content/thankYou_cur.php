@@ -43,7 +43,9 @@
 
 
 <div class="whereAmI">
-    VIELEN DANK!
+    <div class="whereAmICircle">
+		<i class="fa fa-thumbs-up"></i>
+	</div>
 </div>
 
 <div class="PostTitle">

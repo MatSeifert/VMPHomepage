@@ -1,5 +1,7 @@
 <?php
 	require_once('content/galleries/showGallery.php');
+	require_once('helper/dbConnector.php');
+	require_once('helper/shortenLink.php');
 
 	function AddAttachments($RawContent, $id) {
 		// Check for Galleries
@@ -10,26 +12,8 @@
 		return $result;
  	}
 
-	function shortenLink($url) {
-		require_once('../vendor/invokemedia/owly-api-php/OwlyApi.php');
-		$owly = OwlyApi::factory( array('key' => 's4Zm5Rxkm99z6CWEF9ikm') );
-
-		try {
-			$shortenedUrl = $owly->shorten($url);
-		} catch(Exception $e) {
-			echo 'Fehler beim kürzen des Links (Error in ow.ly API):' . $e->getMessage() . "<br />";
-			$url = "";
-		}
-
-		return $shortenedUrl;
-	}
-
 	function GetAdvertisement($alias) {
-		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
-		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
-		if (mysqli_connect_errno()) {
-		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}
+		$database = connect();
 
 		$result = mysqli_query($database,"SELECT * FROM aliastable WHERE alias = '$alias'");
 
@@ -39,10 +23,10 @@
 	}
 
 	function share($id, $article) {
-		$shortlink = shortenLink("http://www.vmp-clan.de/?site=read&id=" . $id);
+		$shortlink = createShortLink("http://www.vmp-clan.de/?site=read&id=" . $id);
 
 		echo '<div class="SqlArticleShare">';
-			echo '<div class="SqlArticleShareInnerRight"><img src="images/share.png"> Teile diesen Artikel <br>';
+			echo '<div class="SqlArticleShareInnerRight mobileClear"><img src="images/share.png"> Teile diesen Artikel <br>';
 				echo '<div class="ShareOnFacebook"' .
 					     ' onclick="popupwindow(\'https://www.facebook.com/sharer/sharer.php?u=' . $shortlink . '\', 500, 400)">' .
 						'<a href=""><img src="images/facebook_transparent.png" class="circle"></a>' .
@@ -59,7 +43,7 @@
 
 			$ad = GetAdvertisement($article['game']);
 
-			echo '<div class="SqlArticleShareInnerLeft"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
+			echo '<div class="SqlArticleShareInnerLeft mobileClear"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
 				echo '<img src="images/articles/cover/' . $article['game'] . '.jpg" alt="Cover" class="adCoverImage">';
 				echo '<div class="adWrapper">';
 			        echo $ad;
@@ -70,11 +54,7 @@
 
 	function GetAlias($game)
 	{
-		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");		// später die Adresse der DB auf dem Server
-		// Check connection 																	// zum lokelen Testen auf mobilen Geräten trotzdem die jetzige
-		if (mysqli_connect_errno()) {
-		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}
+		$database = connect();
 
 		$result = mysqli_query($database,"SELECT * FROM aliastable WHERE alias = '$game'");
 
@@ -100,6 +80,7 @@
 			$raw = utf8_encode($row['content']);
 			$ContentWithAttachments = AddAttachments($raw, $id);
 
+			// The Desktop Version
 			echo '<span class="SqlArticleGame">' . $gamename . '</span>' .
 				 '<span class="SqlArticleDate">' . date("d.m.Y", strtotime($row['date'])) .
 				 '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
@@ -107,6 +88,13 @@
 		  	echo '<img class="SqlArticleHeadImage" src="images/articles/' . $row['game'] . '.jpg" alt="' . $row['game'] . '">';
 		  	echo '<a href="?site=' . $backlink . '"><img src="images/backButton.png" alt="Back" border="0" class="SqlArticleBack"></a>';
 		  	echo '<span class="SqlArticleHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span>';
+			// Mobile Exclusive Stuff
+			echo '<div class="artileInfoboxMobile">';
+				echo '<i class="fa fa-gamepad"></i> ' . $gamename . '<br>';
+				echo '<i class="fa fa-calendar"></i> ' . date("d.m.Y", strtotime($row['date'])) .
+				'&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
+				'&nbsp;UHR&nbsp;VON&nbsp;' . strtoupper($row['author']);
+			echo '</div>';
 		  	echo '<span class="SqlArticleContent">' . $ContentWithAttachments . '</span>';
 			share($id, $row);
 		}
@@ -156,16 +144,11 @@
 
 	function ConnectToDatabase($article) {
 
-		$game = "nichtinderliste";	// default
+		$game = "nichtinderliste";	// fallback
 
-		$database=mysqli_connect("localhost","homepage","yTaYq6Mn*PTY=~%P8oQ,","webseite");
-		// Check connection
-		if (mysqli_connect_errno()) {
-		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-		}
+		$database = connect();
 
-		if ($article)
-		{
+		if ($article) {
 			$game = PrintArticle($database);
 		}
 		else {
@@ -181,13 +164,16 @@
 ?>
 
 <div class="whereAmI">
-    NEWS
+    <div class="whereAmICircle">
+		<i class="fa fa-newspaper-o"></i>
+	</div>
 </div>
 
-	<?php ConnectToDatabase(true); ?>
+<?php ConnectToDatabase(true); ?>
 
 <div class="PostPost">
 	<script>
+		// Social Share Button Popup Window
 		function popupwindow(url, w, h) {
 			var left = (screen.width/2)-(w/2);
 			var top = (screen.height/2)-(h/2);
@@ -196,22 +182,19 @@
 
 			event.preventDefault();
 		}
-	</script>
 
-	<?php ConnectToDatabase(false); ?>
-
-	<script>
+		// Slideshow for Image Galleries
 		$('.bxslider').bxSlider({
 		pagerCustom: '#bx-pager'
 		});
-	</script>
 
-	<script type="text/javascript">
+		// Zoomed Version of Galleries
 		;( function( $ ) {
 			$( '.swipebox' ).swipebox();
 		} )( jQuery );
-
 	</script>
+
+	<?php ConnectToDatabase(false); ?>
 
 	<p>&nbsp;</p>
 	<div id="disqus_thread"></div>
@@ -226,6 +209,5 @@
 	            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	        })();
 	    </script>
-	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+	    <noscript>Bitte aktiviere Javascript, um die <a href="http://disqus.com/?ref_noscript">Disqus</a> Kommentare zu lesen!</noscript>
+	</div>

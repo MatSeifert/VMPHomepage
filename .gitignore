@@ -4,3 +4,4 @@
 *.sublime-workspace
 /content/mapcrafter/build
 vendor/
+/.idea

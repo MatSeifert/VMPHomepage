@@ -43,7 +43,7 @@
 		<a class="navigation" href="?site=letsplay">
 			<img src="images/menuLetsPlayFade.png" alt="Lets Play" class="bottom">
 			<img src="images/menuLetsPlay.png" alt="Lets Play" class="top">
-			Let's Play
+			Let&#39;s Play
 		</a>
 	</span>
 	<span class="NavPoint">

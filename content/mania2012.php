@@ -2,7 +2,9 @@
 
 ?>
 <div class="whereAmI">
-    MANIA '12
+    <div class="whereAmICircle">
+		<i class="fa fa-trophy"></i>
+	</div>
 </div>
 
 <div class="PostTitle">
@@ -10,7 +12,7 @@
 </div>
 <div class="PostPost">
 
-	<?php require_once("WhatIsMania.php") ?> 
+	<?php require_once("WhatIsMania.php") ?>
 
 	<span class="smallHeadline">Spiele &amp; Sieger 2012</span>
 	<table class="mania2011" cellspacing="0" cellpadding="0">
@@ -74,7 +76,7 @@
 	Leider gibt es keine ausführlicheren Statistiken zur Mania 2012. Detaillierte Aufzeichnungen des Turniers finden erst seit 2013 statt.
 	<p>&nbsp;</p>
 	* Aufgrund terminbedingter Schwierigkeiten bei dieser VMP Mania kam es dazu, dass zahlreiche Spiele abgesagt werden mussten. Um das
-	künftig zu vermeiden wurde ab 2013 ein flexibleres Terminsystem eingeführt, um den Ablauf zu optimieren und den Termindruck zu nehmen. 
+	künftig zu vermeiden wurde ab 2013 ein flexibleres Terminsystem eingeführt, um den Ablauf zu optimieren und den Termindruck zu nehmen.
 	Zusätzlich wurden nur die wichtigsten, also meistgespielten Spiele angesetzt, da bei zu geringen Teilnehmerzahlen der Organisationsaufwand
 	nicht im Verhätltnis zum Ergebnis steht.
 

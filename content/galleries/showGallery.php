@@ -24,7 +24,7 @@
                 echo '</ul>';
 
 
-                echo '<div id="bx-pager">';
+                echo '<div id="bx-pager" class="mobileHidden">';
                     foreach ($xml->channel->item as $item) {
                         echo '<a data-slide-index="' . $count . '" href="" class="bxThumb"><img src="' . $item->children($namespaces['media'])->content->attributes()->url . '" /></a>';
 
@@ -32,6 +32,7 @@
                     }
                 echo '</div>';
             echo '</div>';
+            echo '<p class="desktopHidden">&nbsp;</div>';
         }
         catch (Exception $e)
         {
@@ -66,7 +67,7 @@
                 }
 
                 $i = 1;
-                $middle = '</ul><div id="bx-pager">';
+                $middle = '</ul><div id="bx-pager" class="mobileHidden">';
 
                 while($i <= $count) {
                     if ($i == 1)
