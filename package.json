@@ -1,0 +1,21 @@
+{
+  "name": "VMPHomepage",
+  "version": "4.3.0",
+  "description": "Homepage of the VMP-Clan",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MatSeifert/VMPHomepage.git"
+  },
+  "author": "Matthias Seifert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatSeifert/VMPHomepage/issues"
+  },
+  "dependencies": {
+    "grunt": "~0.4.5"
+  }
+}
