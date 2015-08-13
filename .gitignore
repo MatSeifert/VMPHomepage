@@ -5,3 +5,5 @@
 /content/mapcrafter/build
 vendor/
 /.idea
+node_modules/
+secret.json
