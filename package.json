@@ -17,5 +17,9 @@
   },
   "dependencies": {
     "grunt": "~0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-ssh": "~0.12.6"
   }
 }
