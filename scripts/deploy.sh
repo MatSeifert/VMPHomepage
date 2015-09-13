@@ -46,7 +46,9 @@ nightly() {
 	git clone $PAGE_REPO $NIGHTLY_ROOT
 }
 
-production
+production() {
+
+}
 
 if [ $# -lt 1 ]
 then
