@@ -6,4 +6,5 @@
 vendor/
 /.idea
 node_modules/
+*.swp
 secret.json
