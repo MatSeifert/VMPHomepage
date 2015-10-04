@@ -9,6 +9,8 @@
 
 # PROD_ROOT=/var/www
 PROD_ROOT=/tmp/www
+PRODUCTION=1
+NIGHTLY=2
 NIGHTLY_ROOT=$PROD_ROOT/nightly
 FORUM_BACK_wbb=/tmp/wbb
 FORUM_BACK_wcf=/tmp/wcf
@@ -22,6 +24,7 @@ show_help() {
 	echo -e "\t\t-h\tShow help text"
 	echo -e "\t\t-n\tDo nightly build"
 	echo -e "\t\t-p TAG\tDo production build of given tag"
+	echo -e "\t\t-r DIR\tPath to the document root"
 }
 
 run_composer() {
@@ -44,11 +47,19 @@ nightly() {
 
 	# Clone the current Master to nightly root
 	git clone $PAGE_REPO $NIGHTLY_ROOT
+
+	# Restore the backup to document root
+	cp -rp $FORUM_BACK_wbb $NIGHTLY_ROOT/wbb
+	cp -rp $FORUM_BACK_wcf $NIGHTLY_ROOT/wcf
 }
 
-production() {
-
+err() {
+	echo "[E] $1"
 }
+
+#production() {
+
+#}
 
 if [ $# -lt 1 ]
 then
@@ -56,14 +67,26 @@ then
 	exit 1
 fi
 
-while getopts 'nph' opt
+build_type=$NIGHTLY
+prod_root=""
+
+while getopts 'nphr:' opt
 do
 	case $opt in
 		n)
-			nightly
+			build_type=$NIGHTLY	
 			;;
 		p)
-			production
+			build_type=$PRODUCTION
+			;;
+		r)
+			path=$OPTARG
+			if [ -d $path ]; then
+				prod_root=$path
+			else
+				err "$path is not a valid directory"
+				exit 1
+			fi
 			;;
 		h)
 			show_help
