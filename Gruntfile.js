@@ -20,10 +20,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-ssh');
 
   grunt.registerTask(
-      'nightly_clean', [
-      'sshexec:save_forum_nightly',
-      'sshexec:clean_nightly']);
-  grunt.registerTask('nightly_deploy', ['sshexec:deploy_nightly',
-      'sshexec:restore_forum_nightly']);
-  grunt.registerTask('nightly', ['nightly_clean', 'nightly_deploy']);
+      'uptime', [
+      'sshexec:uptime']);
 };
