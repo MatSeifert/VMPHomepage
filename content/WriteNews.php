@@ -55,6 +55,7 @@
 			  <option value="borderlands">Borderlands</option>
 			  <option value="borderlands2">Borderlands 2</option>
 			  <option value="borderlandsthepresequel">Borderlands the Presequel</option>
+        <option value="cod4">Call of Duty 4: Modern Warfare</option>
 			  <option value="modernwarfare2">Call of Duty: Modern Warfare 2</option>
 			  <option value="modernwarfare3">Call of Duty: Modern Warfare 3</option>
 			  <option value="codghosts">Call of Duty: Ghosts</option>
