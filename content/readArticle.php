@@ -26,7 +26,7 @@
 		$shortlink = createShortLink("http://www.vmp-clan.de/?site=read&id=" . $id);
 
 		echo '<div class="SqlArticleShare">';
-			echo '<div class="SqlArticleShareInnerRight mobileClear"><img src="images/share.png"> Teile diesen Artikel <br>';
+			echo '<div class="SqlArticleShareInnerRight mobileClear"><i class="fa fa-share-alt" aria-hidden="true"></i> Teile diesen Artikel <br>';
 				echo '<div class="ShareOnFacebook"' .
 					     ' onclick="popupwindow(\'https://www.facebook.com/sharer/sharer.php?u=' . $shortlink . '\', 500, 400)">' .
 						'<a href=""><img src="images/facebook_transparent.png" class="circle"></a>' .
@@ -43,7 +43,7 @@
 
 			$ad = GetAdvertisement($article['game']);
 
-			echo '<div class="SqlArticleShareInnerLeft mobileClear"> <img src="images/amazon_black.png"> Ein bisschen shoppen ... <br>';
+			echo '<div class="SqlArticleShareInnerLeft mobileClear"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Ein bisschen shoppen ... <br>';
 				echo '<img src="images/articles/cover/' . $article['game'] . '.jpg" alt="Cover" class="adCoverImage">';
 				echo '<div class="adWrapper">';
 			        echo $ad;
@@ -86,7 +86,7 @@
 				 '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) .
 				 '&nbsp;UHR&nbsp;VON&nbsp;' . strtoupper($row['author']) . '</span>';
 		  	echo '<img class="SqlArticleHeadImage" src="images/articles/' . $row['game'] . '.jpg" alt="' . $row['game'] . '">';
-		  	echo '<a href="?site=' . $backlink . '"><img src="images/backButton.png" alt="Back" border="0" class="SqlArticleBack"></a>';
+		  	echo '<a href="?site=' . $backlink . '"><i class="fa fa-arrow-left SqlArticleBack" aria-hidden="true"></i> </a>';
 		  	echo '<span class="SqlArticleHeadline">' . utf8_encode(strtoupper($row['headline'])) . '</span>';
 			// Mobile Exclusive Stuff
 			echo '<div class="artileInfoboxMobile">';
@@ -128,7 +128,7 @@
 		{
 			// continue
 		}
-		else { echo '<span class="smallHeadline"><img src="images/morearticles.png">	Mehr zu ' . GetAlias($game) . ':	</span>'; }
+		else { echo '<span class="smallHeadline"><i class="fa fa-share" aria-hidden="true"></i>	Mehr zu ' . GetAlias($game) . ':	</span>'; }
 
 		while($row = mysqli_fetch_array($result)) {
 			echo '<div class="similarArticleWrapper">';

@@ -1,129 +1,113 @@
 <div class="NavContainer">
-	<span class="NavMainTitle">NAVIGATION</span>
+	<span class="NavMainTitle">Navigation</span>
 	<p class="space">&nbsp;</p>
-	<span class="NavCategory">HOME</span> <br />
+	<span class="NavCategory">Home</span> <br />
 	<span class="NavPoint">
 		<a class="navigation" href="?site=start">
-			<img src="images/menuNewsFade.png" alt="News" class="bottom">
-			<img src="images/menuNews.png" alt="News" class="top">
+			<i class="fa fa-newspaper-o" aria-hidden="true"></i>
 			News
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=archive">
-			<img src="images/menuArchiveFade.png" alt="Archiv" class="bottom">
-			<img src="images/menuArchive.png" alt="Archiv" class="top">
+			<i class="fa fa-inbox" aria-hidden="true"></i>
 			Archiv
 		</a>
 	</span> <div class="h30 mobileHidden"></div>
 
-	<span class="NavCategory">VMP CLAN</span> <br />
+	<span class="NavCategory">VMP Clan</span> <br />
 	<span class="NavPoint">
 		<a class="navigation" href="?site=information">
-			<img src="images/menuInformationFade.png" alt="Information" class="bottom">
-			<img src="images/menuInformation.png" alt="Information" class="top">
+			<i class="fa fa-info" aria-hidden="true"></i>
 			Informationen
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=rules">
-			<img src="images/menuRulesFade.png" alt="Rules" class="bottom">
-			<img src="images/menuRules.png" alt="Rules" class="top">
+			<i class="fa fa-book" aria-hidden="true"></i>
 			Clanregeln
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=screenshots">
-			<img src="images/menuScreenshotsFade.png" alt="Calendar" class="bottom">
-			<img src="images/menuScreenshots.png" alt="Calendar" class="top">
+			<i class="fa fa-camera" aria-hidden="true"></i>
 			Screenshots
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=letsplay">
-			<img src="images/menuLetsPlayFade.png" alt="Lets Play" class="bottom">
-			<img src="images/menuLetsPlay.png" alt="Lets Play" class="top">
+			<i class="fa fa-gamepad" aria-hidden="true"></i>
 			Let&#39;s Play
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="forum.php">
-			<img src="images/menuForumFade.png" alt="Forum" class="bottom">
-			<img src="images/menuForum.png" alt="Forum" class="top">
+			<i class="fa fa-comments-o" aria-hidden="true"></i>
 			Forum
 		</a>
 	</span> <div class="h30 mobileHidden"></div>
 
-	<span class="NavCategory">MEMBER</span> <br />
+	<span class="NavCategory">Member</span> <br />
 	<span class="NavPoint">
 		<a class="navigation" href="?site=member">
-			<img src="images/menuMemberFade.png" alt="Member" class="bottom">
-			<img src="images/menuMember.png" alt="Member" class="top">
+			<i class="fa fa-users" aria-hidden="true"></i>
 			&Uuml;bersicht
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=joinus">
-			<img src="images/menuJoinUsFade.png" alt="Join Us" class="bottom">
-			<img src="images/menuJoinUs.png" alt="Join Us" class="top">
+			<i class="fa fa-user-plus" aria-hidden="true"></i>
 			Join Us
 		</a>
 	</span> <div class="h30 mobileHidden"></div>
 
-	<span class="NavCategory">SERVER</span> <br />
+	<span class="NavCategory">Server</span> <br />
 	<span class="NavPoint">
 		<a class="navigation" href="?site=teamspeak">
-			<img src="images/menuTeamspeakFade.png" alt="Member" class="bottom">
-			<img src="images/menuTeamspeak.png" alt="Member" class="top">
+			<i class="fa fa-microphone" aria-hidden="true"></i>
 			Teamspeak 3
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=minecraft">
-			<img src="images/menuMinecraftFade.png" alt="Member" class="bottom">
-			<img src="images/menuMinecraft.png" alt="Member" class="top">
+			<i class="fa fa-server" aria-hidden="true"></i>
 			Minecraft
 		</a>
 	</span> <div class="h30 mobileHidden"></div>
 
-	<span class="NavCategory">VMP MANIA</span> <br />
+	<span class="NavCategory">VMP Mania</span> <br />
 	<span class="NavPoint">
 		<a class="navigation" href="?site=mania2011">
-			<img src="images/menuManiaFade.png" alt="VMP Mania 2011" class="bottom">
-			<img src="images/menuMania.png" alt="VMP Mania 2011" class="top">
+			<i class="fa fa-trophy" aria-hidden="true"></i>
 			2011
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=mania2012">
-			<img src="images/menuManiaFade.png" alt="VMP Mania 2012" class="bottom">
-			<img src="images/menuMania.png" alt="VMP Mania 2012" class="top">
+			<i class="fa fa-trophy" aria-hidden="true"></i>
 			2012
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=mania2013">
-			<img src="images/menuManiaFade.png" alt="VMP Mania 2013" class="bottom">
-			<img src="images/menuMania.png" alt="VMP Mania 2013" class="top">
+			<i class="fa fa-trophy" aria-hidden="true"></i>
 			2013
 		</a>
 	</span>
 	<span class="NavPoint">
 		<a class="navigation" href="?site=mania2014">
-			<img src="images/menuManiaFade.png" alt="VMP Mania 2014" class="bottom">
-			<img src="images/menuMania.png" alt="VMP Mania 2014" class="top">
+			<i class="fa fa-trophy" aria-hidden="true"></i>
 			2014
 		</a>
 	</span>
 	<span class="NavPoint" style="display:none">
 		<a class="navigation" href="?site=mania2015">
-			<img src="images/menuManiaFade.png" alt="VMP Mania 2015" class="bottom">
-			<img src="images/menuMania.png" alt="VMP Mania 2015" class="top">
+			<i class="fa fa-trophy" aria-hidden="true"></i>
 			2015
 		</a>
 	</span> <div class="h30 mobileHidden"></div>
 
-	<span class="NavCategory">&Uuml;BER DIE SEITE</span> <br>
+	<span class="NavCategory">&Uuml;ber die Seite</span> <br>
 	<?php
 		include('content/impressum.php');
 	?>

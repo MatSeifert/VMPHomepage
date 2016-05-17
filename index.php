@@ -54,10 +54,10 @@
 			<!-- Farbige Statusleiste für Chrom v39+ unter Android 5.0+ /-->
 		<meta name="theme-color" content="#C14924">
 			<!-- Stylesheet- und Favicon Einbindung /-->
-		<link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles/swipebox.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="styles/default_4.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
 			<!-- Die Schriftart der Seite /-->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:300' rel='stylesheet' type='text/css'>

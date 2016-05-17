@@ -5,7 +5,7 @@
 
 body {
 	/* background-image:url('../images/bg_body.png'); */
-	background-color: #dbdbdb;
+	background-color: #dedede;
 	margin: auto auto;
 	padding: 0px;
 	height: 100%;
@@ -943,18 +943,27 @@ body {
 /* Einstellungen für Hyperlinks */
 
 .navigation {
-	color: #787878 !important;
-	margin: 0px 0px 0px 30px;
-	text-decoration:none
-	-webkit-transition: color .4s ease-in;
-	-moz-transition: color .4s ease-in;
-	-o-transition: color .4s ease-in;
-	-ms-transition: color .4s ease-in;
-	transition: color .4s ease-in;
+	color: #fff !important;
+	display: inline-block;
+	margin: 2px 0px 0px 0px;
+	text-decoration:none;
+	-webkit-transition: color .2s ease-in;
+	-moz-transition: color .2s ease-in;
+	-o-transition: color .2s ease-in;
+	-ms-transition: color .2s ease-in;
+	transition: color .2s ease-in;
+}
+.navigation i.fa {
+	color: #fff !important;
+	position: absolute;
+	font-size: 18px;
+	display: inline-block;
+	margin: 3px 0 0 -35px;
 }
 
 .navigation:hover {
-	color:#C40000 !important;
+	color:#511D0F !important;
+	font-weight: bold;
 	text-decoration:none
 }
 
@@ -964,14 +973,20 @@ a:hover{color:#b5b5b5; text-decoration:none}
 a:active{color:#b5b5b5; text-decoration:none}
 
 .navigationS {
+	color: #cdcdcd !important;
 	font-size: 13px;
 	color: #787878;
 	text-decoration: none !important;
-	-webkit-transition: color .4s ease-in;
-	-moz-transition: color .4s ease-in;
-	-o-transition: color .4s ease-in;
-	-ms-transition: color .4s ease-in;
-	transition: color .4s ease-in;
+	-webkit-transition: color .2s ease-in;
+	-moz-transition: color .2s ease-in;
+	-o-transition: color .2s ease-in;
+	-ms-transition: color .2s ease-in;
+	transition: color .2s ease-in;
+}
+
+.navigationS:hover {
+	color: #722B16 !important;
+	font-weight: bold;
 }
 
 
@@ -988,13 +1003,14 @@ div.pageContainer {
 div.menue {
 	width: 250px;
 	vertical-align: top;
-	margin: 0px 0px 20px 0px;
-	background-color: #fff;
+	margin: 7px 0px 20px 0px;
+	background-color: #C14924;
 	float: left;
-	color: #000;
+	color: #fff;
 	height: 100%;
 	display: block;
 	bottom: auto;
+	border-radius: 4px;
 	box-shadow:
 		2px 2px 1px 0px rgba(0,0,0,0.1),
 		0px 0px 1px 0px rgba(0,0,0,0.1);
@@ -1007,13 +1023,8 @@ div.right {
 }
 
 div.NavContainer {
-	background-color: #fff;
 	margin: 0px 0px 0px 0px;
-	padding-top: 10px;
 	height: auto;
-	background: url('../images/bg_material.png');
-    background-size: 300px 55px;
-    background-repeat: no-repeat;
 }
 
 div.NavContainerMobile {
@@ -1029,10 +1040,11 @@ div.impressum {
 }
 
 div.content {
+	border-radius: 4px;
 	width: 600px;
 	margin: 0px 0px 20px 20px;
 	float: left;
-	background-color: #fff !important;
+	background-color: #C14924 !important;
 	z-index: 0;
 	box-shadow:
 		2px 2px 1px 0px rgba(0,0,0,0.1),
@@ -1064,7 +1076,8 @@ div.contentWrapper {
 }
 
 div.contentBox {
-	background-color: #fff !important;
+	border-radius: 4px;
+	background-color: #C14924 !important;
 	box-shadow:
 		2px 2px 1px 0px rgba(0,0,0,0.1),
 		0px 0px 1px 0px rgba(0,0,0,0.1);
@@ -1243,11 +1256,12 @@ div.LPBox {
 	float: left;
 	overflow: hidden;
 	text-align: left;
-	background-color: #EFEFEF;
+	background-color: #fff;
 	margin: 0px 3px 15px 3px;
 	width: 157px;
 	height: 270px;
 	padding: 5px;
+	border-radius: 2px;
 	box-shadow:
 		2px 2px 1px 0px rgba(0,0,0,0.2),
 		0px 0px 1px 0px rgba(0,0,0,0.2);
@@ -1397,6 +1411,7 @@ span.SPDate {
 }
 
 .smallHeadline {
+	color: #fff;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	display: block;
@@ -1405,27 +1420,23 @@ span.SPDate {
 
 span.NavCategory {
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	border-bottom-color: #d3d3d3;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #722B16;
 	width: 85%;
 	display: inline-block;
-	margin: 10px 0px 0px 20px;
+	margin: 10px 0 0 25px;
 }
 
 span.RightHeadline {
 	text-align: left;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-weight: 300;
-	font-size: 26px;
+	font-weight: 600;
+	font-size: 20px;
 	color: #fff;
-	border-bottom-style: solid;
-	border-bottom-width: 0px;
-	border-bottom-color: #d3d3d3;
 	width: 85%;
 	display: inline-block;
-	margin: 10px 0px 0px 20px;
+	margin: 15px 0px 0px 20px;
 }
 
 a:hover img.top{
@@ -1435,28 +1446,12 @@ a:hover img.top{
 .NavPoint {
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 20px;
-	margin: 4px 0px auto 25px;
-	border-bottom: solid 1px #e3e3e3;
-	width: 80%;
-	height: 32px;
+	font-size: 16px;
+	margin: 10px 20px 0 65px;
+	border-bottom: solid 1px #AF4221;
+	height: 35px;
 	position:relative;
 	display: block;
-}
-
-.NavPoint img {
-	position:absolute;
-    margin: 5px 0px 0px -30px;
-    opacity: 1;
-    -webkit-transition: opacity .4s ease-in-out;
-    -moz-transition: opacity .4s ease-in-out;
-    -o-transition: opacity .4s ease-in-out;
-    -ms-transition: opacity .4s ease-in-out;
-    transition: opacity .4s ease-in-out;
-}
-
-.NavPoint img.top:hover {
-    opacity:0;
 }
 
 span.title {
@@ -1517,11 +1512,11 @@ img.inlineImageL {
 div.PostTitle {
 	text-align: left;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-weight: 300;
-	font-size: 26px;
+	font-weight: 600;
+	font-size: 20px;
 	width: 520px;
 	color: #fff;
-	margin: 10px auto;
+	margin: 15px auto;
 	padding-bottom: 3px;
 	border-bottom-style: solid;
 	border-bottom-width: 0px;
@@ -1537,6 +1532,7 @@ div.PostDate {
 }
 
 div.PostPost {
+	color: #fff;
 	text-align: justify;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	width: 520px;
@@ -2089,17 +2085,20 @@ table.mania2011 {
 /* Styles für die Newsseite, deren Inhalt aus der Datenbank kommt */
 
 .SqlNewsBox {
-	background-color: #EFEFEF;
+	background-color: #FFF;
 	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
 				0px 0px 1px 0px rgba(0,0,0,0.2);
 	width: 520px;
 	height: 150px;
 	margin: 0px 0px 15px 0px;
+	border-radius: 2px;
 }
 
 .SqlNewsThumbnail {
 	position: absolute;
 	border: none;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 .SqlNewsHeadline {
@@ -2164,16 +2163,19 @@ table.mania2011 {
 
 .SqlArticleBack {
 	float: left;
-	margin: 5px 10px 0px 5px;
+	margin: 5px 10px 0px 10px;
 	border: none;
+	font-size: 22px;
+	color: #fff;
 }
 
 .SqlArticleBack:hover {
-	background-color: #ccc;
+	color: #90361A;
 }
 
 .SqlArticleHeadline {
 	font-size: 26px;
+	color: #fff;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	text-align: left;
 	margin-left: 5px;
@@ -2206,6 +2208,7 @@ table.mania2011 {
 
 .SqlArticleContent {
 	display: block;
+	color: #fff;
 	font-size: 15px;
 	line-height: 20px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -2227,6 +2230,7 @@ table.mania2011 {
 	font-size: 20px;
 	line-height: 20px;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	color: #fff;
 }
 
 .SqlArticleShareInnerRight {
@@ -2519,11 +2523,18 @@ select.ArchiveMonth:focus {
 
 .NavMainTitle {
 	text-align: left;
+	background-color: #90361A;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-weight: 300;
-	font-size: 26px;
+	font-weight: 900;
+	font-size: 20px;
 	color: #fff;
-	margin: 10px 0px 0px 20px;
+	margin: -7px 0px 0 0;
+	padding: 15px 0 0 20px;
+	display: inline-block;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	width: 230px;
+	height: 40px;
 }
 
 .watchmore {
@@ -2633,12 +2644,13 @@ a:hover.tooltips span {
 }
 
 .similarArticleWrapper {
-	background-color: #EFEFEF;
+	background-color: #fff;
 	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.2),
 				0px 0px 1px 0px rgba(0,0,0,0.2);
 	width: 520px;
 	height: 59px;
 	margin: 0px 0px 15px 0px;
+	border-radius: 2px;
 }
 
 .SimHeadline {
@@ -2658,10 +2670,12 @@ a:hover.tooltips span {
 }
 
 .SimThumb {
-	width: 60px;
-	height: 60px;
+	width: 59px;
+	height: 59px;
 	float: left;
-	margin: -1px 10px 0px -1px;
+	margin: 0px 10px 0px 0px;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 .hiddenOnMobile {
@@ -3150,7 +3164,7 @@ a:hover.tooltips span {
 .pagination {
 	padding: 2px 6px 2px 6px;
 	margin: 0px 5px 0px 5px;
-	background-color: #BBDEFB;
+	background-color: #90361A;
 	border-radius: 3px;
 	border: none;
 	color: #fff;

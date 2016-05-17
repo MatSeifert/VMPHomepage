@@ -113,9 +113,9 @@
 		  	echo '<span class="SqlNewsHeadline"><a href="?site=read&id=' . $row['id'] . '">' . utf8_encode(strtoupper($row['headline'])) . '</a></span>';
 		  	echo '<span class="SqlNewsDate">' . date("d.m.Y", strtotime($row['date'])) . '&nbsp;-&nbsp;' . substr($row['timestamp'], 0, -3) . '&nbsp;Uhr&nbsp;von&nbsp;' . $row['author'] . '</span>';
 		  	echo '<a href="?site=read&id=' . $row['id'] . '"><span class="SqlNewsSnippet">' . utf8_encode(substr($row['content'], 0, 250)) . '</span></a>';
-		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><a href="?site=read&id=' . $row['id'] . '"><img src="images/readMore.png">&nbsp;Artikel lesen</a>&nbsp;&nbsp;' .
+		  	echo '<div class="SqlNewsReadMore"><span class="hiddenOnMobile"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><a href="?site=read&id=' . $row['id'] . '">&nbsp;Artikel lesen</a>&nbsp;&nbsp;' .
 		  		 '&nbsp;</span><i class="fa fa-comments"></i>&nbsp;<a href="http://vmp-clan.de/?site=read&id=' . $row['id'] . '#disqus_thread"><i class="fa fa-spinner fa-spin"></i></a>&nbsp;&nbsp;' .
-		  		 '&nbsp;<i class="fa fa-eye"></i>&nbsp;' . $row['articleRead'] . '&nbsp;mal gelesen&nbsp;&nbsp;' .
+		  		 '&nbsp;<i class="fa fa-eye"></i>&nbsp;' . $row['articleRead'] . '&nbsp;Views&nbsp;&nbsp;' .
 		  		 '</div>';
 		  echo "</div>";
 		}
@@ -139,7 +139,7 @@
 </div>
 
 <div class="PostTitle">
-  NEWS
+  News
 </div>
   <span class="AddNews">
   	<a href="?site=AddNews" class="tooltips">

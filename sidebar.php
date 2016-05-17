@@ -9,20 +9,20 @@
 	<body style="background-color: #C14924;">
 			<p>&nbsp;</p>
 			<div class="contentBox">
-		   		<span class="NavCategory">TEAMSPEAK 3</span>
+		   		<span class="NavCategory">Teamspeak 3</span>
 		   		<div class="rightText">
 		   			<p>&nbsp;</p>
 		   			<p>&nbsp;</p>
 			   		<?php
 			   			require_once ("widgets/TSViewer/teamspeak.php")
-			   		?>		
+			   		?>
 			   	</div>
 		   	</div>
 
 		   	<p>&nbsp;</p>
 
 		   	<div class="contentBox">
-		   		<span class="NavCategory">TERMINE</span>
+		   		<span class="NavCategory">Termine</span>
 		   		<div class="rightText">
 			   		<?php
 			   			include("widgets/kalender/kalender.php")
@@ -34,25 +34,25 @@
 		   	<p>&nbsp;</p>
 
 		   	<div class="contentBox">
-		   		<span class="NavCategory">LET'S PLAY</span>
+		   		<span class="NavCategory">Let's Play</span>
 		   		<p>&nbsp;</p>
 		   		<div class="rightText">
-		   			
+
 					<?php require_once("widgets/letsplay/LetsPlay.html"); ?>
 
 			   	</div>
-		   	</div>		
+		   	</div>
 
 		   	<p>&nbsp;</p>
 
 		   	<div class="contentBox">
-		   		<span class="NavCategory">SOCIAL MEDIA</span>
+		   		<span class="NavCategory">Social Media</span>
 		   		<p>&nbsp;</p>
 		   		<div class="rightText">
-		   			
+
 					<?php require_once("widgets/social/media.php"); ?>
 
 			   	</div>
-		   	</div>	
+		   	</div>
 	</body>
 </html>

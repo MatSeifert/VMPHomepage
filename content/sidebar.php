@@ -1,6 +1,6 @@
 <div class="right">
     <div class="contentBox">
-       <span class="RightHeadline">TEAMSPEAK 3</span>
+       <span class="RightHeadline">Teamspeak 3</span>
        <div class="rightText">
            <div data-async-url="widgets/TSViewer/teamspeak.php">
                <p>&nbsp;</p>
@@ -12,7 +12,7 @@
    </div>
    <p>&nbsp;</p>
    <div class="contentBox">
-       <span class="RightHeadline">TERMINE</span>
+       <span class="RightHeadline">Termine</span>
        <div class="watchmore">
            <a href="?site=termine" class="tooltips">
                &#187;
@@ -29,7 +29,7 @@
    </div>
    <p>&nbsp;</p>
    <div class="contentBox">
-       <span class="RightHeadline">LET'S PLAY</span>
+       <span class="RightHeadline">Let's Play</span>
        <div class="watchmore">
            <a href="?site=letsplay" class="tooltips">
                &#187;
@@ -45,7 +45,7 @@
    </div>
    <p>&nbsp;</p>
    <div class="contentBox">
-       <span class="RightHeadline">SOCIAL MEDIA</span>
+       <span class="RightHeadline">Social Media</span>
        <p>&nbsp;</p>
        <div class="rightText">
 
@@ -55,7 +55,7 @@
    </div>
    <p>&nbsp;</p>
    <div class="contentBox mobileHidden" id="mobilePromo">
-       <span class="RightHeadline">VMP MOBIL</span>
+       <span class="RightHeadline">VMP Mobil</span>
        <div class="watchmore">
            <a href="?site=mobile" class="tooltips">
                &#187;
